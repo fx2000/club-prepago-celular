@@ -1,0 +1,23 @@
+[2016-12-09 17:21:03.992276] [info] ============================================================
+[2016-12-09 17:21:03.992429] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '70'
+[2016-12-09 17:21:03.996843] [info] ============================================================
+[2016-12-09 17:21:03.996959] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-09 17:21:03.998265] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-12-09 17:21:04.000025] [error] GetProfile request failed for UserId 70 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}
+[2016-12-09 17:21:04.998125] [info] ============================================================
+[2016-12-09 17:21:04.999531] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '70'
+[2016-12-09 17:21:05.000490] [error] GetFavorites request failed for UserId 70 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}
+[2016-12-09 17:21:05.008316] [info] ============================================================
+[2016-12-09 17:21:05.008420] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '70'
+[2016-12-09 17:21:05.009264] [error] GetFavorites request failed for UserId 70 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}

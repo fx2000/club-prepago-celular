@@ -1,0 +1,79 @@
+[2017-02-16 8:22:36.704711] [info] ============================================================
+[2017-02-16 8:22:36.704884] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2017-02-16 8:22:36.707267] [info] ============================================================
+[2017-02-16 8:22:36.707412] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '116'
+[2017-02-16 8:22:36.708885] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-02-16 8:22:36.711736] [info] GetProfile request successful for UserId 116 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Kravis Trejos","ID":"8-930-2163","Email":"kgriseth@live.com","Address":"univerdida interamericana","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000116","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2017-02-16 8:22:50.288095] [info] ============================================================
+[2017-02-16 8:22:50.288260] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '116'
+[2017-02-16 8:22:50.290283] [info] GetPrepaidBalance request successful for UserId 116 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"0.47"}}}
+[2017-02-16 19:20:04.965043] [notice] ============================================================
+[2017-02-16 19:20:04.965202] [notice] Received Register request:
+    DeviceId: '1'
+    longitude: '-79.7046592'
+    SponsorId: ''
+    TaxId: '8-8657688'
+    Phone_Number: '62801532'
+    Password: 'mamatuleso'
+    Address: 'panama'
+    Email: 'Dvalentinasexy2305@hotmail.com'
+    latitude: '8.9532183'
+    PlatformId: '1'
+    Country: '1'
+    City: 'panama'
+    Province: 'panama'
+    Name: 'Diana'
+[2017-02-16 19:20:04.967524] [error] Register request failed for user Diana {"Response":{"Status":"0","Code":"529","Message":"Email address already registered"}}
+[2017-02-16 19:29:50.132920] [info] ============================================================
+[2017-02-16 19:29:50.133392] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2017-02-16 19:29:50.135279] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-02-16 19:29:50.543399] [info] ============================================================
+[2017-02-16 19:29:50.543540] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '389'
+[2017-02-16 19:29:50.545517] [info] GetProfile request successful for UserId 389 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Gaviritsel Flores","ID":"5-704-545","Email":"gabycell06@gmail.com","Address":"24 de Diciembre","Country":"Panama","City":"Ciudad de Panama","Province":"Panama","PhoneNo":"62857446","UserId":"000389","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2017-02-16 19:29:54.591959] [info] ============================================================
+[2017-02-16 19:29:54.592272] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '389'
+[2017-02-16 19:29:54.593945] [info] GetPrepaidBalance request successful for UserId 389 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"5.69"}}}
+[2017-02-16 19:30:09.097963] [info] ============================================================
+[2017-02-16 19:30:09.098109] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2017-02-16 19:30:09.099323] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2017-02-16 19:30:21.434274] [notice] ============================================================
+[2017-02-16 19:30:21.434420] [notice] Received Recharge request:
+    DeviceId: '1'
+    Amount: '2.0'
+    Phone_Number: '66851385'
+    Operator: '1'
+    Payment_Method: '1'
+    longitude: ' '
+    latitude: ' '
+    PlatformId: '1'
+    UserId: '389'
+[2017-02-16 19:30:27.940373] [notice] Recharge request completed for Phone Number 66851385 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":2,"ReferenceNo":"0000005485","Date":"2017-02-16 19:30:27","RewardPoint":20,"AvailableBalance":"3.69"}}}
+[2017-02-16 19:30:36.674298] [info] ============================================================
+[2017-02-16 19:30:36.674443] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '389'
+[2017-02-16 19:30:36.676367] [info] GetPrepaidBalance request successful for UserId 389 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"3.69"}}}
+[2017-02-16 19:30:36.750861] [info] ============================================================
+[2017-02-16 19:30:36.751040] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2017-02-16 19:30:36.752147] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}

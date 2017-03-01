@@ -1,0 +1,143 @@
+[2017-02-06 8:19:49.434993] [info] ============================================================
+[2017-02-06 8:19:49.436263] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '215'
+[2017-02-06 8:19:49.435324] [info] ============================================================
+[2017-02-06 8:19:49.436777] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2017-02-06 8:19:49.438455] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-02-06 8:19:49.438975] [info] GetProfile request successful for UserId 215 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Williams Castillo","ID":"8-839-1324","Email":"transcastillo04@gmail.com","Address":"panama ","Country":"Panama","City":"Ciudad de Panama","Province":"Panama","PhoneNo":"69691183","UserId":"000215","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2017-02-06 11:02:47.887130] [info] ============================================================
+[2017-02-06 11:02:47.887259] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '70'
+[2017-02-06 11:02:47.888490] [error] GetProfile request failed for UserId 70 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}
+[2017-02-06 11:02:48.703867] [info] ============================================================
+[2017-02-06 11:02:48.704024] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2017-02-06 11:02:48.705117] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-02-06 17:38:02.819766] [info] ============================================================
+[2017-02-06 17:38:02.819962] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '2'
+    Password: 'laura1226'
+    Email: 'lancegreene1203@gmail.com'
+[2017-02-06 17:38:02.823188] [info] Login request successful for User lancegreene1203@gmail.com {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"UserId":"55","Name":"LANCEL","DiscountPercentage":"7.00","Country":"Panama","TaxPercentage":"7.00","PrepaidBalance":"2.00","TaxId":"8-756-120 DV91","city":"Panama","state":"Panama","RewardPoint":"100"},"version":"1.5"}}
+[2017-02-06 17:38:03.555680] [info] ============================================================
+[2017-02-06 17:38:03.555857] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '55'
+[2017-02-06 17:38:03.552481] [info] ============================================================
+[2017-02-06 17:38:03.556333] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2017-02-06 17:38:03.557425] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-02-06 17:38:03.559850] [info] GetProfile request successful for UserId 55 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"LANCEL","ID":"8-756-120 DV91","Email":"lancegreene1203@gmail.com","Address":"Las Cumbres San Lorenzo Calle G Casa G36","Country":"Panama","City":"Panama","Province":"Panama","PhoneNo":"69857514","UserId":"000055","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2017-02-06 17:38:04.687846] [info] ============================================================
+[2017-02-06 17:38:04.688008] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '55'
+[2017-02-06 17:38:04.693826] [info] ============================================================
+[2017-02-06 17:38:04.693970] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '55'
+[2017-02-06 17:38:04.695663] [info] GetFavorites request successful for UserId 55 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"58","name":"Benjamin Rg.","phone_number":"69575354","operator":"1"}]}}
+[2017-02-06 17:38:04.697357] [info] GetFavorites request successful for UserId 55 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"58","name":"Benjamin Rg.","phone_number":"69575354","operator":"1"}]}}
+[2017-02-06 22:19:06.833677] [info] ============================================================
+[2017-02-06 22:19:06.833842] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'mis2bebes'
+    Email: 'oshime.27.12@gmail.com'
+[2017-02-06 22:19:06.835665] [error] Login request failed for User oshime.27.12@gmail.com {"Response":{"Status":"0","Code":"535","Message":"Incorrect Email or Password"}}
+[2017-02-06 22:19:26.951328] [info] ============================================================
+[2017-02-06 22:19:26.951462] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'mis2bebes'
+    Email: 'oshime.27.12@gmail.com'
+[2017-02-06 22:19:26.952662] [error] Login request failed for User oshime.27.12@gmail.com {"Response":{"Status":"0","Code":"535","Message":"Incorrect Email or Password"}}
+[2017-02-06 22:22:19.382791] [notice] ============================================================
+[2017-02-06 22:22:19.382940] [notice] Received Register request:
+    DeviceId: '1'
+    longitude: ' '
+    SponsorId: '798341'
+    TaxId: '73620559'
+    Phone_Number: '06256339'
+    Password: 'mis2bebes'
+    Address: 'jr,huanuco'
+    Email: 'oshime.27.12@gmail.com'
+    latitude: ' '
+    PlatformId: '1'
+    Country: '1'
+    City: 'huacar'
+    Province: 'huacar'
+    Name: 'oshime keyko'
+[2017-02-06 22:22:20.769329] [notice] Register request successful for user oshime keyko {"Response":{"Status":"1","Code":"533","Message":"Success","data":{"UserId":507,"Name":"oshime keyko"}}}
+[2017-02-06 22:22:41.958745] [info] ============================================================
+[2017-02-06 22:22:41.958883] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'mis2bebes'
+    Email: 'oshime.27.12@gmail.com'
+[2017-02-06 22:22:41.960738] [error] Login request failed for User oshime.27.12@gmail.com {"Response":{"Status":"0","Code":"536","Message":"User is inactive"}}
+[2017-02-06 22:22:57.920190] [info] ============================================================
+[2017-02-06 22:22:57.920387] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'mis2bebes'
+    Email: 'oshime.27.12@gmail.com'
+[2017-02-06 22:22:57.923657] [error] Login request failed for User oshime.27.12@gmail.com {"Response":{"Status":"0","Code":"536","Message":"User is inactive"}}
+[2017-02-06 22:29:42.581840] [info] ============================================================
+[2017-02-06 22:29:42.582035] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'mis2bebes'
+    Email: 'oshime.27.12@gmail.com'
+[2017-02-06 22:29:42.583200] [error] Login request failed for User oshime.27.12@gmail.com {"Response":{"Status":"0","Code":"536","Message":"User is inactive"}}
+[2017-02-06 22:51:20.881664] [info] ============================================================
+[2017-02-06 22:51:20.881838] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '180'
+[2017-02-06 22:51:20.884172] [info] GetProfile request successful for UserId 180 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Carmen Pena Rosario","ID":"3354887","Email":"larubia120875@gmail.com","Address":"La iyueca","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000180","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2017-02-06 22:51:20.913726] [info] ============================================================
+[2017-02-06 22:51:20.913858] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2017-02-06 22:51:20.914793] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-02-06 23:40:10.862771] [info] ============================================================
+[2017-02-06 23:40:10.862927] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '460'
+[2017-02-06 23:40:10.864028] [info] ============================================================
+[2017-02-06 23:40:10.864211] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2017-02-06 23:40:10.865272] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-02-06 23:40:10.868012] [info] GetProfile request successful for UserId 460 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"elvis bernat","ID":"jenvis","Email":"elvis.bernat20@gmail.com","Address":"penonome","Country":"Panama","City":"penonome","Province":"cocle","PhoneNo":"65274292","UserId":"000460","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2017-02-06 23:40:16.222225] [info] ============================================================
+[2017-02-06 23:40:16.222476] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2017-02-06 23:40:16.224282] [info] ============================================================
+[2017-02-06 23:40:16.224406] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '460'
+[2017-02-06 23:40:16.226320] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-02-06 23:40:16.226978] [info] GetProfile request successful for UserId 460 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"elvis bernat","ID":"jenvis","Email":"elvis.bernat20@gmail.com","Address":"penonome","Country":"Panama","City":"penonome","Province":"cocle","PhoneNo":"65274292","UserId":"000460","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2017-02-06 23:40:18.837057] [info] ============================================================
+[2017-02-06 23:40:18.837199] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '460'
+[2017-02-06 23:40:18.838582] [info] GetPrepaidBalance request successful for UserId 460 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"0.00"}}}

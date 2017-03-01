@@ -1,0 +1,98 @@
+[2017-01-02 8:50:39.436290] [info] ============================================================
+[2017-01-02 8:50:39.440737] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '112'
+[2017-01-02 8:50:39.448354] [info] ============================================================
+[2017-01-02 8:50:39.450532] [info] GetProfile request successful for UserId 112 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Lava Auto Pirolo","ID":"3-102-911 DV 65","Email":"mwatson-1623@hotmail.com","Address":"ARRAIJAN","Country":"Panama","City":"ciudad de panama","Province":"panama","PhoneNo":"00000000","UserId":"000112","SponsorId":"000006","SponsorName":"Pedro Rodriguez"}}}
+[2017-01-02 8:50:39.448488] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2017-01-02 8:50:39.453813] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-01-02 8:50:40.280046] [info] ============================================================
+[2017-01-02 8:50:40.293234] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '112'
+[2017-01-02 8:50:40.296452] [info] GetFavorites request failed for UserId 112 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2017-01-02 8:50:40.297754] [info] ============================================================
+[2017-01-02 8:50:40.297894] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '112'
+[2017-01-02 8:50:40.300952] [info] GetFavorites request failed for UserId 112 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2017-01-02 8:50:56.966392] [info] ============================================================
+[2017-01-02 8:50:56.966562] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '112'
+[2017-01-02 8:50:56.969718] [info] GetPrepaidBalance request successful for UserId 112 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"18.50"}}}
+[2017-01-02 8:51:03.013663] [info] ============================================================
+[2017-01-02 8:51:03.013861] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2017-01-02 8:51:03.016822] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2017-01-02 8:51:13.965795] [notice] ============================================================
+[2017-01-02 8:51:13.966036] [notice] Received Recharge request:
+    DeviceId: '1'
+    Operator: '1'
+    UserId: '112'
+    longitude: ' '
+    Amount: '3.0'
+    Phone_Number: '69438246'
+    latitude: ' '
+    PlatformId: '2'
+    Payment_Method: '1'
+[2017-01-02 8:51:21.577600] [notice] Recharge request completed for Phone Number 69438246 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":3,"ReferenceNo":"0000005381","Date":"2017-01-02 08:51:21","RewardPoint":30,"AvailableBalance":"15.50"}}}
+[2017-01-02 8:51:31.923382] [info] ============================================================
+[2017-01-02 8:51:31.923527] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2017-01-02 8:51:31.924598] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2017-01-02 8:51:38.416335] [info] ============================================================
+[2017-01-02 8:51:38.416594] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '112'
+[2017-01-02 8:51:38.420439] [info] GetPrepaidBalance request successful for UserId 112 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"15.50"}}}
+[2017-01-02 8:52:16.301218] [info] ============================================================
+[2017-01-02 8:52:16.301389] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '112'
+[2017-01-02 8:52:16.302685] [info] GetFavorites request failed for UserId 112 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2017-01-02 9:35:58.797032] [info] ============================================================
+[2017-01-02 9:35:58.797141] [info] Received Login request:
+    Email: 'Delacruzjuvartic.@gmail.com'
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'dj1811975'
+[2017-01-02 9:35:58.799321] [error] Login request failed for User Delacruzjuvartic.@gmail.com {"Response":{"Status":"0","Code":"535","Message":"Incorrect Email or Password"}}
+[2017-01-02 9:38:42.527679] [info] ============================================================
+[2017-01-02 9:38:42.527904] [info] Received Login request:
+    Email: 'delacruzjuvartic.@gmail.com'
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'dj1811975'
+[2017-01-02 9:38:42.529479] [error] Login request failed for User delacruzjuvartic.@gmail.com {"Response":{"Status":"0","Code":"535","Message":"Incorrect Email or Password"}}
+[2017-01-02 9:41:18.652519] [info] ============================================================
+[2017-01-02 9:41:18.652659] [info] Received Login request:
+    Email: 'delacruzjuvartic.@gmail.com'
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'dj1811975'
+[2017-01-02 9:41:18.653698] [error] Login request failed for User delacruzjuvartic.@gmail.com {"Response":{"Status":"0","Code":"535","Message":"Incorrect Email or Password"}}
+[2017-01-02 9:41:46.791229] [info] ============================================================
+[2017-01-02 9:41:46.791378] [info] Received Login request:
+    Email: 'delacruzjuvartic.@gmail.com'
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'dj1811975'
+[2017-01-02 9:41:46.792464] [error] Login request failed for User delacruzjuvartic.@gmail.com {"Response":{"Status":"0","Code":"535","Message":"Incorrect Email or Password"}}
+[2017-01-02 9:59:42.123390] [info] ============================================================
+[2017-01-02 9:59:42.123627] [info] Received Login request:
+    Email: 'delacruzjuvartic.@gmail.com'
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'dj1811975'
+[2017-01-02 9:59:42.124623] [error] Login request failed for User delacruzjuvartic.@gmail.com {"Response":{"Status":"0","Code":"535","Message":"Incorrect Email or Password"}}

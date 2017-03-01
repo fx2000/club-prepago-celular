@@ -1,0 +1,142 @@
+[2017-01-19 9:25:42.256394] [info] ============================================================
+[2017-01-19 9:25:42.256589] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2017-01-19 9:25:42.259664] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-01-19 9:25:42.271698] [info] ============================================================
+[2017-01-19 9:25:42.271811] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '69'
+[2017-01-19 9:25:42.273583] [info] GetProfile request successful for UserId 69 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Eric Olivares","ID":"8-241-510","Email":"eric.olivares@clubprepago.com","Address":"Panama","Country":"Panama","City":"Ciudad de Panama","Province":"Panama","PhoneNo":"69544171","UserId":"000069","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2017-01-19 14:15:06.033219] [notice] ============================================================
+[2017-01-19 14:15:06.033375] [notice] Received Register request:
+    DeviceId: '1'
+    longitude: '-67.944133'
+    SponsorId: '123456'
+    TaxId: '22515019'
+    Phone_Number: '58424431'
+    Password: 'martes'
+    Address: 'valencia'
+    Email: 'candidamarianunes@gmail.com'
+    latitude: '10.1582561'
+    PlatformId: '1'
+    Country: '1'
+    City: 'valencia'
+    Province: 'carabobo'
+    Name: 'candida nunes'
+[2017-01-19 14:15:07.647687] [notice] Register request successful for user candida nunes {"Response":{"Status":"1","Code":"533","Message":"Success","data":{"UserId":499,"Name":"candida nunes"}}}
+[2017-01-19 14:17:28.182728] [info] ============================================================
+[2017-01-19 14:17:28.182879] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'martes'
+    Email: 'candidamarianunes@gmail.com'
+[2017-01-19 14:17:28.184973] [error] Login request failed for User candidamarianunes@gmail.com {"Response":{"Status":"0","Code":"536","Message":"User is inactive"}}
+[2017-01-19 14:19:59.254359] [info] ============================================================
+[2017-01-19 14:19:59.254645] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'martes'
+    Email: 'candidamarianunes@gmail.com'
+[2017-01-19 14:19:59.255942] [error] Login request failed for User candidamarianunes@gmail.com {"Response":{"Status":"0","Code":"536","Message":"User is inactive"}}
+[2017-01-19 14:30:39.869900] [notice] ============================================================
+[2017-01-19 14:30:39.870058] [notice] Received Register request:
+    DeviceId: '1'
+    longitude: '-67.9441379'
+    SponsorId: '123456'
+    TaxId: '22515019'
+    Phone_Number: '44312460'
+    Password: 'martes'
+    Address: 'valencia '
+    Email: 'candidanarianunes@gmail.com'
+    latitude: '10.1581352'
+    PlatformId: '1'
+    Country: '1'
+    City: 'valencia'
+    Province: 'Venezuela '
+    Name: 'candida nunes'
+[2017-01-19 14:30:41.629487] [notice] Register request successful for user candida nunes {"Response":{"Status":"1","Code":"533","Message":"Success","data":{"UserId":500,"Name":"candida nunes"}}}
+[2017-01-19 15:45:56.219810] [info] ============================================================
+[2017-01-19 15:45:56.220222] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2017-01-19 15:45:56.225137] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-01-19 15:45:56.226876] [info] ============================================================
+[2017-01-19 15:45:56.226982] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '114'
+[2017-01-19 15:45:56.229007] [info] GetProfile request successful for UserId 114 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"InterPlay","ID":"8-812-1290","Email":"inter-play@outlook.com","Address":"La Cabima","Country":"Panama","City":"Ciudad de Panama","Province":"Panama","PhoneNo":"","UserId":"000114","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2017-01-19 15:46:25.528153] [info] ============================================================
+[2017-01-19 15:46:25.528368] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '114'
+[2017-01-19 15:46:25.529747] [info] GetPrepaidBalance request successful for UserId 114 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"13.85"}}}
+[2017-01-19 15:46:40.104698] [info] ============================================================
+[2017-01-19 15:46:40.104835] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2017-01-19 15:46:40.105707] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2017-01-19 15:46:47.648473] [notice] ============================================================
+[2017-01-19 15:46:47.648631] [notice] Received Recharge request:
+    DeviceId: '1'
+    Amount: '5.0'
+    Phone_Number: '67913975'
+    Operator: '1'
+    Payment_Method: '1'
+    longitude: '-79.5367193'
+    latitude: '9.1092065'
+    PlatformId: '2'
+    UserId: '114'
+[2017-01-19 15:46:55.349689] [notice] Recharge request completed for Phone Number 67913975 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":5,"ReferenceNo":"0000005406","Date":"2017-01-19 15:46:55","RewardPoint":50,"AvailableBalance":"8.85"}}}
+[2017-01-19 15:47:09.031413] [info] ============================================================
+[2017-01-19 15:47:09.031604] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2017-01-19 15:47:09.032998] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2017-01-19 15:47:09.123255] [info] ============================================================
+[2017-01-19 15:47:09.123430] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '114'
+[2017-01-19 15:47:09.125207] [info] GetPrepaidBalance request successful for UserId 114 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"8.85"}}}
+[2017-01-19 23:29:11.373800] [notice] ============================================================
+[2017-01-19 23:29:11.373960] [notice] Received Register request:
+    DeviceId: '1'
+    longitude: '-74.1471635'
+    SponsorId: ''
+    TaxId: '91041178'
+    Phone_Number: '32033894'
+    Password: 'carlitosma'
+    Address: 'calle 6 41-15'
+    Email: 'carlosarturo271@hotmail.com'
+    latitude: '4.6663657'
+    PlatformId: '1'
+    Country: '1'
+    City: 'Bucaramanga'
+    Province: 'giron'
+    Name: 'carlos arturo'
+[2017-01-19 23:29:13.637181] [notice] Register request successful for user carlos arturo {"Response":{"Status":"1","Code":"533","Message":"Success","data":{"UserId":501,"Name":"carlos arturo"}}}
+[2017-01-19 23:30:09.476068] [info] ============================================================
+[2017-01-19 23:30:09.476217] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'carlitosmario'
+    Email: 'carlosarturo271@hotmail.com'
+[2017-01-19 23:30:09.477960] [error] Login request failed for User carlosarturo271@hotmail.com {"Response":{"Status":"0","Code":"535","Message":"Incorrect Email or Password"}}
+[2017-01-19 23:31:46.753179] [info] ============================================================
+[2017-01-19 23:31:46.753330] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'carlitosmario'
+    Email: 'carlosarturo271@hotmail.com'
+[2017-01-19 23:31:46.754422] [error] Login request failed for User carlosarturo271@hotmail.com {"Response":{"Status":"0","Code":"535","Message":"Incorrect Email or Password"}}
+[2017-01-19 23:31:55.033248] [info] ============================================================
+[2017-01-19 23:31:55.033660] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'carlitosmario'
+    Email: 'carlosarturo271@hotmail.com'
+[2017-01-19 23:31:55.035521] [error] Login request failed for User carlosarturo271@hotmail.com {"Response":{"Status":"0","Code":"535","Message":"Incorrect Email or Password"}}

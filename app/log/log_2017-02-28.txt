@@ -1,0 +1,162 @@
+[2017-02-28 0:00:03.331348] [info] ============================================================
+[2017-02-28 0:00:03.331521] [info] Received GetRewards request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '460'
+[2017-02-28 0:00:03.332664] [info] GetRewards request successful for UserId 460 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"Point":"1000","Cost":"1.00","Description":"Recarga de $1 de cualquier operadora","Image":"https:\/\/app.clubprepago.com\/img\/rewards\/99560b5313e2478e88fc1b1a23876021cfcd034e.png"}]}}
+[2017-02-28 0:00:03.386383] [info] ============================================================
+[2017-02-28 0:00:03.386573] [info] Received GetRewardPoints request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '460'
+[2017-02-28 0:00:03.388288] [info] GetRewardPoints request successful for UserId 460 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"RewardPoint":"0"}}}
+[2017-02-28 0:20:55.532952] [info] ============================================================
+[2017-02-28 0:20:55.533220] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'angelb24'
+    Email: 'angel02.aa@gmail.com'
+[2017-02-28 0:20:55.538893] [info] Login request successful for User angel02.aa@gmail.com {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"UserId":"429","Name":"Angel Atencio","DiscountPercentage":"0.00","Country":"Panama","TaxPercentage":"7.00","PrepaidBalance":"0.00","TaxId":"8-774-129","city":"Panam","state":"Panam","RewardPoint":"10"},"version":"1.5.2"}}
+[2017-02-28 0:20:57.349108] [info] ============================================================
+[2017-02-28 0:20:57.349260] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2017-02-28 0:20:57.350328] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-02-28 0:20:57.361891] [info] ============================================================
+[2017-02-28 0:20:57.361985] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '429'
+[2017-02-28 0:20:57.363727] [info] GetProfile request successful for UserId 429 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Angel Atencio","ID":"8-774-129","Email":"angel02.aa@gmail.com","Address":"villa lucre","Country":"Panama","City":"Panam","Province":"Panam","PhoneNo":"60825715","UserId":"000429","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2017-02-28 0:23:02.430778] [info] ============================================================
+[2017-02-28 0:23:02.430995] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '429'
+[2017-02-28 0:23:02.432140] [info] GetPrepaidBalance request successful for UserId 429 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"0.00"}}}
+[2017-02-28 0:24:11.333098] [info] ============================================================
+[2017-02-28 0:24:11.333250] [info] Received GetRechargeHistory request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '429'
+[2017-02-28 0:24:11.342510] [info] GetRechargeHistory request successful for UserId 429 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"60825715","Operator":"2","Amount":"1.00","PaymentVia":"1","ReferenceNo":"0000005513","DateTime":"2017-02-24 21:51:54","Message":"Recharge has been successful"}]}}
+[2017-02-28 0:25:32.268457] [notice] ============================================================
+[2017-02-28 0:25:32.268569] [notice] Received ForgotPassword request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Email: 'angel02.aa@gmail.com'
+[2017-02-28 0:25:33.832185] [notice] ForgotPassword request successful for UserId angel02.aa@gmail.com {"Response":{"Status":"1","Code":"592","Message":"A new password has been sent to your email address"}}
+[2017-02-28 0:26:43.566477] [info] ============================================================
+[2017-02-28 0:26:43.566770] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'angelb24'
+    Email: 'angel02.aa@gmail.com'
+[2017-02-28 0:26:43.568736] [error] Login request failed for User angel02.aa@gmail.com {"Response":{"Status":"0","Code":"535","Message":"Incorrect Email or Password"}}
+[2017-02-28 0:26:54.486107] [info] ============================================================
+[2017-02-28 0:26:54.486346] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'yjdf034l'
+    Email: 'angel02.aa@gmail.com'
+[2017-02-28 0:26:54.489909] [error] Login request failed for User angel02.aa@gmail.com {"Response":{"Status":"0","Code":"535","Message":"Incorrect Email or Password"}}
+[2017-02-28 0:27:10.617772] [info] ============================================================
+[2017-02-28 0:27:10.617887] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'yjdf034l'
+    Email: 'angel02.aa@gmail.com'
+[2017-02-28 0:27:10.618870] [error] Login request failed for User angel02.aa@gmail.com {"Response":{"Status":"0","Code":"535","Message":"Incorrect Email or Password"}}
+[2017-02-28 0:28:22.676625] [info] ============================================================
+[2017-02-28 0:28:22.676738] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'yjdf034l'
+    Email: 'angel02.aa@gmail.com'
+[2017-02-28 0:28:22.677762] [error] Login request failed for User angel02.aa@gmail.com {"Response":{"Status":"0","Code":"535","Message":"Incorrect Email or Password"}}
+[2017-02-28 0:32:20.172430] [info] ============================================================
+[2017-02-28 0:32:20.172590] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: '1z705d2y'
+    Email: 'angel02.aa@gmail.com'
+[2017-02-28 0:32:20.175318] [info] Login request successful for User angel02.aa@gmail.com {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"UserId":"429","Name":"Angel Atencio","DiscountPercentage":"0.00","Country":"Panama","TaxPercentage":"7.00","PrepaidBalance":"0.00","TaxId":"8-774-129","city":"Panam","state":"Panam","RewardPoint":"10"},"version":"1.5.2"}}
+[2017-02-28 0:32:20.966165] [info] ============================================================
+[2017-02-28 0:32:20.966269] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '429'
+[2017-02-28 0:32:20.967994] [info] GetProfile request successful for UserId 429 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Angel Atencio","ID":"8-774-129","Email":"angel02.aa@gmail.com","Address":"villa lucre","Country":"Panama","City":"Panam","Province":"Panam","PhoneNo":"60825715","UserId":"000429","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2017-02-28 0:32:20.975660] [info] ============================================================
+[2017-02-28 0:32:20.975752] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2017-02-28 0:32:20.976602] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-02-28 0:33:21.971108] [notice] ============================================================
+[2017-02-28 0:33:21.971262] [notice] Received ChangePassword request:
+    DeviceId: '1'
+    NewPassword: 'angelb24'
+    PlatformId: '1'
+    UserId: '429'
+    CurrentPassword: '1z705d2y'
+[2017-02-28 0:33:21.972875] [notice] ChangePassword request successful for UserId 429 {"Response":{"Status":"1","Code":"533","Message":"Success"}}
+[2017-02-28 0:34:18.495037] [info] ============================================================
+[2017-02-28 0:34:18.495152] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'angelb24'
+    Email: 'angel02.aa@gmail.com'
+[2017-02-28 0:34:18.497663] [info] Login request successful for User angel02.aa@gmail.com {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"UserId":"429","Name":"Angel Atencio","DiscountPercentage":"0.00","Country":"Panama","TaxPercentage":"7.00","PrepaidBalance":"0.00","TaxId":"8-774-129","city":"Panam","state":"Panam","RewardPoint":"10"},"version":"1.5.2"}}
+[2017-02-28 0:34:19.135356] [info] ============================================================
+[2017-02-28 0:34:19.135452] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2017-02-28 0:34:19.136357] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-02-28 0:34:19.137135] [info] ============================================================
+[2017-02-28 0:34:19.137232] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '429'
+[2017-02-28 0:34:19.138839] [info] GetProfile request successful for UserId 429 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Angel Atencio","ID":"8-774-129","Email":"angel02.aa@gmail.com","Address":"villa lucre","Country":"Panama","City":"Panam","Province":"Panam","PhoneNo":"60825715","UserId":"000429","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2017-02-28 0:34:59.483953] [info] ============================================================
+[2017-02-28 0:34:59.484088] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'angelb24'
+    Email: 'angel02.aa@gmail.com'
+[2017-02-28 0:34:59.485879] [info] Login request successful for User angel02.aa@gmail.com {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"UserId":"429","Name":"Angel Atencio","DiscountPercentage":"0.00","Country":"Panama","TaxPercentage":"7.00","PrepaidBalance":"0.00","TaxId":"8-774-129","city":"Panam","state":"Panam","RewardPoint":"10"},"version":"1.5.2"}}
+[2017-02-28 0:35:00.086355] [info] ============================================================
+[2017-02-28 0:35:00.086458] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '429'
+[2017-02-28 0:35:00.090615] [info] ============================================================
+[2017-02-28 0:35:00.090723] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2017-02-28 0:35:00.091590] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-02-28 0:35:00.093010] [info] GetProfile request successful for UserId 429 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Angel Atencio","ID":"8-774-129","Email":"angel02.aa@gmail.com","Address":"villa lucre","Country":"Panama","City":"Panam","Province":"Panam","PhoneNo":"60825715","UserId":"000429","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2017-02-28 0:35:34.514802] [info] ============================================================
+[2017-02-28 0:35:34.515404] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '429'
+[2017-02-28 0:35:34.517224] [info] GetPrepaidBalance request successful for UserId 429 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"0.00"}}}
+[2017-02-28 0:38:29.143532] [info] ============================================================
+[2017-02-28 0:38:29.143644] [info] Received GetRewardPoints request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '429'
+[2017-02-28 0:38:29.144524] [info] ============================================================
+[2017-02-28 0:38:29.144594] [info] Received GetRewards request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '429'
+[2017-02-28 0:38:29.145951] [info] GetRewardPoints request successful for UserId 429 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"RewardPoint":"10"}}}
+[2017-02-28 0:38:29.147366] [info] GetRewards request successful for UserId 429 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"Point":"1000","Cost":"1.00","Description":"Recarga de $1 de cualquier operadora","Image":"https:\/\/app.clubprepago.com\/img\/rewards\/99560b5313e2478e88fc1b1a23876021cfcd034e.png"}]}}
+[2017-02-28 0:39:12.860542] [info] ============================================================
+[2017-02-28 0:39:12.860712] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '429'
+[2017-02-28 0:39:12.862169] [info] GetPrepaidBalance request successful for UserId 429 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"0.00"}}}

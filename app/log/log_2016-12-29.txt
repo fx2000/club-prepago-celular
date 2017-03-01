@@ -1,0 +1,134 @@
+[2016-12-29 13:26:59.394200] [info] ============================================================
+[2016-12-29 13:26:59.394360] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-29 13:26:59.395456] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-12-29 13:26:59.402415] [info] ============================================================
+[2016-12-29 13:26:59.402544] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '114'
+[2016-12-29 13:26:59.404855] [info] GetProfile request successful for UserId 114 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"InterPlay","ID":"8-812-1290","Email":"inter-play@outlook.com","Address":"La Cabima","Country":"Panama","City":"Ciudad de Panama","Province":"Panama","PhoneNo":"","UserId":"000114","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-12-29 13:27:04.202536] [info] ============================================================
+[2016-12-29 13:27:04.202677] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '114'
+[2016-12-29 13:27:04.204016] [info] GetPrepaidBalance request successful for UserId 114 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"2.75"}}}
+[2016-12-29 14:47:28.020304] [info] ============================================================
+[2016-12-29 14:47:28.020414] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-29 14:47:28.021425] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-12-29 14:47:28.029685] [info] ============================================================
+[2016-12-29 14:47:28.029798] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '70'
+[2016-12-29 14:47:28.031424] [error] GetProfile request failed for UserId 70 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}
+[2016-12-29 14:47:28.844048] [info] ============================================================
+[2016-12-29 14:47:28.844171] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '70'
+[2016-12-29 14:47:28.845129] [error] GetFavorites request failed for UserId 70 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}
+[2016-12-29 14:47:28.873780] [info] ============================================================
+[2016-12-29 14:47:28.873891] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '70'
+[2016-12-29 14:47:28.874773] [error] GetFavorites request failed for UserId 70 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}
+[2016-12-29 14:47:42.398515] [info] ============================================================
+[2016-12-29 14:47:42.398658] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '70'
+[2016-12-29 14:47:42.399625] [error] GetFavorites request failed for UserId 70 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}
+[2016-12-29 15:19:56.306142] [info] ============================================================
+[2016-12-29 15:19:56.306360] [info] Received Login request:
+    Email: 'tifilapulga@gmail.com'
+    DeviceId: '1'
+    PlatformId: '2'
+    Password: '123456'
+[2016-12-29 15:19:56.308862] [info] Login request successful for User tifilapulga@gmail.com {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"UserId":"139","Name":"Raquel Carreno","DiscountPercentage":"7.00","Country":"Panama","TaxPercentage":"7.00","PrepaidBalance":"2.44","TaxId":"7-92-2388","city":"panama","state":"panama","RewardPoint":"3390"},"version":"1.5"}}
+[2016-12-29 15:19:57.271239] [info] ============================================================
+[2016-12-29 15:19:57.271387] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-29 15:19:57.275710] [info] ============================================================
+[2016-12-29 15:19:57.275820] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-29 15:19:57.277976] [info] GetProfile request successful for UserId 139 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Raquel Carreno","ID":"7-92-2388","Email":"tifilapulga@gmail.com","Address":"villa nueva","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000139","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-12-29 15:19:57.279424] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-12-29 15:19:58.307447] [info] ============================================================
+[2016-12-29 15:19:58.307594] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-29 15:19:58.309006] [info] GetFavorites request failed for UserId 139 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-29 15:19:58.342307] [info] ============================================================
+[2016-12-29 15:19:58.342428] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-29 15:19:58.343380] [info] GetFavorites request failed for UserId 139 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-29 15:20:18.222459] [info] ============================================================
+[2016-12-29 15:20:18.222594] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-29 15:20:18.223695] [info] GetPrepaidBalance request successful for UserId 139 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"2.44"}}}
+[2016-12-29 15:21:05.928869] [info] ============================================================
+[2016-12-29 15:21:05.929008] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-29 15:21:05.930151] [info] GetPrepaidBalance request successful for UserId 139 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"2.44"}}}
+[2016-12-29 15:24:42.131143] [info] ============================================================
+[2016-12-29 15:24:42.131361] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-29 15:24:42.132484] [info] GetFavorites request failed for UserId 139 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-29 19:15:27.786211] [info] ============================================================
+[2016-12-29 19:15:27.786350] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '114'
+[2016-12-29 19:15:27.787878] [info] GetProfile request successful for UserId 114 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"InterPlay","ID":"8-812-1290","Email":"inter-play@outlook.com","Address":"La Cabima","Country":"Panama","City":"Ciudad de Panama","Province":"Panama","PhoneNo":"","UserId":"000114","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-12-29 19:15:28.685633] [info] ============================================================
+[2016-12-29 19:15:28.685755] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-29 19:15:28.686680] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-12-29 19:15:34.012222] [info] ============================================================
+[2016-12-29 19:15:34.012346] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '114'
+[2016-12-29 19:15:34.013660] [info] GetPrepaidBalance request successful for UserId 114 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"2.75"}}}
+[2016-12-29 20:52:45.898854] [info] ============================================================
+[2016-12-29 20:52:45.898981] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-12-29 20:52:45.903913] [info] ============================================================
+[2016-12-29 20:52:45.904217] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-29 20:52:45.905658] [info] GetProfile request successful for UserId 133 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Jacinto Andujar","ID":"SC0183624","Email":"supersanto3@gmail.com","Address":"pedregal","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000133","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-12-29 20:52:45.906783] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-12-29 20:52:48.755506] [info] ============================================================
+[2016-12-29 20:52:48.755646] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-12-29 20:52:48.757040] [info] GetFavorites request failed for UserId 133 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-29 20:52:48.762407] [info] ============================================================
+[2016-12-29 20:52:48.762526] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-12-29 20:52:48.763569] [info] GetFavorites request failed for UserId 133 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}

@@ -1,0 +1,138 @@
+[2016-12-02 6:44:48.205558] [info] ============================================================
+[2016-12-02 6:44:48.205744] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-02 6:44:48.206798] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-12-02 6:44:48.207715] [info] ============================================================
+[2016-12-02 6:44:48.207825] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '39'
+[2016-12-02 6:44:48.210052] [info] GetProfile request successful for UserId 39 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Daniel Duque","ID":"E-8-113952","Email":"duque@outlook.com","Address":"San Francisco","Country":"Panama","City":"Ciudad de Panam\u00e1","Province":"Panama","PhoneNo":"69822702","UserId":"000039","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2016-12-02 6:44:53.126632] [info] ============================================================
+[2016-12-02 6:44:53.126779] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-02 6:44:53.127763] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-12-02 6:45:02.363404] [info] ============================================================
+[2016-12-02 6:45:02.363559] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-02 6:45:02.364655] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-12-02 10:44:56.161231] [info] ============================================================
+[2016-12-02 10:44:56.161367] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '39'
+[2016-12-02 10:44:56.163618] [info] ============================================================
+[2016-12-02 10:44:56.163755] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-02 10:44:56.164921] [info] GetProfile request successful for UserId 39 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Daniel Duque","ID":"E-8-113952","Email":"duque@outlook.com","Address":"San Francisco","Country":"Panama","City":"Ciudad de Panam\u00e1","Province":"Panama","PhoneNo":"69822702","UserId":"000039","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2016-12-02 10:44:56.166132] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-12-02 10:45:01.894397] [info] ============================================================
+[2016-12-02 10:45:01.894532] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-02 10:45:01.895486] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-12-02 17:54:23.858163] [info] ============================================================
+[2016-12-02 17:54:23.858338] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-02 17:54:23.859426] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-12-02 17:54:23.867887] [info] ============================================================
+[2016-12-02 17:54:23.868006] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '70'
+[2016-12-02 17:54:23.869582] [error] GetProfile request failed for UserId 70 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}
+[2016-12-02 17:54:24.637671] [info] ============================================================
+[2016-12-02 17:54:24.637975] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '70'
+[2016-12-02 17:54:24.639054] [error] GetFavorites request failed for UserId 70 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}
+[2016-12-02 17:54:24.685168] [info] ============================================================
+[2016-12-02 17:54:24.685288] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '70'
+[2016-12-02 17:54:24.686474] [error] GetFavorites request failed for UserId 70 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}
+[2016-12-02 18:28:43.176255] [notice] ============================================================
+[2016-12-02 18:28:43.176449] [notice] Received Register request:
+    DeviceId: '1'
+    longitude: ' '
+    SponsorId: '2304'
+    TaxId: '47752413'
+    Phone_Number: '65453488'
+    Password: 'hermosa'
+    Address: 'bugaba'
+    Email: 'babyandkiss@hotmail.com'
+    latitude: ' '
+    PlatformId: '1'
+    Country: '1'
+    City: 'la concepcion'
+    Province: 'chiriqui'
+    Name: 'katy troetsch'
+[2016-12-02 18:28:44.870609] [notice] Register request successful for user katy troetsch {"Response":{"Status":"1","Code":"533","Message":"Success","data":{"UserId":458,"Name":"katy troetsch"}}}
+[2016-12-02 18:29:08.155709] [info] ============================================================
+[2016-12-02 18:29:08.155852] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'hermosa'
+    Email: 'babyandkiss@hotmail.com'
+[2016-12-02 18:29:08.157399] [error] Login request failed for User babyandkiss@hotmail.com {"Response":{"Status":"0","Code":"536","Message":"User is inactive"}}
+[2016-12-02 20:58:34.916531] [notice] ============================================================
+[2016-12-02 20:58:34.916838] [notice] Received Register request:
+    DeviceId: '1'
+    longitude: '-78.8908063'
+    SponsorId: ''
+    TaxId: '8-863-1054'
+    Phone_Number: '63096618'
+    Password: 'Blackwolf-'
+    Address: 'Panamá'
+    Email: 'irving.09.icn@hotmail.com'
+    latitude: '9.2212165'
+    PlatformId: '1'
+    Country: '1'
+    City: 'Panamá'
+    Province: 'Los santos'
+    Name: 'Irving a cedeno'
+[2016-12-02 20:58:36.419318] [notice] Register request successful for user Irving a cedeno {"Response":{"Status":"1","Code":"533","Message":"Success","data":{"UserId":459,"Name":"Irving a cedeno"}}}
+[2016-12-02 20:59:35.673748] [info] ============================================================
+[2016-12-02 20:59:35.673882] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'Blackwolf-0'
+    Email: 'Irving.09.icn@hotmail.com'
+[2016-12-02 20:59:35.675257] [error] Login request failed for User Irving.09.icn@hotmail.com {"Response":{"Status":"0","Code":"535","Message":"Incorrect Email or Password"}}
+[2016-12-02 20:59:49.490956] [info] ============================================================
+[2016-12-02 20:59:49.491236] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'Blackwolf-'
+    Email: 'Irving.09.icn@hotmail.com'
+[2016-12-02 20:59:49.493119] [error] Login request failed for User Irving.09.icn@hotmail.com {"Response":{"Status":"0","Code":"536","Message":"User is inactive"}}
+[2016-12-02 23:28:23.515981] [info] ============================================================
+[2016-12-02 23:28:23.516217] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2016-12-02 23:28:23.519293] [info] ============================================================
+[2016-12-02 23:28:23.519408] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '448'
+[2016-12-02 23:28:23.521271] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-12-02 23:28:23.523389] [info] GetProfile request successful for UserId 448 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Gabriel Pineda","ID":"9-733-1443","Email":"gabrielpnd1414@hotmail.com","Address":"Panam","Country":"Panama","City":"Panam","Province":"Panam","PhoneNo":"67253060","UserId":"000448","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2016-12-02 23:28:24.080735] [info] ============================================================
+[2016-12-02 23:28:24.080887] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '448'
+[2016-12-02 23:28:24.082425] [info] GetFavorites request failed for UserId 448 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-02 23:28:24.096205] [info] ============================================================
+[2016-12-02 23:28:24.096345] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '448'
+[2016-12-02 23:28:24.097511] [info] GetFavorites request failed for UserId 448 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}

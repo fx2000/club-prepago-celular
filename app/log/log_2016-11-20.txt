@@ -1,0 +1,228 @@
+[2016-11-20 0:56:41.215333] [info] ============================================================
+[2016-11-20 0:56:41.215528] [info] Received GetSettings request:
+[2016-11-20 0:56:41.215797] [error] GetSettings request failed {"Response":{"Status":"0","Code":"502","Message":"Device ID parameter not found"}}
+[2016-11-20 0:56:41.404042] [info] ============================================================
+[2016-11-20 0:56:41.404187] [info] Received Login request:
+[2016-11-20 0:56:41.404402] [error] Login request failed for User  {"Response":{"Status":"0","Code":"508","Message":"Email Address parameter not found"}}
+[2016-11-20 0:56:41.497314] [notice] ============================================================
+[2016-11-20 0:56:41.497471] [notice] Received Register request:
+[2016-11-20 0:56:41.497678] [error] Register request failed for user  {"Response":{"Status":"0","Code":"504","Message":"Name parameter not found"}}
+[2016-11-20 0:56:41.592116] [info] ============================================================
+[2016-11-20 0:56:41.592257] [info] Received RemoveFavorite request:
+[2016-11-20 0:56:41.592428] [error] RemoveFavorite request failed for UserId  {"Response":{"Status":"0","Code":"540","Message":"User ID parameter not found"}}
+[2016-11-20 0:56:41.647562] [info] ============================================================
+[2016-11-20 0:56:41.647705] [info] Received UpdateFavorite request:
+[2016-11-20 0:56:41.647911] [error] UpdateFavorite request failed for UserId  {"Response":{"Status":"0","Code":"579","Message":"Invalid Favorite ID"}}
+[2016-11-20 0:56:41.663739] [notice] ============================================================
+[2016-11-20 0:56:41.663902] [notice] Received SendPaymentCreditCard request:
+[2016-11-20 0:56:41.664149] [error] SendPaymentCreditCard request failed for UserId  {"Response":{"Status":"0","Code":"540","Message":"User ID parameter not found"}}
+[2016-11-20 0:56:41.722047] [info] ============================================================
+[2016-11-20 0:56:41.722179] [info] Received GetPrepaidBalance request:
+[2016-11-20 0:56:41.722425] [error] GetPrepaidBalance request failed for UserId  {"Response":{"Status":"0","Code":"540","Message":"User ID parameter not found"}}
+[2016-11-20 0:56:41.803479] [info] ============================================================
+[2016-11-20 0:56:41.803642] [info] Received UpdateProfile request:
+[2016-11-20 0:56:41.803829] [error] UpdateProfile request failed for UserId  {"Response":{"Status":"0","Code":"517","Message":"Address parameter not found"}}
+[2016-11-20 0:56:41.805548] [info] ============================================================
+[2016-11-20 0:56:41.805661] [info] Received GetRewardPoints request:
+[2016-11-20 0:56:41.805876] [error] GetRewardPoints request failed for UserId  {"Response":{"Status":"0","Code":"540","Message":"User ID parameter not found"}}
+[2016-11-20 0:56:41.857522] [info] ============================================================
+[2016-11-20 0:56:41.857626] [info] Received GetPaymentHistory request:
+[2016-11-20 0:56:41.857847] [error] GetPaymentHistory request failed for UserId  {"Response":{"Status":"0","Code":"540","Message":"User ID parameter not found"}}
+[2016-11-20 0:56:41.955970] [info] ============================================================
+[2016-11-20 0:56:41.956067] [info] Received GetBanks request:
+[2016-11-20 0:56:41.956223] [error] GetBanks request failed for UserId  {"Response":{"Status":"0","Code":"540","Message":"User ID parameter not found"}}
+[2016-11-20 0:56:42.037657] [notice] ============================================================
+[2016-11-20 0:56:42.037758] [notice] Received SendPaymentDeposit request:
+[2016-11-20 0:56:42.037926] [error] SendPaymentDeposit request failed for UserId  {"Response":{"Status":"0","Code":"540","Message":"User ID parameter not found"}}
+[2016-11-20 0:56:42.068392] [notice] ============================================================
+[2016-11-20 0:56:42.068476] [notice] Received ChangePassword request:
+[2016-11-20 0:56:42.069386] [info] ============================================================
+[2016-11-20 0:56:42.069483] [info] Received GetFavorites request:
+[2016-11-20 0:56:42.069639] [error] GetFavorites request failed for UserId  {"Response":{"Status":"0","Code":"540","Message":"User ID parameter not found"}}
+[2016-11-20 0:56:42.070405] [error] ChangePassword request failed for UserId  {"Response":{"Status":"0","Code":"581","Message":"Current Password parameter not found"}}
+[2016-11-20 0:56:42.087418] [notice] ============================================================
+[2016-11-20 0:56:42.087500] [notice] Received RechargePoints request:
+[2016-11-20 0:56:42.087692] [error] RechargePoints request failed for Phone Number  {"Response":{"Status":"0","Code":"521","Message":"Phone Number parameter not found"}}
+[2016-11-20 0:56:42.442475] [notice] ============================================================
+[2016-11-20 0:56:42.442639] [notice] Received ForgotPassword request:
+[2016-11-20 0:56:42.442862] [error] ForgotPassword request failed for UserId  {"Response":{"Status":"0","Code":"508","Message":"Email Address parameter not found"}}
+[2016-11-20 0:56:42.586174] [info] ============================================================
+[2016-11-20 0:56:42.586282] [info] Received GetRewards request:
+[2016-11-20 0:56:42.586467] [error] GetRewards request failed for UserId  {"Response":{"Status":"0","Code":"540","Message":"User ID parameter not found"}}
+[2016-11-20 0:56:42.587400] [info] ============================================================
+[2016-11-20 0:56:42.587472] [info] Received GetSponsors request:
+[2016-11-20 0:56:42.587591] [error] GetSponsors request failed {"Response":{"Status":"0","Code":"502","Message":"Device ID parameter not found"}}
+[2016-11-20 0:56:42.632039] [info] ============================================================
+[2016-11-20 0:56:42.632164] [info] Received GetOperators request:
+[2016-11-20 0:56:42.632338] [error] GetOperators request failed {"Response":{"Status":"0","Code":"502","Message":"Device ID parameter not found"}}
+[2016-11-20 0:56:43.539895] [notice] ============================================================
+[2016-11-20 0:56:43.540020] [notice] Received AddFavorite request:
+[2016-11-20 0:56:43.540194] [error] AddFavorite request failed for UserId  {"Response":{"Status":"0","Code":"504","Message":"Name parameter not found"}}
+[2016-11-20 0:56:43.542476] [info] ============================================================
+[2016-11-20 0:56:43.542552] [info] Received GetProfile request:
+[2016-11-20 0:56:43.542705] [error] GetProfile request failed for UserId  {"Response":{"Status":"0","Code":"540","Message":"User ID parameter not found"}}
+[2016-11-20 0:56:43.551320] [info] ============================================================
+[2016-11-20 0:56:43.551397] [info] Received GetRechargeHistory request:
+[2016-11-20 0:56:43.551578] [error] GetRechargeHistory request failed for UserId  {"Response":{"Status":"0","Code":"540","Message":"User ID parameter not found"}}
+[2016-11-20 0:56:43.553534] [notice] ============================================================
+[2016-11-20 0:56:43.553607] [notice] Received Recharge request:
+[2016-11-20 0:56:43.553781] [error] Recharge request failed for Phone Number  {"Response":{"Status":"0","Code":"521","Message":"Phone Number parameter not found"}}
+[2016-11-20 6:29:29.868366] [info] ============================================================
+[2016-11-20 6:29:29.868515] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-11-20 6:29:29.870826] [info] GetProfile request successful for UserId 133 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Jacinto Andujar","ID":"SC0183624","Email":"supersanto3@gmail.com","Address":"pedregal","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000133","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-11-20 6:29:29.877412] [info] ============================================================
+[2016-11-20 6:29:29.877527] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-20 6:29:29.878365] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-20 6:29:30.698977] [info] ============================================================
+[2016-11-20 6:29:30.699125] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-11-20 6:29:30.701055] [info] ============================================================
+[2016-11-20 6:29:30.701173] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-11-20 6:29:30.702541] [info] GetFavorites request failed for UserId 133 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-20 6:29:30.705672] [info] GetFavorites request failed for UserId 133 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-20 11:17:44.421619] [notice] ============================================================
+[2016-11-20 11:17:44.421869] [notice] Received Register request:
+    DeviceId: '1'
+    longitude: ' '
+    SponsorId: ''
+    TaxId: '4-754-82'
+    Phone_Number: '62208920'
+    Password: '508745'
+    Address: 'boquete chiriqui'
+    Email: 'samuel19892010@hotmail.es'
+    latitude: ' '
+    PlatformId: '1'
+    Country: '1'
+    City: 'panama'
+    Province: 'chiriqui'
+    Name: 'samuel abrego'
+[2016-11-20 11:17:46.129184] [notice] Register request successful for user samuel abrego {"Response":{"Status":"1","Code":"533","Message":"Success","data":{"UserId":400,"Name":"samuel abrego"}}}
+[2016-11-20 11:18:21.817547] [info] ============================================================
+[2016-11-20 11:18:21.817871] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: '508745'
+    Email: 'samuel19892010@hotmail.es'
+[2016-11-20 11:18:21.821609] [error] Login request failed for User samuel19892010@hotmail.es {"Response":{"Status":"0","Code":"536","Message":"User is inactive"}}
+[2016-11-20 11:18:52.193294] [info] ============================================================
+[2016-11-20 11:18:52.193489] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: '508745'
+    Email: 'samuel19892010@hotmail.es'
+[2016-11-20 11:18:52.196211] [error] Login request failed for User samuel19892010@hotmail.es {"Response":{"Status":"0","Code":"536","Message":"User is inactive"}}
+[2016-11-20 11:19:07.380448] [info] ============================================================
+[2016-11-20 11:19:07.380713] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: '508745'
+    Email: 'samuel19892010@hotmail.com'
+[2016-11-20 11:19:07.383945] [error] Login request failed for User samuel19892010@hotmail.com {"Response":{"Status":"0","Code":"535","Message":"Incorrect Email or Password"}}
+[2016-11-20 14:46:46.840297] [notice] ============================================================
+[2016-11-20 14:46:46.840516] [notice] Received ForgotPassword request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Email: 'samuel19892010@hotamil.es'
+[2016-11-20 14:46:46.842562] [error] ForgotPassword request failed for UserId samuel19892010@hotamil.es {"Response":{"Status":"0","Code":"591","Message":"Email Address not registered"}}
+[2016-11-20 14:46:56.819724] [notice] ============================================================
+[2016-11-20 14:46:56.819905] [notice] Received ForgotPassword request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Email: 'samuel19892010@hotamil.es'
+[2016-11-20 14:46:56.821269] [error] ForgotPassword request failed for UserId samuel19892010@hotamil.es {"Response":{"Status":"0","Code":"591","Message":"Email Address not registered"}}
+[2016-11-20 17:44:20.621897] [info] ============================================================
+[2016-11-20 17:44:20.622056] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '70'
+[2016-11-20 17:44:20.624536] [error] GetProfile request failed for UserId 70 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}
+[2016-11-20 17:44:20.764712] [info] ============================================================
+[2016-11-20 17:44:20.764945] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-20 17:44:20.766062] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-20 17:44:21.582796] [info] ============================================================
+[2016-11-20 17:44:21.583060] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '70'
+[2016-11-20 17:44:21.585021] [error] GetFavorites request failed for UserId 70 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}
+[2016-11-20 17:44:21.601355] [info] ============================================================
+[2016-11-20 17:44:21.601577] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '70'
+[2016-11-20 17:44:21.602888] [error] GetFavorites request failed for UserId 70 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}
+[2016-11-20 21:03:54.247534] [info] ============================================================
+[2016-11-20 21:03:54.247782] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-20 21:03:54.250999] [info] ============================================================
+[2016-11-20 21:03:54.251145] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '112'
+[2016-11-20 21:03:54.252197] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-20 21:03:54.254898] [info] GetProfile request successful for UserId 112 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Lava Auto Pirolo","ID":"3-102-911 DV 65","Email":"mwatson-1623@hotmail.com","Address":"ARRAIJAN","Country":"Panama","City":"ciudad de panama","Province":"panama","PhoneNo":"00000000","UserId":"000112","SponsorId":"000006","SponsorName":"Pedro Rodriguez"}}}
+[2016-11-20 21:03:54.956307] [info] ============================================================
+[2016-11-20 21:03:54.956459] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '112'
+[2016-11-20 21:03:54.957660] [info] GetFavorites request failed for UserId 112 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-20 21:03:54.994106] [info] ============================================================
+[2016-11-20 21:03:54.994278] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '112'
+[2016-11-20 21:03:54.995455] [info] GetFavorites request failed for UserId 112 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-20 21:04:20.587429] [info] ============================================================
+[2016-11-20 21:04:20.587582] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '112'
+[2016-11-20 21:04:20.588968] [info] GetPrepaidBalance request successful for UserId 112 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"15.30"}}}
+[2016-11-20 21:04:24.026246] [info] ============================================================
+[2016-11-20 21:04:24.026393] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-20 21:04:24.027333] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-20 21:04:35.947582] [notice] ============================================================
+[2016-11-20 21:04:35.947750] [notice] Received Recharge request:
+    DeviceId: '1'
+    Operator: '1'
+    UserId: '112'
+    longitude: '-79.7304793'
+    Amount: '3.0'
+    Phone_Number: '67002052'
+    latitude: '8.9279322'
+    PlatformId: '2'
+    Payment_Method: '1'
+[2016-11-20 21:04:41.605671] [notice] Recharge request completed for Phone Number 67002052 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":3,"ReferenceNo":"0000005264","Date":"2016-11-20 21:04:41","RewardPoint":30,"AvailableBalance":"12.30"}}}
+[2016-11-20 21:04:50.947731] [info] ============================================================
+[2016-11-20 21:04:50.947907] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-20 21:04:50.950815] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-20 21:04:51.787883] [info] ============================================================
+[2016-11-20 21:04:51.788079] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '112'
+[2016-11-20 21:04:51.791161] [info] GetPrepaidBalance request successful for UserId 112 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"12.30"}}}
+[2016-11-20 21:04:53.433598] [info] ============================================================
+[2016-11-20 21:04:53.433703] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '112'
+[2016-11-20 21:04:53.435003] [info] GetFavorites request failed for UserId 112 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}

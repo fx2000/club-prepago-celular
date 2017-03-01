@@ -1,0 +1,61 @@
+[2017-03-01 7:31:23.510555] [notice] ============================================================
+[2017-03-01 7:31:23.510761] [notice] Received Register request:
+    DeviceId: '1'
+    longitude: '-86.2150953'
+    SponsorId: ''
+    TaxId: 'E11606977'
+    Phone_Number: '33423569'
+    Password: 'eneydamota'
+    Address: '40  barberry  st'
+    Email: 'eneydamota4@gmail.comcom'
+    latitude: '32.395278'
+    PlatformId: '1'
+    Country: '1'
+    City: 'montgomery.      al '
+    Province: 'mexico '
+    Name: 'eneyda'
+[2017-03-01 7:31:23.511198] [error] Register request failed for user eneyda {"Response":{"Status":"0","Code":"510","Message":"Invalid Email address"}}
+[2017-03-01 7:31:51.836947] [notice] ============================================================
+[2017-03-01 7:31:51.837152] [notice] Received Register request:
+    DeviceId: '1'
+    longitude: '-86.2150953'
+    SponsorId: ''
+    TaxId: 'E11606977'
+    Phone_Number: '33423569'
+    Password: 'eneydamota'
+    Address: '40  barberry  st'
+    Email: 'eneydamota4@gmail.com'
+    latitude: '32.395278'
+    PlatformId: '1'
+    Country: '1'
+    City: 'montgomery.      al '
+    Province: 'mexico '
+    Name: 'eneyda'
+[2017-03-01 7:31:53.293128] [notice] Register request successful for user eneyda {"Response":{"Status":"1","Code":"533","Message":"Success","data":{"UserId":515,"Name":"eneyda"}}}
+[2017-03-01 7:32:25.233372] [info] ============================================================
+[2017-03-01 7:32:25.233537] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'eneydamota'
+    Email: 'eneydamota4@gmail.com'
+[2017-03-01 7:32:25.235582] [error] Login request failed for User eneydamota4@gmail.com {"Response":{"Status":"0","Code":"536","Message":"User is inactive"}}
+[2017-03-01 7:32:45.401717] [info] ============================================================
+[2017-03-01 7:32:45.401895] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'eneydamota'
+    Email: 'eneydamota4@gmail.com'
+[2017-03-01 7:32:45.403073] [error] Login request failed for User eneydamota4@gmail.com {"Response":{"Status":"0","Code":"536","Message":"User is inactive"}}
+[2017-03-01 7:33:12.323213] [notice] ============================================================
+[2017-03-01 7:33:12.323411] [notice] Received ForgotPassword request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Email: 'eneydamota4@gmail.com'
+[2017-03-01 7:33:14.187673] [notice] ForgotPassword request successful for UserId eneydamota4@gmail.com {"Response":{"Status":"1","Code":"592","Message":"A new password has been sent to your email address"}}
+[2017-03-01 7:34:49.664463] [info] ============================================================
+[2017-03-01 7:34:49.664649] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'ffuvxkf1'
+    Email: 'eneydamota4@gmail.com'
+[2017-03-01 7:34:49.666431] [error] Login request failed for User eneydamota4@gmail.com {"Response":{"Status":"0","Code":"536","Message":"User is inactive"}}

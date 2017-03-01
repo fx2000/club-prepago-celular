@@ -1,0 +1,184 @@
+[2016-12-23 6:01:17.283600] [info] ============================================================
+[2016-12-23 6:01:17.283834] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '116'
+[2016-12-23 6:01:17.286386] [info] ============================================================
+[2016-12-23 6:01:17.286521] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-23 6:01:17.288873] [info] GetProfile request successful for UserId 116 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Kravis Trejos","ID":"8-930-2163","Email":"kgriseth@live.com","Address":"univerdida interamericana","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000116","SponsorId":"000006","SponsorName":"Pedro Rodriguez"}}}
+[2016-12-23 6:01:17.290183] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-12-23 6:01:40.637321] [info] ============================================================
+[2016-12-23 6:01:40.637459] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '116'
+[2016-12-23 6:01:40.638858] [info] GetPrepaidBalance request successful for UserId 116 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"7.84"}}}
+[2016-12-23 6:02:02.806474] [info] ============================================================
+[2016-12-23 6:02:02.806621] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-23 6:02:02.807847] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-12-23 6:02:08.307466] [notice] ============================================================
+[2016-12-23 6:02:08.307607] [notice] Received Recharge request:
+    DeviceId: '1'
+    Operator: '1'
+    UserId: '116'
+    longitude: '-79.5462065'
+    Amount: '5.0'
+    Phone_Number: '65487017'
+    latitude: '8.9664457'
+    PlatformId: '2'
+    Payment_Method: '1'
+[2016-12-23 6:02:14.448216] [notice] Recharge request completed for Phone Number 65487017 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":5,"ReferenceNo":"0000005371","Date":"2016-12-23 06:02:14","RewardPoint":50,"AvailableBalance":"2.84"}}}
+[2016-12-23 6:02:18.896394] [info] ============================================================
+[2016-12-23 6:02:18.896629] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-23 6:02:18.897780] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-12-23 6:02:19.958520] [info] ============================================================
+[2016-12-23 6:02:19.958643] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '116'
+[2016-12-23 6:02:19.959996] [info] GetPrepaidBalance request successful for UserId 116 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"2.84"}}}
+[2016-12-23 8:03:43.002504] [info] ============================================================
+[2016-12-23 8:03:43.002648] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '44'
+[2016-12-23 8:03:43.003654] [info] ============================================================
+[2016-12-23 8:03:43.003762] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-23 8:03:43.005055] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-12-23 8:03:43.007164] [info] GetProfile request successful for UserId 44 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Aminta Arjona","ID":"PE-2-455","Email":"amintaearjona@gmail.com","Address":"via israel","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"66120766","UserId":"000044","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2016-12-23 8:04:22.716974] [info] ============================================================
+[2016-12-23 8:04:22.717128] [info] Received GetRechargeHistory request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '44'
+[2016-12-23 8:04:22.726079] [info] GetRechargeHistory request successful for UserId 44 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"69544171","Operator":"1","Amount":"16.00","PaymentVia":"1","ReferenceNo":"31653772","DateTime":"2016-09-06 10:41:47","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"69544172","Operator":"1","Amount":"16.00","PaymentVia":"1","ReferenceNo":"31675787","DateTime":"2016-09-06 10:52:45","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"69544172","Operator":"1","Amount":"16.00","PaymentVia":"1","ReferenceNo":"0000004277","DateTime":"2016-10-04 11:21:17","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"69544171","Operator":"1","Amount":"16.00","PaymentVia":"1","ReferenceNo":"0000004278","DateTime":"2016-10-04 11:21:50","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"69544172","Operator":"1","Amount":"17.00","PaymentVia":"1","ReferenceNo":"0000005198","DateTime":"2016-11-07 10:02:31","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"66665152","Operator":"1","Amount":"20.00","PaymentVia":"1","ReferenceNo":"0000005213","DateTime":"2016-11-08 08:57:46","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"69544171","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000005214","DateTime":"2016-11-08 09:37:18","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"69544171","Operator":"1","Amount":"20.00","PaymentVia":"1","ReferenceNo":"0000005291","DateTime":"2016-12-01 16:15:28","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"69544172","Operator":"1","Amount":"17.00","PaymentVia":"1","ReferenceNo":"0000005297","DateTime":"2016-12-05 10:34:55","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"68737750","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000005298","DateTime":"2016-12-05 10:37:16","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"68737694","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000005299","DateTime":"2016-12-05 10:46:05","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"68737556","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000005300","DateTime":"2016-12-05 10:46:51","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"68737465","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000005301","DateTime":"2016-12-05 10:59:39","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"68737426","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000005302","DateTime":"2016-12-05 11:00:19","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"68737378","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000005303","DateTime":"2016-12-05 11:01:07","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"0","PhoneNo":"68737194","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000005304","DateTime":"2016-12-05 11:01:40","Message":"Su recarga ha fallado, por favor intente de nuevo"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"68737176","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000005305","DateTime":"2016-12-05 11:03:31","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"68737145","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000005306","DateTime":"2016-12-05 11:04:11","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"68737078","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000005307","DateTime":"2016-12-05 11:04:56","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"68737063","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000005308","DateTime":"2016-12-05 11:05:35","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"68737056","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000005309","DateTime":"2016-12-05 11:06:11","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"68737012","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000005310","DateTime":"2016-12-05 11:06:48","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"68737004","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000005311","DateTime":"2016-12-05 11:07:21","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"68736994","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000005312","DateTime":"2016-12-05 11:08:05","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"68736981","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000005313","DateTime":"2016-12-05 11:08:39","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"68736957","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000005314","DateTime":"2016-12-05 11:09:11","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"68736899","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000005315","DateTime":"2016-12-05 11:09:50","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"68736852","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000005316","DateTime":"2016-12-05 11:10:24","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"68736713","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000005317","DateTime":"2016-12-05 11:11:00","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"68737194","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000005318","DateTime":"2016-12-05 11:13:52","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"66665152","Operator":"1","Amount":"17.00","PaymentVia":"1","ReferenceNo":"0000005328","DateTime":"2016-12-12 09:02:59","Message":"Recharge has been successful"}]}}
+[2016-12-23 16:31:31.430231] [info] ============================================================
+[2016-12-23 16:31:31.430386] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-23 16:31:31.434509] [info] ============================================================
+[2016-12-23 16:31:31.434624] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '106'
+[2016-12-23 16:31:31.435595] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-12-23 16:31:31.437524] [error] GetProfile request failed for UserId 106 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}
+[2016-12-23 16:31:31.965198] [info] ============================================================
+[2016-12-23 16:31:31.965374] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '106'
+[2016-12-23 16:31:31.966495] [error] GetFavorites request failed for UserId 106 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}
+[2016-12-23 16:31:32.052875] [info] ============================================================
+[2016-12-23 16:31:32.053108] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '106'
+[2016-12-23 16:31:32.054081] [error] GetFavorites request failed for UserId 106 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}
+[2016-12-23 16:33:45.870798] [info] ============================================================
+[2016-12-23 16:33:45.870949] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '106'
+[2016-12-23 16:33:45.873567] [error] GetFavorites request failed for UserId 106 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}
+[2016-12-23 18:50:04.681552] [notice] ============================================================
+[2016-12-23 18:50:04.681691] [notice] Received Register request:
+    DeviceId: '1'
+    longitude: '-79.3240442'
+    SponsorId: ''
+    TaxId: '8907585'
+    Phone_Number: '69814093'
+    Password: 'alexandra'
+    Address: 'Panama'
+    Email: 'erramago@gmail.com'
+    latitude: '9.0978611'
+    PlatformId: '1'
+    Country: '1'
+    City: 'panama'
+    Province: 'panamaa'
+    Name: 'Eric Martinez'
+[2016-12-23 18:50:06.157330] [notice] Register request successful for user Eric Martinez {"Response":{"Status":"1","Code":"533","Message":"Success","data":{"UserId":486,"Name":"Eric Martinez"}}}
+[2016-12-23 18:50:28.999633] [info] ============================================================
+[2016-12-23 18:50:28.999860] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'alexandra'
+    Email: 'erramago@gmail.com'
+[2016-12-23 18:50:29.001502] [error] Login request failed for User erramago@gmail.com {"Response":{"Status":"0","Code":"536","Message":"User is inactive"}}
+[2016-12-23 18:51:30.932919] [info] ============================================================
+[2016-12-23 18:51:30.933063] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'alexandra'
+    Email: 'erramago@gmail.com'
+[2016-12-23 18:51:30.934127] [error] Login request failed for User erramago@gmail.com {"Response":{"Status":"0","Code":"536","Message":"User is inactive"}}
+[2016-12-23 18:51:39.776068] [info] ============================================================
+[2016-12-23 18:51:39.776410] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'alexandra'
+    Email: 'erramago@gmail.com'
+[2016-12-23 18:51:39.777920] [error] Login request failed for User erramago@gmail.com {"Response":{"Status":"0","Code":"536","Message":"User is inactive"}}
+[2016-12-23 18:51:51.105000] [notice] ============================================================
+[2016-12-23 18:51:51.105195] [notice] Received ForgotPassword request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Email: 'erramago@gmail.com'
+[2016-12-23 18:51:52.613455] [notice] ForgotPassword request successful for UserId erramago@gmail.com {"Response":{"Status":"1","Code":"592","Message":"A new password has been sent to your email address"}}
+[2016-12-23 18:52:23.779463] [info] ============================================================
+[2016-12-23 18:52:23.779597] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'juhnyzvq'
+    Email: 'erramago@gmail.com'
+[2016-12-23 18:52:23.781146] [error] Login request failed for User erramago@gmail.com {"Response":{"Status":"0","Code":"536","Message":"User is inactive"}}
+[2016-12-23 18:53:05.291184] [info] ============================================================
+[2016-12-23 18:53:05.291439] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'juhnyzvq'
+    Email: 'erramago@gmail.com'
+[2016-12-23 18:53:05.293134] [error] Login request failed for User erramago@gmail.com {"Response":{"Status":"0","Code":"536","Message":"User is inactive"}}
+[2016-12-23 18:53:18.426870] [info] ============================================================
+[2016-12-23 18:53:18.427042] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'juhnyzvq'
+    Email: 'erramago@gmail.com'
+[2016-12-23 18:53:18.428246] [error] Login request failed for User erramago@gmail.com {"Response":{"Status":"0","Code":"536","Message":"User is inactive"}}
+[2016-12-23 18:53:25.196321] [info] ============================================================
+[2016-12-23 18:53:25.196474] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'juhnyzvq'
+    Email: 'erramago@gmail.com'
+[2016-12-23 18:53:25.197592] [error] Login request failed for User erramago@gmail.com {"Response":{"Status":"0","Code":"536","Message":"User is inactive"}}
+[2016-12-23 18:54:15.152231] [info] ============================================================
+[2016-12-23 18:54:15.152364] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'juhnyzvq'
+    Email: 'erramago@gmail.com'
+[2016-12-23 18:54:15.153306] [error] Login request failed for User erramago@gmail.com {"Response":{"Status":"0","Code":"536","Message":"User is inactive"}}
+[2016-12-23 18:54:36.719480] [info] ============================================================
+[2016-12-23 18:54:36.719615] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'juhnyzvq'
+    Email: 'erramago@gmail.com'
+[2016-12-23 18:54:36.720837] [error] Login request failed for User erramago@gmail.com {"Response":{"Status":"0","Code":"536","Message":"User is inactive"}}
+[2016-12-23 18:54:54.248667] [info] ============================================================
+[2016-12-23 18:54:54.248775] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'juhnyzvq'
+    Email: 'erramago@gmail.com'
+[2016-12-23 18:54:54.249746] [error] Login request failed for User erramago@gmail.com {"Response":{"Status":"0","Code":"536","Message":"User is inactive"}}

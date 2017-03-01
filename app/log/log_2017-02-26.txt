@@ -1,0 +1,11 @@
+[2017-02-26 17:30:54.402122] [info] ============================================================
+[2017-02-26 17:30:54.402381] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2017-02-26 17:30:54.406308] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-02-26 17:30:54.535684] [info] ============================================================
+[2017-02-26 17:30:54.535877] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '389'
+[2017-02-26 17:30:54.539726] [info] GetProfile request successful for UserId 389 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Gaviritsel Flores","ID":"5-704-545","Email":"gabycell06@gmail.com","Address":"24 de Diciembre","Country":"Panama","City":"Ciudad de Panama","Province":"Panama","PhoneNo":"62857446","UserId":"000389","SponsorId":"000001","SponsorName":"Club Prepago"}}}

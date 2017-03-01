@@ -1,0 +1,86 @@
+[2017-02-13 12:23:34.782411] [info] ============================================================
+[2017-02-13 12:23:34.782589] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2017-02-13 12:23:34.785475] [info] ============================================================
+[2017-02-13 12:23:34.785607] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '116'
+[2017-02-13 12:23:34.786695] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-02-13 12:23:34.789417] [info] GetProfile request successful for UserId 116 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Kravis Trejos","ID":"8-930-2163","Email":"kgriseth@live.com","Address":"univerdida interamericana","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000116","SponsorId":"000006","SponsorName":"Pedro Rodriguez"}}}
+[2017-02-13 12:23:51.144685] [info] ============================================================
+[2017-02-13 12:23:51.144876] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '116'
+[2017-02-13 12:23:51.148433] [info] GetPrepaidBalance request successful for UserId 116 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"18.47"}}}
+[2017-02-13 12:23:53.886132] [info] ============================================================
+[2017-02-13 12:23:53.886275] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2017-02-13 12:23:53.887748] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2017-02-13 12:23:58.682311] [notice] ============================================================
+[2017-02-13 12:23:58.682553] [notice] Received Recharge request:
+    DeviceId: '1'
+    Operator: '1'
+    UserId: '116'
+    longitude: '-79.5462065'
+    Amount: '5.0'
+    Phone_Number: '68055895'
+    latitude: '8.9664457'
+    PlatformId: '2'
+    Payment_Method: '1'
+[2017-02-13 12:24:05.932284] [notice] Recharge request completed for Phone Number 68055895 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":5,"ReferenceNo":"0000005473","Date":"2017-02-13 12:24:05","RewardPoint":50,"AvailableBalance":"13.47"}}}
+[2017-02-13 12:24:08.065038] [info] ============================================================
+[2017-02-13 12:24:08.065191] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2017-02-13 12:24:08.066221] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2017-02-13 12:24:08.539519] [info] ============================================================
+[2017-02-13 12:24:08.539740] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '116'
+[2017-02-13 12:24:08.541817] [info] GetPrepaidBalance request successful for UserId 116 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"13.47"}}}
+[2017-02-13 15:20:09.107831] [info] ============================================================
+[2017-02-13 15:20:09.107983] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '215'
+[2017-02-13 15:20:09.109730] [info] ============================================================
+[2017-02-13 15:20:09.109847] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2017-02-13 15:20:09.110951] [info] GetProfile request successful for UserId 215 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Williams Castillo","ID":"8-839-1324","Email":"transcastillo04@gmail.com","Address":"panama ","Country":"Panama","City":"Ciudad de Panama","Province":"Panama","PhoneNo":"69691183","UserId":"000215","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2017-02-13 15:20:09.112546] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-02-13 15:20:09.855310] [info] ============================================================
+[2017-02-13 15:20:09.855473] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '215'
+[2017-02-13 15:20:09.857261] [info] GetFavorites request failed for UserId 215 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2017-02-13 15:20:09.892025] [info] ============================================================
+[2017-02-13 15:20:09.892203] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '215'
+[2017-02-13 15:20:09.895607] [info] GetFavorites request failed for UserId 215 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2017-02-13 18:19:19.263211] [info] ============================================================
+[2017-02-13 18:19:19.263448] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'benja1993'
+    Email: 'wilberto32@hotmail.es'
+[2017-02-13 18:19:19.267349] [error] Login request failed for User wilberto32@hotmail.es {"Response":{"Status":"0","Code":"535","Message":"Incorrect Email or Password"}}
+[2017-02-13 22:02:08.739932] [info] ============================================================
+[2017-02-13 22:02:08.740149] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '368'
+[2017-02-13 22:02:08.744609] [info] GetProfile request successful for UserId 368 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Gustavo Edmundo Ochoa Sanchez","ID":"8-728-1720","Email":"guedocsa27@gmail.com","Address":"Villa Lucre","Country":"Panama","City":"Panama","Province":"Panama","PhoneNo":"60634418","UserId":"000368","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2017-02-13 22:02:08.752444] [info] ============================================================
+[2017-02-13 22:02:08.752562] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2017-02-13 22:02:08.753747] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}

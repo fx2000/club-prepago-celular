@@ -1,0 +1,65 @@
+[2016-12-21 19:06:57.400106] [info] ============================================================
+[2016-12-21 19:06:57.400273] [info] Received Login request:
+    Email: 'diego.v1691@gmail.com'
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'Am232014'
+[2016-12-21 19:06:57.403033] [info] Login request successful for User diego.v1691@gmail.com {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"UserId":"267","Name":"Diego","DiscountPercentage":"0.00","Country":"Panama","TaxPercentage":"7.00","PrepaidBalance":"0.00","TaxId":"3726424","city":"Col","state":"Col","RewardPoint":"0"},"version":"1.5.1"}}
+[2016-12-21 19:06:58.319571] [info] ============================================================
+[2016-12-21 19:06:58.319688] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '267'
+[2016-12-21 19:06:58.321573] [info] GetProfile request successful for UserId 267 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Diego","ID":"3726424","Email":"diego.v1691@gmail.com","Address":"Col","Country":"Panama","City":"Col","Province":"Col","PhoneNo":"63216543","UserId":"000267","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2016-12-21 19:06:58.349478] [info] ============================================================
+[2016-12-21 19:06:58.349605] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2016-12-21 19:06:58.350541] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-12-21 19:06:59.269679] [info] ============================================================
+[2016-12-21 19:06:59.269854] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '267'
+[2016-12-21 19:06:59.271291] [info] GetFavorites request successful for UserId 267 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"161","name":"Diego","phone_number":"63216543","operator":"3"}]}}
+[2016-12-21 19:06:59.890718] [info] ============================================================
+[2016-12-21 19:06:59.890939] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '267'
+[2016-12-21 19:06:59.892337] [info] GetFavorites request successful for UserId 267 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"161","name":"Diego","phone_number":"63216543","operator":"3"}]}}
+[2016-12-21 19:07:04.554353] [info] ============================================================
+[2016-12-21 19:07:04.554579] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '267'
+[2016-12-21 19:07:04.556386] [info] GetPrepaidBalance request successful for UserId 267 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"0.00"}}}
+[2016-12-21 19:07:29.347518] [info] ============================================================
+[2016-12-21 19:07:29.347697] [info] Received GetBanks request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '267'
+[2016-12-21 19:07:29.348916] [info] GetBanks request successful for UserId 267 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","bank_name":"Banco General (Ahorros)"},{"id":"2","bank_name":"Banco General (Corriente)"},{"id":"3","bank_name":"Pago en efectivo"}]}}
+[2016-12-21 19:08:08.886415] [info] ============================================================
+[2016-12-21 19:08:08.886559] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '267'
+[2016-12-21 19:08:08.888112] [info] GetProfile request successful for UserId 267 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Diego","ID":"3726424","Email":"diego.v1691@gmail.com","Address":"Col","Country":"Panama","City":"Col","Province":"Col","PhoneNo":"63216543","UserId":"000267","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2016-12-21 19:08:08.985183] [info] ============================================================
+[2016-12-21 19:08:08.985387] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2016-12-21 19:08:08.986403] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-12-21 19:08:15.804404] [info] ============================================================
+[2016-12-21 19:08:15.804572] [info] Received GetRewardPoints request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '267'
+[2016-12-21 19:08:15.806082] [info] GetRewardPoints request successful for UserId 267 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"RewardPoint":"0"}}}
+[2016-12-21 19:08:15.822679] [info] ============================================================
+[2016-12-21 19:08:15.822748] [info] Received GetRewards request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '267'
+[2016-12-21 19:08:15.823488] [info] GetRewards request successful for UserId 267 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"Point":"1000","Cost":"1.00","Description":"Recarga de $1 de cualquier operadora","Image":"https:\/\/app.clubprepago.com\/img\/rewards\/99560b5313e2478e88fc1b1a23876021cfcd034e.png"}]}}

@@ -1,0 +1,64 @@
+[2017-02-09 7:31:28.639029] [info] ============================================================
+[2017-02-09 7:31:28.639214] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2017-02-09 7:31:28.640297] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-02-09 7:31:29.663064] [info] ============================================================
+[2017-02-09 7:31:29.663243] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '249'
+[2017-02-09 7:31:29.665533] [info] GetProfile request successful for UserId 249 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Tomas Palacios","ID":"47281241","Email":"tomaspalacios26@gmail.com","Address":"24 de Diciembre, Vista Hermosa","Country":"Panama","City":"Ciudad de Panama","Province":"Panama","PhoneNo":"68750741","UserId":"000249","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2017-02-09 7:31:39.980959] [info] ============================================================
+[2017-02-09 7:31:39.981277] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '249'
+[2017-02-09 7:31:39.983922] [info] GetFavorites request failed for UserId 249 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2017-02-09 13:03:38.770302] [info] ============================================================
+[2017-02-09 13:03:38.770469] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '62'
+[2017-02-09 13:03:38.772147] [info] GetProfile request successful for UserId 62 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Gisela Esther Gonzalez","ID":"8-479-264","Email":"giselagon2009@hotmail.com","Address":"calidonia","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"","UserId":"000062","SponsorId":"000006","SponsorName":"Pedro Rodriguez"}}}
+[2017-02-09 13:03:38.787627] [info] ============================================================
+[2017-02-09 13:03:38.787748] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2017-02-09 13:03:38.788614] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-02-09 13:03:59.803509] [info] ============================================================
+[2017-02-09 13:03:59.803733] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '62'
+[2017-02-09 13:03:59.805514] [info] GetPrepaidBalance request successful for UserId 62 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"6.16"}}}
+[2017-02-09 13:04:05.309900] [info] ============================================================
+[2017-02-09 13:04:05.312191] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2017-02-09 13:04:05.313781] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2017-02-09 13:04:13.918582] [notice] ============================================================
+[2017-02-09 13:04:13.918785] [notice] Received Recharge request:
+    DeviceId: '1'
+    Operator: '3'
+    UserId: '62'
+    longitude: ' '
+    Amount: '5.0'
+    Phone_Number: '63051064'
+    latitude: ' '
+    PlatformId: '2'
+    Payment_Method: '1'
+[2017-02-09 13:04:16.780540] [notice] Recharge request completed for Phone Number 63051064 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":5,"ReferenceNo":"0000005467","Date":"2017-02-09 13:04:16","RewardPoint":50,"AvailableBalance":"1.16"}}}
+[2017-02-09 15:35:45.424184] [info] ============================================================
+[2017-02-09 15:35:45.424345] [info] Received Login request:
+    Email: 'nachito@live.com'
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: '101205'
+[2017-02-09 15:35:45.426876] [error] Login request failed for User nachito@live.com {"Response":{"Status":"0","Code":"535","Message":"Incorrect Email or Password"}}
+[2017-02-09 15:36:06.572989] [notice] ============================================================
+[2017-02-09 15:36:06.573127] [notice] Received ForgotPassword request:
+    Email: 'ignacio@live.com'
+    DeviceId: '1'
+    PlatformId: '1'
+[2017-02-09 15:36:06.574536] [error] ForgotPassword request failed for UserId ignacio@live.com {"Response":{"Status":"0","Code":"591","Message":"Email Address not registered"}}

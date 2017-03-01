@@ -1,0 +1,48 @@
+[2017-02-12 13:39:27.645904] [info] ============================================================
+[2017-02-12 13:39:27.646167] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '215'
+[2017-02-12 13:39:27.655385] [info] ============================================================
+[2017-02-12 13:39:27.655553] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2017-02-12 13:39:27.657782] [info] GetProfile request successful for UserId 215 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Williams Castillo","ID":"8-839-1324","Email":"transcastillo04@gmail.com","Address":"panama ","Country":"Panama","City":"Ciudad de Panama","Province":"Panama","PhoneNo":"69691183","UserId":"000215","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2017-02-12 13:39:27.661447] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-02-12 15:04:41.503834] [info] ============================================================
+[2017-02-12 15:04:41.504030] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '472'
+[2017-02-12 15:04:41.506519] [info] ============================================================
+[2017-02-12 15:04:41.506652] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2017-02-12 15:04:41.513267] [info] GetProfile request successful for UserId 472 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"angelica maria vasquez","ID":"87981577","Email":"chickalatina15@gmail.com","Address":"san miguelito pan de azucar","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"65042652","UserId":"000472","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2017-02-12 15:04:41.514773] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-02-12 15:04:46.860192] [info] ============================================================
+[2017-02-12 15:04:46.860363] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '472'
+[2017-02-12 15:04:46.864728] [info] GetFavorites request failed for UserId 472 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2017-02-12 15:04:46.916096] [info] ============================================================
+[2017-02-12 15:04:46.916276] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '472'
+[2017-02-12 15:04:46.919266] [info] GetFavorites request failed for UserId 472 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2017-02-12 21:28:55.702821] [info] ============================================================
+[2017-02-12 21:28:55.703003] [info] Received Login request:
+    Email: 'garciamonserrath934@gmail.com'
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'monserrathguadalupe'
+[2017-02-12 21:28:55.705955] [error] Login request failed for User garciamonserrath934@gmail.com {"Response":{"Status":"0","Code":"535","Message":"Incorrect Email or Password"}}
+[2017-02-12 21:29:12.170535] [info] ============================================================
+[2017-02-12 21:29:12.170728] [info] Received Login request:
+    Email: 'garciamonserrath934@gmail.com'
+    DeviceId: '1'
+    PlatformId: '1'
+    Password: 'monserrath'
+[2017-02-12 21:29:12.172774] [error] Login request failed for User garciamonserrath934@gmail.com {"Response":{"Status":"0","Code":"535","Message":"Incorrect Email or Password"}}

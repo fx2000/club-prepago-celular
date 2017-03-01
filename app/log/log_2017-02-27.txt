@@ -1,0 +1,17 @@
+[2017-02-27 23:59:40.328671] [info] ============================================================
+[2017-02-27 23:59:40.328937] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '460'
+[2017-02-27 23:59:40.331901] [info] GetProfile request successful for UserId 460 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"elvis bernat","ID":"jenvis","Email":"elvis.bernat20@gmail.com","Address":"penonome","Country":"Panama","City":"penonome","Province":"cocle","PhoneNo":"65274292","UserId":"000460","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2017-02-27 23:59:40.351053] [info] ============================================================
+[2017-02-27 23:59:40.351274] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2017-02-27 23:59:40.352304] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-02-27 23:59:50.795476] [info] ============================================================
+[2017-02-27 23:59:50.795834] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '460'
+[2017-02-27 23:59:50.797890] [info] GetPrepaidBalance request successful for UserId 460 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"0.00"}}}

@@ -1,0 +1,436 @@
+[2016-12-17 10:12:29.567948] [info] ============================================================
+[2016-12-17 10:12:29.568171] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '2'
+    Password: 'movistar85'
+    Email: 'globalcanal@email.es'
+[2016-12-17 10:12:29.570883] [info] Login request successful for User globalcanal@email.es {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"UserId":"154","Name":"Global Mobiles","DiscountPercentage":"7.00","Country":"Panama","TaxPercentage":"7.00","PrepaidBalance":"86.47","TaxId":"8-836-1151 DV 6","city":"panama","state":"panama","RewardPoint":"2500"},"version":"1.5"}}
+[2016-12-17 10:12:35.488126] [info] ============================================================
+[2016-12-17 10:12:35.488327] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-17 10:12:35.489455] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-12-17 10:12:35.494239] [info] ============================================================
+[2016-12-17 10:12:35.494347] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '154'
+[2016-12-17 10:12:35.496165] [info] GetProfile request successful for UserId 154 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Global Mobiles","ID":"8-836-1151 DV 6","Email":"globalcanal@email.es","Address":"albrook","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000154","SponsorId":"000006","SponsorName":"Pedro Rodriguez"}}}
+[2016-12-17 10:12:38.075975] [info] ============================================================
+[2016-12-17 10:12:38.076159] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '154'
+[2016-12-17 10:12:38.079979] [info] ============================================================
+[2016-12-17 10:12:38.080121] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '154'
+[2016-12-17 10:12:38.082751] [info] GetFavorites request failed for UserId 154 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-17 10:12:38.083180] [info] GetFavorites request failed for UserId 154 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-17 10:14:05.967953] [info] ============================================================
+[2016-12-17 10:14:05.968094] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '154'
+[2016-12-17 10:14:05.969388] [info] GetPrepaidBalance request successful for UserId 154 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"86.47"}}}
+[2016-12-17 10:14:09.897980] [info] ============================================================
+[2016-12-17 10:14:09.898111] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-17 10:14:09.899024] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-12-17 10:14:20.978475] [info] ============================================================
+[2016-12-17 10:14:20.982186] [info] ============================================================
+[2016-12-17 10:14:20.982317] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '154'
+[2016-12-17 10:14:20.978599] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '154'
+[2016-12-17 10:14:20.983419] [info] GetFavorites request failed for UserId 154 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-17 10:14:20.984744] [info] GetFavorites request failed for UserId 154 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-17 10:14:36.769901] [info] ============================================================
+[2016-12-17 10:14:36.770081] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '154'
+[2016-12-17 10:14:36.771260] [info] GetPrepaidBalance request successful for UserId 154 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"86.47"}}}
+[2016-12-17 10:14:39.178555] [info] ============================================================
+[2016-12-17 10:14:39.178685] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-17 10:14:39.179475] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-12-17 10:14:46.730936] [notice] ============================================================
+[2016-12-17 10:14:46.731033] [notice] Received Recharge request:
+    DeviceId: '1'
+    Operator: '1'
+    UserId: '154'
+    longitude: ' '
+    Amount: '15.0'
+    Phone_Number: '67393782'
+    latitude: ' '
+    PlatformId: '2'
+    Payment_Method: '1'
+[2016-12-17 10:14:53.296838] [notice] Recharge request completed for Phone Number 67393782 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":15,"ReferenceNo":"0000005354","Date":"2016-12-17 10:14:53","RewardPoint":150,"AvailableBalance":"71.47"}}}
+[2016-12-17 10:15:01.832098] [info] ============================================================
+[2016-12-17 10:15:01.832194] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-17 10:15:01.832961] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-12-17 10:15:01.873590] [info] ============================================================
+[2016-12-17 10:15:01.873667] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '154'
+[2016-12-17 10:15:01.874834] [info] GetPrepaidBalance request successful for UserId 154 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"71.47"}}}
+[2016-12-17 10:29:24.452663] [info] ============================================================
+[2016-12-17 10:29:24.452784] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '154'
+[2016-12-17 10:29:24.454039] [info] GetFavorites request failed for UserId 154 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-17 10:29:27.707398] [info] ============================================================
+[2016-12-17 10:29:27.711237] [info] Received GetRechargeHistory request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '154'
+[2016-12-17 10:29:27.721324] [info] GetRechargeHistory request successful for UserId 154 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"64921708","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"17319002","DateTime":"2016-08-02 11:49:08","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"0","PhoneNo":"62398222","Operator":"1","Amount":"15.00","PaymentVia":"1","ReferenceNo":"18033815","DateTime":"2016-08-03 20:22:22","Message":"Su recarga ha fallado, por favor intente de nuevo"},{"HistoryType":"1","RechargeStatus":"0","PhoneNo":"62398222","Operator":"1","Amount":"15.00","PaymentVia":"1","ReferenceNo":"18045205","DateTime":"2016-08-03 20:23:09","Message":"Su recarga ha fallado, por favor intente de nuevo"},{"HistoryType":"1","RechargeStatus":"0","PhoneNo":"62398222","Operator":"1","Amount":"15.00","PaymentVia":"1","ReferenceNo":"18054194","DateTime":"2016-08-03 20:23:45","Message":"Su recarga ha fallado, por favor intente de nuevo"},{"HistoryType":"1","RechargeStatus":"0","PhoneNo":"62398222","Operator":"1","Amount":"15.00","PaymentVia":"1","ReferenceNo":"18064802","DateTime":"2016-08-03 20:24:38","Message":"Su recarga ha fallado, por favor intente de nuevo"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"67762998","Operator":"1","Amount":"5.00","PaymentVia":"1","ReferenceNo":"18419243","DateTime":"2016-08-04 12:15:09","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"69484978","Operator":"1","Amount":"15.00","PaymentVia":"1","ReferenceNo":"18956804","DateTime":"2016-08-06 16:14:47","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"62398222","Operator":"1","Amount":"5.00","PaymentVia":"1","ReferenceNo":"20061802","DateTime":"2016-08-10 12:40:35","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"66883118","Operator":"1","Amount":"15.00","PaymentVia":"1","ReferenceNo":"22013368","DateTime":"2016-08-16 12:20:12","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"67793478","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"22634152","DateTime":"2016-08-17 16:15:59","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"66540256","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"22708594","DateTime":"2016-08-17 18:47:53","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"66535655","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"22863074","DateTime":"2016-08-18 11:05:19","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"62398222","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"23990910","DateTime":"2016-08-22 09:45:58","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"67291645","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"24259528","DateTime":"2016-08-22 17:53:12","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"69648188","Operator":"1","Amount":"5.00","PaymentVia":"1","ReferenceNo":"24368905","DateTime":"2016-08-22 20:13:22","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"67291645","Operator":"1","Amount":"15.00","PaymentVia":"1","ReferenceNo":"25087397","DateTime":"2016-08-24 19:52:24","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"62398222","Operator":"1","Amount":"5.00","PaymentVia":"1","ReferenceNo":"25181362","DateTime":"2016-08-25 09:12:17","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"62398222","Operator":"1","Amount":"5.00","PaymentVia":"1","ReferenceNo":"25703421","DateTime":"2016-08-26 11:07:42","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"69648188","Operator":"1","Amount":"5.00","PaymentVia":"1","ReferenceNo":"26558872","DateTime":"2016-08-27 23:40:31","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"69648188","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"28240377","DateTime":"2016-08-31 21:40:06","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"69420010","Operator":"1","Amount":"20.00","PaymentVia":"1","ReferenceNo":"28289857","DateTime":"2016-09-01 10:09:05","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"69648188","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"28421557","DateTime":"2016-09-01 17:56:06","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"60037256","Operator":"2","Amount":"15.00","PaymentVia":"1","ReferenceNo":"28552887","DateTime":"2016-09-01 21:07:37","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"0","PhoneNo":"69895353","Operator":"1","Amount":"5.00","PaymentVia":"1","ReferenceNo":"31074107","DateTime":"2016-09-05 15:12:08","Message":"Su recarga ha fallado, por favor intente de nuevo"},{"HistoryType":"1","RechargeStatus":"0","PhoneNo":"69895353","Operator":"1","Amount":"5.00","PaymentVia":"1","ReferenceNo":"31084936","DateTime":"2016-09-05 15:12:36","Message":"Su recarga ha fallado, por favor intente de nuevo"},{"HistoryType":"1","RechargeStatus":"0","PhoneNo":"69895353","Operator":"1","Amount":"5.00","PaymentVia":"1","ReferenceNo":"31090273","DateTime":"2016-09-05 15:13:21","Message":"Su recarga ha fallado, por favor intente de nuevo"},{"HistoryType":"1","RechargeStatus":"0","PhoneNo":"69895353","Operator":"1","Amount":"5.00","PaymentVia":"1","ReferenceNo":"31107476","DateTime":"2016-09-05 15:14:03","Message":"Su recarga ha fallado, por favor intente de nuevo"},{"HistoryType":"1","RechargeStatus":"0","PhoneNo":"62398222","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"31111113","DateTime":"2016-09-05 15:14:37","Message":"Su recarga ha fallado, por favor intente de nuevo"},{"HistoryType":"1","RechargeStatus":"0","PhoneNo":"69895353","Operator":"1","Amount":"5.00","PaymentVia":"1","ReferenceNo":"31121930","DateTime":"2016-09-05 15:15:47","Message":"Su recarga ha fallado, por favor intente de nuevo"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"62398222","Operator":"1","Amount":"5.00","PaymentVia":"1","ReferenceNo":"31626909","DateTime":"2016-09-06 10:04:19","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"62709613","Operator":"3","Amount":"3.00","PaymentVia":"1","ReferenceNo":"31944271","DateTime":"2016-09-06 14:52:23","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"63204746","Operator":"3","Amount":"5.00","PaymentVia":"1","ReferenceNo":"32156404","DateTime":"2016-09-06 19:03:18","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"69648188","Operator":"1","Amount":"5.00","PaymentVia":"1","ReferenceNo":"32265129","DateTime":"2016-09-06 23:11:20","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"60752970","Operator":"2","Amount":"5.00","PaymentVia":"1","ReferenceNo":"32342600","DateTime":"2016-09-07 09:51:41","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"64068982","Operator":"3","Amount":"3.00","PaymentVia":"1","ReferenceNo":"32408030","DateTime":"2016-09-07 10:41:37","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"63849786","Operator":"2","Amount":"3.00","PaymentVia":"1","ReferenceNo":"32534212","DateTime":"2016-09-07 14:01:30","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"69601700","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"32612699","DateTime":"2016-09-07 15:48:05","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"62808232","Operator":"3","Amount":"5.00","PaymentVia":"1","ReferenceNo":"32700537","DateTime":"2016-09-07 17:05:47","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"60114036","Operator":"2","Amount":"5.00","PaymentVia":"1","ReferenceNo":"32806469","DateTime":"2016-09-07 19:29:16","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"69484978","Operator":"1","Amount":"15.00","PaymentVia":"1","ReferenceNo":"34072686","DateTime":"2016-09-10 12:18:39","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"61349470","Operator":"2","Amount":"5.00","PaymentVia":"1","ReferenceNo":"34817491","DateTime":"2016-09-12 13:39:14","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"61388949","Operator":"2","Amount":"5.00","PaymentVia":"1","ReferenceNo":"34844050","DateTime":"2016-09-12 14:52:00","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"65764540","Operator":"2","Amount":"5.00","PaymentVia":"1","ReferenceNo":"34970272","DateTime":"2016-09-12 16:08:06","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"60367667","Operator":"2","Amount":"5.00","PaymentVia":"1","ReferenceNo":"35345166","DateTime":"2016-09-13 11:53:40","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"61310815","Operator":"2","Amount":"5.00","PaymentVia":"1","ReferenceNo":"35427459","DateTime":"2016-09-13 15:01:58","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"61529957","Operator":"2","Amount":"3.00","PaymentVia":"1","ReferenceNo":"35453482","DateTime":"2016-09-13 15:34:50","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"60752970","Operator":"2","Amount":"5.00","PaymentVia":"1","ReferenceNo":"35644592","DateTime":"2016-09-14 10:23:20","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"61513825","Operator":"2","Amount":"3.00","PaymentVia":"1","ReferenceNo":"35673104","DateTime":"2016-09-14 11:20:59","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"60604941","Operator":"2","Amount":"5.00","PaymentVia":"1","ReferenceNo":"35917863","DateTime":"2016-09-14 17:00:08","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"66521092","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"36087383","DateTime":"2016-09-15 09:33:55","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"0","PhoneNo":"65083344","Operator":"2","Amount":"5.00","PaymentVia":"1","ReferenceNo":"36247607","DateTime":"2016-09-15 11:49:58","Message":"Su recarga ha fallado, por favor intente de nuevo"},{"HistoryType":"1","RechargeStatus":"0","PhoneNo":"65083344","Operator":"2","Amount":"5.00","PaymentVia":"1","ReferenceNo":"36250960","DateTime":"2016-09-15 11:50:44","Message":"Su recarga ha fallado, por favor intente de nuevo"},{"HistoryType":"1","RechargeStatus":"0","PhoneNo":"65083344","Operator":"2","Amount":"5.00","PaymentVia":"1","ReferenceNo":"36268850","DateTime":"2016-09-15 11:52:37","Message":"Su recarga ha fallado, por favor intente de nuevo"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"62398222","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"36275449","DateTime":"2016-09-15 11:53:17","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"0","PhoneNo":"65083344","Operator":"2","Amount":"5.00","PaymentVia":"1","ReferenceNo":"36286769","DateTime":"2016-09-15 11:53:52","Message":"Su recarga ha fallado, por favor intente de nuevo"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"62632794","Operator":"3","Amount":"5.00","PaymentVia":"1","ReferenceNo":"36399105","DateTime":"2016-09-15 13:18:04","Message":"Recharge has been successful."},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"65090072","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000004041","DateTime":"2016-09-27 12:00:05","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"0","PhoneNo":"66613128","Operator":"1","Amount":"5.00","PaymentVia":"1","ReferenceNo":"0000004062","DateTime":"2016-09-27 17:12:27","Message":"Su recarga ha fallado, por favor intente de nuevo"},{"HistoryType":"1","RechargeStatus":"0","PhoneNo":"66613128","Operator":"1","Amount":"5.00","PaymentVia":"1","ReferenceNo":"0000004063","DateTime":"2016-09-27 17:13:31","Message":"Su recarga ha fallado, por favor intente de nuevo"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"66613128","Operator":"2","Amount":"5.00","PaymentVia":"1","ReferenceNo":"0000004064","DateTime":"2016-09-27 17:14:23","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"60411681","Operator":"2","Amount":"5.00","PaymentVia":"1","ReferenceNo":"0000004065","DateTime":"2016-09-27 18:09:27","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"60652722","Operator":"2","Amount":"5.00","PaymentVia":"1","ReferenceNo":"0000004073","DateTime":"2016-09-28 09:41:24","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"60986879","Operator":"2","Amount":"3.00","PaymentVia":"1","ReferenceNo":"0000004103","DateTime":"2016-09-28 22:14:12","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"61110021","Operator":"2","Amount":"3.00","PaymentVia":"1","ReferenceNo":"0000004108","DateTime":"2016-09-29 09:30:11","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"61071313","Operator":"2","Amount":"5.00","PaymentVia":"1","ReferenceNo":"0000004173","DateTime":"2016-09-30 15:17:55","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"60279878","Operator":"2","Amount":"3.00","PaymentVia":"1","ReferenceNo":"0000004243","DateTime":"2016-10-03 09:54:13","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"60530523","Operator":"2","Amount":"5.00","PaymentVia":"1","ReferenceNo":"0000004244","DateTime":"2016-10-03 10:06:03","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"69425676","Operator":"1","Amount":"5.00","PaymentVia":"1","ReferenceNo":"0000004340","DateTime":"2016-10-06 14:13:26","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"63495376","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"0000004503","DateTime":"2016-10-12 14:29:45","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"62829304","Operator":"3","Amount":"5.00","PaymentVia":"1","ReferenceNo":"0000004504","DateTime":"2016-10-12 14:35:03","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"62088571","Operator":"3","Amount":"3.00","PaymentVia":"1","ReferenceNo":"0000004522","DateTime":"2016-10-13 09:45:46","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"60605409","Operator":"2","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000004715","DateTime":"2016-10-19 11:23:41","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"0","PhoneNo":"66523025","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000004718","DateTime":"2016-10-19 12:08:20","Message":"Su recarga ha fallado, por favor intente de nuevo"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"66523035","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000004719","DateTime":"2016-10-19 12:09:12","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"69108555","Operator":"1","Amount":"15.00","PaymentVia":"1","ReferenceNo":"0000004721","DateTime":"2016-10-19 12:15:11","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"65056757","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"0000004722","DateTime":"2016-10-19 12:15:44","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"67890698","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"0000004724","DateTime":"2016-10-19 12:54:42","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"67122797","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"0000004728","DateTime":"2016-10-19 14:07:32","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"67155409","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"0000004729","DateTime":"2016-10-19 14:10:00","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"60114036","Operator":"2","Amount":"5.00","PaymentVia":"1","ReferenceNo":"0000004732","DateTime":"2016-10-19 14:33:37","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"60606134","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"0000004749","DateTime":"2016-10-20 08:32:30","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"0","PhoneNo":"61513825","Operator":"1","Amount":"5.00","PaymentVia":"1","ReferenceNo":"0000004751","DateTime":"2016-10-20 08:36:20","Message":"Su recarga ha fallado, por favor intente de nuevo"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"61513825","Operator":"2","Amount":"5.00","PaymentVia":"1","ReferenceNo":"0000004752","DateTime":"2016-10-20 08:37:12","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"69408648","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"0000004753","DateTime":"2016-10-20 08:48:51","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"69408640","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"0000004754","DateTime":"2016-10-20 08:50:20","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"69408640","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"0000004755","DateTime":"2016-10-20 09:06:00","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"65016419","Operator":"1","Amount":"5.00","PaymentVia":"1","ReferenceNo":"0000004757","DateTime":"2016-10-20 09:46:37","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"62398222","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"0000004759","DateTime":"2016-10-20 10:11:52","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"60802675","Operator":"2","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000004772","DateTime":"2016-10-20 14:41:30","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"67291645","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"0000004842","DateTime":"2016-10-24 18:39:12","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"62398222","Operator":"1","Amount":"15.00","PaymentVia":"1","ReferenceNo":"0000004852","DateTime":"2016-10-25 09:35:42","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"66641408","Operator":"2","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000004856","DateTime":"2016-10-25 13:01:08","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"60404872","Operator":"2","Amount":"5.00","PaymentVia":"1","ReferenceNo":"0000004867","DateTime":"2016-10-25 14:44:08","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"60404872","Operator":"2","Amount":"3.00","PaymentVia":"1","ReferenceNo":"0000004868","DateTime":"2016-10-25 14:44:48","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"66587444","Operator":"1","Amount":"5.00","PaymentVia":"1","ReferenceNo":"0000004873","DateTime":"2016-10-25 16:49:30","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"66587444","Operator":"1","Amount":"5.00","PaymentVia":"1","ReferenceNo":"0000004874","DateTime":"2016-10-25 16:51:29","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"60530523","Operator":"2","Amount":"3.00","PaymentVia":"1","ReferenceNo":"0000004884","DateTime":"2016-10-26 08:26:48","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"65090072","Operator":"1","Amount":"5.00","PaymentVia":"1","ReferenceNo":"0000004886","DateTime":"2016-10-26 08:39:35","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"67305900","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"0000004888","DateTime":"2016-10-26 08:52:32","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"67706450","Operator":"1","Amount":"5.00","PaymentVia":"1","ReferenceNo":"0000004889","DateTime":"2016-10-26 09:09:38","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"60752970","Operator":"2","Amount":"5.00","PaymentVia":"1","ReferenceNo":"0000004893","DateTime":"2016-10-26 09:39:26","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"0","PhoneNo":"68678823","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"0000004896","DateTime":"2016-10-26 10:43:38","Message":"Su recarga ha fallado, por favor intente de nuevo"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"68704679","Operator":"1","Amount":"15.00","PaymentVia":"1","ReferenceNo":"0000004897","DateTime":"2016-10-26 10:51:49","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"68761670","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"0000004899","DateTime":"2016-10-26 11:40:31","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"68436086","Operator":"1","Amount":"3.00","PaymentVia":"1","ReferenceNo":"0000004900","DateTime":"2016-10-26 11:49:31","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"67886243","Operator":"1","Amount":"5.00","PaymentVia":"1","ReferenceNo":"0000004907","DateTime":"2016-10-26 12:28:22","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"61529322","Operator":"1","Amount":"5.00","PaymentVia":"1","ReferenceNo":"0000004916","DateTime":"2016-10-26 14:36:00","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"61040059","Operator":"2","Amount":"5.00","PaymentVia":"1","ReferenceNo":"0000004917","DateTime":"2016-10-26 14:55:29","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"0","PhoneNo":"66260480","Operator":"1","Amount":"15.00","PaymentVia":"1","ReferenceNo":"0000005350","DateTime":"2016-12-16 09:18:31","Message":"Su recarga ha fallado, por favor intente de nuevo"},{"HistoryType":"1","RechargeStatus":"0","PhoneNo":"66260480","Operator":"1","Amount":"15.00","PaymentVia":"1","ReferenceNo":"0000005351","DateTime":"2016-12-16 09:19:04","Message":"Su recarga ha fallado, por favor intente de nuevo"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"63422135","Operator":"1","Amount":"10.00","PaymentVia":"1","ReferenceNo":"0000005352","DateTime":"2016-12-16 14:04:32","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"60752970","Operator":"2","Amount":"5.00","PaymentVia":"1","ReferenceNo":"0000005353","DateTime":"2016-12-16 19:09:18","Message":"Recharge has been successful"},{"HistoryType":"1","RechargeStatus":"1","PhoneNo":"67393782","Operator":"1","Amount":"15.00","PaymentVia":"1","ReferenceNo":"0000005354","DateTime":"2016-12-17 10:14:46","Message":"Recharge has been successful"}]}}
+[2016-12-17 10:29:34.359431] [info] ============================================================
+[2016-12-17 10:29:34.359538] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-17 10:29:34.360316] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-12-17 10:48:49.071932] [info] ============================================================
+[2016-12-17 10:48:49.072097] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-12-17 10:48:49.077815] [info] ============================================================
+[2016-12-17 10:48:49.077945] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-17 10:48:49.079914] [info] GetProfile request successful for UserId 133 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Jacinto Andujar","ID":"SC0183624","Email":"supersanto3@gmail.com","Address":"pedregal","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000133","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-12-17 10:48:49.081656] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-12-17 10:48:49.749505] [info] ============================================================
+[2016-12-17 10:48:49.749692] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-12-17 10:48:49.751018] [info] GetFavorites request failed for UserId 133 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-17 10:48:49.778724] [info] ============================================================
+[2016-12-17 10:48:49.778858] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-12-17 10:48:49.779947] [info] GetFavorites request failed for UserId 133 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-17 11:34:52.828438] [info] ============================================================
+[2016-12-17 11:34:52.828591] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-17 11:34:52.833110] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-12-17 11:34:52.834636] [info] ============================================================
+[2016-12-17 11:34:52.834793] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-17 11:34:52.836481] [info] GetProfile request successful for UserId 139 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Raquel Carreno","ID":"7-92-2388","Email":"tifilapulga@gmail.com","Address":"villa nueva","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000139","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-12-17 11:34:54.097276] [info] ============================================================
+[2016-12-17 11:34:54.097425] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-17 11:34:54.098583] [info] GetFavorites request failed for UserId 139 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-17 11:34:54.173386] [info] ============================================================
+[2016-12-17 11:34:54.173533] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-17 11:34:54.174755] [info] GetFavorites request failed for UserId 139 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-17 11:35:28.164025] [info] ============================================================
+[2016-12-17 11:35:28.164170] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-17 11:35:28.165338] [info] GetFavorites request failed for UserId 139 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-17 11:35:55.232862] [info] ============================================================
+[2016-12-17 11:35:55.233226] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-17 11:35:55.234289] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-12-17 11:36:16.657416] [info] ============================================================
+[2016-12-17 11:36:16.657635] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-17 11:36:16.658889] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-12-17 11:38:51.838546] [info] ============================================================
+[2016-12-17 11:38:51.838768] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-17 11:38:51.839711] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-12-17 11:38:57.731019] [info] ============================================================
+[2016-12-17 11:38:57.731169] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-17 11:38:57.732217] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-12-17 11:39:20.178625] [info] ============================================================
+[2016-12-17 11:39:20.178776] [info] Received GetPaymentHistory request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-17 11:39:20.180435] [info] GetPaymentHistory request successful for UserId 139 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"111","payment_method":"1","reference_number":"raquel","amount":"60.00","discount":"4.22","tax":"3.93","net_amount":"56.07","amount_credited":"60.29","bank":"Pago en efectivo","status":"1","date":"2016-10-26 13:21:04"},{"id":"73","payment_method":"1","reference_number":"Raquel","amount":"30.00","discount":"2.11","tax":"1.96","net_amount":"28.04","amount_credited":"30.15","bank":"Pago en efectivo","status":"1","date":"2016-10-12 11:00:37"}]}}
+[2016-12-17 11:39:44.689702] [info] ============================================================
+[2016-12-17 11:39:44.693602] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-17 11:39:44.694986] [info] GetProfile request successful for UserId 139 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Raquel Carreno","ID":"7-92-2388","Email":"tifilapulga@gmail.com","Address":"villa nueva","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000139","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-12-17 11:39:54.787636] [info] ============================================================
+[2016-12-17 11:39:54.787744] [info] Received UpdateProfile request:
+    DeviceId: '1'
+    Email: 'tifilapulga@gmail.com'
+    Phone_Number: '00000000'
+    Address: 'villa nueva'
+    PlatformId: '2'
+    UserId: '139'
+    Province: 'panama'
+    City: 'panama'
+[2016-12-17 11:39:54.789721] [info] UpdateProfile request successful for UserId 139 {"Response":{"Status":"1","Code":"533","Message":"Success"}}
+[2016-12-17 11:40:03.922629] [info] ============================================================
+[2016-12-17 11:40:03.922821] [info] Received GetBanks request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-17 11:40:03.924048] [info] GetBanks request successful for UserId 139 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","bank_name":"Banco General (Ahorros)"},{"id":"2","bank_name":"Banco General (Corriente)"},{"id":"3","bank_name":"Pago en efectivo"}]}}
+[2016-12-17 11:41:56.187479] [info] ============================================================
+[2016-12-17 11:41:56.187614] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-17 11:41:56.188746] [info] GetFavorites request failed for UserId 139 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-17 11:44:00.730325] [info] ============================================================
+[2016-12-17 11:44:00.730422] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-17 11:44:00.731205] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-12-17 11:44:00.735217] [info] ============================================================
+[2016-12-17 11:44:00.735282] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-17 11:44:00.736350] [info] GetProfile request successful for UserId 139 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Raquel Carreno","ID":"7-92-2388","Email":"tifilapulga@gmail.com","Address":"villa nueva","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000139","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-12-17 11:44:01.544747] [info] ============================================================
+[2016-12-17 11:44:01.544858] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-17 11:44:01.545927] [info] GetFavorites request failed for UserId 139 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-17 11:44:01.598191] [info] ============================================================
+[2016-12-17 11:44:01.598263] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-17 11:44:01.599046] [info] GetFavorites request failed for UserId 139 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-17 11:44:10.023431] [info] ============================================================
+[2016-12-17 11:44:10.023524] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-17 11:44:10.024508] [info] GetFavorites request failed for UserId 139 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-17 11:44:16.227170] [info] ============================================================
+[2016-12-17 11:44:16.227298] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-17 11:44:16.228351] [info] GetFavorites request failed for UserId 139 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-17 11:44:17.517466] [info] ============================================================
+[2016-12-17 11:44:17.517707] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-17 11:44:17.519292] [info] GetFavorites request failed for UserId 139 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-17 11:44:23.222475] [info] ============================================================
+[2016-12-17 11:44:23.222573] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-17 11:44:23.223675] [info] GetProfile request successful for UserId 139 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Raquel Carreno","ID":"7-92-2388","Email":"tifilapulga@gmail.com","Address":"villa nueva","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000139","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-12-17 11:44:23.230945] [info] ============================================================
+[2016-12-17 11:44:23.231051] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-17 11:44:23.231869] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-12-17 11:44:23.988900] [info] ============================================================
+[2016-12-17 11:44:23.989022] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-17 11:44:23.989989] [info] GetFavorites request failed for UserId 139 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-17 11:44:24.651540] [info] ============================================================
+[2016-12-17 11:44:24.651647] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-17 11:44:24.652543] [info] GetFavorites request failed for UserId 139 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-17 11:44:31.905916] [info] ============================================================
+[2016-12-17 11:44:31.906013] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-17 11:44:31.906898] [info] GetFavorites request failed for UserId 139 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-17 11:44:36.323606] [info] ============================================================
+[2016-12-17 11:44:36.323720] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-17 11:44:36.324673] [info] GetProfile request successful for UserId 139 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Raquel Carreno","ID":"7-92-2388","Email":"tifilapulga@gmail.com","Address":"villa nueva","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000139","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-12-17 11:44:36.328434] [info] ============================================================
+[2016-12-17 11:44:36.328500] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-17 11:44:36.329233] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-12-17 11:44:37.054838] [info] ============================================================
+[2016-12-17 11:44:37.054929] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-17 11:44:37.055784] [info] GetFavorites request failed for UserId 139 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-17 11:44:37.078478] [info] ============================================================
+[2016-12-17 11:44:37.078547] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '139'
+[2016-12-17 11:44:37.079281] [info] GetFavorites request failed for UserId 139 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-17 14:22:36.169114] [info] ============================================================
+[2016-12-17 14:22:36.169248] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '154'
+[2016-12-17 14:22:36.171103] [info] ============================================================
+[2016-12-17 14:22:36.171196] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '154'
+[2016-12-17 14:22:36.172171] [info] GetFavorites request failed for UserId 154 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-17 14:22:36.173444] [info] GetFavorites request failed for UserId 154 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-12-17 14:22:48.455040] [info] ============================================================
+[2016-12-17 14:22:48.455168] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '154'
+[2016-12-17 14:22:48.456259] [info] GetPrepaidBalance request successful for UserId 154 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"71.47"}}}
+[2016-12-17 14:22:57.567620] [info] ============================================================
+[2016-12-17 14:22:57.567744] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-17 14:22:57.568721] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-12-17 14:23:08.722912] [notice] ============================================================
+[2016-12-17 14:23:08.723037] [notice] Received Recharge request:
+    DeviceId: '1'
+    Operator: '2'
+    UserId: '154'
+    longitude: ' '
+    Amount: '10.0'
+    Phone_Number: '60559689'
+    latitude: ' '
+    PlatformId: '2'
+    Payment_Method: '1'
+[2016-12-17 14:23:11.783308] [notice] Recharge request completed for Phone Number 60559689 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":10,"ReferenceNo":"0000005355","Date":"2016-12-17 14:23:11","RewardPoint":100,"AvailableBalance":"61.47"}}}
+[2016-12-17 14:23:22.816627] [info] ============================================================
+[2016-12-17 14:23:22.816776] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-17 14:23:22.817976] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-12-17 14:23:24.221524] [info] ============================================================
+[2016-12-17 14:23:24.221649] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '154'
+[2016-12-17 14:23:24.222960] [info] GetPrepaidBalance request successful for UserId 154 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"61.47"}}}
+[2016-12-17 16:00:58.445122] [info] ============================================================
+[2016-12-17 16:00:58.445307] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '154'
+[2016-12-17 16:00:58.446734] [info] GetPrepaidBalance request successful for UserId 154 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"61.47"}}}
+[2016-12-17 16:01:08.923261] [info] ============================================================
+[2016-12-17 16:01:08.923427] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-17 16:01:08.924324] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-12-17 16:01:21.960256] [notice] ============================================================
+[2016-12-17 16:01:21.960387] [notice] Received Recharge request:
+    DeviceId: '1'
+    Operator: '1'
+    UserId: '154'
+    longitude: ' '
+    Amount: '10.0'
+    Phone_Number: '69648188'
+    latitude: ' '
+    PlatformId: '2'
+    Payment_Method: '1'
+[2016-12-17 16:01:27.462502] [notice] Recharge request completed for Phone Number 69648188 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":10,"ReferenceNo":"0000005356","Date":"2016-12-17 16:01:27","RewardPoint":100,"AvailableBalance":"51.47"}}}
+[2016-12-17 16:11:54.881650] [info] ============================================================
+[2016-12-17 16:11:54.881897] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-17 16:11:54.882945] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-12-17 16:11:54.955293] [info] ============================================================
+[2016-12-17 16:11:54.955408] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '154'
+[2016-12-17 16:11:54.956774] [info] GetPrepaidBalance request successful for UserId 154 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"51.47"}}}
+[2016-12-17 16:12:11.181018] [info] ============================================================
+[2016-12-17 16:12:11.181169] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '154'
+[2016-12-17 16:12:11.182291] [info] GetPrepaidBalance request successful for UserId 154 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"51.47"}}}
+[2016-12-17 16:12:14.086575] [info] ============================================================
+[2016-12-17 16:12:14.086760] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-17 16:12:14.088084] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-12-17 16:12:23.036922] [notice] ============================================================
+[2016-12-17 16:12:23.037075] [notice] Received Recharge request:
+    DeviceId: '1'
+    Operator: '2'
+    UserId: '154'
+    longitude: ' '
+    Amount: '3.0'
+    Phone_Number: '61321669'
+    latitude: ' '
+    PlatformId: '2'
+    Payment_Method: '1'
+[2016-12-17 16:12:27.263119] [notice] Recharge request completed for Phone Number 61321669 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":3,"ReferenceNo":"0000005357","Date":"2016-12-17 16:12:27","RewardPoint":30,"AvailableBalance":"48.47"}}}
+[2016-12-17 18:58:18.439846] [info] ============================================================
+[2016-12-17 18:58:18.440001] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-12-17 18:58:18.441293] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-12-17 18:58:18.539392] [info] ============================================================
+[2016-12-17 18:58:18.539544] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '70'
+[2016-12-17 18:58:18.541080] [error] GetProfile request failed for UserId 70 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}
+[2016-12-17 18:58:19.260845] [info] ============================================================
+[2016-12-17 18:58:19.260988] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '70'
+[2016-12-17 18:58:19.262248] [error] GetFavorites request failed for UserId 70 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}
+[2016-12-17 18:58:19.273468] [info] ============================================================
+[2016-12-17 18:58:19.273595] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '70'
+[2016-12-17 18:58:19.274569] [error] GetFavorites request failed for UserId 70 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}
+[2016-12-17 18:58:46.396590] [info] ============================================================
+[2016-12-17 18:58:46.396727] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '70'
+[2016-12-17 18:58:46.397658] [error] GetFavorites request failed for UserId 70 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}

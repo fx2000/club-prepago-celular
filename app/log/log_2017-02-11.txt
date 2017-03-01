@@ -1,0 +1,191 @@
+[2017-02-11 0:03:33.315108] [info] ============================================================
+[2017-02-11 0:03:33.315272] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '255'
+[2017-02-11 0:03:33.317462] [info] GetProfile request successful for UserId 255 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"luis villarreal","ID":"47152424","Email":"luis-1003@hotmail.com","Address":"alanje","Country":"Panama","City":"david","Province":"chiriqui","PhoneNo":"63140747","UserId":"000255","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2017-02-11 0:03:33.363858] [info] ============================================================
+[2017-02-11 0:03:33.364020] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2017-02-11 0:03:33.365432] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-02-11 0:03:34.213335] [info] ============================================================
+[2017-02-11 0:03:34.213480] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '255'
+[2017-02-11 0:03:34.214689] [info] GetFavorites request failed for UserId 255 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2017-02-11 0:03:34.293098] [info] ============================================================
+[2017-02-11 0:03:34.293251] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '255'
+[2017-02-11 0:03:34.294627] [info] GetFavorites request failed for UserId 255 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2017-02-11 0:03:44.361912] [info] ============================================================
+[2017-02-11 0:03:44.362082] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '255'
+[2017-02-11 0:03:44.363437] [info] GetFavorites request failed for UserId 255 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2017-02-11 0:03:47.886791] [info] ============================================================
+[2017-02-11 0:03:47.886965] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '255'
+[2017-02-11 0:03:47.888163] [info] GetFavorites request failed for UserId 255 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2017-02-11 0:03:58.112797] [info] ============================================================
+[2017-02-11 0:03:58.112977] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '255'
+[2017-02-11 0:03:58.114630] [info] GetFavorites request failed for UserId 255 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2017-02-11 0:04:00.989094] [info] ============================================================
+[2017-02-11 0:04:00.989232] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '255'
+[2017-02-11 0:04:00.991154] [info] ============================================================
+[2017-02-11 0:04:00.991265] [info] Received GetRewards request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '255'
+[2017-02-11 0:04:00.993030] [info] GetFavorites request failed for UserId 255 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2017-02-11 0:04:00.993706] [info] GetRewards request successful for UserId 255 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"Point":"1000","Cost":"1.00","Description":"Recarga de $1 de cualquier operadora","Image":"https:\/\/app.clubprepago.com\/img\/rewards\/99560b5313e2478e88fc1b1a23876021cfcd034e.png"}]}}
+[2017-02-11 0:04:01.012348] [info] ============================================================
+[2017-02-11 0:04:01.012484] [info] Received GetRewardPoints request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '255'
+[2017-02-11 0:04:01.014358] [info] GetRewardPoints request successful for UserId 255 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"RewardPoint":"0"}}}
+[2017-02-11 0:04:21.148386] [info] ============================================================
+[2017-02-11 0:04:21.148519] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '255'
+[2017-02-11 0:04:21.149588] [info] GetFavorites request failed for UserId 255 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2017-02-11 0:04:21.167686] [info] ============================================================
+[2017-02-11 0:04:21.167794] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '255'
+[2017-02-11 0:04:21.168746] [info] GetFavorites request failed for UserId 255 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2017-02-11 0:04:21.388077] [info] ============================================================
+[2017-02-11 0:04:21.388335] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '255'
+[2017-02-11 0:04:21.391105] [info] GetFavorites request failed for UserId 255 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2017-02-11 0:04:24.569828] [info] ============================================================
+[2017-02-11 0:04:24.569940] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '255'
+[2017-02-11 0:04:24.571193] [info] GetFavorites request failed for UserId 255 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2017-02-11 1:24:56.165287] [info] ============================================================
+[2017-02-11 1:24:56.165460] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2017-02-11 1:24:56.167931] [info] ============================================================
+[2017-02-11 1:24:56.168040] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '215'
+[2017-02-11 1:24:56.169378] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-02-11 1:24:56.171981] [info] GetProfile request successful for UserId 215 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Williams Castillo","ID":"8-839-1324","Email":"transcastillo04@gmail.com","Address":"panama ","Country":"Panama","City":"Ciudad de Panama","Province":"Panama","PhoneNo":"69691183","UserId":"000215","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2017-02-11 3:43:19.410458] [info] ============================================================
+[2017-02-11 3:43:19.410630] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '389'
+[2017-02-11 3:43:19.412451] [info] GetProfile request successful for UserId 389 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Gaviritsel Flores","ID":"5-704-545","Email":"gabycell06@gmail.com","Address":"24 de Diciembre","Country":"Panama","City":"Ciudad de Panama","Province":"Panama","PhoneNo":"62857446","UserId":"000389","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2017-02-11 3:43:19.520184] [info] ============================================================
+[2017-02-11 3:43:19.520332] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2017-02-11 3:43:19.521389] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-02-11 3:43:23.151742] [info] ============================================================
+[2017-02-11 3:43:23.151895] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '389'
+[2017-02-11 3:43:23.153116] [info] GetPrepaidBalance request successful for UserId 389 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"2.35"}}}
+[2017-02-11 3:43:42.273957] [info] ============================================================
+[2017-02-11 3:43:42.274111] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2017-02-11 3:43:42.275255] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2017-02-11 3:44:02.872921] [notice] ============================================================
+[2017-02-11 3:44:02.873119] [notice] Received Recharge request:
+    DeviceId: '1'
+    Amount: '2.35'
+    Phone_Number: '62857446'
+    Operator: '3'
+    Payment_Method: '1'
+    longitude: ' '
+    latitude: ' '
+    PlatformId: '1'
+    UserId: '389'
+[2017-02-11 3:44:05.913450] [notice] Recharge request completed for Phone Number 62857446 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":2.35,"ReferenceNo":"0000005472","Date":"2017-02-11 03:44:05","RewardPoint":20,"AvailableBalance":"0.00"}}}
+[2017-02-11 3:44:23.161550] [info] ============================================================
+[2017-02-11 3:44:23.161714] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '389'
+[2017-02-11 3:44:23.165003] [info] GetPrepaidBalance request successful for UserId 389 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"0.00"}}}
+[2017-02-11 3:44:23.366034] [info] ============================================================
+[2017-02-11 3:44:23.366183] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2017-02-11 3:44:23.367328] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2017-02-11 17:47:31.110981] [info] ============================================================
+[2017-02-11 17:47:31.111197] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2017-02-11 17:47:31.112723] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-02-11 17:47:31.114320] [info] ============================================================
+[2017-02-11 17:47:31.114453] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2017-02-11 17:47:31.116708] [info] GetProfile request successful for UserId 133 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Jacinto Andujar","ID":"SC0183624","Email":"supersanto3@gmail.com","Address":"pedregal","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000133","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2017-02-11 17:47:31.849108] [info] ============================================================
+[2017-02-11 17:47:31.849266] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2017-02-11 17:47:31.851970] [info] GetFavorites request failed for UserId 133 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2017-02-11 17:47:31.882885] [info] ============================================================
+[2017-02-11 17:47:31.883054] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2017-02-11 17:47:31.884552] [info] GetFavorites request failed for UserId 133 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2017-02-11 18:55:04.473092] [info] ============================================================
+[2017-02-11 18:55:04.473514] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2017-02-11 18:55:04.475480] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-02-11 18:55:04.483608] [info] ============================================================
+[2017-02-11 18:55:04.483886] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '115'
+[2017-02-11 18:55:04.486670] [info] GetProfile request successful for UserId 115 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Iris Pineda","ID":"4-277-467","Email":"agrosandias@hotmail.com","Address":"panama","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000115","SponsorId":"000006","SponsorName":"Pedro Rodriguez"}}}
+[2017-02-11 18:55:05.354950] [info] ============================================================
+[2017-02-11 18:55:05.355098] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '115'
+[2017-02-11 18:55:05.356734] [info] GetFavorites request failed for UserId 115 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2017-02-11 18:55:05.369666] [info] ============================================================
+[2017-02-11 18:55:05.369862] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '115'
+[2017-02-11 18:55:05.371865] [info] GetFavorites request failed for UserId 115 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2017-02-11 18:55:30.198867] [info] ============================================================
+[2017-02-11 18:55:30.199131] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '115'
+[2017-02-11 18:55:30.200984] [info] GetPrepaidBalance request successful for UserId 115 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"49.78"}}}

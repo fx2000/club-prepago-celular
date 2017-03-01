@@ -1,0 +1,23 @@
+[2017-01-01 7:36:59.824928] [info] ============================================================
+[2017-01-01 7:36:59.825148] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '175'
+[2017-01-01 7:36:59.831456] [info] ============================================================
+[2017-01-01 7:36:59.831661] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2017-01-01 7:36:59.835212] [error] GetProfile request failed for UserId 175 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}
+[2017-01-01 7:36:59.838501] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2017-01-01 7:37:00.722438] [info] ============================================================
+[2017-01-01 7:37:00.722606] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '175'
+[2017-01-01 7:37:00.725369] [error] GetFavorites request failed for UserId 175 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}
+[2017-01-01 7:37:00.825640] [info] ============================================================
+[2017-01-01 7:37:00.825917] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '175'
+[2017-01-01 7:37:00.829484] [error] GetFavorites request failed for UserId 175 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}

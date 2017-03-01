@@ -1,0 +1,1308 @@
+[2016-11-01 3:45:32.825156] [info] ============================================================
+[2016-11-01 3:45:32.825356] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '120'
+[2016-11-01 3:45:32.827475] [info] GetProfile request successful for UserId 120 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Daniel Agusto Gonzalez Lopez","ID":"C01422952","Email":"Daniel@arcangel.com","Address":"san miguelito","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000120","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-11-01 3:45:32.832431] [info] ============================================================
+[2016-11-01 3:45:32.832530] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 3:45:32.833854] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 3:45:33.776073] [info] ============================================================
+[2016-11-01 3:45:33.776207] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '120'
+[2016-11-01 3:45:33.777271] [info] GetFavorites request failed for UserId 120 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 3:45:33.811961] [info] ============================================================
+[2016-11-01 3:45:33.812068] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '120'
+[2016-11-01 3:45:33.812988] [info] GetFavorites request failed for UserId 120 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 6:35:55.003650] [info] ============================================================
+[2016-11-01 6:35:55.003865] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '116'
+[2016-11-01 6:35:55.005477] [info] ============================================================
+[2016-11-01 6:35:55.005645] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 6:35:55.009052] [info] GetProfile request successful for UserId 116 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Kravis Trejos","ID":"8-930-2163","Email":"kgriseth@live.com","Address":"univerdida interamericana","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000116","SponsorId":"000006","SponsorName":"Pedro Rodriguez"}}}
+[2016-11-01 6:35:55.009717] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 6:36:09.486557] [info] ============================================================
+[2016-11-01 6:36:09.486701] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '116'
+[2016-11-01 6:36:09.487905] [info] GetPrepaidBalance request successful for UserId 116 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"37.50"}}}
+[2016-11-01 6:36:11.489687] [info] ============================================================
+[2016-11-01 6:36:11.489819] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 6:36:11.490679] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 6:36:17.558948] [notice] ============================================================
+[2016-11-01 6:36:17.559092] [notice] Received Recharge request:
+    DeviceId: '1'
+    Operator: '1'
+    UserId: '116'
+    longitude: '-79.546215'
+    Amount: '3.0'
+    Phone_Number: '67103899'
+    latitude: '8.9665206'
+    PlatformId: '2'
+    Payment_Method: '1'
+[2016-11-01 6:36:23.955190] [notice] Recharge request completed for Phone Number 67103899 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":3,"ReferenceNo":"0000005101","Date":"2016-11-01 06:36:23","RewardPoint":30,"AvailableBalance":"34.50"}}}
+[2016-11-01 6:36:30.999906] [info] ============================================================
+[2016-11-01 6:36:31.000101] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 6:36:31.001044] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 6:36:31.550781] [info] ============================================================
+[2016-11-01 6:36:31.550924] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '116'
+[2016-11-01 6:36:31.552268] [info] GetPrepaidBalance request successful for UserId 116 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"34.50"}}}
+[2016-11-01 8:39:50.958790] [info] ============================================================
+[2016-11-01 8:39:50.958939] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '2'
+    Password: 'mariacamila'
+    Email: 'mwatson-1623@hotmail.com'
+[2016-11-01 8:39:50.960359] [error] Login request failed for User mwatson-1623@hotmail.com {"Response":{"Status":"0","Code":"535","Message":"Incorrect Email or Password"}}
+[2016-11-01 8:40:01.082925] [info] ============================================================
+[2016-11-01 8:40:01.083127] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '2'
+    Password: '123456'
+    Email: 'mwatson-1623@hotmail.com'
+[2016-11-01 8:40:01.086566] [info] Login request successful for User mwatson-1623@hotmail.com {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"UserId":"112","Name":"Lava Auto Pirolo","DiscountPercentage":"7.00","Country":"Panama","TaxPercentage":"7.00","PrepaidBalance":"6.20","TaxId":"3-102-911 DV 65","city":"ciudad de panama","state":"panama","RewardPoint":"2310"},"version":"1.5"}}
+[2016-11-01 8:40:01.573672] [info] ============================================================
+[2016-11-01 8:40:01.573895] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 8:40:01.575512] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 8:40:01.601818] [info] ============================================================
+[2016-11-01 8:40:01.602018] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '112'
+[2016-11-01 8:40:01.604238] [info] GetProfile request successful for UserId 112 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Lava Auto Pirolo","ID":"3-102-911 DV 65","Email":"mwatson-1623@hotmail.com","Address":"ARRAIJAN","Country":"Panama","City":"ciudad de panama","Province":"panama","PhoneNo":"00000000","UserId":"000112","SponsorId":"000006","SponsorName":"Pedro Rodriguez"}}}
+[2016-11-01 8:40:02.075984] [info] ============================================================
+[2016-11-01 8:40:02.076152] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '112'
+[2016-11-01 8:40:02.077063] [info] ============================================================
+[2016-11-01 8:40:02.077167] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '112'
+[2016-11-01 8:40:02.078357] [info] GetFavorites request failed for UserId 112 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 8:40:02.079565] [info] GetFavorites request failed for UserId 112 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 8:40:25.415956] [info] ============================================================
+[2016-11-01 8:40:25.416093] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '112'
+[2016-11-01 8:40:25.417162] [info] GetFavorites request failed for UserId 112 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 8:43:20.343688] [info] ============================================================
+[2016-11-01 8:43:20.343863] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 8:43:20.345649] [info] ============================================================
+[2016-11-01 8:43:20.345747] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '116'
+[2016-11-01 8:43:20.347778] [info] GetProfile request successful for UserId 116 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Kravis Trejos","ID":"8-930-2163","Email":"kgriseth@live.com","Address":"univerdida interamericana","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000116","SponsorId":"000006","SponsorName":"Pedro Rodriguez"}}}
+[2016-11-01 8:43:20.348211] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 8:43:33.254363] [info] ============================================================
+[2016-11-01 8:43:33.254504] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '116'
+[2016-11-01 8:43:33.255491] [info] GetPrepaidBalance request successful for UserId 116 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"34.50"}}}
+[2016-11-01 8:43:35.452727] [info] ============================================================
+[2016-11-01 8:43:35.452826] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 8:43:35.453608] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 8:43:40.572644] [notice] ============================================================
+[2016-11-01 8:43:40.575280] [notice] Received Recharge request:
+    DeviceId: '1'
+    Operator: '1'
+    UserId: '116'
+    longitude: '-79.5462186'
+    Amount: '5.0'
+    Phone_Number: '67344013'
+    latitude: '8.9664866'
+    PlatformId: '2'
+    Payment_Method: '1'
+[2016-11-01 8:43:46.105392] [notice] Recharge request completed for Phone Number 67344013 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":5,"ReferenceNo":"0000005102","Date":"2016-11-01 08:43:46","RewardPoint":50,"AvailableBalance":"29.50"}}}
+[2016-11-01 8:43:50.490374] [info] ============================================================
+[2016-11-01 8:43:50.490473] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 8:43:50.491283] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 8:43:50.970015] [info] ============================================================
+[2016-11-01 8:43:50.970118] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '116'
+[2016-11-01 8:43:50.971927] [info] GetPrepaidBalance request successful for UserId 116 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"29.50"}}}
+[2016-11-01 8:57:27.770544] [info] ============================================================
+[2016-11-01 8:57:27.770709] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 8:57:27.771531] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 8:57:27.792449] [info] ============================================================
+[2016-11-01 8:57:27.792577] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '130'
+[2016-11-01 8:57:27.793776] [info] GetPrepaidBalance request successful for UserId 130 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"20.50"}}}
+[2016-11-01 8:58:29.631620] [info] ============================================================
+[2016-11-01 8:58:29.631743] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '130'
+[2016-11-01 8:58:29.633076] [info] GetProfile request successful for UserId 130 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Digna Mc Claren","ID":"8-328-859","Email":"dignamcclaren@gmail.com","Address":"chilibre","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"69540710","UserId":"000130","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-11-01 8:58:29.652090] [info] ============================================================
+[2016-11-01 8:58:29.652162] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 8:58:29.652928] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 8:58:59.766077] [info] ============================================================
+[2016-11-01 8:58:59.766192] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '130'
+[2016-11-01 8:58:59.767177] [info] GetPrepaidBalance request successful for UserId 130 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"20.50"}}}
+[2016-11-01 8:59:06.345345] [info] ============================================================
+[2016-11-01 8:59:06.345467] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 8:59:06.346312] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 8:59:17.894153] [notice] ============================================================
+[2016-11-01 8:59:17.894264] [notice] Received Recharge request:
+    DeviceId: '1'
+    Operator: '1'
+    UserId: '130'
+    longitude: ' '
+    Amount: '5.0'
+    Phone_Number: '68027903'
+    latitude: ' '
+    PlatformId: '2'
+    Payment_Method: '1'
+[2016-11-01 8:59:25.101754] [notice] Recharge request completed for Phone Number 68027903 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":5,"ReferenceNo":"0000005103","Date":"2016-11-01 08:59:25","RewardPoint":50,"AvailableBalance":"15.50"}}}
+[2016-11-01 8:59:35.361464] [info] ============================================================
+[2016-11-01 8:59:35.361664] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 8:59:35.362519] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 8:59:35.425905] [info] ============================================================
+[2016-11-01 8:59:35.425997] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '130'
+[2016-11-01 8:59:35.427081] [info] GetPrepaidBalance request successful for UserId 130 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"15.50"}}}
+[2016-11-01 9:49:48.374608] [info] ============================================================
+[2016-11-01 9:49:48.375102] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 9:49:48.376277] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 9:49:48.404068] [info] ============================================================
+[2016-11-01 9:49:48.404175] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '70'
+[2016-11-01 9:49:48.405287] [error] GetProfile request failed for UserId 70 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}
+[2016-11-01 9:49:49.119290] [info] ============================================================
+[2016-11-01 9:49:49.119436] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '70'
+[2016-11-01 9:49:49.120410] [error] GetFavorites request failed for UserId 70 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}
+[2016-11-01 9:49:49.136264] [info] ============================================================
+[2016-11-01 9:49:49.136367] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '70'
+[2016-11-01 9:49:49.137139] [error] GetFavorites request failed for UserId 70 {"Response":{"Status":"0","Code":"544","Message":"User is not signed in on this device"}}
+[2016-11-01 10:03:09.367005] [info] ============================================================
+[2016-11-01 10:03:09.367150] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '120'
+[2016-11-01 10:03:09.370500] [info] GetProfile request successful for UserId 120 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Daniel Agusto Gonzalez Lopez","ID":"C01422952","Email":"Daniel@arcangel.com","Address":"san miguelito","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000120","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-11-01 10:03:09.416310] [info] ============================================================
+[2016-11-01 10:03:09.416443] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 10:03:09.417391] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 10:03:10.403435] [info] ============================================================
+[2016-11-01 10:03:10.403567] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '120'
+[2016-11-01 10:03:10.404617] [info] GetFavorites request failed for UserId 120 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 10:03:10.443929] [info] ============================================================
+[2016-11-01 10:03:10.444062] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '120'
+[2016-11-01 10:03:10.445148] [info] GetFavorites request failed for UserId 120 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 10:03:24.977742] [info] ============================================================
+[2016-11-01 10:03:24.978065] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '120'
+[2016-11-01 10:03:24.979449] [info] GetPrepaidBalance request successful for UserId 120 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"17.12"}}}
+[2016-11-01 10:03:32.817410] [info] ============================================================
+[2016-11-01 10:03:32.817574] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 10:03:32.818468] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 10:03:42.850975] [notice] ============================================================
+[2016-11-01 10:03:42.851075] [notice] Received Recharge request:
+    DeviceId: '1'
+    Amount: '3.0'
+    Phone_Number: '69450536'
+    Operator: '1'
+    Payment_Method: '1'
+    longitude: ' '
+    latitude: ' '
+    PlatformId: '2'
+    UserId: '120'
+[2016-11-01 10:03:48.337009] [notice] Recharge request completed for Phone Number 69450536 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":3,"ReferenceNo":"0000005104","Date":"2016-11-01 10:03:48","RewardPoint":30,"AvailableBalance":"14.12"}}}
+[2016-11-01 10:04:16.996225] [info] ============================================================
+[2016-11-01 10:04:16.996326] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 10:04:16.997139] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 10:04:17.164439] [info] ============================================================
+[2016-11-01 10:04:17.164576] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '120'
+[2016-11-01 10:04:17.165764] [info] GetPrepaidBalance request successful for UserId 120 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"14.12"}}}
+[2016-11-01 11:50:55.509658] [info] ============================================================
+[2016-11-01 11:50:55.509843] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 11:50:55.511255] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 11:50:55.728991] [info] ============================================================
+[2016-11-01 11:50:55.729120] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '196'
+[2016-11-01 11:50:55.730866] [info] GetProfile request successful for UserId 196 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Mayuri Ruidiaz","ID":"3-731-89","Email":"mayuriruidiaz@gmail.com","Address":"sabanita, Colon","Country":"Panama","City":"colon","Province":"colon","PhoneNo":"6746-8547","UserId":"000196","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-11-01 11:50:58.453512] [info] ============================================================
+[2016-11-01 11:50:58.453650] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '196'
+[2016-11-01 11:50:58.454874] [info] GetFavorites request failed for UserId 196 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 11:50:59.212846] [info] ============================================================
+[2016-11-01 11:50:59.212980] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '196'
+[2016-11-01 11:50:59.213958] [info] GetFavorites request failed for UserId 196 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 11:51:09.012629] [info] ============================================================
+[2016-11-01 11:51:09.012777] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '196'
+[2016-11-01 11:51:09.014108] [info] GetPrepaidBalance request successful for UserId 196 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"4.90"}}}
+[2016-11-01 11:52:19.041426] [info] ============================================================
+[2016-11-01 11:52:19.041562] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '196'
+[2016-11-01 11:52:19.042526] [info] GetPrepaidBalance request successful for UserId 196 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"4.90"}}}
+[2016-11-01 11:52:28.665884] [info] ============================================================
+[2016-11-01 11:52:28.666024] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 11:52:28.666893] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 11:52:36.184767] [notice] ============================================================
+[2016-11-01 11:52:36.184988] [notice] Received Recharge request:
+    DeviceId: '1'
+    Amount: '3.0'
+    Phone_Number: '65434028'
+    Operator: '1'
+    Payment_Method: '1'
+    longitude: ' '
+    latitude: ' '
+    PlatformId: '2'
+    UserId: '196'
+[2016-11-01 11:52:42.100958] [notice] Recharge request completed for Phone Number 65434028 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":3,"ReferenceNo":"0000005105","Date":"2016-11-01 11:52:42","RewardPoint":30,"AvailableBalance":"1.90"}}}
+[2016-11-01 11:59:36.359244] [info] ============================================================
+[2016-11-01 11:59:36.359384] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 11:59:36.360243] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 12:36:11.979242] [info] ============================================================
+[2016-11-01 12:36:11.979382] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '112'
+[2016-11-01 12:36:11.981276] [info] ============================================================
+[2016-11-01 12:36:11.981383] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 12:36:11.982887] [info] GetProfile request successful for UserId 112 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Lava Auto Pirolo","ID":"3-102-911 DV 65","Email":"mwatson-1623@hotmail.com","Address":"ARRAIJAN","Country":"Panama","City":"ciudad de panama","Province":"panama","PhoneNo":"00000000","UserId":"000112","SponsorId":"000006","SponsorName":"Pedro Rodriguez"}}}
+[2016-11-01 12:36:11.984071] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 12:36:15.203753] [info] ============================================================
+[2016-11-01 12:36:15.203875] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '112'
+[2016-11-01 12:36:15.204813] [info] GetFavorites request failed for UserId 112 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 12:36:15.220720] [info] ============================================================
+[2016-11-01 12:36:15.220843] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '112'
+[2016-11-01 12:36:15.221678] [info] GetFavorites request failed for UserId 112 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 12:36:50.018588] [info] ============================================================
+[2016-11-01 12:36:50.018692] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '112'
+[2016-11-01 12:36:50.019695] [info] GetPrepaidBalance request successful for UserId 112 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"6.20"}}}
+[2016-11-01 12:37:36.878398] [info] ============================================================
+[2016-11-01 12:37:36.878597] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '112'
+[2016-11-01 12:37:36.879863] [info] GetPrepaidBalance request successful for UserId 112 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"6.20"}}}
+[2016-11-01 12:37:41.856347] [info] ============================================================
+[2016-11-01 12:37:41.856482] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 12:37:41.857307] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 12:37:54.701220] [notice] ============================================================
+[2016-11-01 12:37:54.701349] [notice] Received Recharge request:
+    DeviceId: '1'
+    Operator: '1'
+    UserId: '112'
+    longitude: '-79.73028517618407'
+    Amount: '3.0'
+    Phone_Number: '66842890'
+    latitude: '8.927765491218274'
+    PlatformId: '2'
+    Payment_Method: '1'
+[2016-11-01 12:38:00.526058] [notice] Recharge request completed for Phone Number 66842890 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":3,"ReferenceNo":"0000005106","Date":"2016-11-01 12:38:00","RewardPoint":30,"AvailableBalance":"3.20"}}}
+[2016-11-01 12:38:08.592024] [info] ============================================================
+[2016-11-01 12:38:08.592183] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 12:38:08.593544] [info] ============================================================
+[2016-11-01 12:38:08.593611] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '112'
+[2016-11-01 12:38:08.594376] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 12:38:08.595698] [info] GetPrepaidBalance request successful for UserId 112 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"3.20"}}}
+[2016-11-01 12:38:10.655612] [info] ============================================================
+[2016-11-01 12:38:10.655751] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '112'
+[2016-11-01 12:38:10.656997] [info] GetFavorites request failed for UserId 112 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 13:06:15.086945] [info] ============================================================
+[2016-11-01 13:06:15.087093] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '138'
+[2016-11-01 13:06:15.088773] [info] GetProfile request successful for UserId 138 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Evisia de Sanchez","ID":"9-175-158","Email":"edwinsanchez1881@hotmail.com","Address":"chilibre calzada larga","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000138","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-11-01 13:06:15.114015] [info] ============================================================
+[2016-11-01 13:06:15.114093] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 13:06:15.114989] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 13:06:15.995301] [info] ============================================================
+[2016-11-01 13:06:15.995405] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '138'
+[2016-11-01 13:06:15.996525] [info] GetFavorites request failed for UserId 138 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 13:06:16.035823] [info] ============================================================
+[2016-11-01 13:06:16.035939] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '138'
+[2016-11-01 13:06:16.036886] [info] GetFavorites request failed for UserId 138 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 13:06:49.678850] [info] ============================================================
+[2016-11-01 13:06:49.678955] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '138'
+[2016-11-01 13:06:49.680139] [info] GetPrepaidBalance request successful for UserId 138 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"58.53"}}}
+[2016-11-01 13:06:53.287545] [info] ============================================================
+[2016-11-01 13:06:53.287652] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 13:06:53.288609] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 13:07:03.324882] [notice] ============================================================
+[2016-11-01 13:07:03.324981] [notice] Received Recharge request:
+    DeviceId: '1'
+    Amount: '3.0'
+    Phone_Number: '65197761'
+    Operator: '1'
+    Payment_Method: '1'
+    longitude: ' '
+    latitude: ' '
+    PlatformId: '2'
+    UserId: '138'
+[2016-11-01 13:07:09.995877] [notice] Recharge request completed for Phone Number 65197761 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":3,"ReferenceNo":"0000005107","Date":"2016-11-01 13:07:09","RewardPoint":30,"AvailableBalance":"55.53"}}}
+[2016-11-01 13:07:23.782982] [info] ============================================================
+[2016-11-01 13:07:23.783086] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 13:07:23.783902] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 13:14:13.063117] [info] ============================================================
+[2016-11-01 13:14:13.063266] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '130'
+[2016-11-01 13:14:13.065248] [info] GetProfile request successful for UserId 130 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Digna Mc Claren","ID":"8-328-859","Email":"dignamcclaren@gmail.com","Address":"chilibre","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"69540710","UserId":"000130","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-11-01 13:14:13.095705] [info] ============================================================
+[2016-11-01 13:14:13.095801] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 13:14:13.096990] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 13:15:02.142612] [info] ============================================================
+[2016-11-01 13:15:02.142719] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '130'
+[2016-11-01 13:15:02.143788] [info] GetPrepaidBalance request successful for UserId 130 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"15.50"}}}
+[2016-11-01 13:15:05.818881] [info] ============================================================
+[2016-11-01 13:15:05.819020] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 13:15:05.819880] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 13:15:24.978727] [notice] ============================================================
+[2016-11-01 13:15:24.978998] [notice] Received Recharge request:
+    DeviceId: '1'
+    Operator: '1'
+    UserId: '130'
+    longitude: ' '
+    Amount: '5.0'
+    Phone_Number: '66768769'
+    latitude: ' '
+    PlatformId: '2'
+    Payment_Method: '1'
+[2016-11-01 13:15:30.403491] [notice] Recharge request completed for Phone Number 66768769 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":5,"ReferenceNo":"0000005108","Date":"2016-11-01 13:15:30","RewardPoint":50,"AvailableBalance":"10.50"}}}
+[2016-11-01 13:15:52.964174] [info] ============================================================
+[2016-11-01 13:15:52.964310] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 13:15:52.965225] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 13:15:52.991493] [info] ============================================================
+[2016-11-01 13:15:52.991564] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '130'
+[2016-11-01 13:15:52.992526] [info] GetPrepaidBalance request successful for UserId 130 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"10.50"}}}
+[2016-11-01 13:17:21.390036] [info] ============================================================
+[2016-11-01 13:17:21.390150] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '1'
+[2016-11-01 13:17:21.391134] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 13:17:21.412385] [info] ============================================================
+[2016-11-01 13:17:21.412586] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '1'
+    UserId: '251'
+[2016-11-01 13:17:21.414381] [info] GetProfile request successful for UserId 251 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"mavis Berenguer","ID":"87721390","Email":"mavis.berenguer@gmail.com","Address":"villa lucre","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"64825184","UserId":"000251","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2016-11-01 13:39:36.649991] [info] ============================================================
+[2016-11-01 13:39:36.650178] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '138'
+[2016-11-01 13:39:36.651815] [info] GetProfile request successful for UserId 138 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Evisia de Sanchez","ID":"9-175-158","Email":"edwinsanchez1881@hotmail.com","Address":"chilibre calzada larga","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000138","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-11-01 13:39:36.664800] [info] ============================================================
+[2016-11-01 13:39:36.664908] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 13:39:36.665566] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 13:39:37.388674] [info] ============================================================
+[2016-11-01 13:39:37.388787] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '138'
+[2016-11-01 13:39:37.389868] [info] GetFavorites request failed for UserId 138 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 13:39:37.429336] [info] ============================================================
+[2016-11-01 13:39:37.429470] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '138'
+[2016-11-01 13:39:37.430516] [info] GetFavorites request failed for UserId 138 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 13:40:17.550712] [info] ============================================================
+[2016-11-01 13:40:17.550908] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '138'
+[2016-11-01 13:40:17.552026] [info] GetPrepaidBalance request successful for UserId 138 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"55.53"}}}
+[2016-11-01 13:40:27.667280] [info] ============================================================
+[2016-11-01 13:40:27.667386] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 13:40:27.668167] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 13:40:35.751138] [notice] ============================================================
+[2016-11-01 13:40:35.751271] [notice] Received Recharge request:
+    DeviceId: '1'
+    Amount: '3.0'
+    Phone_Number: '67867649'
+    Operator: '1'
+    Payment_Method: '1'
+    longitude: ' '
+    latitude: ' '
+    PlatformId: '2'
+    UserId: '138'
+[2016-11-01 13:40:40.906486] [notice] Recharge request completed for Phone Number 67867649 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":3,"ReferenceNo":"0000005109","Date":"2016-11-01 13:40:40","RewardPoint":30,"AvailableBalance":"52.53"}}}
+[2016-11-01 13:41:11.703630] [info] ============================================================
+[2016-11-01 13:41:11.703737] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 13:41:11.704603] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 13:55:52.025197] [info] ============================================================
+[2016-11-01 13:55:52.025300] [info] Received Login request:
+    DeviceId: '1'
+    PlatformId: '2'
+    Password: 'danielito'
+    Email: 'duque@outlook.com'
+[2016-11-01 13:55:52.027235] [info] Login request successful for User duque@outlook.com {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"UserId":"39","Name":"Daniel Duque","DiscountPercentage":"7.00","Country":"Panama","TaxPercentage":"7.00","PrepaidBalance":"54.25","TaxId":"E-8-113952","city":"Ciudad de Panam\u00e1","state":"Panama","RewardPoint":"7860"},"version":"1.5"}}
+[2016-11-01 13:55:52.626199] [info] ============================================================
+[2016-11-01 13:55:52.626296] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 13:55:52.627223] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 13:55:53.579662] [info] ============================================================
+[2016-11-01 13:55:53.579761] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '39'
+[2016-11-01 13:55:53.581454] [info] GetProfile request successful for UserId 39 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Daniel Duque","ID":"E-8-113952","Email":"duque@outlook.com","Address":"San Francisco","Country":"Panama","City":"Ciudad de Panam\u00e1","Province":"Panama","PhoneNo":"69822702","UserId":"000039","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2016-11-01 13:56:17.331866] [info] ============================================================
+[2016-11-01 13:56:17.332003] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '39'
+[2016-11-01 13:56:17.333971] [info] ============================================================
+[2016-11-01 13:56:17.334039] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 13:56:17.334975] [info] GetProfile request successful for UserId 39 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Daniel Duque","ID":"E-8-113952","Email":"duque@outlook.com","Address":"San Francisco","Country":"Panama","City":"Ciudad de Panam\u00e1","Province":"Panama","PhoneNo":"69822702","UserId":"000039","SponsorId":"000001","SponsorName":"Club Prepago"}}}
+[2016-11-01 13:56:17.335988] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 13:56:35.754812] [info] ============================================================
+[2016-11-01 13:56:35.754919] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '39'
+[2016-11-01 13:56:35.756026] [info] GetPrepaidBalance request successful for UserId 39 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"54.25"}}}
+[2016-11-01 13:56:43.390706] [info] ============================================================
+[2016-11-01 13:56:43.390892] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 13:56:43.391788] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 13:56:53.531032] [notice] ============================================================
+[2016-11-01 13:56:53.531136] [notice] Received Recharge request:
+    DeviceId: '1'
+    Operator: '1'
+    UserId: '39'
+    longitude: '-79.5075007'
+    Amount: '5.0'
+    Phone_Number: '69629520'
+    latitude: '8.9874106'
+    PlatformId: '2'
+    Payment_Method: '1'
+[2016-11-01 13:57:00.593034] [notice] Recharge request completed for Phone Number 69629520 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":5,"ReferenceNo":"0000005110","Date":"2016-11-01 13:57:00","RewardPoint":50,"AvailableBalance":"49.25"}}}
+[2016-11-01 13:57:03.501789] [info] ============================================================
+[2016-11-01 13:57:03.501935] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '39'
+[2016-11-01 13:57:03.503217] [info] GetPrepaidBalance request successful for UserId 39 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"49.25"}}}
+[2016-11-01 13:57:04.437330] [info] ============================================================
+[2016-11-01 13:57:04.437434] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 13:57:04.438381] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 13:57:16.645215] [info] ============================================================
+[2016-11-01 13:57:16.645317] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '39'
+[2016-11-01 13:57:16.646596] [info] GetFavorites request successful for UserId 39 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"34","name":"Daniel","phone_number":"69822702","operator":"1"},{"id":"37","name":"Eric","phone_number":"69544171","operator":"1"},{"id":"38","name":"Pedro","phone_number":"69544172","operator":"1"},{"id":"104","name":"Danilo","phone_number":"00000000","operator":"3"}]}}
+[2016-11-01 13:58:05.605195] [info] ============================================================
+[2016-11-01 13:58:05.605295] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '107'
+[2016-11-01 13:58:05.606610] [info] GetProfile request successful for UserId 107 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Jose Capellan","ID":"4-771-38","Email":"joseramoncapellan@hotmail.com","Address":"La do","Country":"Panama","City":"Panama","Province":"Panama","PhoneNo":"61446499","UserId":"000107","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-11-01 13:58:05.610711] [info] ============================================================
+[2016-11-01 13:58:05.610786] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 13:58:05.611848] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 13:58:14.388181] [info] ============================================================
+[2016-11-01 13:58:14.388406] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '107'
+[2016-11-01 13:58:14.389892] [info] GetPrepaidBalance request successful for UserId 107 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"23.04"}}}
+[2016-11-01 13:58:16.033173] [info] ============================================================
+[2016-11-01 13:58:16.033340] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 13:58:16.034070] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 13:58:20.335617] [notice] ============================================================
+[2016-11-01 13:58:20.338121] [notice] Received Recharge request:
+    DeviceId: '1'
+    Operator: '1'
+    UserId: '107'
+    longitude: '-79.369831'
+    Amount: '3.0'
+    Phone_Number: '66853881'
+    latitude: '9.1046843'
+    PlatformId: '2'
+    Payment_Method: '1'
+[2016-11-01 13:58:27.312634] [notice] Recharge request completed for Phone Number 66853881 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":3,"ReferenceNo":"0000005111","Date":"2016-11-01 13:58:27","RewardPoint":30,"AvailableBalance":"20.04"}}}
+[2016-11-01 14:57:33.228410] [info] ============================================================
+[2016-11-01 14:57:33.228634] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '138'
+[2016-11-01 14:57:33.230326] [info] GetProfile request successful for UserId 138 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Evisia de Sanchez","ID":"9-175-158","Email":"edwinsanchez1881@hotmail.com","Address":"chilibre calzada larga","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000138","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-11-01 14:57:33.338191] [info] ============================================================
+[2016-11-01 14:57:33.338325] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 14:57:33.339618] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 14:57:34.288923] [info] ============================================================
+[2016-11-01 14:57:34.289060] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '138'
+[2016-11-01 14:57:34.290105] [info] GetFavorites request failed for UserId 138 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 14:57:34.548222] [info] ============================================================
+[2016-11-01 14:57:34.548352] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '138'
+[2016-11-01 14:57:34.549413] [info] GetFavorites request failed for UserId 138 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 14:58:15.028587] [info] ============================================================
+[2016-11-01 14:58:15.028872] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '138'
+[2016-11-01 14:58:15.030935] [info] GetPrepaidBalance request successful for UserId 138 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"52.53"}}}
+[2016-11-01 14:58:19.670640] [info] ============================================================
+[2016-11-01 14:58:19.670932] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 14:58:19.671854] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 14:58:42.725147] [notice] ============================================================
+[2016-11-01 14:58:42.725282] [notice] Received Recharge request:
+    DeviceId: '1'
+    Amount: '3.0'
+    Phone_Number: '67298353'
+    Operator: '1'
+    Payment_Method: '1'
+    longitude: ' '
+    latitude: ' '
+    PlatformId: '2'
+    UserId: '138'
+[2016-11-01 14:58:48.544850] [notice] Recharge request completed for Phone Number 67298353 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":3,"ReferenceNo":"0000005112","Date":"2016-11-01 14:58:48","RewardPoint":30,"AvailableBalance":"49.53"}}}
+[2016-11-01 15:15:44.492414] [info] ============================================================
+[2016-11-01 15:15:44.495726] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-11-01 15:15:44.495641] [info] ============================================================
+[2016-11-01 15:15:44.496038] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 15:15:44.497056] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 15:15:44.498548] [info] GetProfile request successful for UserId 133 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Jacinto Andujar","ID":"SC0183624","Email":"supersanto3@gmail.com","Address":"pedregal","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000133","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-11-01 15:15:46.547869] [info] ============================================================
+[2016-11-01 15:15:46.547970] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-11-01 15:15:46.548845] [info] GetFavorites request failed for UserId 133 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 15:15:47.079580] [info] ============================================================
+[2016-11-01 15:15:47.079709] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-11-01 15:15:47.080749] [info] GetFavorites request failed for UserId 133 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 15:16:07.612108] [info] ============================================================
+[2016-11-01 15:16:07.612287] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-11-01 15:16:07.613481] [info] GetPrepaidBalance request successful for UserId 133 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"37.06"}}}
+[2016-11-01 15:16:14.316967] [info] ============================================================
+[2016-11-01 15:16:14.317096] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 15:16:14.317958] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 15:16:30.951275] [notice] ============================================================
+[2016-11-01 15:16:30.951415] [notice] Received Recharge request:
+    DeviceId: '1'
+    Operator: '1'
+    UserId: '133'
+    longitude: ' '
+    Amount: '5.0'
+    Phone_Number: '67295410'
+    latitude: ' '
+    PlatformId: '2'
+    Payment_Method: '1'
+[2016-11-01 15:16:37.913528] [notice] Recharge request completed for Phone Number 67295410 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":5,"ReferenceNo":"0000005113","Date":"2016-11-01 15:16:37","RewardPoint":50,"AvailableBalance":"32.06"}}}
+[2016-11-01 15:27:30.683413] [info] ============================================================
+[2016-11-01 15:27:30.683517] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '120'
+[2016-11-01 15:27:30.685245] [info] GetProfile request successful for UserId 120 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Daniel Agusto Gonzalez Lopez","ID":"C01422952","Email":"Daniel@arcangel.com","Address":"san miguelito","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000120","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-11-01 15:27:30.704313] [info] ============================================================
+[2016-11-01 15:27:30.704423] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 15:27:30.705306] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 15:27:32.459141] [info] ============================================================
+[2016-11-01 15:27:32.459245] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '120'
+[2016-11-01 15:27:32.460125] [info] GetFavorites request failed for UserId 120 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 15:27:32.488046] [info] ============================================================
+[2016-11-01 15:27:32.488131] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '120'
+[2016-11-01 15:27:32.488928] [info] GetFavorites request failed for UserId 120 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 15:28:06.300457] [info] ============================================================
+[2016-11-01 15:28:06.300591] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '120'
+[2016-11-01 15:28:06.301712] [info] GetPrepaidBalance request successful for UserId 120 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"14.12"}}}
+[2016-11-01 15:28:27.208537] [info] ============================================================
+[2016-11-01 15:28:27.208664] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 15:28:27.209420] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 15:28:45.178982] [notice] ============================================================
+[2016-11-01 15:28:45.179132] [notice] Received Recharge request:
+    DeviceId: '1'
+    Amount: '5.0'
+    Phone_Number: '69460022'
+    Operator: '1'
+    Payment_Method: '1'
+    longitude: ' '
+    latitude: ' '
+    PlatformId: '2'
+    UserId: '120'
+[2016-11-01 15:28:51.655787] [notice] Recharge request completed for Phone Number 69460022 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":5,"ReferenceNo":"0000005114","Date":"2016-11-01 15:28:51","RewardPoint":50,"AvailableBalance":"9.12"}}}
+[2016-11-01 15:29:24.059890] [info] ============================================================
+[2016-11-01 15:29:24.060031] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 15:29:24.061047] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 16:16:40.754600] [info] ============================================================
+[2016-11-01 16:16:40.754717] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 16:16:40.755839] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 16:16:40.955070] [info] ============================================================
+[2016-11-01 16:16:40.955226] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-11-01 16:16:40.956753] [info] GetProfile request successful for UserId 133 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Jacinto Andujar","ID":"SC0183624","Email":"supersanto3@gmail.com","Address":"pedregal","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000133","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-11-01 16:16:43.803359] [info] ============================================================
+[2016-11-01 16:16:43.803556] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-11-01 16:16:43.804536] [info] GetFavorites request failed for UserId 133 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 16:16:43.836138] [info] ============================================================
+[2016-11-01 16:16:43.836244] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-11-01 16:16:43.837141] [info] GetFavorites request failed for UserId 133 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 16:17:28.118428] [info] ============================================================
+[2016-11-01 16:17:28.118712] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-11-01 16:17:28.119920] [info] GetPrepaidBalance request successful for UserId 133 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"32.06"}}}
+[2016-11-01 16:17:49.353028] [info] ============================================================
+[2016-11-01 16:17:49.353188] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 16:17:49.354202] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 16:17:50.761169] [info] ============================================================
+[2016-11-01 16:17:50.761305] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-11-01 16:17:50.762290] [info] GetFavorites request failed for UserId 133 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 16:17:50.795938] [info] ============================================================
+[2016-11-01 16:17:50.796075] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-11-01 16:17:50.797215] [info] GetFavorites request failed for UserId 133 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 16:18:00.717426] [info] ============================================================
+[2016-11-01 16:18:00.717567] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-11-01 16:18:00.718844] [info] GetProfile request successful for UserId 133 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Jacinto Andujar","ID":"SC0183624","Email":"supersanto3@gmail.com","Address":"pedregal","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000133","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-11-01 16:18:34.403656] [info] ============================================================
+[2016-11-01 16:18:34.403785] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-11-01 16:18:34.404922] [info] GetFavorites request failed for UserId 133 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 16:19:02.998734] [info] ============================================================
+[2016-11-01 16:19:02.998845] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-11-01 16:19:02.999810] [info] GetPrepaidBalance request successful for UserId 133 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"32.06"}}}
+[2016-11-01 16:19:14.403614] [info] ============================================================
+[2016-11-01 16:19:14.403743] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 16:19:14.404799] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 16:19:31.261122] [notice] ============================================================
+[2016-11-01 16:19:31.261224] [notice] Received Recharge request:
+    DeviceId: '1'
+    Operator: '1'
+    UserId: '133'
+    longitude: ' '
+    Amount: '3.0'
+    Phone_Number: '69037294'
+    latitude: ' '
+    PlatformId: '2'
+    Payment_Method: '1'
+[2016-11-01 16:19:37.412755] [notice] Recharge request completed for Phone Number 69037294 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":3,"ReferenceNo":"0000005115","Date":"2016-11-01 16:19:37","RewardPoint":30,"AvailableBalance":"29.06"}}}
+[2016-11-01 16:50:15.848117] [info] ============================================================
+[2016-11-01 16:50:15.848294] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 16:50:15.849455] [info] ============================================================
+[2016-11-01 16:50:15.849531] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '147'
+[2016-11-01 16:50:15.850608] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 16:50:15.851974] [info] GetProfile request successful for UserId 147 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Mirna Alvarado","ID":"4-206-965","Email":"mdalvaradog@hotmail.com","Address":"pedregal el parador","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"","UserId":"000147","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-11-01 16:50:16.535311] [info] ============================================================
+[2016-11-01 16:50:16.535535] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '147'
+[2016-11-01 16:50:16.536545] [info] GetFavorites request failed for UserId 147 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 16:50:16.544641] [info] ============================================================
+[2016-11-01 16:50:16.544720] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '147'
+[2016-11-01 16:50:16.545433] [info] GetFavorites request failed for UserId 147 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 16:56:23.780833] [info] ============================================================
+[2016-11-01 16:56:23.780997] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '147'
+[2016-11-01 16:56:23.783713] [info] GetFavorites request failed for UserId 147 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 17:11:49.729259] [info] ============================================================
+[2016-11-01 17:11:49.729401] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '120'
+[2016-11-01 17:11:49.730977] [info] GetProfile request successful for UserId 120 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Daniel Agusto Gonzalez Lopez","ID":"C01422952","Email":"Daniel@arcangel.com","Address":"san miguelito","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000120","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-11-01 17:11:49.762417] [info] ============================================================
+[2016-11-01 17:11:49.762546] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 17:11:49.764813] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 17:11:51.073451] [info] ============================================================
+[2016-11-01 17:11:51.073592] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '120'
+[2016-11-01 17:11:51.074592] [info] GetFavorites request failed for UserId 120 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 17:11:51.089975] [info] ============================================================
+[2016-11-01 17:11:51.090116] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '120'
+[2016-11-01 17:11:51.091161] [info] GetFavorites request failed for UserId 120 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 17:12:08.624166] [info] ============================================================
+[2016-11-01 17:12:08.624289] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '120'
+[2016-11-01 17:12:08.625432] [info] GetPrepaidBalance request successful for UserId 120 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"9.12"}}}
+[2016-11-01 17:12:14.956026] [info] ============================================================
+[2016-11-01 17:12:14.956227] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 17:12:14.957262] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 17:12:28.411919] [notice] ============================================================
+[2016-11-01 17:12:28.412019] [notice] Received Recharge request:
+    DeviceId: '1'
+    Amount: '3.0'
+    Phone_Number: '62913154'
+    Operator: '3'
+    Payment_Method: '1'
+    longitude: ' '
+    latitude: ' '
+    PlatformId: '2'
+    UserId: '120'
+[2016-11-01 17:12:29.672152] [notice] Recharge request completed for Phone Number 62913154 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":3,"ReferenceNo":"0000005116","Date":"2016-11-01 17:12:29","RewardPoint":30,"AvailableBalance":"6.12"}}}
+[2016-11-01 17:12:31.760534] [info] ============================================================
+[2016-11-01 17:12:31.760658] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 17:12:31.761559] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 17:12:31.994054] [info] ============================================================
+[2016-11-01 17:12:31.994210] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '120'
+[2016-11-01 17:12:31.996912] [info] GetPrepaidBalance request successful for UserId 120 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"6.12"}}}
+[2016-11-01 17:13:03.626435] [info] ============================================================
+[2016-11-01 17:13:03.626586] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 17:13:03.627691] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 17:13:03.806410] [info] ============================================================
+[2016-11-01 17:13:03.806504] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '138'
+[2016-11-01 17:13:03.807928] [info] GetProfile request successful for UserId 138 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Evisia de Sanchez","ID":"9-175-158","Email":"edwinsanchez1881@hotmail.com","Address":"chilibre calzada larga","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000138","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-11-01 17:13:05.288197] [info] ============================================================
+[2016-11-01 17:13:05.288297] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '138'
+[2016-11-01 17:13:05.289416] [info] GetFavorites request failed for UserId 138 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 17:13:05.967900] [info] ============================================================
+[2016-11-01 17:13:05.967998] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '138'
+[2016-11-01 17:13:05.968888] [info] GetFavorites request failed for UserId 138 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 17:13:59.599061] [info] ============================================================
+[2016-11-01 17:13:59.599165] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '138'
+[2016-11-01 17:13:59.600210] [info] GetPrepaidBalance request successful for UserId 138 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"49.53"}}}
+[2016-11-01 17:14:03.989051] [info] ============================================================
+[2016-11-01 17:14:03.989150] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 17:14:03.989919] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 17:14:10.772063] [notice] ============================================================
+[2016-11-01 17:14:10.772166] [notice] Received Recharge request:
+    DeviceId: '1'
+    Amount: '3.0'
+    Phone_Number: '67094457'
+    Operator: '1'
+    Payment_Method: '1'
+    longitude: ' '
+    latitude: ' '
+    PlatformId: '2'
+    UserId: '138'
+[2016-11-01 17:14:17.340290] [notice] Recharge request completed for Phone Number 67094457 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":3,"ReferenceNo":"0000005117","Date":"2016-11-01 17:14:17","RewardPoint":30,"AvailableBalance":"46.53"}}}
+[2016-11-01 17:26:52.975083] [info] ============================================================
+[2016-11-01 17:26:52.975191] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '107'
+[2016-11-01 17:26:52.976294] [info] GetPrepaidBalance request successful for UserId 107 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"20.04"}}}
+[2016-11-01 17:26:53.187983] [info] ============================================================
+[2016-11-01 17:26:53.188119] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 17:26:53.188940] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 17:27:06.930589] [info] ============================================================
+[2016-11-01 17:27:06.930691] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '107'
+[2016-11-01 17:27:06.931868] [info] GetPrepaidBalance request successful for UserId 107 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"20.04"}}}
+[2016-11-01 17:27:09.208353] [info] ============================================================
+[2016-11-01 17:27:09.208540] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 17:27:09.209615] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 17:27:17.040828] [notice] ============================================================
+[2016-11-01 17:27:17.040944] [notice] Received Recharge request:
+    DeviceId: '1'
+    Operator: '1'
+    UserId: '107'
+    longitude: '-79.369831'
+    Amount: '5.0'
+    Phone_Number: '67777167'
+    latitude: '9.1046843'
+    PlatformId: '2'
+    Payment_Method: '1'
+[2016-11-01 17:27:22.871390] [notice] Recharge request completed for Phone Number 67777167 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":5,"ReferenceNo":"0000005118","Date":"2016-11-01 17:27:22","RewardPoint":50,"AvailableBalance":"15.04"}}}
+[2016-11-01 17:32:03.512410] [info] ============================================================
+[2016-11-01 17:32:03.513345] [info] ============================================================
+[2016-11-01 17:32:03.513445] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 17:32:03.514683] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 17:32:03.515228] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '147'
+[2016-11-01 17:32:03.516487] [info] GetProfile request successful for UserId 147 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Mirna Alvarado","ID":"4-206-965","Email":"mdalvaradog@hotmail.com","Address":"pedregal el parador","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"","UserId":"000147","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-11-01 17:32:04.036458] [info] ============================================================
+[2016-11-01 17:32:04.036581] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '147'
+[2016-11-01 17:32:04.037602] [info] GetFavorites request failed for UserId 147 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 17:32:04.054064] [info] ============================================================
+[2016-11-01 17:32:04.054174] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '147'
+[2016-11-01 17:32:04.055011] [info] GetFavorites request failed for UserId 147 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 17:32:43.799731] [info] ============================================================
+[2016-11-01 17:32:43.799834] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '147'
+[2016-11-01 17:32:43.801203] [info] GetPrepaidBalance request successful for UserId 147 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"9.30"}}}
+[2016-11-01 17:32:48.435153] [info] ============================================================
+[2016-11-01 17:32:48.435256] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 17:32:48.435956] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 17:32:58.352670] [notice] ============================================================
+[2016-11-01 17:32:58.352776] [notice] Received Recharge request:
+    DeviceId: '1'
+    Operator: '1'
+    UserId: '147'
+    longitude: ' '
+    Amount: '3.0'
+    Phone_Number: '67355835'
+    latitude: ' '
+    PlatformId: '2'
+    Payment_Method: '1'
+[2016-11-01 17:33:04.547651] [notice] Recharge request completed for Phone Number 67355835 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":3,"ReferenceNo":"0000005119","Date":"2016-11-01 17:33:04","RewardPoint":30,"AvailableBalance":"6.30"}}}
+[2016-11-01 17:45:28.516684] [info] ============================================================
+[2016-11-01 17:45:28.516798] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 17:45:28.517885] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 17:45:28.523024] [info] ============================================================
+[2016-11-01 17:45:28.523091] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-11-01 17:45:28.524374] [info] GetProfile request successful for UserId 133 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Jacinto Andujar","ID":"SC0183624","Email":"supersanto3@gmail.com","Address":"pedregal","Country":"Panama","City":"panama","Province":"panama","PhoneNo":"00000000","UserId":"000133","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-11-01 17:45:29.174135] [info] ============================================================
+[2016-11-01 17:45:29.174235] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-11-01 17:45:29.175102] [info] GetFavorites request failed for UserId 133 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 17:45:29.236119] [info] ============================================================
+[2016-11-01 17:45:29.236198] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-11-01 17:45:29.237005] [info] GetFavorites request failed for UserId 133 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 17:45:51.195297] [info] ============================================================
+[2016-11-01 17:45:51.195504] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '133'
+[2016-11-01 17:45:51.196928] [info] GetPrepaidBalance request successful for UserId 133 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"29.06"}}}
+[2016-11-01 17:45:55.784090] [info] ============================================================
+[2016-11-01 17:45:55.784204] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 17:45:55.784985] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 17:46:08.715945] [notice] ============================================================
+[2016-11-01 17:46:08.716048] [notice] Received Recharge request:
+    DeviceId: '1'
+    Operator: '3'
+    UserId: '133'
+    longitude: ' '
+    Amount: '3.0'
+    Phone_Number: '62324439'
+    latitude: ' '
+    PlatformId: '2'
+    Payment_Method: '1'
+[2016-11-01 17:46:09.885585] [notice] Recharge request completed for Phone Number 62324439 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":3,"ReferenceNo":"0000005120","Date":"2016-11-01 17:46:09","RewardPoint":30,"AvailableBalance":"26.06"}}}
+[2016-11-01 18:20:29.627216] [info] ============================================================
+[2016-11-01 18:20:29.627392] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '107'
+[2016-11-01 18:20:29.627847] [info] ============================================================
+[2016-11-01 18:20:29.627963] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 18:20:29.629462] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 18:20:29.631758] [info] GetProfile request successful for UserId 107 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Jose Capellan","ID":"4-771-38","Email":"joseramoncapellan@hotmail.com","Address":"La do","Country":"Panama","City":"Panama","Province":"Panama","PhoneNo":"61446499","UserId":"000107","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-11-01 18:20:33.868392] [info] ============================================================
+[2016-11-01 18:20:33.868527] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '107'
+[2016-11-01 18:20:33.869736] [info] GetPrepaidBalance request successful for UserId 107 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"15.04"}}}
+[2016-11-01 18:20:35.810410] [info] ============================================================
+[2016-11-01 18:20:35.810535] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 18:20:35.811379] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 18:20:46.228832] [notice] ============================================================
+[2016-11-01 18:20:46.228986] [notice] Received Recharge request:
+    DeviceId: '1'
+    Operator: '1'
+    UserId: '107'
+    longitude: '-79.4509627'
+    Amount: '3.0'
+    Phone_Number: '67942579'
+    latitude: '9.0488323'
+    PlatformId: '2'
+    Payment_Method: '1'
+[2016-11-01 18:20:52.839076] [notice] Recharge request completed for Phone Number 67942579 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":3,"ReferenceNo":"0000005121","Date":"2016-11-01 18:20:52","RewardPoint":30,"AvailableBalance":"12.04"}}}
+[2016-11-01 18:20:58.380104] [info] ============================================================
+[2016-11-01 18:20:58.380261] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 18:20:58.381500] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 18:40:23.786370] [info] ============================================================
+[2016-11-01 18:40:23.786509] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 18:40:23.790035] [info] ============================================================
+[2016-11-01 18:40:23.790103] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '100'
+[2016-11-01 18:40:23.791661] [info] GetProfile request successful for UserId 100 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Oscar B Estrada W","ID":"8481745","Email":"oscar.taton@barberi.com","Address":"La cabima ","Country":"Panama","City":"Ciudad de Panama","Province":"Panama","PhoneNo":"00000000","UserId":"000100","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-11-01 18:40:23.792984] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 18:40:24.581027] [info] ============================================================
+[2016-11-01 18:40:24.581160] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '100'
+[2016-11-01 18:40:24.582155] [info] GetFavorites request failed for UserId 100 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 18:40:24.603796] [info] ============================================================
+[2016-11-01 18:40:24.603908] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '100'
+[2016-11-01 18:40:24.604993] [info] GetFavorites request failed for UserId 100 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 18:40:41.209451] [info] ============================================================
+[2016-11-01 18:40:41.209572] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '100'
+[2016-11-01 18:40:41.210621] [info] GetPrepaidBalance request successful for UserId 100 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"14.64"}}}
+[2016-11-01 18:40:43.778146] [info] ============================================================
+[2016-11-01 18:40:43.778244] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 18:40:43.778997] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 18:40:55.145318] [notice] ============================================================
+[2016-11-01 18:40:55.145457] [notice] Received Recharge request:
+    DeviceId: '1'
+    Operator: '1'
+    UserId: '100'
+    longitude: '-79.53595899'
+    Amount: '5.0'
+    Phone_Number: '66583565'
+    latitude: '9.1117781'
+    PlatformId: '2'
+    Payment_Method: '1'
+[2016-11-01 18:41:01.229157] [notice] Recharge request completed for Phone Number 66583565 {"Response":{"Status":1,"Code":"563","Message":"Recharge has been successful","Data":{"tax":0,"totalAmount":5,"ReferenceNo":"0000005122","Date":"2016-11-01 18:41:01","RewardPoint":50,"AvailableBalance":"9.64"}}}
+[2016-11-01 18:41:07.371419] [info] ============================================================
+[2016-11-01 18:41:07.371558] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 18:41:07.372502] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 18:41:10.291114] [info] ============================================================
+[2016-11-01 18:41:10.298482] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '100'
+[2016-11-01 18:41:10.299635] [info] GetPrepaidBalance request successful for UserId 100 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"9.64"}}}
+[2016-11-01 18:50:38.782615] [info] ============================================================
+[2016-11-01 18:50:38.782756] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 18:50:38.783629] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 18:50:49.181588] [info] ============================================================
+[2016-11-01 18:50:49.181691] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '147'
+[2016-11-01 18:50:49.182845] [info] GetPrepaidBalance request successful for UserId 147 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"6.30"}}}
+[2016-11-01 18:50:50.748456] [info] ============================================================
+[2016-11-01 18:50:50.748615] [info] Received GetFavorites request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '147'
+[2016-11-01 18:50:50.749540] [info] GetFavorites request failed for UserId 147 {"Response":{"Status":"0","Code":"547","Message":"Your Favorites list is empty"}}
+[2016-11-01 20:25:46.090622] [info] ============================================================
+[2016-11-01 20:25:46.090765] [info] Received GetOperators request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 20:25:46.091918] [info] GetOperators request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":[{"id":"1","name":"CWP"},{"id":"2","name":"Digicel"},{"id":"3","name":"Claro"}]}}
+[2016-11-01 20:25:46.102585] [info] ============================================================
+[2016-11-01 20:25:46.102684] [info] Received GetProfile request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '107'
+[2016-11-01 20:25:46.104027] [info] GetProfile request successful for UserId 107 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"Name":"Jose Capellan","ID":"4-771-38","Email":"joseramoncapellan@hotmail.com","Address":"La do","Country":"Panama","City":"Panama","Province":"Panama","PhoneNo":"61446499","UserId":"000107","SponsorId":"000007","SponsorName":"Eric Olivares"}}}
+[2016-11-01 20:26:21.785332] [info] ============================================================
+[2016-11-01 20:26:21.785507] [info] Received GetPrepaidBalance request:
+    DeviceId: '1'
+    PlatformId: '2'
+    UserId: '107'
+[2016-11-01 20:26:21.786995] [info] GetPrepaidBalance request successful for UserId 107 {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"PrepaidBalance":"12.04"}}}
+[2016-11-01 20:26:30.874433] [info] ============================================================
+[2016-11-01 20:26:30.874598] [info] Received GetSettings request:
+    DeviceId: '1'
+    PlatformId: '2'
+[2016-11-01 20:26:30.875546] [info] GetSettings request successful {"Response":{"Status":"1","Code":"533","Message":"Success","Data":{"credit_card_fee_percent":"3.50","credit_card_fee_fixed":"0.00"}}}
+[2016-11-01 20:26:57.763220] [notice] ============================================================
+[2016-11-01 20:26:57.763361] [notice] Received Recharge request:
+    DeviceId: '1'
+    Operator: '2'
+    UserId: '107'
+    longitude: ' '
+    Amount: '5.0'
+    Phone_Number: '61446499'
+    latitude: ' '
+    PlatformId: '2'
+    Payment_Method: '1'
+[2016-11-01 20:26:57.993031] [notice] Recharge request completed for Phone Number 61446499 {"Response":{"Status":0,"Code":"571","Message":"Insufficient funds","Data":{"tax":0,"totalAmount":5,"ReferenceNo":"0000005123","Date":"2016-11-01 20:26:57","RewardPoint":50}}}
