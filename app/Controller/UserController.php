@@ -418,6 +418,15 @@ class UserController extends AppController {
 			)
 		);
 
+		// Get staff member information
+		$Admindata = $this->Admin->find(
+			'first',
+			array(
+				'conditions' => array('id' => $this->Session->read('admin_id'))
+			)
+		);
+		$this->set('Admindata', $Admindata);
+
 		// Load standard layout
 		$this->layout = 'admin_layout';
 
@@ -508,10 +517,15 @@ class UserController extends AppController {
 			$data = $this->User->query($qry);
 
 			// Gather data for account_history table update
-			$history['AccountHistory']['detail'] = $this->request->data['User']['detail'];
-			$history['AccountHistory']['amount'] = $action . $amount;
-			$history['AccountHistory']['user_id'] = base64_decode($id);
-			$history['AccountHistory']['account_type'] = $this->request->data['User']['name'];
+			$history = array(
+				'AccountHistory' => array(
+					'detail'       => $this->request->data['User']['detail'],
+					'amount'       => $action . $amount,
+					'user_id'      => base64_decode($id),
+					'account_type' => $this->request->data['User']['name'],
+					'staff_id'     => $Admindata['Admin']['id']
+				)
+			);
 
 			// If everything went well, generate success message
 			if ($this->AccountHistory->save($history)) {
@@ -1253,13 +1267,39 @@ class UserController extends AppController {
 				'first',
 				array(
 					'conditions' => array(
-						'id' => $id
+						'id'     => $id
 					)
 				)
 			);
 
 			// And return the name
 			return $user;
+
+		// Otherwise return blank
+		} else {
+			return '';
+		}
+	}
+
+	/**
+	 * Get a staff member's name from it's id
+	*/
+	public function admin_getStaffName($id) {
+		$this->autoRender = false;
+
+		// If a Staff ID is specified, find it in the table
+		if (!empty($id)) {
+			$staff = $this->Admin->find(
+				'first',
+				array(
+					'conditions' => array(
+						'id'     => $id
+					)
+				)
+			);
+
+			// And return the name
+			return $staff;
 
 		// Otherwise return blank
 		} else {

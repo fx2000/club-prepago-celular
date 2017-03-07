@@ -464,6 +464,15 @@ class ResellerController extends AppController {
 			)
 		);
 
+		// Get staff member information
+		$Admindata = $this->Admin->find(
+			'first',
+			array(
+				'conditions' => array('id' => $this->Session->read('admin_id'))
+			)
+		);
+		$this->set('Admindata', $Admindata);
+
 		// Load standard layout
 		$this->layout = 'admin_layout';
 
@@ -554,13 +563,18 @@ class ResellerController extends AppController {
 			$data = $this->Reseller->query($qry);
 
 			// Gather data for account_history table update
-			$History['AccountHistory']['detail'] = $this->request->data['Reseller']['detail'];
-			$History['AccountHistory']['amount'] = $action . $amount;
-			$History['AccountHistory']['user_id'] = base64_decode($id);
-			$History['AccountHistory']['account_type'] = $this->request->data['Reseller']['name'];
+			$history = array(
+				'AccountHistory' => array(
+					'detail'       => $this->request->data['Reseller']['detail'],
+					'amount'       => $action . $amount,
+					'user_id'      => base64_decode($id),
+					'account_type' => $this->request->data['Reseller']['name'],
+					'staff_id'     => $Admindata['Admin']['id']
+				)
+			);
 
 			// If everything went well, generate success message
-			if ($this->AccountHistory->save($History)) {
+			if ($this->AccountHistory->save($history)) {
 				$this->Session->write('success', "1");
 				$this->Session->write('alert', __('Account update successful'));
 
@@ -1138,6 +1152,32 @@ class ResellerController extends AppController {
 			)
 		);
 		return $reseller;
+	}
+
+	/**
+	 * Get a staff member's name from it's id
+	*/
+	public function admin_getStaffName($id) {
+		$this->autoRender = false;
+
+		// If a Staff ID is specified, find it in the table
+		if (!empty($id)) {
+			$staff = $this->Admin->find(
+				'first',
+				array(
+					'conditions' => array(
+						'id'     => $id
+					)
+				)
+			);
+
+			// And return the name
+			return $staff;
+
+		// Otherwise return blank
+		} else {
+			return '';
+		}
 	}
 
 	/**
