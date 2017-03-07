@@ -196,7 +196,7 @@
 									);
 								}
 
-								if ($Admindata['Admin']['type'] == 3) {
+								if ($Admindata['Admin']['type'] == 2 || $Admindata['Admin']['type'] == 3) {
 									echo $this->html->link(
 										__('<i class="icon-user icon-black"></i></i><span class="hidden-phone"> Account</span>'),
 										array(
