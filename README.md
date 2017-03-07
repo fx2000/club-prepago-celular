@@ -26,13 +26,15 @@ Configurar acceso a MySQL en /app/Config/database.php
 
 Cambiar la configuración de Apache:
 
+```
 <Directory /var/www/>
      Options FollowSymLinks
      AllowOverride All
      Require all granted
 </Directory>
+```
 
-Activar a2enmod rewrite
+Activar `a2enmod rewrite`
 
 
 =======
