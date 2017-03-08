@@ -1,52 +1,44 @@
-<<<<<<< HEAD
-# CakePHP
+# Club Prepago Celular
 
-[![Latest Stable Version](https://poser.pugx.org/cakephp/cakephp/v/stable.svg)](https://packagist.org/packages/cakephp/cakephp)
-[![License](https://poser.pugx.org/cakephp/cakephp/license.svg)](https://packagist.org/packages/cakephp/cakephp)
-[![Bake Status](https://secure.travis-ci.org/cakephp/cakephp.png?branch=master)](http://travis-ci.org/cakephp/cakephp)
-[![Code consistency](http://squizlabs.github.io/PHP_CodeSniffer/analysis/cakephp/cakephp/grade.svg)](http://squizlabs.github.io/PHP_CodeSniffer/analysis/cakephp/cakephp/)
+Plataforma transaccional para comercialización de productos y servicios intangibles.
 
-CakePHP is a rapid development framework for PHP which uses commonly known design patterns like Active Record, Association Data Mapping, Front Controller and MVC.
-Our primary goal is to provide a structured framework that enables PHP users at all levels to rapidly develop robust web applications, without any loss to flexibility.
+[Club Prepago Celular](http://www.clubprepago.com)
 
 
-## Some Handy Links
+## Requerimientos
 
-[CakePHP](http://www.cakephp.org) - The rapid development PHP framework
+Linux
 
-[CookBook](http://book.cakephp.org) - THE CakePHP user documentation; start learning here!
+Apache 2.4
 
-[API](http://api.cakephp.org) - A reference to CakePHP's classes
+MySQL 5.5
 
-[Plugins](http://plugins.cakephp.org/) - A repository of extensions to the framework
+PHP 5.6
 
-[The Bakery](http://bakery.cakephp.org) - Tips, tutorials and articles
+## Instalación
 
-[Community Center](http://community.cakephp.org) - A source for everything community related
+Clonar repositorio en directorio raiz de apache
 
-[Training](http://training.cakephp.org) - Join a live session and get skilled with the framework
+Cambiar la propiedad del directorio /app/log a www-data
 
-[CakeFest](http://cakefest.org) - Don't miss our annual CakePHP conference
+Cambiar la propiedad del directorio /app/tmp a www-data
 
-[Cake Software Foundation](http://cakefoundation.org) - Promoting development related to CakePHP
+Instalar [KLogger](https://github.com/katzgrau/KLogger) utilizando Composer en /app/webroot/API
 
+Configurar acceso a MySQL en /app/Config/database.php
 
-## Get Support!
+Cambiar la configuración de Apache:
 
-[#cakephp](http://webchat.freenode.net/?channels=#cakephp) on irc.freenode.net - Come chat with us, we have cake
+```
+<Directory /var/www/>
+     Options FollowSymLinks
+     AllowOverride All
+     Require all granted
+</Directory>
+```
 
-[Google Group](https://groups.google.com/group/cake-php) - Community mailing list and forum
+Activar `a2enmod rewrite`
 
-[GitHub Issues](https://github.com/cakephp/cakephp/issues) - Got issues? Please tell us!
-
-[Roadmaps](https://github.com/cakephp/cakephp/wiki#roadmaps) - Want to contribute? Get involved!
-
-
-## Contributing
-
-[CONTRIBUTING.md](CONTRIBUTING.md) - Quick pointers for contributing to the CakePHP project
-
-[CookBook "Contributing" Section (2.x)](http://book.cakephp.org/2.0/en/contributing.html) [(3.0)](http://book.cakephp.org/3.0/en/contributing.html) - Version-specific details about contributing to the project
 =======
 # ServerClubPrepago
 Club Prepago Application Server
