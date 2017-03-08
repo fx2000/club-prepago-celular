@@ -164,7 +164,7 @@
 				<h2><i class="icon-th"></i><?php echo __('  Account History'); ?></h2>
 			</div>
 			<div class="box-content"  style="font-size:15px;">
-				<table class="table table-striped table-bordered bootstrap-datatable Useraccdatatable">
+				<table class="table table-striped table-bordered bootstrap-datatable Restrxdatatable">
 					<thead>
 						<tr>
 							<th class="hidden-phone"><?php echo __('Payment ID'); ?></th>
@@ -172,6 +172,7 @@
 							<th><?php echo __('Amount'); ?></th>
 							<th class="hidden-phone"><?php echo __('Notes'); ?></th>
 							<th><?php echo __('Date & Time'); ?></th>
+							<th><?php echo __('Authorized By'); ?></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -228,7 +229,23 @@
 										date('Y-m-d H:i:s', strtotime($val['AccountHistory']['datetime'])) :
 										'N/A';
 								?>
-							</td>	
+							</td>
+							<td class="hidden-phone">
+								<?php 
+									if ($val['AccountHistory']['staff_id'] != 0) {
+										$staff = $this->requestAction(
+											array(
+												'controller' => 'User',
+												'action'     => 'getStaffName',
+												$val['AccountHistory']['staff_id']
+											)
+										);
+										echo $staff['Admin']['name'];
+									} else {
+										echo '-';
+									}
+								?>
+							</td>
 						</tr>
 						<?php
 							}

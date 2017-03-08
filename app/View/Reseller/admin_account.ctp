@@ -7,7 +7,7 @@
  *
  * @copyright     Copyright (c) Móviles de Panamá, S.A. (http://www.movilesdepanama.com)
  * @link          http://www.clubprepago.com Club Prepago Celular(tm) Project
- * @package       app.View.User
+ * @package       app.View.Reseller
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
 ?>
@@ -159,6 +159,7 @@
 							<th><?php echo __('Amount'); ?></th>
 							<th class="hidden-phone"><?php echo __('Notes'); ?></th>
 							<th><?php echo __('Date & Time'); ?></th>
+							<th><?php echo __('Authorized By'); ?></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -215,7 +216,23 @@
 										date('Y-m-d H:i:s', strtotime($val['AccountHistory']['datetime'])) :
 										'N/A';
 								?>
-							</td>	
+							</td>
+							<td class="hidden-phone">
+								<?php 
+									if ($val['AccountHistory']['staff_id'] != 0) {
+										$staff = $this->requestAction(
+											array(
+												'controller' => 'Reseller',
+												'action'     => 'getStaffName',
+												$val['AccountHistory']['staff_id']
+											)
+										);
+										echo $staff['Admin']['name'];
+									} else {
+										echo '-';
+									}
+								?>
+							</td>
 						</tr>
 						<?php
 							}
