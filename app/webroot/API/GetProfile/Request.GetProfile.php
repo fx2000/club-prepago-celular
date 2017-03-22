@@ -90,7 +90,7 @@ class RequestGetProfileAPI extends Dbconn {
 	/**
 	 * Check Device ID
 	 */
-	function checkDevice($deviceId, $platformId, $userId) {
+	function checkDevice($deviceId, $userId) {
 		$query = 
 			"SELECT id
 				FROM devices
