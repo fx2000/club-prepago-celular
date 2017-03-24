@@ -23,4 +23,5 @@
 /app/Config/core.php
 /app/Config/database.php
 /app/webroot/API/config.php
+/app/webroot/API/vendor/*
 /vendors/*
