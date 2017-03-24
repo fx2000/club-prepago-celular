@@ -13,7 +13,6 @@
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
 include "../Dbconn.php";
-require "../../PHPMailer-master/class.phpmailer.php";
 
 class RequestSendPaymentDepositAPI extends Dbconn {
 
