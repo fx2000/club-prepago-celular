@@ -13,8 +13,9 @@
 // Server URL
 define('DOMAINURL','https://app.clubprepago.com/');
 
-// Log directory
+// Directories
 define('LOG_DIR', '/var/www/app/log');
+define('TEMPLATE_DIR', '/var/www/app/View/Emails/html');
 
 // Set email parameters
 define('EMAIL_SERVER', 'ssl://pan.movilesdepanama.com');
