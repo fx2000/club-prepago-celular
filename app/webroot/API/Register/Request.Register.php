@@ -10,7 +10,6 @@
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
 include "../Dbconn.php";
-require "../../PHPMailer-master/class.phpmailer.php";
 
 class RequestRegisterAPI extends Dbconn {
 
@@ -105,10 +104,15 @@ class RequestRegisterAPI extends Dbconn {
 
 			// Generate activation URL
 			$enc_uid = sha1($userId);
-			$activation_url = DOMAINURL . "home/activate/" . $enc_uid;
+			$activation_url = DOMAINURL . 'home/activate/' . $enc_uid;
 
 			// Generate account activation email
 			$mail = new PHPMailer(true);
+
+			// Select email template and pass variables
+			$messageBody = file_get_contents(TEMPLATE_DIR . '/activacion.html');
+			$messageBody = str_replace('%username%', $data['Name'], $messageBody);
+			$messageBody = str_replace('%url%', $activation_url, $messageBody);
 
 			// Set PHP Mailer parameters
 			$mail->isSMTP();
@@ -125,24 +129,7 @@ class RequestRegisterAPI extends Dbconn {
 			$mail->isHTML(true);
 			$mail->CharSet = "UTF-8";
 			$mail->Subject = 'Bienvenido a Club Prepago Celular';
-			$mail->Body =
-				'<html>
-				<body>
-					<div style="font-family:Tahoma;">
-						Felicidades ' . $data['Name'] . ',<br/><br/>
-						Tu cuenta de Club Prepago Celular ha sido creada exitosamente. <a href=' .
-						$activation_url . '>Haz Click Aquí</a> para confirmar tu dirección de email y activar tu cuenta.<br/><br/>
-						Recuerda que para comenzar a recargar debes agregar saldo a tu cuenta, puedes hacer esto desde el menú Cuenta/Recargar Balance. 
-						Club Prepago Celular recibe pagos a través de tarjetas de crédito, transferencias bancarias o depósitos directos a la cuenta 
-						de ahorros de <b>Banco General</b> número <b>04-30-02-012333-3</b> a nombre de <b>Móviles de Panamá, S.A.</b>, puedes encontrar más información en el 
-						menú de ayuda de la aplicación o en nuestras redes sociales.<br/><br/>
-						Si tienes algún problema, por favor escríbenos a <a href=\"mailto:soporte@clubprepago.com\">soporte@clubprepago.com</a>
-						o llámanos al <b>+507 388-6220</b><br/><br/>
-						Gracias,<br/><br/>
-						<b>Club Prepago Celular</b>
-					</div>
-				</body>
-				<html>';
+			$mail->Body = $messageBody;
 
 			// Prepare registration results
 			$resultArr['UserId'] = $userId;
