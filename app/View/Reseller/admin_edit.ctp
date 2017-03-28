@@ -425,6 +425,20 @@
 					</div>
 				</div>
 				<div class="control-group">
+                    <label class="control-label"><?php echo ('Cambiar a '); echo __('User'); ?></label>
+                        <div class="controls">
+                        <?php
+                            echo $this->Form->checkbox(
+                                'Reseller.user_type',
+                                array(
+                                    'value'           => 1,
+                                    'hiddenField'     => 2
+                                )
+                            );
+                   			?>
+               			</div>
+            	</div>
+				<div class="control-group">
 					<label class="control-label"><?php echo __('Image'); ?></label>
 					<div class="controls">
 						<?php
