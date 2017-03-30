@@ -147,6 +147,14 @@ $userName = $this->requestAction(
 					</div>
 				</div>
 				<div class="control-group">
+					<label class="control-label" for="textarea2"><?php echo __('Promo Number'); ?></label>
+					<div class="controls">
+						<?php
+							echo @$details['Payment']['promo_number'];
+						?>
+					</div>
+				</div>
+				<div class="control-group">
 					<label class="control-label" for="textarea2"><?php echo __('Payment Method'); ?></label>
 					<div class="controls">
 						<?php
