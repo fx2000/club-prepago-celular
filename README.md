@@ -19,11 +19,9 @@ PHP 5.6
 
 Clonar repositorio en directorio raiz de apache
 
-Cambiar la propiedad del directorio /app/log a www-data
+Cambiar la propiedad de los directorios /app/tmp, /app/log y /app/invoices a www-data (recursivo)
 
-Cambiar la propiedad del directorio /app/tmp a www-data
-
-Instalar [KLogger](https://github.com/katzgrau/KLogger) utilizando Composer en /app/webroot/API
+Correr "composer update" en directorio /app/webroot/API
 
 Configurar acceso a MySQL en /app/Config/database.php
 
@@ -42,4 +40,4 @@ Activar `a2enmod rewrite`
 =======
 # ServerClubPrepago
 Club Prepago Application Server
->>>>>>> a232155af9f3b9a70bb5373d605b36f02e93a2ee
+a232155af9f3b9a70bb5373d605b36f02e93a2ee
