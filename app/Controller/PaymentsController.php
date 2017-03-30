@@ -130,9 +130,17 @@ class PaymentsController extends AppController {
 		$this->loadModel('Country');
 		
 		if (!empty($id)) {
+
+			// Set basic payment information
 			$data['Payment']['id'] = base64_decode($id);
 			$data['Payment']['status'] = 1;
 			$data['Payment']['change_status_date'] = date('Y-m-d H:i:s',time());
+
+			// Generate promo number for lottery promotions
+			$prePromo = rand(0,9999);
+			$promo = str_pad($prePromo, 4, "0", STR_PAD_LEFT);
+			$data['Payment']['promo_number'] = $promo;
+
 			
 			// Find payment details
 			$paymentData = $this->Payment->find(

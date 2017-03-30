@@ -54,7 +54,7 @@
 						<th class="hidden-phone"><?php echo __('User'); ?></th>
 						<th class="hidden-phone"><?php echo __('Reseller'); ?></th>
 						<th class="hidden-phone"><?php echo __('Type'); ?></th>
-						<th class="hidden-phone"><?php echo __('Bank'); ?></th>
+						<th class="hidden-phone"><?php echo __('Promo Number'); ?></th>
 						<th class="hidden-phone"><?php echo __('Reference'); ?></th>
 						<th class="hidden-phone"><?php echo __('Notification'); ?></th>
 						<th><?php echo __('Status Change'); ?></th>
@@ -121,7 +121,7 @@
 							?>
 						</td>
 						<td style="vertical-align:middle;" class="hidden-phone"><?php echo __('Bank Deposit'); ?></td>
-						<td style="vertical-align:middle;" class="hidden-phone"><?php echo @$bank['Bank']['bank_name']; ?></td>
+						<td style="vertical-align:middle;" class="hidden-phone"><?php echo @$val['Payment']['promo_number']; ?></td>
 						<td style="vertical-align:middle;" class="hidden-phone"><?php echo $val['Payment']['reference_number']; ?></td>
 						<td style="vertical-align:middle;" class="hidden-phone"><?php echo $val['Payment']['notification_date']; ?></td>
 						<td style="vertical-align:middle;"><?php echo $val['Payment']['change_status_date']; ?></td>
@@ -188,7 +188,7 @@
 							?>
 						</td>
 						<td style="vertical-align:middle;" class="hidden-phone"><?php echo __('Credit Card'); ?></td>
-						<td style="vertical-align:middle;" class="hidden-phone"><?php echo __('-');?></td>
+						<td style="vertical-align:middle;" class="hidden-phone"><?php echo @$val['Payment']['promo_number'];?></td>
 						<td style="vertical-align:middle;" class="hidden-phone"><?php echo __('-');?></td>
 						<td style="vertical-align:middle;" class="hidden-phone"><?php echo $val['Payment']['notification_date'];?></td>
 						<td style="vertical-align:middle;"><?php echo $val['Payment']['change_status_date'];?></td>
