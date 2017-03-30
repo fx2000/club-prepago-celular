@@ -36,8 +36,3 @@ Cambiar la configuración de Apache:
 ```
 
 Activar `a2enmod rewrite`
-
-=======
-# ServerClubPrepago
-Club Prepago Application Server
-a232155af9f3b9a70bb5373d605b36f02e93a2ee
