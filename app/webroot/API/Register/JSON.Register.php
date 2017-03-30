@@ -22,9 +22,26 @@ class RestResponse {
 		// Initializing logger
 		$logger = new Katzgrau\KLogger\Logger(LOG_DIR);
 
+		// Making sure the user's password doesn't show up in the log
+		$logArray = array(
+			'Name'         => $CLIENT_DATA_ARY['Name'],
+			'TaxId'        => $CLIENT_DATA_ARY['TaxId'],
+			'Email'        => $CLIENT_DATA_ARY['Email'],	
+			'Address'      => $CLIENT_DATA_ARY['Address'],
+			'City'         => $CLIENT_DATA_ARY['City'],
+			'Province'     => $CLIENT_DATA_ARY['Province'],
+			'Country'      => $CLIENT_DATA_ARY['Country'],
+			'Phone_Number' => $CLIENT_DATA_ARY['Phone_Number'],
+			'SponsorId'    => $CLIENT_DATA_ARY['SponsorId'],
+			'DeviceId'     => $CLIENT_DATA_ARY['DeviceId'],
+			'PlatformId'   => $CLIENT_DATA_ARY['PlatformId'],
+			'latitude'     => $CLIENT_DATA_ARY['latitude'],
+			'longitude'    => $CLIENT_DATA_ARY['longitude'
+		);
+
 		// Logging Forgot Password
 		$logger->notice("============================================================");
-		$logger->notice("Received Register request:", $CLIENT_DATA_ARY);
+		$logger->notice("Received Register request:", $logArray);
 
 		$returnArray = array();
 		$responseArray = array();
