@@ -310,7 +310,7 @@ class PaymentsController extends AppController {
 						'amount_fees'        => number_format((float)$fees, 2, '.', ''),
 						'amount_discount'    => number_format((float)$discountApplied, 2, '.', ''),
 						'amount_total'       => number_format((float)$paymentData['Payment']['amount'], 2, '.', ''),
-						'promo_number'       => $paymentData['Payment']['promo_number']
+						'promo'              => $promo
 					)
 				);
 
