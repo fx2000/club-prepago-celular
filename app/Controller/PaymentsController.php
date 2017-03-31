@@ -290,37 +290,32 @@ class PaymentsController extends AppController {
 				// Set target email address
 				$user_mail = $user_data['User']['email'];
 
-				// Generate target body
-				$msg = 
-					"<html>
-					<body>
-						<div style='font-family:Tahoma;'>
-							Hola " . $user_data['User']['name'] . ",<br/><br/>
-							Tu pago de número " . str_pad($paymentData['Payment']['id'], 7, "0", STR_PAD_LEFT) . " ha sido aprobado:<br/><br/>
-							<span style='font-size:12px;'><b>Fecha de Notificación: </b>" . date('d-m-Y h:i:s a', strtotime($paymentData['Payment']['notification_date'])) . "</span><br/>
-							<span style='font-size:12px;'><b>Fecha de Aprobación: </b>" . date('d-m-Y h:i:s a', strtotime($data['Payment']['change_status_date'])) . "</span><br/>
-							<span style='font-size:12px;'><b>Monto: </b> B/. " . number_format((float)$paymentData['Payment']['amount'], 2, '.', '') . "</span><br/>
-							<span style='font-size:12px;'><b>ITBMS: </b> B/. " . number_format((float)$taxPaid, 2, '.', '') . "</span><br/>
-							<span style='font-size:12px;'><b>Cargos Adicionales: </b> B/. " . number_format((float)$fees, 2, '.', '') . "</span><br/>
-							<span style='font-size:12px;'><b>Descuento: </b> B/. " . number_format((float)$discountApplied, 2, '.', '') . "</span><br/>
-							<span style='font-size:12px;'><b>Monto agregado a tu balance: </b> B/. " . number_format((float)$newAmount, 2, '.', '') . '</span><br/><br/>
-							Si tienes algún problema, escríbenos a <a href=\"mailto:soporte@clubprepago.com\">soporte@clubprepago.com</a></br>
-							o llámanos al <b>+507 388-6220</b><br/><br/>
-							Gracias,<br/><br/>
-							<b>Club Prepago Celular</b>
-						</div>
-					</body>
-					<html>';
-
-				// Set header information
+				// Set email details
 				$Email = new CakeEmail();
+				$Email->template('payment_approved');
 				$Email->emailFormat('html');
 				$Email->config('smtp');
 				$Email->to($user_data['User']['email']);
 				$Email->subject('¡Tu pago ha sido aprobado!');
 
+				// Set Email body variables
+				$Email->viewVars(
+					array(
+						'username' => $user_data['User']['name'],
+						'payment_number' => str_pad($paymentData['Payment']['id'], 7, "0", STR_PAD_LEFT),
+						'fecha_notificacion' => date('d-m-Y h:i:s a', strtotime($paymentData['Payment']['notification_date'])),
+						'fecha_aprobacion' => date('d-m-Y h:i:s a', strtotime($data['Payment']['change_status_date'])),
+						'monto_neto' => number_format((float)$newAmount, 2, '.', ''),
+						'monto_itbms' => number_format((float)$taxPaid, 2, '.', ''),
+						'monto_cargos' => number_format((float)$fees, 2, '.', ''),
+						'monto_descuento' => number_format((float)$discountApplied, 2, '.', ''),
+						'monto_total' => number_format((float)$paymentData['Payment']['amount'], 2, '.', ''),
+						'promo_number' => $paymentData['Payment']['promo_number']
+					)
+				);
+
 				// Send email message
-				$Email->send($msg);
+				$Email->send();
 
 				// Generate success message
 				$this->Session->write('success',"1");
