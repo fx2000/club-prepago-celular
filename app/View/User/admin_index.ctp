@@ -96,6 +96,7 @@
 						<th><?php echo __('ID'); ?></th>
 						<th><?php echo __('Name'); ?></th>
 						<th class="hidden-phone"><?php echo __('Email'); ?></th>
+						<th class="hidden-phone"><?php echo __('Phone Number'); ?></th>
 						<th class="hidden-phone"><?php echo __('Verified'); ?></th>
 						<th class="hidden-phone"><?php echo __('Registered'); ?></th>
 						<th class="hidden-phone"><?php echo __('Status'); ?></th>
@@ -139,6 +140,7 @@
 							?>
 						</td>
 						<td class="hidden-phone"><?php echo $val['User']['email']; ?></td>
+						<td class="hidden-phone"><?php echo $val['User']['phone_number']; ?></td>
 						<td class="hidden-phone">
 							<?php
 								if ($val['User']['email_verify'] == 1) {
