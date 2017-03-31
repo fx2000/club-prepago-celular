@@ -301,16 +301,16 @@ class PaymentsController extends AppController {
 				// Set Email body variables
 				$Email->viewVars(
 					array(
-						'username' => $user_data['User']['name'],
-						'payment_number' => str_pad($paymentData['Payment']['id'], 7, "0", STR_PAD_LEFT),
-						'fecha_notificacion' => date('d-m-Y h:i:s a', strtotime($paymentData['Payment']['notification_date'])),
-						'fecha_aprobacion' => date('d-m-Y h:i:s a', strtotime($data['Payment']['change_status_date'])),
-						'monto_neto' => number_format((float)$newAmount, 2, '.', ''),
-						'monto_itbms' => number_format((float)$taxPaid, 2, '.', ''),
-						'monto_cargos' => number_format((float)$fees, 2, '.', ''),
-						'monto_descuento' => number_format((float)$discountApplied, 2, '.', ''),
-						'monto_total' => number_format((float)$paymentData['Payment']['amount'], 2, '.', ''),
-						'promo_number' => $paymentData['Payment']['promo_number']
+						'username'           => $user_data['User']['name'],
+						'payment_number'     => str_pad($paymentData['Payment']['id'], 7, "0", STR_PAD_LEFT),
+						'notification_date'  => date('d-m-Y h:i:s a', strtotime($paymentData['Payment']['notification_date'])),
+						'status_change'      => date('d-m-Y h:i:s a', strtotime($data['Payment']['change_status_date'])),
+						'amount_net'         => number_format((float)$newAmount, 2, '.', ''),
+						'amount_itbms'       => number_format((float)$taxPaid, 2, '.', ''),
+						'amount_fees'        => number_format((float)$fees, 2, '.', ''),
+						'amount_discount'    => number_format((float)$discountApplied, 2, '.', ''),
+						'amount_total'       => number_format((float)$paymentData['Payment']['amount'], 2, '.', ''),
+						'promo_number'       => $paymentData['Payment']['promo_number']
 					)
 				);
 
@@ -392,35 +392,28 @@ class PaymentsController extends AppController {
 			// Set target email address
 			$user_mail = $user_data['User']['email'];
 
-			// Generate email body
-			$msg = 
-				"<html>
-				<body>
-					<div style='font-family:Tahoma;'>
-						Hola " . $user_data['User']['name'] . ",<br/><br/>
-						Lamentamos informarte que tu notificación de pago ha sido rechazada:<br/><br/>
-						<span style='font-size:12px;'><b>Fecha de Notificación: </b> " . date('d-m-Y h:i:s a', strtotime($paymentData['Payment']['notification_date'])) . "</span><br/>
-						<span style='font-size:12px;'><b>Fecha de Rechazo: </b> " . date('d-m-Y h:i:s a', strtotime($paymentData['Payment']['change_status_date'])) . "</span><br/>
-						<span style='font-size:12px;'><b>Monto: </b> B/. " . number_format((float)$paymentData['Payment']['amount'], 2, '.', '') . "</span><br/>
-						<span style='font-size:12px;'><b>Motivo del rechazo: </b>" . $reason . '</span><br/><br/>
-						Puedes generar una nueva notificación una vez que se haya resuelto el inconveniente.<br/>
-						Si tienes algún problema, escríbenos a <a href=\"mailto:soporte@clubprepago.com\">soporte@clubprepago.com</a></br>
-						o llámanos al <b>+507 388-6220</b><br/><br/>
-						Gracias,<br/><br/>
-						<b>Club Prepago Celular</b>
-					</div>
-				</body>
-				<html>';
-
-			// Set header information
+			// Set email details
 			$Email = new CakeEmail();
+			$Email->template('payment_denied');
 			$Email->emailFormat('html');
 			$Email->config('smtp');
 			$Email->to($user_data['User']['email']);
 			$Email->subject('¡Tu notificación de pago ha sido rechazada!');
 
+			// Set Email body variables
+			$Email->viewVars(
+				array(
+					'username'           => $user_data['User']['name'],
+					'payment_number'     => str_pad($paymentData['Payment']['id'], 7, "0", STR_PAD_LEFT),
+					'notification_date'  => date('d-m-Y h:i:s a', strtotime($paymentData['Payment']['notification_date'])),
+					'status_change'      => date('d-m-Y h:i:s a', strtotime($data['Payment']['change_status_date'])),
+					'amount_total'       => number_format((float)$paymentData['Payment']['amount'], 2, '.', ''),
+					'denial_reason'      => $reason
+				)
+			);
+
 			// Send email message
-			$Email->send($msg);
+			$Email->send();
 
 			// Generate success message
 			$this->Session->write('success', "1");
