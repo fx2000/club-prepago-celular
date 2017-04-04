@@ -36,7 +36,7 @@ class RestResponse {
 			'DeviceId'     => $CLIENT_DATA_ARY['DeviceId'],
 			'PlatformId'   => $CLIENT_DATA_ARY['PlatformId'],
 			'latitude'     => $CLIENT_DATA_ARY['latitude'],
-			'longitude'    => $CLIENT_DATA_ARY['longitude'
+			'longitude'    => $CLIENT_DATA_ARY['longitude']
 		);
 
 		// Logging Forgot Password
