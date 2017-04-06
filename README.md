@@ -19,7 +19,7 @@ PHP 5.6
 
 Clonar repositorio en directorio raiz de apache
 
-Cambiar la propiedad de los directorios /app/tmp, /app/log y /app/invoices a www-data (recursivo)
+Cambiar la propiedad de los directorios /app/tmp, /app/log, /app/invoices, /app/webroot/uploads y /app/webroot/img/rewards a www-data (recursivo)
 
 Correr "composer update" en directorio /app/webroot/API
 
