@@ -204,7 +204,7 @@ class RestResponse {
 			$balanceCheck = $REQ_SUCCESS->checkBalance($userId);
 			$amount = $CLIENT_DATA_ARY['Amount'];
 
-			if ($balanceCheck < $amount) {
+			if ($balanceCheck['balance'] < $amount) {
 				$logger->error("Recharge request failed for Phone Number " . $CLIENT_DATA_ARY['Phone_Number'] . " " . $this->generateJSONError('589'));
 				return $this->generateJSONError('589');
 			}
