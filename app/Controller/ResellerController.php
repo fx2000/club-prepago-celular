@@ -192,33 +192,26 @@ class ResellerController extends AppController {
 					// Generate activation url
 					$activation_url	= Router::url('/home/activate/', true) . $enc_uid;
 
-					// Generate email body
-					$msg =
-						'<html>
-						<body>
-							<div style="font-family:Tahoma;">
-								Bienvenido, ' . $data['Reseller']['name'] . '<br/><br/>
-								Tu cuenta de Club Prepago Empresarios ha sido creda correctamente<br/>
-								<span style="font-size:12px;"><b>Usuario: </b> ' . $data['Reseller']['email'] . ' </span><br/>
-								<span style="font-size:12px;"><b>Contraseña: </b> ' . $password . ' </span><br/><br/>
-								Por favor, <a href=' . $activation_url . '>Haz Click Aquí</a> para activar tu cuenta.<br/><br/>
-								Si tienes algún problema, escríbenos a <a href="mailto:soporte@clubprepago.com">soporte@clubprepago.com</a></br>
-								o llámanos al <b>+507 388-6220</b><br/><br/>
-								Gracias,<br/><br/>
-								<b>Club Prepago Celular</b>
-							</div>
-						</body>
-						<html>';
-
-					// Set email headers
+					// Set email details
 					$Email = new CakeEmail();
+					$Email->template('welcome');
 					$Email->emailFormat('html');
 					$Email->config('smtp');
 					$Email->to($data['Reseller']['email']);
-					$Email->subject('¡Bienvenido a Club Prepago Empresarios!');
+					$Email->subject('¡Bienvenido a Club Prepago Celular!');
+
+					// Set Email body variables
+					$Email->viewVars(
+						array(
+							'username'           => $data['Reseller']['name'],
+							'email_address'      => $data['Reseller']['email'],
+							'password'           => $password,
+							'url'                => $activation_url
+						)
+					);
 
 					// Send email message
-					$Email->send($msg);
+					$Email->send();
 
 					// Generate success message
 					$this->Session->write('success', "1");
