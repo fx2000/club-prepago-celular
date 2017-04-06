@@ -814,7 +814,7 @@ class UserController extends AppController {
 					$user['User']['name'] . "," .
 					$user['User']['tax_id'] . "," .
 					$user['User']['email'] . "," .
-					$user['User']['address'] . "," .
+					"\"" . $user['User']['address'] . "\"" . "," .
 					$user['User']['city'] . "," .
 					$user['User']['state'] . "," .
 					$country . "," .
