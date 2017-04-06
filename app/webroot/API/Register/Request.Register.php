@@ -26,6 +26,9 @@ class RequestRegisterAPI extends Dbconn {
 			$discountRate = 0;
 		}
 
+		// Get welcome reward value
+		$points = $this->checkRewards();
+
 		// If a sponsor was specified, check if it is active and not deleted
 		if ($data['SponsorId']) {
 			$sponsorValid = $this->checkSponsor($data['SponsorId']);
@@ -59,6 +62,7 @@ class RequestRegisterAPI extends Dbconn {
 				sponsor_id,
 				discount_rate,
 				phone_number,
+				points,
 				registered,
 				x,
 				y
@@ -75,6 +79,7 @@ class RequestRegisterAPI extends Dbconn {
 				$sponsor . "," .
 				$discountRate . "," .
 				"\"" . $data['Phone_Number'] . "\"" . "," .
+				"\"" . $points . "\"" . "," .
 				"\"" . $date . "\"" . "," .
 				"\"" . $data['longitude'] . "\"" . "," .
 				"\"" . $data['latitude'] . "\"" .
@@ -189,5 +194,15 @@ class RequestRegisterAPI extends Dbconn {
 		$result = $this->fireQuery($query);
 		$value = $this->fetchAssoc($result);
 		return $value['discount_rate'];
+	}
+
+	// Get initial reward points value
+	function checkRewards() {
+		$query =
+			"SELECT reward_signup
+				FROM settings";
+		$result = $this->fireQuery($query);
+		$value = $this->fetchAssoc($result);
+		return $value['reward_signup'];
 	}
 }
