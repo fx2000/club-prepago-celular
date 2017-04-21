@@ -107,6 +107,38 @@ class RequestSendPaymentDepositAPI extends Dbconn {
 			if (!$mail->send()) {
 				return 0;
 			}
+
+			// Generate Payment Received email
+			$mail = new PHPMailer(true);
+
+			// Select email template and pass variables
+			$messageBody = file_get_contents(TEMPLATE_DIR . '/payment_received.html');
+			$messageBody = str_replace('%username%', $userData['name'], $messageBody);
+			$messageBody = str_replace('%payment_number%', str_pad($paymentId, 7, "0", STR_PAD_LEFT), $messageBody);
+			$messageBody = str_replace('%notification_date%', date('d-m-Y h:i:s a', strtotime($date)), $messageBody);
+			$messageBody = str_replace('%amount_total%', number_format((float)$amount, 2, '.', ''), $messageBody);
+
+			// Set PHP Mailer parameters
+			$mail->isSMTP();
+			$mail->Host = EMAIL_SERVER;
+			$mail->SMTPAuth = true;
+			$mail->Username = EMAIL_USER;
+			$mail->Password = EMAIL_PASSWORD;
+			$mail->From = EMAIL_FROM;
+			$mail->FromName = EMAIL_SENDER_NAME;
+			$mail->addAddress($userData['email'], $userData['name']);
+			$mail->Port = 465;
+			$mail->Timeout = 30;
+			$mail->WordWrap = 50;
+			$mail->isHTML(true);
+			$mail->CharSet = "UTF-8";
+			$mail->Subject = 'Hemos recibido tu solicitud correctamente';
+			$mail->Body = $messageBody;
+
+			if (!$mail->send()) {
+				return 0;
+			}
+
 			return 1;
 		} else {
 			return 0;
