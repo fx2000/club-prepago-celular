@@ -367,6 +367,20 @@
 						?>
 					</div>
 				</div>
+				<div class="control-group">
+                    <label class="control-label"><?php echo ('Cambiar a '); echo __('Reseller'); ?></label>
+                    <div class="controls">
+                         <?php
+                            echo $this->Form->checkbox(
+                                'User.user_type',
+                                array(
+                                    'value'           => 2,
+                                    'hiddenField'     => 1
+                                )
+                            );
+                         ?>
+                    </div>
+                </div>
 				<div class="form-actions">
 					<?php echo $this->Form->Submit(__('Submit'), array('class' => 'btn btn-primary')); ?>
 				</div>

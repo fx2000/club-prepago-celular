@@ -117,7 +117,7 @@ class RestResponse {
 			}
 
 			// Check that Device ID is valid
-			$deviceIdValid = $REQ_SUCCESS->checkDevice($deviceId, $platformId, $userId);
+			$deviceIdValid = $REQ_SUCCESS->checkDevice($deviceId, $userId);
 
 			if ($deviceIdValid == 0) {
 				$logger->error("GetProfile request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('544'));
