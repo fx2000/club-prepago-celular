@@ -28,7 +28,7 @@ class RequestLoginAPI extends Dbconn {
 				WHERE email = " . "\"" . $data['Email'] . "\"" .
             " AND password = " . "\"" . sha1($data['Password'].SALT) . "\"" .
             " AND delete_status = " . NOT_DELETED .
-            " AND user_type =" . $data['PlatformId'];
+            "";
         $result = $this->fireQuery($query);
         $num = $this->rowCount($result);
 
@@ -58,7 +58,7 @@ class RequestLoginAPI extends Dbconn {
                     "SELECT id
 						FROM devices
 						WHERE user_id = " . $userdata['id'] . " AND device_id = " . $data['DeviceId'] .
-                    " AND platform_id = " . $data['PlatformId'];
+                    "";
                 $resDevice = $this->fireQuery($selDevice);
                 $numDevice = $this->rowCount($resDevice);
 
