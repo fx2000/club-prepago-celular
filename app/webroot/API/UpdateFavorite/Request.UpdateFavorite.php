@@ -79,7 +79,7 @@ class RequestUpdateFavoriteAPI extends Dbconn {
 		$query = 
 			"SELECT id
 				FROM devices
-				WHERE device_id = " . $deviceId . " AND user_id = " . $userId . " AND platform_id = " . $platformId . " AND login_status = " . SIGNED_IN;
+				WHERE device_id = " . $deviceId . " AND user_id = " . $userId . " AND login_status = " . SIGNED_IN;
 		$result = $this->fireQuery($query);
 		$value = $this->rowCount($result);
 		return $value;
