@@ -10,7 +10,6 @@
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
 include "../Dbconn.php";
-require "../../PHPMailer-master/class.phpmailer.php";
 
 class RequestRechargePointsAPI extends Dbconn {
 
@@ -57,7 +56,7 @@ class RequestRechargePointsAPI extends Dbconn {
 					y
 				) VALUES (" .
 					$data['UserId'] . "," . 
-					$data['PlatformId'] . "," . // Change this to check the user tables
+					"1" . "," . // Hardcoded to User
 					"\"" . $data['Phone_Number'] . "\"" . "," .
 					$data['Operator'] . "," .
 					$amount . "," .
@@ -94,7 +93,7 @@ class RequestRechargePointsAPI extends Dbconn {
 				$message = 'Recharge has been successful';
 				$messageCode = '563';
 
-				// If not a reseller, adjust the user's points
+				// Adjust the user's points
 				if ($data['PlatformId'] == 1) {
 					$updUserPoints = $this->fireQuery(
 						"UPDATE users
@@ -107,6 +106,27 @@ class RequestRechargePointsAPI extends Dbconn {
 					"UPDATE operators
 						SET balance = balance - " . $amount . " WHERE id = " . $data['Operator']
 				);
+
+				// Add redemption to Redemptions table
+				$insRedemption =
+					"INSERT INTO redemptions (
+						user_id,
+						points,
+						redeem_date,
+						reward_type,
+						reward_id,
+						phone_number,
+						operator
+					) VALUES (" .
+						$data['UserId'] . "," . 
+						$data['Points'] . "," .
+						"\"" . $date . "\"" . "," .
+						"1" . "," .
+						$data['RewardId'] . "," .
+						"\"" . $data['Phone_Number'] . "\"" . "," .
+						$data['Operator'] .
+					")";
+				$resInsRedemption = $this->fireQuery($insRedemption);
 
 				// Check if the balance dropped below the warning levels
 				$this->lowInventoryEmail($data['Operator']);

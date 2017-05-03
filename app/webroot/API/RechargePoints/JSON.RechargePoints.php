@@ -30,16 +30,17 @@ class RestResponse {
 		$responseArray = array();
 		$client_key_array = array();
 		$check_data_array = array(
-			'0' => 'Phone_Number',
-			'1' => 'Operator',
-			'2' => 'Amount',
-			'3' => 'Points',
-			'4' => 'Payment_Method',
-			'5' => 'UserId',
-			'6' => 'DeviceId',
-			'7' => 'PlatformId',
-			'8' => 'latitude',
-			'9' => 'longitude'
+			'0'  => 'Phone_Number',
+			'1'  => 'Operator',
+			'2'  => 'Amount',
+			'3'  => 'Points',
+			'4'  => 'Payment_Method',
+			'5'  => 'UserId',
+			'6'  => 'DeviceId',
+			'7'  => 'PlatformId',
+			'8'  => 'latitude',
+			'9'  => 'longitude',
+			'10' => 'RewardId'
 		);
 
 		// Check if the correct parameters are being sent and mark as (S)uccess or (F)ailed
