@@ -23,7 +23,7 @@ define('EMAIL_FROM', 'noreply@clubprepago.com');
 define('EMAIL_USER', 'noreply@clubprepago.com');
 define('EMAIL_PASSWORD', 'noreplyClub2049');
 define('EMAIL_SENDER_NAME', 'Club Prepago Celular');
-define('EMAIL_STAFF', 'jhoner.araujo@clubprepago.com');
+define('EMAIL_STAFF', 'staff@clubprepago.com');
 
 // Set API type
 define('API_TYPE', 1);				// Club Prepago Empresarios
