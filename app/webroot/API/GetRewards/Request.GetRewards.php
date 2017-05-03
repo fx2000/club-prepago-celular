@@ -35,6 +35,7 @@ class RequestGetRewardsAPI extends Dbconn {
 			$num = 0;
 			
 			while ($arrReward = $this->fetchAssoc($resRewards)) {
+					$rewards[$num]['id'] = $arrReward['id'];
 					$rewards[$num]['Point'] = $arrReward['points'];	
 					$rewards[$num]['Cost'] = $arrReward['value'];	
 					$rewards[$num]['Description'] = $arrReward['description'];
