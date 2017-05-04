@@ -27,6 +27,7 @@ class RequestSendPaymentDepositAPI extends Dbconn {
 		$date = date('Y-m-d H:i:s', time());
 		$userData = $this->getUserData($userId);
 		$name = $userData['name'];
+		$type = $userData['user_type'];
 
 		// Insert payment information into payment notifications table
 		$selPaymentDeposit =
@@ -42,7 +43,7 @@ class RequestSendPaymentDepositAPI extends Dbconn {
 				y
 			) VALUES (" .
 				$userId	. "," .
-				$data['PlatformId'] . "," .
+				$type . "," .
 				PAYMENT_BANK . "," .
 				$data['BankId'] . "," .
 				"\"" . $data['reference_number'] . "\"" . "," .
@@ -53,15 +54,6 @@ class RequestSendPaymentDepositAPI extends Dbconn {
 			")";
 		$resPaymentDeposit = $this->fireQuery($selPaymentDeposit);
 		$paymentId = mysqli_insert_id($this->_conn);
-
-		// Set user type name
-		if ($data['PlatformId'] == 1) {
-			$type = 'Usuario';
-		} else if ($data['PlatformId'] == 2) {
-			$type = 'Revendedor';
-		} else {
-			$type = $data['PlatformId'];
-		}
 
 		// If all went well, generate notification email
 		if ($resPaymentDeposit) {
@@ -93,7 +85,6 @@ class RequestSendPaymentDepositAPI extends Dbconn {
 					<body>
 						<div style='font-family:Tahoma;'>
 							Hay una nueva notificación de pago en efectivo, depósito o transferencia pendiente por revisión:<br/><br/>
-							<span style='font-size:12px;'><b>Tipo: </b>" . $type . "</span><br/>
 							<span style='font-size:12px;'><b>Nombre: </b>" . $name . "</span><br/>
 							<span style='font-size:12px;'><b>Monto: </b> B/. " . number_format((float)$amount, 2, '.', '') . "</span><br/>
 							<span style='font-size:12px;'><b>Número de Pago: </b>" . str_pad($paymentId, 6, '0', STR_PAD_LEFT) . "</span><br/><br/>
