@@ -34,48 +34,31 @@ class RequestGetpaymentHistoryAPI extends Dbconn {
 			
 			while ($arrpaymentHistory = $this->fetchAssoc($respaymentHistory)) {
 				$paymentHistory[$i]['id'] = $arrpaymentHistory['id'];
-				$paymentHistory[$i]['payment_method']	= $arrpaymentHistory['payment_method'];
-				
-				// Get bank deposit payments
-				if ($arrpaymentHistory['payment_method'] == PAYMENT_BANK) {
-					$paymentHistory[$i]['reference_number'] = $arrpaymentHistory['reference_number'];
-					$paymentHistory[$i]['amount']	= $arrpaymentHistory['amount'];
-					$paymentHistory[$i]['discount']	= $arrpaymentHistory['discount'];
-					$paymentHistory[$i]['tax']	= $arrpaymentHistory['tax'];
-					$paymentHistory[$i]['net_amount']	= $arrpaymentHistory['net_amount'];
-					$paymentHistory[$i]['amount_credited']	= $arrpaymentHistory['amount_credited'];
-					$bankId = $arrpaymentHistory['bank_id'];
-					$selQry =
-						"SELECT *
-							FROM banks
-							WHERE id = " . $bankId . " AND delete_status = " . NOT_DELETED . " LIMIT 1";
-					$resQry = $this->fireQuery($selQry);
-					$numBanks = $this->rowCount($resQry);
-					
-					if ($numBanks > 0) {
-						$bank = $this->fetchAssoc($resQry);
-						$bank_name = $bank['bank_name'];
-					}
-					$paymentHistory[$i]['bank'] = $bank_name;
-				
-				// Get credit card payments
-				} else if ($arrpaymentHistory['payment_method'] = PAYMENT_CC) {
-					$SelPaymentTrans =
-						"SELECT *
-							FROM transactions
-							WHERE id = \"" . $arrpaymentHistory['reference_number'] . "\"";
-					$ResPaymentTrans = $this->fireQuery($SelPaymentTrans);
-					$ArrPaymentTrans = $this->fetchAssoc($ResPaymentTrans);
-					$paymentHistory[$i]['reference_number'] = $arrpaymentHistory['reference_number'];
-					$paymentHistory[$i]['amount']	= $arrpaymentHistory['amount'];				
-					$paymentHistory[$i]['discount']	= $arrpaymentHistory['discount'];
-					$paymentHistory[$i]['tax']	= $arrpaymentHistory['tax'];
-					$paymentHistory[$i]['net_amount']	= $arrpaymentHistory['net_amount'];
-					$paymentHistory[$i]['amount_credited']	= $arrpaymentHistory['amount_credited'];
-					$paymentHistory[$i]['bank'] = '';
-				}
+				$paymentHistory[$i]['payment_method'] = $arrpaymentHistory['payment_method'];
+				$paymentHistory[$i]['reference_number'] = str_pad($arrpaymentHistory['reference_number'],6,"0",STR_PAD_LEFT);
+				$paymentHistory[$i]['amount']	= $arrpaymentHistory['amount'];
+				$paymentHistory[$i]['discount']	= $arrpaymentHistory['discount'];
+				$paymentHistory[$i]['tax']	= $arrpaymentHistory['tax'];
+				$paymentHistory[$i]['net_amount']	= $arrpaymentHistory['net_amount'];
+				$paymentHistory[$i]['amount_credited']	= $arrpaymentHistory['amount_credited'];
 				$paymentHistory[$i]['status'] = $arrpaymentHistory['status'];
 				$paymentHistory[$i]['date'] = $arrpaymentHistory['notification_date'];
+
+				// Translate Bank ID into bank name
+				$bankId = $arrpaymentHistory['bank_id'];
+				$selQry =
+					"SELECT *
+						FROM banks
+						WHERE id = " . $bankId . " AND delete_status = " . NOT_DELETED . " LIMIT 1";
+				$resQry = $this->fireQuery($selQry);
+				$numBanks = $this->rowCount($resQry);
+				
+				if ($numBanks > 0) {
+					$bank = $this->fetchAssoc($resQry);
+					$bank_name = $bank['bank_name'];
+				}
+				$paymentHistory[$i]['bank'] = $bank_name;
+
 				$i++;
 			}
 			return $paymentHistory;
