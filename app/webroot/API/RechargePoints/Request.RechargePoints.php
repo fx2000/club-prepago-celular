@@ -114,7 +114,6 @@ class RequestRechargePointsAPI extends Dbconn {
 						points,
 						redeem_date,
 						reward_type,
-						reward_id,
 						phone_number,
 						operator
 					) VALUES (" .
@@ -122,7 +121,6 @@ class RequestRechargePointsAPI extends Dbconn {
 						$data['Points'] . "," .
 						"\"" . $date . "\"" . "," .
 						"1" . "," .
-						$data['RewardId'] . "," .
 						"\"" . $data['Phone_Number'] . "\"" . "," .
 						$data['Operator'] .
 					")";

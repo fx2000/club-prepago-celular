@@ -207,7 +207,7 @@ class RestResponse {
 			$pointsCheck = $REQ_SUCCESS->checkPoints($userId);
 			$points = $CLIENT_DATA_ARY['Points'];
 				
-			if ($pointsCheck < $points) {
+			if ($pointsCheck['points'] < $points) {
 				$logger->error("RechargePoints request failed for Phone Number " . $CLIENT_DATA_ARY['Phone_Number'] . " " . $this->generateJSONError('562'));
 				return $this->generateJSONError('562');
 			}
