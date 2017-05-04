@@ -218,11 +218,6 @@ class RequestRechargePointsAPI extends Dbconn {
 			$resultArr['Data']['ReferenceNo'] = $merchantTxnId;
 			$resultArr['Data']['Date'] = date('Y-m-d H:i:s');
 
-			// If recharge is succesful, put updated user's balance in the results array
-			if ($rechargeDone == 1) {
-				$resultArr['Data']['AvailableBalance'] = $arrUser['balance'];
-			}
-
 			// Return recharge information
 			return $resultArr;
 
