@@ -98,19 +98,6 @@ class RestResponse {
 				return $this->generateJSONError('504');
 			}
 
-			// Check cedula or passport
-			if (in_array("TaxId", $client_key_array)) {
-				$taxId = $CLIENT_DATA_ARY['TaxId'];
-				
-				if (strlen($taxId) == 0) {
-					$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('711'));
-					return $this->generateJSONError('711');
-				}
-			} else {
-				$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('710'));
-				return $this->generateJSONError('710');
-			}
-
 			// Check email address
 			if (in_array("Email", $client_key_array)) {
 				$email = $CLIENT_DATA_ARY['Email'];
@@ -142,45 +129,6 @@ class RestResponse {
 			} else {
 				$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('514'));
 				return $this->generateJSONError('514');
-			}
-
-			// Check address
-			if (in_array("Address", $client_key_array)) {
-				$address = $CLIENT_DATA_ARY['Address'];
-				
-				if (strlen($address) == 0) {
-					$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('518'));
-					return $this->generateJSONError('518');
-				}
-			} else {
-				$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('517'));
-				return $this->generateJSONError('517');
-			}
-
-			// Check city
-			if (in_array("City", $client_key_array)) {
-				$city = $CLIENT_DATA_ARY['City'];
-				
-				if (strlen($city) == 0) {
-					$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('713'));
-					return $this->generateJSONError('713');
-				}
-			} else {
-				$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('712'));
-				return $this->generateJSONError('712');
-			}
-			
-			// Check state or province
-			if (in_array("Province", $client_key_array)) {
-				$province = $CLIENT_DATA_ARY['Province'];
-				
-				if (strlen($province) == 0) {
-					$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('715'));
-					return $this->generateJSONError('715');
-				}
-			} else {
-				$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('714'));
-				return $this->generateJSONError('714');
 			}
 
 			// Check Country
