@@ -206,7 +206,7 @@
 						</td>
 						<td style="vertical-align:middle;" class="hidden-phone"><?php echo 'B/. ' . $val['Payment']['amount_credited']; ?></td>
 						<td style="vertical-align:middle;">
-							<span class="label label-success"><?php echo __(' Pre-Approved '); ?></span>
+							<span class="label label-success"><?php echo __(' Approved '); ?></span>
 						</td>
 					</tr>
 				<?php
