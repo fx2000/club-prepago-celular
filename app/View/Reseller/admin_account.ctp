@@ -191,20 +191,20 @@
 								<?php
 									if ($val['AccountHistory']['account_type'] == 1) {
 										if ($val['AccountHistory']['amount'] < 0) {
-											?><p style="color:red"><?php echo 'B/. ' . round($val['AccountHistory']['amount'], 0); ?></p>
+											?><p style="color:red"><?php echo 'B/. ' . number_format((float)$val['AccountHistory']['amount'], 2, '.', ''); ?></p>
 										<?php
 										} else {
-											echo 'B/. ' . round($val['AccountHistory']['amount'], 0);
+											echo 'B/. ' . number_format((float)$val['AccountHistory']['amount'], 2, '.', '');
 										}
 									} else if ($val['AccountHistory']['account_type'] == 2) {
 										if ($val['AccountHistory']['amount'] < 0) {
-											?><p style="color:red"><?php echo round($val['AccountHistory']['amount'], 0); ?></p>
+											?><p style="color:red"><?php echo number_format((float)$val['AccountHistory']['amount'], 2, '.', ''); ?></p>
 										<?php
 										} else {
-											echo round($val['AccountHistory']['amount'], 0);
+											echo number_format((float)$val['AccountHistory']['amount'], 2, '.', '');
 										}
 									} else {
-										echo $val['AccountHistory']['amount'];
+										echo number_format((float)$val['AccountHistory']['amount'], 2, '.', '');
 									}
 									
 								?>
