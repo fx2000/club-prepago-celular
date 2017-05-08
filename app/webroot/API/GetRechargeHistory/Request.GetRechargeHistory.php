@@ -28,7 +28,7 @@ class RequestGetHistoryAPI extends Dbconn {
 			$i = 0;
 			
 			while ($arrHistory = $this->fetchAssoc($resRechargeHistory)) {
-				$rechargeHistory[$i]['HistoryType'] = '1';
+				$rechargeHistory[$i]['HistoryType'] = $arrHistory['payment_method'];
 				$rechargeHistory[$i]['RechargeStatus'] = $arrHistory['status'];
 				$rechargeHistory[$i]['PhoneNo'] = $arrHistory['phone_number'];
 				$rechargeHistory[$i]['Operator'] = $arrHistory['operator'];
