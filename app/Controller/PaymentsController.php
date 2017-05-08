@@ -323,7 +323,7 @@ class PaymentsController extends AppController {
 				echo "<script>window.location.href='../payment_notifications'</script>";
 				$this->render();
 
-			// If something goes wring, generate error message
+			// If something goes wrong, generate error message
 			} else {
 				$this->Session->write('success', "0");
 				$this->Session->write('alert', __("Your request could not be processed."));
@@ -331,7 +331,7 @@ class PaymentsController extends AppController {
 				exit;
 			}
 
-		// If something goes wring, generate error message
+		// If something goes wrong, generate error message
 		} else {
 			$this->Session->write('success', "0");
 			$this->Session->write('alert', __("Your request could not be processed."));
