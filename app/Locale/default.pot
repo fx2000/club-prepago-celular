@@ -13,2272 +13,2304 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: BanksController.php:96
+#: Controller/BanksController.php:96
 msgid "Bank name cannot be blank"
 msgstr ""
 
-#: BanksController.php:103
+#: Controller/BanksController.php:103
 msgid "Account number cannot be blank"
 msgstr ""
 
-#: BanksController.php:110
+#: Controller/BanksController.php:110
 msgid "Account type cannot be blank"
 msgstr ""
 
-#: BanksController.php:128
+#: Controller/BanksController.php:128
 msgid "Bank added successfully"
 msgstr ""
 
-#: BanksController.php:141
+#: Controller/BanksController.php:141
 msgid "Bank could not be created"
 msgstr ""
 
-#: BanksController.php:179
+#: Controller/BanksController.php:179
 msgid "Bank Name cannot be blank"
 msgstr ""
 
-#: BanksController.php:185
+#: Controller/BanksController.php:185
 msgid "Bank already exists"
 msgstr ""
 
-#: BanksController.php:195
+#: Controller/BanksController.php:195
 msgid "Bank updated successfully"
 msgstr ""
 
-#: BanksController.php:200
+#: Controller/BanksController.php:200
 msgid "Bank could not be updated"
 msgstr ""
 
-#: BanksController.php:228
+#: Controller/BanksController.php:228
 msgid "Invalid Bank"
 msgstr ""
 
-#: BanksController.php:250
+#: Controller/BanksController.php:250
 msgid "Bank Deleted"
 msgstr ""
 
-#: BanksController.php:255
+#: Controller/BanksController.php:255
 msgid "Unable to delete Bank"
 msgstr ""
 
-#: BanksController.php:261
+#: Controller/BanksController.php:261
 msgid "Invalid Bank ID provided"
 msgstr ""
 
-#: CpanelController.php:31
+#: Controller/CpanelController.php:31
 msgid "<span style='color:red;'>You must enter a username</span>"
 msgstr ""
 
-#: CpanelController.php:36
+#: Controller/CpanelController.php:36
 msgid "<span style='color:red;'>You must enter a password</span>"
 msgstr ""
 
-#: CpanelController.php:73
+#: Controller/CpanelController.php:73
 msgid "<span style='color:red;'>Invalid Username or Password</span>"
 msgstr ""
 
-#: CpanelController.php:121
+#: Controller/CpanelController.php:124
 msgid "Profile update successful"
 msgstr ""
 
-#: CpanelController.php:174
+#: Controller/CpanelController.php:177
 msgid "Incorrect password"
 msgstr ""
 
-#: CpanelController.php:184
-#: SettingController.php:363
+#: Controller/CpanelController.php:187
+#: Controller/SettingController.php:364
 msgid "Password change successful"
 msgstr ""
 
-#: CpanelController.php:195
-#: SettingController.php:382
+#: Controller/CpanelController.php:198
+#: Controller/SettingController.php:383
 msgid "Password confirmation failed"
 msgstr ""
 
-#: CpanelController.php:211
+#: Controller/CpanelController.php:214
 msgid "<span style='color:green;'>Sign out successful</span>"
 msgstr ""
 
-#: CpanelController.php:232
+#: Controller/CpanelController.php:235
 msgid "<span style='color:red;'>Your session has expired, please sign in to continue</span>"
 msgstr ""
 
-#: HomeController.php:21
+#: Controller/HomeController.php:21
 msgid "Activation"
 msgstr ""
 
-#: InventoryController.php:58
+#: Controller/InventoryController.php:58
 msgid "Amount added to inventory"
 msgstr ""
 
-#: InventoryController.php:191
+#: Controller/InventoryController.php:191
 msgid "Warning level set"
 msgstr ""
 
-#: PaymentsController.php:199
+#: Controller/PaymentsController.php:226
 msgid "Payment Notification Accepted"
 msgstr ""
 
-#: PaymentsController.php:287
+#: Controller/PaymentsController.php:322
 msgid "Payment Request Accepted."
 msgstr ""
 
-#: PaymentsController.php:294;302
+#: Controller/PaymentsController.php:329;337
 msgid "Your request could not be processed."
 msgstr ""
 
-#: PaymentsController.php:392
+#: Controller/PaymentsController.php:420
 msgid "Payment Request rejected successfully."
 msgstr ""
 
-#: PaymentsController.php:399
+#: Controller/PaymentsController.php:427
 msgid "Payment Request could not be rejected."
 msgstr ""
 
-#: RechargeController.php:153;298
+#: Controller/RechargeController.php:153;298
 msgid "Please enter a Transaction ID"
 msgstr ""
 
-#: RechargeController.php:285
+#: Controller/RechargeController.php:285
 msgid "No match Found"
 msgstr ""
 
-#: RechargeController.php:422
+#: Controller/RechargeController.php:422
 msgid "Your recharge has been successful, the original recharge has been marked as fixed and a new recharge has been added to the database as replacement"
 msgstr ""
 
-#: ReportController.php:231
+#: Controller/ReportController.php:231
 msgid "User,Mobile Operator,Phone Number,Payment Method,Recharge Amount,"
 msgstr ""
 
-#: ReportController.php:232
+#: Controller/ReportController.php:232
 msgid "Taxes,Total Amount,Points Awarded,Date & Time,X,Y"
 msgstr ""
 
-#: ReportController.php:240;739
-#: UserController.php:927
-#: Report/admin_direct_sales.ctp:145
-#: Report/admin_transactions.ctp:122;237
-#: Reseller/admin_account.ctp:87;188
-#: User/admin_account.ctp:95;201
-#: User/admin_transactions.ctp:142
+#: Controller/ReportController.php:240;739
+#: Controller/UserController.php:933
+#: View/Report/admin_direct_sales.ctp:145
+#: View/Report/admin_transactions.ctp:122;237
+#: View/Reseller/admin_account.ctp:87;189
+#: View/User/admin_account.ctp:95;202
+#: View/User/admin_transactions.ctp:142
 msgid "Prepaid Balance"
 msgstr ""
 
-#: ReportController.php:242;741;990;1210
-#: ResellerController.php:1020
-#: UserController.php:929;1067
-#: Payments/admin_details.ctp:156
-#: Payments/admin_payment_history.ctp:190
-#: Report/admin_direct_sales.ctp:148
-#: Report/admin_transactions.ctp:125;239
-#: User/admin_transactions.ctp:144
+#: Controller/ReportController.php:242;741;990;1210
+#: Controller/ResellerController.php:1058
+#: Controller/UserController.php:935;1073
+#: View/Payments/admin_details.ctp:164
+#: View/Payments/admin_payment_history.ctp:190
+#: View/Payments/admin_payment_notifications.ctp:119
+#: View/Report/admin_direct_sales.ctp:148
+#: View/Report/admin_transactions.ctp:125;239
+#: View/User/admin_transactions.ctp:144
 msgid "Credit Card"
 msgstr ""
 
-#: ReportController.php:244
-#: UserController.php:931
-#: Report/admin_direct_sales.ctp:151
-#: Reward/admin_add.ctp:77
-#: Reward/admin_index.ctp:53
-#: User/admin_transactions.ctp:146
+#: Controller/ReportController.php:244
+#: Controller/UserController.php:937
+#: View/Report/admin_direct_sales.ctp:151
+#: View/Reward/admin_add.ctp:77
+#: View/Reward/admin_index.ctp:53
+#: View/User/admin_transactions.ctp:146
 msgid "Points"
 msgstr ""
 
-#: ReportController.php:721
+#: Controller/ReportController.php:721
 msgid "Transaction ID,User,Reseller,Mobile Operator,Phone Number,"
 msgstr ""
 
-#: ReportController.php:722
+#: Controller/ReportController.php:722
 msgid "Amount,Payment Method,Date & Time,Points Awarded,Status,Replaced By,X,Y"
 msgstr ""
 
-#: ReportController.php:730
-#: ResellerController.php:882
-#: UserController.php:918
-#: Report/admin_transactions.ctp:139
+#: Controller/ReportController.php:730
+#: Controller/ResellerController.php:920
+#: Controller/UserController.php:924
+#: View/Report/admin_transactions.ctp:139
 msgid "Failed"
 msgstr ""
 
-#: ReportController.php:732
-#: ResellerController.php:884
-#: UserController.php:920
-#: Report/admin_transactions.ctp:142
+#: Controller/ReportController.php:732
+#: Controller/ResellerController.php:922
+#: Controller/UserController.php:926
+#: View/Report/admin_transactions.ctp:142
 msgid "Successful"
 msgstr ""
 
-#: ReportController.php:734
-#: ResellerController.php:886
-#: UserController.php:922
+#: Controller/ReportController.php:734
+#: Controller/ResellerController.php:924
+#: Controller/UserController.php:928
 msgid "Replaced"
 msgstr ""
 
-#: ReportController.php:743
-#: Report/admin_transactions.ctp:128;241
-#: Reseller/admin_account.ctp:188
-#: User/admin_account.ctp:100;201
+#: Controller/ReportController.php:743
+#: View/Report/admin_transactions.ctp:128;241
+#: View/Reseller/admin_account.ctp:189
+#: View/User/admin_account.ctp:100;202
 msgid "Reward Points"
 msgstr ""
 
-#: ReportController.php:959;1179
-#: UserController.php:1036
+#: Controller/ReportController.php:959;1179
+#: Controller/UserController.php:1042
 msgid "Payment Number,Type,Bank,Account Type,Account Number,Reference,"
 msgstr ""
 
-#: ReportController.php:960
-#: UserController.php:1037
+#: Controller/ReportController.php:960
+#: Controller/UserController.php:1043
 msgid "Notification,Status Change,Payment Amount,Tax Deducted,Fees Paid,Balance Added,Status,X,Y"
 msgstr ""
 
-#: ReportController.php:967;1187
-#: ResellerController.php:997
-#: UserController.php:1044
+#: Controller/ReportController.php:967;1187
+#: Controller/ResellerController.php:1035
+#: Controller/UserController.php:1050
 msgid "Pending"
 msgstr ""
 
-#: ReportController.php:969;1189
-#: ResellerController.php:999
-#: UserController.php:1046
+#: Controller/ReportController.php:969;1189
+#: Controller/ResellerController.php:1037
+#: Controller/UserController.php:1052
 msgid "Approved"
 msgstr ""
 
-#: ReportController.php:971;1191
-#: ResellerController.php:1001
-#: UserController.php:1048
+#: Controller/ReportController.php:971;1191
+#: Controller/ResellerController.php:1039
+#: Controller/UserController.php:1054
 msgid "Denied"
 msgstr ""
 
-#: ReportController.php:979;1199
-#: ResellerController.php:1009
-#: UserController.php:1056
-#: Payments/admin_details.ctp:154
-#: Payments/admin_payment_history.ctp:123
-#: Report/admin_reseller_purchases.ctp:227
-#: Report/admin_user_purchases.ctp:193
+#: Controller/ReportController.php:979;1199
+#: Controller/ResellerController.php:1047
+#: Controller/UserController.php:1062
+#: View/Payments/admin_details.ctp:162
+#: View/Payments/admin_payment_history.ctp:123
+#: View/Report/admin_reseller_purchases.ctp:227
+#: View/Report/admin_user_purchases.ctp:193
 msgid "Bank Deposit"
 msgstr ""
 
-#: ReportController.php:983;1203
-#: ResellerController.php:1013
-#: UserController.php:1060
-#: User/admin_purchases.ctp:163
+#: Controller/ReportController.php:983;1203
+#: Controller/ResellerController.php:1051
+#: Controller/UserController.php:1066
+#: View/User/admin_purchases.ctp:163
 msgid "Checking"
 msgstr ""
 
-#: ReportController.php:985;1205
-#: ResellerController.php:1015
-#: UserController.php:1062
-#: User/admin_purchases.ctp:165
+#: Controller/ReportController.php:985;1205
+#: Controller/ResellerController.php:1053
+#: Controller/UserController.php:1068
+#: View/User/admin_purchases.ctp:165
 msgid "Savings"
 msgstr ""
 
-#: ReportController.php:1180
+#: Controller/ReportController.php:1180
 msgid "Notification,Status Change,Payment Amount,Tax Deducted,Fees Paid,Discount Credit,Balance Added,Status,X,Y"
 msgstr ""
 
-#: ReportController.php:1425
+#: Controller/ReportController.php:1425
 msgid "Recharge"
 msgstr ""
 
-#: ReportController.php:1428
+#: Controller/ReportController.php:1428
 msgid "Customer Support"
 msgstr ""
 
-#: ReportController.php:1431
+#: Controller/ReportController.php:1431
 msgid "Download"
 msgstr ""
 
-#: ResellerController.php:121;321
-#: SponsorController.php:99;174
-#: UserController.php:109;310
+#: Controller/ResellerController.php:124;317
+#: Controller/SponsorController.php:99;174
+#: Controller/UserController.php:109;302
 msgid "You must enter a name"
 msgstr ""
 
-#: ResellerController.php:126;326
-#: UserController.php:116;315
+#: Controller/ResellerController.php:129;322
+#: Controller/UserController.php:115;307
 msgid "You must enter a Cedula or Passport number"
 msgstr ""
 
-#: ResellerController.php:131;331
-#: SponsorController.php:106;179
-#: UserController.php:122;320
+#: Controller/ResellerController.php:134;327
+#: Controller/SponsorController.php:106;179
+#: Controller/UserController.php:121;312
 msgid "You must enter an email address"
 msgstr ""
 
-#: ResellerController.php:136;336
-#: SponsorController.php:110;182
-#: UserController.php:128;325
+#: Controller/ResellerController.php:139;332
+#: Controller/SponsorController.php:110;182
+#: Controller/UserController.php:127;317
 msgid "Invalid email address"
 msgstr ""
 
-#: ResellerController.php:141;346
-#: UserController.php:140;335
+#: Controller/ResellerController.php:144;342
+#: Controller/UserController.php:139;327
 msgid "You must enter an address"
 msgstr ""
 
-#: ResellerController.php:146;351
-#: UserController.php:146;340
+#: Controller/ResellerController.php:149;347
+#: Controller/UserController.php:145;332
 msgid "You must enter a phone number"
 msgstr ""
 
-#: ResellerController.php:222
+#: Controller/ResellerController.php:218
 msgid "Reseller created successfully"
 msgstr ""
 
-#: ResellerController.php:229
+#: Controller/ResellerController.php:225
 msgid "Error creating Reseller"
 msgstr ""
 
-#: ResellerController.php:284;393;576
+#: Controller/ResellerController.php:280;417;614
 msgid "Invalid Reseller"
 msgstr ""
 
-#: ResellerController.php:341
-#: SponsorController.php:114;185
-#: UserController.php:134;330
+#: Controller/ResellerController.php:337
+#: Controller/SponsorController.php:114;185
+#: Controller/UserController.php:133;322
 msgid "Email already registered"
 msgstr ""
 
-#: ResellerController.php:356
+#: Controller/ResellerController.php:352
 msgid "Discount percentage cannot be blank"
 msgstr ""
 
-#: ResellerController.php:369
+#: Controller/ResellerController.php:392
 msgid "Reseller updated successfully"
 msgstr ""
 
-#: ResellerController.php:374
+#: Controller/ResellerController.php:397
 msgid "Reseller could not be updated"
 msgstr ""
 
-#: ResellerController.php:416
+#: Controller/ResellerController.php:440
 msgid "Reseller deleted successfully"
 msgstr ""
 
-#: ResellerController.php:464
-#: UserController.php:450
+#: Controller/ResellerController.php:497
+#: Controller/UserController.php:451
 msgid "You can't extract an amount higher than the current balance of the account"
 msgstr ""
 
-#: ResellerController.php:489
-#: UserController.php:475
+#: Controller/ResellerController.php:522
+#: Controller/UserController.php:476
 msgid "You can't extract more points than are available in the account"
 msgstr ""
 
-#: ResellerController.php:534
-#: UserController.php:520
+#: Controller/ResellerController.php:572
+#: Controller/UserController.php:526
 msgid "Account update successful"
 msgstr ""
 
-#: ResellerController.php:539
-#: UserController.php:525
+#: Controller/ResellerController.php:577
+#: Controller/UserController.php:531
 msgid "Account update failed"
 msgstr ""
 
-#: ResellerController.php:732
-#: UserController.php:765
+#: Controller/ResellerController.php:770
+#: Controller/UserController.php:771
 msgid "id,Name,Cedula or Passport,Email,Address,City,State or Province,"
 msgstr ""
 
-#: ResellerController.php:733
-#: UserController.php:766
+#: Controller/ResellerController.php:771
+#: Controller/UserController.php:772
 msgid "Country,Phone Number,Registration Date,Status,Verified,Banned"
 msgstr ""
 
-#: ResellerController.php:747
-#: UserController.php:781
+#: Controller/ResellerController.php:785
+#: Controller/UserController.php:787
 msgid "Inactive"
 msgstr ""
 
-#: ResellerController.php:749
-#: UserController.php:783
+#: Controller/ResellerController.php:787
+#: Controller/UserController.php:789
 msgid "Active"
 msgstr ""
 
-#: ResellerController.php:756;765
-#: UserController.php:790;799
-#: Staff/admin_edit.ctp:235
-#: Staff/admin_index.ctp:85
+#: Controller/ResellerController.php:794;803
+#: Controller/UserController.php:796;805
+#: View/Staff/admin_edit.ctp:235
+#: View/Staff/admin_index.ctp:85
 msgid "No"
 msgstr ""
 
-#: ResellerController.php:758;767
-#: UserController.php:792;801
-#: Staff/admin_edit.ctp:229
-#: Staff/admin_index.ctp:83
+#: Controller/ResellerController.php:796;805
+#: Controller/UserController.php:798;807
+#: View/Staff/admin_edit.ctp:229
+#: View/Staff/admin_index.ctp:83
 msgid "Yes"
 msgstr ""
 
-#: ResellerController.php:875
+#: Controller/ResellerController.php:913
 msgid "Transaction ID,Mobile Operator,Phone Number,Amount,Date & Time,Status,X,Y"
 msgstr ""
 
-#: SettingController.php:45
+#: Controller/RewardController.php:89
+msgid "Reward added successfully"
+msgstr ""
+
+#: Controller/RewardController.php:97
+msgid "Error in uploaded image"
+msgstr ""
+
+#: Controller/RewardController.php:103
+msgid "Image Size should be less than 10MB"
+msgstr ""
+
+#: Controller/SettingController.php:45
 msgid "Reward points for signup cannot not be blank"
 msgstr ""
 
-#: SettingController.php:49
+#: Controller/SettingController.php:49
 msgid "Reward points for refferals cannot be blank"
 msgstr ""
 
-#: SettingController.php:53
+#: Controller/SettingController.php:53
 msgid "Reward points for recharges cannot be blank"
 msgstr ""
 
-#: SettingController.php:57
+#: Controller/SettingController.php:57
 msgid "Reward points for shares or likes cannot be blank"
 msgstr ""
 
-#: SettingController.php:265;294
+#: Controller/SettingController.php:266;295
 msgid "TrxEngine settings update successful"
 msgstr ""
 
-#: SettingController.php:278;307
+#: Controller/SettingController.php:279;308
 msgid "TrxEngine settings update failed"
 msgstr ""
 
-#: SettingController.php:373
+#: Controller/SettingController.php:374
 msgid "Password change failed"
 msgstr ""
 
-#: SettingController.php:412
+#: Controller/SettingController.php:413
 msgid "Settings saved successfully"
 msgstr ""
 
-#: SponsorController.php:125
+#: Controller/SponsorController.php:125
 msgid "Sponsor creation successful"
 msgstr ""
 
-#: SponsorController.php:136
+#: Controller/SponsorController.php:136
 msgid "Sponsor creation failed"
 msgstr ""
 
-#: SponsorController.php:192
+#: Controller/SponsorController.php:192
 msgid "Sponsor update successful"
 msgstr ""
 
-#: SponsorController.php:197
+#: Controller/SponsorController.php:197
 msgid "Sponsor update failed"
 msgstr ""
 
-#: SponsorController.php:225;270
+#: Controller/SponsorController.php:225;270
 msgid "Invalid Sponsor"
 msgstr ""
 
-#: SponsorController.php:293
+#: Controller/SponsorController.php:293
 msgid "Sponsor deletion successful"
 msgstr ""
 
-#: UserController.php:210
+#: Controller/UserController.php:202
 msgid "User creation successful"
 msgstr ""
 
-#: UserController.php:217
+#: Controller/UserController.php:209
 msgid "User creation failed"
 msgstr ""
 
-#: UserController.php:272;375;562
+#: Controller/UserController.php:264;367;568
 msgid "Invalid User"
 msgstr ""
 
-#: UserController.php:347
+#: Controller/UserController.php:339
 msgid "User update successful"
 msgstr ""
 
-#: UserController.php:352
+#: Controller/UserController.php:344
 msgid "User update failed"
 msgstr ""
 
-#: UserController.php:402
+#: Controller/UserController.php:394
 msgid "User deleted successfully"
 msgstr ""
 
-#: UserController.php:826
+#: Controller/UserController.php:832
 msgid "Users.csv"
 msgstr ""
 
-#: UserController.php:911
+#: Controller/UserController.php:917
 msgid "Transaction ID,Mobile Operator,Phone Number,Payment Method,Amount,Date & Time,Points Awarded,Status,X,Y"
 msgstr ""
 
-#: UserController.php:1165
+#: Controller/UserController.php:1171
 msgid "Reward ID,Reward Type,Reward Value,Points Spent,Date & Time"
 msgstr ""
 
-#: UserController.php:1216
+#: Controller/UserController.php:1222
 msgid "Invalid User ID"
 msgstr ""
 
-#: Banks/admin_add.ctp:19
-#: Banks/admin_edit.ctp:19
-#: Banks/admin_index.ctp:19
-#: Cpanel/admin_change_password.ctp:19
-#: Cpanel/admin_home.ctp:21
-#: Cpanel/admin_profile.ctp:19
-#: Inventory/admin_index.ctp:21
-#: Inventory/admin_warning.ctp:19
-#: Payments/admin_deny_confirmation.ctp:24
-#: Payments/admin_details.ctp:71
-#: Payments/admin_payment_history.ctp:19
-#: Payments/admin_payment_notifications.ctp:19
-#: Recharge/admin_check_status.ctp:51
-#: Recharge/admin_failed.ctp:19
-#: Recharge/admin_status.ctp:19
-#: Recharge/admin_view_status.ctp:51
-#: Report/admin_direct_sales.ctp:81
-#: Report/admin_reseller_purchases.ctp:58
-#: Report/admin_reseller_sales.ctp:75
-#: Report/admin_transactions.ctp:62
-#: Report/admin_user_purchases.ctp:58
-#: Reseller/admin_account.ctp:19
-#: Reseller/admin_add.ctp:19
-#: Reseller/admin_edit.ctp:21
-#: Reseller/admin_index.ctp:51
-#: Reseller/admin_purchases.ctp:54
-#: Reseller/admin_transactions.ctp:49
-#: Reseller/admin_view.ctp:52
-#: Reward/admin_add.ctp:19
-#: Reward/admin_edit.ctp:19
-#: Reward/admin_index.ctp:19
-#: Setting/admin_change_password.ctp:19
-#: Setting/admin_edit_platform.ctp:19
-#: Setting/admin_edit_points.ctp:19
-#: Setting/admin_operator.ctp:19
-#: Setting/admin_reseller.ctp:19
-#: Setting/admin_tax.ctp:19
-#: Setting/admin_view_platform.ctp:19
-#: Sponsor/admin_add.ctp:19
-#: Sponsor/admin_edit.ctp:19
-#: Sponsor/admin_index.ctp:55
-#: Sponsor/admin_resellers.ctp:55
-#: Sponsor/admin_view.ctp:19
-#: Staff/admin_add.ctp:33
-#: Staff/admin_change_password.ctp:19
-#: Staff/admin_edit.ctp:34
-#: Staff/admin_index.ctp:19
-#: User/admin_account.ctp:19
-#: User/admin_add.ctp:19
-#: User/admin_index.ctp:55
-#: User/admin_purchases.ctp:54
-#: User/admin_rewards.ctp:55
-#: User/admin_transactions.ctp:55
+#: View/Banks/admin_add.ctp:19
+#: View/Banks/admin_edit.ctp:19
+#: View/Banks/admin_index.ctp:19
+#: View/Cpanel/admin_change_password.ctp:19
+#: View/Cpanel/admin_home.ctp:21
+#: View/Cpanel/admin_profile.ctp:19
+#: View/Inventory/admin_index.ctp:21
+#: View/Inventory/admin_warning.ctp:19
+#: View/Payments/admin_deny_confirmation.ctp:24
+#: View/Payments/admin_details.ctp:71
+#: View/Payments/admin_payment_history.ctp:19
+#: View/Payments/admin_payment_notifications.ctp:19
+#: View/Recharge/admin_check_status.ctp:51
+#: View/Recharge/admin_failed.ctp:19
+#: View/Recharge/admin_status.ctp:19
+#: View/Recharge/admin_view_status.ctp:51
+#: View/Report/admin_direct_sales.ctp:81
+#: View/Report/admin_reseller_purchases.ctp:58
+#: View/Report/admin_reseller_sales.ctp:75
+#: View/Report/admin_transactions.ctp:62
+#: View/Report/admin_user_purchases.ctp:58
+#: View/Reseller/admin_account.ctp:19
+#: View/Reseller/admin_add.ctp:19
+#: View/Reseller/admin_edit.ctp:21
+#: View/Reseller/admin_index.ctp:51
+#: View/Reseller/admin_purchases.ctp:54
+#: View/Reseller/admin_transactions.ctp:49
+#: View/Reseller/admin_view.ctp:52
+#: View/Reward/admin_add.ctp:19
+#: View/Reward/admin_edit.ctp:19
+#: View/Reward/admin_index.ctp:19
+#: View/Setting/admin_change_password.ctp:19
+#: View/Setting/admin_edit_platform.ctp:19
+#: View/Setting/admin_edit_points.ctp:19
+#: View/Setting/admin_operator.ctp:19
+#: View/Setting/admin_reseller.ctp:19
+#: View/Setting/admin_tax.ctp:19
+#: View/Setting/admin_view_platform.ctp:19
+#: View/Sponsor/admin_add.ctp:19
+#: View/Sponsor/admin_edit.ctp:19
+#: View/Sponsor/admin_index.ctp:55
+#: View/Sponsor/admin_resellers.ctp:55
+#: View/Sponsor/admin_view.ctp:19
+#: View/Staff/admin_add.ctp:33
+#: View/Staff/admin_change_password.ctp:19
+#: View/Staff/admin_edit.ctp:34
+#: View/Staff/admin_index.ctp:19
+#: View/User/admin_account.ctp:19
+#: View/User/admin_add.ctp:19
+#: View/User/admin_index.ctp:55
+#: View/User/admin_purchases.ctp:54
+#: View/User/admin_rewards.ctp:55
+#: View/User/admin_transactions.ctp:55
 msgid "Home"
 msgstr ""
 
-#: Banks/admin_add.ctp:43
+#: View/Banks/admin_add.ctp:43
 msgid " Add Bank"
 msgstr ""
 
-#: Banks/admin_add.ctp:60
-#: Banks/admin_edit.ctp:78
-#: Banks/admin_index.ctp:52
-#: Cpanel/admin_profile.ctp:76;87
-#: Reseller/admin_add.ctp:53;66
-#: Reseller/admin_edit.ctp:118;131
-#: Reseller/admin_index.ctp:86
-#: Reseller/admin_view.ctp:149;163
-#: Sponsor/admin_add.ctp:53;66
-#: Sponsor/admin_edit.ctp:111;124
-#: Sponsor/admin_index.ctp:96
-#: Sponsor/admin_resellers.ctp:109
-#: Sponsor/admin_view.ctp:111;125
-#: Staff/admin_add.ctp:78;91
-#: Staff/admin_edit.ctp:91;104
-#: Staff/admin_index.ctp:53
-#: User/admin_add.ctp:60;73
-#: User/admin_edit.ctp:112;125
-#: User/admin_index.ctp:97
-#: User/admin_view.ctp:143;157
+#: View/Banks/admin_add.ctp:60
+#: View/Banks/admin_edit.ctp:78
+#: View/Banks/admin_index.ctp:52
+#: View/Cpanel/admin_profile.ctp:76;87
+#: View/Reseller/admin_add.ctp:53;66
+#: View/Reseller/admin_edit.ctp:118;131
+#: View/Reseller/admin_index.ctp:86
+#: View/Reseller/admin_view.ctp:149;163
+#: View/Sponsor/admin_add.ctp:53;66
+#: View/Sponsor/admin_edit.ctp:111;124
+#: View/Sponsor/admin_index.ctp:96
+#: View/Sponsor/admin_resellers.ctp:109
+#: View/Sponsor/admin_view.ctp:111;125
+#: View/Staff/admin_add.ctp:78;91
+#: View/Staff/admin_edit.ctp:91;104
+#: View/Staff/admin_index.ctp:53
+#: View/User/admin_add.ctp:60;73
+#: View/User/admin_edit.ctp:112;125
+#: View/User/admin_index.ctp:97
+#: View/User/admin_view.ctp:143;157
 msgid "Name"
 msgstr ""
 
-#: Banks/admin_add.ctp:73
-#: Banks/admin_edit.ctp:91
+#: View/Banks/admin_add.ctp:73
+#: View/Banks/admin_edit.ctp:91
 msgid "Bank Name"
 msgstr ""
 
-#: Banks/admin_add.ctp:84;97
-#: Banks/admin_edit.ctp:102;115
-#: Banks/admin_index.ctp:53
-#: User/admin_purchases.ctp:105
+#: View/Banks/admin_add.ctp:84;97
+#: View/Banks/admin_edit.ctp:102;115
+#: View/Banks/admin_index.ctp:53
+#: View/User/admin_purchases.ctp:105
 msgid "Account Number"
 msgstr ""
 
-#: Banks/admin_add.ctp:108
-#: Banks/admin_edit.ctp:126
-#: Banks/admin_index.ctp:54
-#: User/admin_purchases.ctp:104
+#: View/Banks/admin_add.ctp:108
+#: View/Banks/admin_edit.ctp:126
+#: View/Banks/admin_index.ctp:54
+#: View/User/admin_purchases.ctp:104
 msgid "Account Type"
 msgstr ""
 
-#: Banks/admin_add.ctp:114
-#: Banks/admin_edit.ctp:132
+#: View/Banks/admin_add.ctp:114
+#: View/Banks/admin_edit.ctp:132
 msgid "Corriente"
 msgstr ""
 
-#: Banks/admin_add.ctp:121
-#: Banks/admin_edit.ctp:139
+#: View/Banks/admin_add.ctp:121
+#: View/Banks/admin_edit.ctp:139
 msgid "Ahorros"
 msgstr ""
 
-#: Banks/admin_add.ctp:128
-#: Cpanel/admin_profile.ctp:162
-#: Inventory/admin_warning.ctp:116
-#: Recharge/admin_status.ctp:89
-#: Report/admin_transactions.ctp:147
-#: Reseller/admin_account.ctp:132
-#: Reseller/admin_add.ctp:320
-#: Reward/admin_add.ctp:198
-#: Reward/admin_edit.ctp:197
-#: Setting/admin_change_password.ctp:126
-#: Setting/admin_edit_platform.ctp:225
-#: Setting/admin_edit_points.ctp:168
-#: Setting/admin_reseller.ctp:160
-#: Setting/admin_tax.ctp:104
-#: Sponsor/admin_add.ctp:275
-#: Sponsor/admin_edit.ctp:333
-#: Staff/admin_add.ctp:260
-#: User/admin_account.ctp:145
-#: User/admin_add.ctp:282
-#: User/admin_edit.ctp:371
+#: View/Banks/admin_add.ctp:128
+#: View/Cpanel/admin_profile.ctp:162
+#: View/Inventory/admin_warning.ctp:116
+#: View/Recharge/admin_status.ctp:89
+#: View/Report/admin_transactions.ctp:147
+#: View/Reseller/admin_account.ctp:132
+#: View/Reseller/admin_add.ctp:320
+#: View/Reward/admin_add.ctp:198
+#: View/Reward/admin_edit.ctp:197
+#: View/Setting/admin_change_password.ctp:126
+#: View/Setting/admin_edit_platform.ctp:225
+#: View/Setting/admin_edit_points.ctp:170
+#: View/Setting/admin_reseller.ctp:160
+#: View/Setting/admin_tax.ctp:104
+#: View/Sponsor/admin_add.ctp:275
+#: View/Sponsor/admin_edit.ctp:333
+#: View/Staff/admin_add.ctp:260
+#: View/User/admin_account.ctp:145
+#: View/User/admin_add.ctp:282
+#: View/User/admin_edit.ctp:385
 msgid "Submit"
 msgstr ""
 
-#: Banks/admin_edit.ctp:31
+#: View/Banks/admin_edit.ctp:31
 msgid "View Banks"
 msgstr ""
 
-#: Banks/admin_edit.ctp:55
+#: View/Banks/admin_edit.ctp:55
 msgid "Edit Bank"
 msgstr ""
 
-#: Banks/admin_index.ctp:46
+#: View/Banks/admin_index.ctp:46
 msgid " Banks"
 msgstr ""
 
-#: Banks/admin_index.ctp:55
-#: Payments/admin_payment_notifications.ctp:60
-#: Reseller/admin_index.ctp:92
-#: Reward/admin_index.ctp:58
-#: Setting/admin_operator.ctp:55
-#: Sponsor/admin_index.ctp:100
-#: Staff/admin_index.ctp:57
-#: User/admin_index.ctp:102
+#: View/Banks/admin_index.ctp:55
+#: View/Payments/admin_payment_notifications.ctp:60
+#: View/Reseller/admin_index.ctp:92
+#: View/Reward/admin_index.ctp:58
+#: View/Setting/admin_operator.ctp:55
+#: View/Sponsor/admin_index.ctp:100
+#: View/Staff/admin_index.ctp:57
+#: View/User/admin_index.ctp:103
 msgid "Actions"
 msgstr ""
 
-#: Banks/admin_index.ctp:81
-#: Reward/admin_index.ctp:97
-#: Staff/admin_index.ctp:92
+#: View/Banks/admin_index.ctp:81
+#: View/Reward/admin_index.ctp:97
+#: View/Staff/admin_index.ctp:92
 msgid "<i class=\"icon-edit icon-black\"></i><span class=\"hidden-phone\">Edit</span>"
 msgstr ""
 
-#: Banks/admin_index.ctp:96
-#: Reward/admin_index.ctp:109
-#: Staff/admin_index.ctp:106
+#: View/Banks/admin_index.ctp:96
+#: View/Reward/admin_index.ctp:109
+#: View/Staff/admin_index.ctp:106
 msgid "<i class=\"icon-trash icon-black\"></i></i><span class=\"hidden-phone\">Delete</span>"
 msgstr ""
 
-#: Cpanel/admin_change_password.ctp:46
-#: Elements/adminheader.ctp:59
-#: Staff/admin_change_password.ctp:59
+#: View/Cpanel/admin_change_password.ctp:46
+#: View/Elements/adminheader.ctp:59
+#: View/Staff/admin_change_password.ctp:59
 msgid "Change Password"
 msgstr ""
 
-#: Cpanel/admin_change_password.ctp:63;74
+#: View/Cpanel/admin_change_password.ctp:63;74
 msgid "Current Password"
 msgstr ""
 
-#: Cpanel/admin_change_password.ctp:85;96
-#: Setting/admin_change_password.ctp:77;88
-#: Staff/admin_change_password.ctp:77
+#: View/Cpanel/admin_change_password.ctp:85;96
+#: View/Setting/admin_change_password.ctp:77;88
+#: View/Staff/admin_change_password.ctp:77
 msgid "New Password"
 msgstr ""
 
-#: Cpanel/admin_change_password.ctp:108;119
-#: Setting/admin_change_password.ctp:101;112
-#: Staff/admin_add.ctp:180;193
-#: Staff/admin_change_password.ctp:101
+#: View/Cpanel/admin_change_password.ctp:108;119
+#: View/Setting/admin_change_password.ctp:101;112
+#: View/Staff/admin_add.ctp:180;193
+#: View/Staff/admin_change_password.ctp:101
 msgid "Confirm Password"
 msgstr ""
 
-#: Cpanel/admin_home.ctp:39;168;282
+#: View/Cpanel/admin_home.ctp:39;168;282
 msgid "<span class=\"icon32 icon-blue icon-user\"></span><div>Users</div>"
 msgstr ""
 
-#: Cpanel/admin_home.ctp:46;175;289
-#: User/admin_index.ctp:87
+#: View/Cpanel/admin_home.ctp:46;175;289
+#: View/User/admin_index.ctp:87
 msgid " Users"
 msgstr ""
 
-#: Cpanel/admin_home.ctp:54;183
+#: View/Cpanel/admin_home.ctp:54;183
 msgid "<span class=\"icon32 icon-blue icon-user\"></span><div>Sponsors</div>"
 msgstr ""
 
-#: Cpanel/admin_home.ctp:61;190
-#: Sponsor/admin_index.ctp:87
+#: View/Cpanel/admin_home.ctp:61;190
+#: View/Sponsor/admin_index.ctp:87
 msgid " Sponsors"
 msgstr ""
 
-#: Cpanel/admin_home.ctp:69;198;297
+#: View/Cpanel/admin_home.ctp:69;198;297
 msgid "<span class=\"icon32 icon-blue icon-user\"></span><div>Resellers</div>"
 msgstr ""
 
-#: Cpanel/admin_home.ctp:76;205;304
-#: Reseller/admin_index.ctp:79
+#: View/Cpanel/admin_home.ctp:76;205;304
+#: View/Reseller/admin_index.ctp:79
 msgid " Resellers"
 msgstr ""
 
-#: Cpanel/admin_home.ctp:84
+#: View/Cpanel/admin_home.ctp:84
 msgid "<span class=\"icon32 icon-blue icon-users\"></span><div>Staff Members</div>"
 msgstr ""
 
-#: Cpanel/admin_home.ctp:91
-#: Staff/admin_index.ctp:47
+#: View/Cpanel/admin_home.ctp:91
+#: View/Staff/admin_index.ctp:47
 msgid " Staff Members"
 msgstr ""
 
-#: Cpanel/admin_home.ctp:101;230
+#: View/Cpanel/admin_home.ctp:101;230
 msgid "<span class=\"icon32 icon-blue icon-star-off\"></span><div>Inventory</div>"
 msgstr ""
 
-#: Cpanel/admin_home.ctp:108;237
+#: View/Cpanel/admin_home.ctp:108;237
 msgid "View inventory"
 msgstr ""
 
-#: Cpanel/admin_home.ctp:116;245;312
+#: View/Cpanel/admin_home.ctp:116;245;312
 msgid "<span class=\"icon32 icon-blue icon-info\"></span><div>Check Recharge</div>"
 msgstr ""
 
-#: Cpanel/admin_home.ctp:123;252;319
+#: View/Cpanel/admin_home.ctp:123;252;319
 msgid "Check the status of a recharge"
 msgstr ""
 
-#: Cpanel/admin_home.ctp:131;260
+#: View/Cpanel/admin_home.ctp:131;260
 msgid "<span class=\"icon32 icon-blue icon-book\"></span><div>Payment Notifications</div>"
 msgstr ""
 
-#: Cpanel/admin_home.ctp:138;267
+#: View/Cpanel/admin_home.ctp:138;267
 msgid "View payment notifications"
 msgstr ""
 
-#: Cpanel/admin_home.ctp:146
+#: View/Cpanel/admin_home.ctp:146
 msgid "<span class=\"icon32 icon-blue icon-cart\"></span><div>Transactions</div>"
 msgstr ""
 
-#: Cpanel/admin_home.ctp:153
+#: View/Cpanel/admin_home.ctp:153
 msgid "View Transactions report"
 msgstr ""
 
-#: Cpanel/admin_home.ctp:213
+#: View/Cpanel/admin_home.ctp:213
 msgid "<span class=\"icon32 icon-blue icon-book\"></span><div>Transactions</div>"
 msgstr ""
 
-#: Cpanel/admin_home.ctp:220
+#: View/Cpanel/admin_home.ctp:220
 msgid "View transactions report"
 msgstr ""
 
-#: Cpanel/admin_index.ctp:27
+#: View/Cpanel/admin_index.ctp:27
 msgid "Club Prepago Celular"
 msgstr ""
 
-#: Cpanel/admin_index.ctp:58
+#: View/Cpanel/admin_index.ctp:58
 msgid "Enter your username and password"
 msgstr ""
 
-#: Cpanel/admin_index.ctp:79
-#: Cpanel/admin_profile.ctp:98;109
-#: Setting/admin_view_platform.ctp:57
-#: Staff/admin_add.ctp:129;142
-#: Staff/admin_edit.ctp:142;155
-#: Staff/admin_index.ctp:54
+#: View/Cpanel/admin_index.ctp:79
+#: View/Cpanel/admin_profile.ctp:98;109
+#: View/Setting/admin_view_platform.ctp:57
+#: View/Staff/admin_add.ctp:129;142
+#: View/Staff/admin_edit.ctp:142;155
+#: View/Staff/admin_index.ctp:54
 msgid "Username"
 msgstr ""
 
-#: Cpanel/admin_index.ctp:99
-#: Staff/admin_add.ctp:154;167
+#: View/Cpanel/admin_index.ctp:99
+#: View/Staff/admin_add.ctp:154;167
 msgid "Password"
 msgstr ""
 
-#: Cpanel/admin_index.ctp:124
+#: View/Cpanel/admin_index.ctp:124
 msgid "Sign in"
 msgstr ""
 
-#: Cpanel/admin_profile.ctp:31
-#: Elements/adminheader.ctp:47
+#: View/Cpanel/admin_profile.ctp:31
+#: View/Elements/adminheader.ctp:47
 msgid "Profile"
 msgstr ""
 
-#: Cpanel/admin_profile.ctp:59
+#: View/Cpanel/admin_profile.ctp:59
 msgid " Profile"
 msgstr ""
 
-#: Cpanel/admin_profile.ctp:120;131
-#: Reseller/admin_add.ctp:103
-#: Reseller/admin_edit.ctp:168
-#: Reseller/admin_index.ctp:87
-#: Reseller/admin_view.ctp:201
-#: Sponsor/admin_add.ctp:103
-#: Sponsor/admin_edit.ctp:161
-#: Sponsor/admin_index.ctp:97
-#: Sponsor/admin_resellers.ctp:110
-#: Sponsor/admin_view.ctp:163
-#: Staff/admin_add.ctp:103
-#: Staff/admin_edit.ctp:116
-#: User/admin_add.ctp:110
-#: User/admin_edit.ctp:162
-#: User/admin_index.ctp:98
-#: User/admin_view.ctp:195
+#: View/Cpanel/admin_profile.ctp:120;131
+#: View/Reseller/admin_add.ctp:103
+#: View/Reseller/admin_edit.ctp:168
+#: View/Reseller/admin_index.ctp:87
+#: View/Reseller/admin_view.ctp:201
+#: View/Sponsor/admin_add.ctp:103
+#: View/Sponsor/admin_edit.ctp:161
+#: View/Sponsor/admin_index.ctp:97
+#: View/Sponsor/admin_resellers.ctp:110
+#: View/Sponsor/admin_view.ctp:163
+#: View/Staff/admin_add.ctp:103
+#: View/Staff/admin_edit.ctp:116
+#: View/User/admin_add.ctp:110
+#: View/User/admin_edit.ctp:162
+#: View/User/admin_index.ctp:98
+#: View/User/admin_view.ctp:195
 msgid "Email"
 msgstr ""
 
-#: Cpanel/admin_profile.ctp:143
-#: Staff/admin_edit.ctp:167
+#: View/Cpanel/admin_profile.ctp:143
+#: View/Staff/admin_edit.ctp:167
 msgid "Language"
 msgstr ""
 
-#: Cpanel/admin_profile.ctp:149
-#: Staff/admin_edit.ctp:173
+#: View/Cpanel/admin_profile.ctp:149
+#: View/Staff/admin_edit.ctp:173
 msgid "English"
 msgstr ""
 
-#: Cpanel/admin_profile.ctp:156
-#: Staff/admin_edit.ctp:180
+#: View/Cpanel/admin_profile.ctp:156
+#: View/Staff/admin_edit.ctp:180
 msgid "Spanish"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:20
+#: View/Elements/adminLeftMenu.ctp:20
 msgid "<i class='icon-home'></i><span class='hidden-tablet'> Home</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:41;655;979
+#: View/Elements/adminLeftMenu.ctp:41;655;979
 msgid "<i class='icon-user'></i><span class='hidden-tablet'> Users</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:55;669;993
+#: View/Elements/adminLeftMenu.ctp:55;669;993
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> Add User</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:71;685;1009
+#: View/Elements/adminLeftMenu.ctp:71;685;1009
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> View Users</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:89
+#: View/Elements/adminLeftMenu.ctp:89
 msgid "<i class='icon-user'></i><span class='hidden-tablet'> Sponsors</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:103
+#: View/Elements/adminLeftMenu.ctp:103
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> Add Sponsor</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:119
+#: View/Elements/adminLeftMenu.ctp:119
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> View Sponsors</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:137;703;1027
+#: View/Elements/adminLeftMenu.ctp:137;703;1027
 msgid "<i class='icon-user'></i><span class='hidden-tablet'> Resellers</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:151;717;1041
+#: View/Elements/adminLeftMenu.ctp:151;717;1041
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> Add Reseller</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:167;733;1057
+#: View/Elements/adminLeftMenu.ctp:167;733;1057
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> View Resellers</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:185;751
+#: View/Elements/adminLeftMenu.ctp:185;751
 msgid "<i class='icon-list-alt'></i><span class='hidden-tablet'> Reports</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:199;765
+#: View/Elements/adminLeftMenu.ctp:199;765
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> Direct Sales</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:215;781
+#: View/Elements/adminLeftMenu.ctp:215;781
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'>  Reseller Sales</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:231;797
+#: View/Elements/adminLeftMenu.ctp:231;797
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> Transactions</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:247;813
+#: View/Elements/adminLeftMenu.ctp:247;813
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> User Purchases</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:263;829
+#: View/Elements/adminLeftMenu.ctp:263;829
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> Reseller Purchases</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:281;847
+#: View/Elements/adminLeftMenu.ctp:281;847
 msgid "<i class='icon-star-empty'></i><span class='hidden-tablet'> Inventory</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:295;861
+#: View/Elements/adminLeftMenu.ctp:295;861
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> View Inventory</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:311
+#: View/Elements/adminLeftMenu.ctp:311
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> Inventory Warnings</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:329
+#: View/Elements/adminLeftMenu.ctp:329
 msgid "<i class='icon-star'></i><span class='hidden-tablet'> Rewards</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:343
+#: View/Elements/adminLeftMenu.ctp:343
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> Add Reward</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:359
+#: View/Elements/adminLeftMenu.ctp:359
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> View Rewards</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:377;879;1075
+#: View/Elements/adminLeftMenu.ctp:377;879;1075
 msgid "<i class='icon-info-sign'></i><span class='hidden-tablet'> Recharge Status</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:391;893;1089
+#: View/Elements/adminLeftMenu.ctp:391;893;1089
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> Check Recharge</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:407;909;1105
+#: View/Elements/adminLeftMenu.ctp:407;909;1105
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> Failed Recharges</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:425
+#: View/Elements/adminLeftMenu.ctp:425
 msgid "<i class='icon-cog'></i><span class='hidden-tablet'> Settings</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:439
+#: View/Elements/adminLeftMenu.ctp:439
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> Taxes</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:455
+#: View/Elements/adminLeftMenu.ctp:455
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> Reward Points</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:471
+#: View/Elements/adminLeftMenu.ctp:471
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> Fees and Discounts</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:487
+#: View/Elements/adminLeftMenu.ctp:487
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> Mobile Operators</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:503
+#: View/Elements/adminLeftMenu.ctp:503
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> TrxEngine</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:519
+#: View/Elements/adminLeftMenu.ctp:519
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> Add Banks</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:535
+#: View/Elements/adminLeftMenu.ctp:535
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> View Banks</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:553
+#: View/Elements/adminLeftMenu.ctp:553
 msgid "<i class='icon-user'></i><span class='hidden-tablet'> Staff Members</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:567
+#: View/Elements/adminLeftMenu.ctp:567
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> Add Staff Member</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:583
+#: View/Elements/adminLeftMenu.ctp:583
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> View Staff Members</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:601;927;1123
+#: View/Elements/adminLeftMenu.ctp:601;927;1123
 msgid "<i class='icon-list-alt'></i><span class='hidden-tablet'> Payments</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:615;941;1137
+#: View/Elements/adminLeftMenu.ctp:615;941;1137
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> Payment Notifications</span>"
 msgstr ""
 
-#: Elements/adminLeftMenu.ctp:631;957;1153
+#: View/Elements/adminLeftMenu.ctp:631;957;1153
 msgid "<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> Payment History</span>"
 msgstr ""
 
-#: Elements/adminheader.ctp:71
+#: View/Elements/adminheader.ctp:71
 msgid "Sign Out"
 msgstr ""
 
-#: Inventory/admin_index.ctp:76
+#: View/Inventory/admin_index.ctp:76
 msgid "User Prepaid Balance"
 msgstr ""
 
-#: Inventory/admin_index.ctp:84
+#: View/Inventory/admin_index.ctp:84
 msgid "Reseller Prepaid Balance"
 msgstr ""
 
-#: Inventory/admin_index.ctp:97
+#: View/Inventory/admin_index.ctp:97
 msgid " Enter new purchase into inventory"
 msgstr ""
 
-#: Inventory/admin_index.ctp:114;180
-#: Recharge/admin_check_status.ctp:122
-#: Recharge/admin_failed.ctp:59
-#: Recharge/admin_view_status.ctp:128
-#: Report/admin_direct_sales.ctp:191
-#: Report/admin_reseller_sales.ctp:188
-#: Report/admin_transactions.ctp:165
-#: Reseller/admin_transactions.ctp:96
-#: Setting/admin_edit_platform.ctp:78;92;109
-#: Setting/admin_operator.ctp:53
-#: Setting/admin_view_platform.ctp:53
-#: User/admin_transactions.ctp:108
+#: View/Inventory/admin_index.ctp:114;180
+#: View/Recharge/admin_check_status.ctp:122
+#: View/Recharge/admin_failed.ctp:59
+#: View/Recharge/admin_view_status.ctp:128
+#: View/Report/admin_direct_sales.ctp:191
+#: View/Report/admin_reseller_sales.ctp:188
+#: View/Report/admin_transactions.ctp:165
+#: View/Reseller/admin_transactions.ctp:96
+#: View/Setting/admin_edit_platform.ctp:78;92;109
+#: View/Setting/admin_operator.ctp:53
+#: View/Setting/admin_view_platform.ctp:53
+#: View/User/admin_transactions.ctp:108
 msgid "Mobile Operator"
 msgstr ""
 
-#: Inventory/admin_index.ctp:117
+#: View/Inventory/admin_index.ctp:117
 msgid "Select..."
 msgstr ""
 
-#: Inventory/admin_index.ctp:131;134;181
-#: Payments/admin_payment_notifications.ctp:59
-#: Recharge/admin_check_status.ctp:146
-#: Recharge/admin_failed.ctp:61
-#: Recharge/admin_view_status.ctp:172
-#: Report/admin_reseller_sales.ctp:190
-#: Report/admin_transactions.ctp:167
-#: Reseller/admin_account.ctp:159
-#: Reseller/admin_transactions.ctp:98
-#: User/admin_account.ctp:172
-#: User/admin_transactions.ctp:110
+#: View/Inventory/admin_index.ctp:131;134;181
+#: View/Payments/admin_payment_notifications.ctp:59
+#: View/Recharge/admin_check_status.ctp:146
+#: View/Recharge/admin_failed.ctp:61
+#: View/Recharge/admin_view_status.ctp:172
+#: View/Report/admin_reseller_sales.ctp:190
+#: View/Report/admin_transactions.ctp:167
+#: View/Reseller/admin_account.ctp:159
+#: View/Reseller/admin_transactions.ctp:98
+#: View/User/admin_account.ctp:172
+#: View/User/admin_transactions.ctp:110
 msgid "Amount"
 msgstr ""
 
-#: Inventory/admin_index.ctp:143;146;182
+#: View/Inventory/admin_index.ctp:143;146;182
 msgid "Document Number"
 msgstr ""
 
-#: Inventory/admin_index.ctp:174
+#: View/Inventory/admin_index.ctp:174
 msgid " Airtime Purchase History"
 msgstr ""
 
-#: Inventory/admin_index.ctp:183
-#: Recharge/admin_check_status.ctp:154
-#: Recharge/admin_failed.ctp:62
-#: Recharge/admin_view_status.ctp:190
-#: Report/admin_direct_sales.ctp:198
-#: Report/admin_reseller_sales.ctp:191
-#: Report/admin_transactions.ctp:169
-#: Reseller/admin_account.ctp:161
-#: Reseller/admin_transactions.ctp:99
-#: User/admin_account.ctp:174
-#: User/admin_rewards.ctp:111
-#: User/admin_transactions.ctp:112
+#: View/Inventory/admin_index.ctp:183
+#: View/Recharge/admin_check_status.ctp:154
+#: View/Recharge/admin_failed.ctp:62
+#: View/Recharge/admin_view_status.ctp:190
+#: View/Report/admin_direct_sales.ctp:198
+#: View/Report/admin_reseller_sales.ctp:191
+#: View/Report/admin_transactions.ctp:169
+#: View/Reseller/admin_account.ctp:161
+#: View/Reseller/admin_transactions.ctp:99
+#: View/User/admin_account.ctp:174
+#: View/User/admin_rewards.ctp:111
+#: View/User/admin_transactions.ctp:112
 msgid "Date & Time"
 msgstr ""
 
-#: Inventory/admin_warning.ctp:31
+#: View/Inventory/admin_warning.ctp:31
 msgid "View Inventory"
 msgstr ""
 
-#: Inventory/admin_warning.ctp:59
+#: View/Inventory/admin_warning.ctp:59
 msgid " Inventory Warnings"
 msgstr ""
 
-#: Layouts/admin_layout.ctp:26
+#: View/Layouts/admin_layout.ctp:26
 msgid "Club Prepago"
 msgstr ""
 
-#: Layouts/error.ctp:24
+#: View/Layouts/error.ctp:24
 msgid "Error"
 msgstr ""
 
-#: Layouts/error.ctp:44
+#: View/Layouts/error.ctp:44
 msgid "<center>\n\t\t\t\t\t<div style=\"font-family:Tahoma;\">\n\t\t\t\t\t\t<h2>Something went wrong...</h2>\n\t\t\t\t\t\t</br>\n\t\t\t\t\t\t</br>\n\t\t\t\t\t\tIf you have any problems, please contact <a href=\"mailto:support@clubprepago.com\">support@clubprepago.com</a>\n\t\t\t\t\t\t</br>\n\t\t\t\t\t\tor call us at <b>+507 388-6220</b>\n\t\t\t\t\t</div>\n\t\t\t\t</center>"
 msgstr ""
 
-#: Payments/admin_deny_confirmation.ctp:36
+#: View/Payments/admin_deny_confirmation.ctp:36
 msgid "Payment Notifications"
 msgstr ""
 
-#: Payments/admin_deny_confirmation.ctp:64
+#: View/Payments/admin_deny_confirmation.ctp:64
 msgid " Deny Payment Notification"
 msgstr ""
 
-#: Payments/admin_deny_confirmation.ctp:81
+#: View/Payments/admin_deny_confirmation.ctp:81
 msgid "Reason For Rejection"
 msgstr ""
 
-#: Payments/admin_deny_confirmation.ctp:92
+#: View/Payments/admin_deny_confirmation.ctp:92
 msgid "Enter a reason for rejecting the notification"
 msgstr ""
 
-#: Payments/admin_deny_confirmation.ctp:103
+#: View/Payments/admin_deny_confirmation.ctp:103
 msgid "Deny"
 msgstr ""
 
-#: Payments/admin_details.ctp:83
+#: View/Payments/admin_details.ctp:83
 msgid "Payment History"
 msgstr ""
 
-#: Payments/admin_details.ctp:111
+#: View/Payments/admin_details.ctp:111
 msgid "Payment Details"
 msgstr ""
 
-#: Payments/admin_details.ctp:124
-#: Payments/admin_payment_history.ctp:53
-#: Payments/admin_payment_notifications.ctp:53
-#: Report/admin_reseller_purchases.ctp:149
-#: Report/admin_user_purchases.ctp:134
-#: Reseller/admin_purchases.ctp:101
-#: User/admin_purchases.ctp:101
+#: View/Payments/admin_details.ctp:124
+#: View/Payments/admin_payment_history.ctp:53
+#: View/Payments/admin_payment_notifications.ctp:53
+#: View/Report/admin_reseller_purchases.ctp:149
+#: View/Report/admin_user_purchases.ctp:134
+#: View/Reseller/admin_purchases.ctp:101
+#: View/User/admin_purchases.ctp:101
 msgid "Payment Number"
 msgstr ""
 
-#: Payments/admin_details.ctp:142
-#: Recharge/admin_failed.ctp:57
+#: View/Payments/admin_details.ctp:142
+#: View/Recharge/admin_failed.ctp:57
 msgid "User or Reseller"
 msgstr ""
 
-#: Payments/admin_details.ctp:150
-#: Report/admin_direct_sales.ctp:193
-#: Report/admin_transactions.ctp:120;168
-#: User/admin_transactions.ctp:111
+#: View/Payments/admin_details.ctp:150
+#: View/Payments/admin_payment_history.ctp:57
+msgid "Promo Number"
+msgstr ""
+
+#: View/Payments/admin_details.ctp:158
+#: View/Payments/admin_payment_notifications.ctp:57
+#: View/Report/admin_direct_sales.ctp:193
+#: View/Report/admin_transactions.ctp:120;168
+#: View/User/admin_transactions.ctp:111
 msgid "Payment Method"
 msgstr ""
 
-#: Payments/admin_details.ctp:164
-#: Payments/admin_payment_history.ctp:57
-#: Payments/admin_payment_notifications.ctp:57
-#: Report/admin_reseller_purchases.ctp:153
-#: Report/admin_user_purchases.ctp:137
-#: Reseller/admin_purchases.ctp:103
-#: User/admin_purchases.ctp:103
+#: View/Payments/admin_details.ctp:172
+#: View/Report/admin_reseller_purchases.ctp:153
+#: View/Report/admin_user_purchases.ctp:137
+#: View/Reseller/admin_purchases.ctp:103
+#: View/User/admin_purchases.ctp:103
 msgid "Bank"
 msgstr ""
 
-#: Payments/admin_details.ctp:172
-#: Payments/admin_payment_history.ctp:58
-#: Payments/admin_payment_notifications.ctp:56
-#: Report/admin_reseller_purchases.ctp:154
-#: Report/admin_user_purchases.ctp:138
-#: Reseller/admin_purchases.ctp:104
-#: User/admin_purchases.ctp:106
+#: View/Payments/admin_details.ctp:180
+#: View/Payments/admin_payment_history.ctp:58
+#: View/Payments/admin_payment_notifications.ctp:56
+#: View/Report/admin_reseller_purchases.ctp:154
+#: View/Report/admin_user_purchases.ctp:138
+#: View/Reseller/admin_purchases.ctp:104
+#: View/User/admin_purchases.ctp:106
 msgid "Reference"
 msgstr ""
 
-#: Payments/admin_details.ctp:190
+#: View/Payments/admin_details.ctp:198
 msgid "Notification Date"
 msgstr ""
 
-#: Payments/admin_details.ctp:208
-#: Payments/admin_payment_history.ctp:60
-#: Reseller/admin_purchases.ctp:106
-#: User/admin_purchases.ctp:108
+#: View/Payments/admin_details.ctp:216
+#: View/Payments/admin_payment_history.ctp:60
+#: View/Reseller/admin_purchases.ctp:106
+#: View/User/admin_purchases.ctp:108
 msgid "Status Change"
 msgstr ""
 
-#: Payments/admin_details.ctp:226
-#: Payments/admin_payment_history.ctp:61
-#: Report/admin_reseller_purchases.ctp:156
-#: Report/admin_user_purchases.ctp:140
-#: Reseller/admin_purchases.ctp:107
-#: User/admin_purchases.ctp:109
+#: View/Payments/admin_details.ctp:234
+#: View/Payments/admin_payment_history.ctp:61
+#: View/Report/admin_reseller_purchases.ctp:156
+#: View/Report/admin_user_purchases.ctp:140
+#: View/Reseller/admin_purchases.ctp:107
+#: View/User/admin_purchases.ctp:109
 msgid "Payment Amount"
 msgstr ""
 
-#: Payments/admin_details.ctp:249
-#: Payments/admin_payment_history.ctp:62
-#: Report/admin_reseller_purchases.ctp:157
-#: Report/admin_user_purchases.ctp:141
-#: Reseller/admin_purchases.ctp:108
-#: User/admin_purchases.ctp:110
+#: View/Payments/admin_details.ctp:257
+#: View/Payments/admin_payment_history.ctp:62
+#: View/Report/admin_reseller_purchases.ctp:157
+#: View/Report/admin_user_purchases.ctp:141
+#: View/Reseller/admin_purchases.ctp:108
+#: View/User/admin_purchases.ctp:110
 msgid "Tax Deducted"
 msgstr ""
 
-#: Payments/admin_details.ctp:272
-#: Payments/admin_payment_history.ctp:63
-#: Report/admin_reseller_purchases.ctp:158
-#: Reseller/admin_purchases.ctp:110
-#: User/admin_purchases.ctp:111
+#: View/Payments/admin_details.ctp:280
+#: View/Payments/admin_payment_history.ctp:63
+#: View/Report/admin_reseller_purchases.ctp:158
+#: View/Reseller/admin_purchases.ctp:110
+#: View/User/admin_purchases.ctp:111
 msgid "Fees Paid"
 msgstr ""
 
-#: Payments/admin_details.ctp:295
-#: Payments/admin_payment_history.ctp:64
-#: Report/admin_reseller_purchases.ctp:159
-#: Reseller/admin_purchases.ctp:109
+#: View/Payments/admin_details.ctp:303
+#: View/Payments/admin_payment_history.ctp:64
+#: View/Report/admin_reseller_purchases.ctp:159
+#: View/Reseller/admin_purchases.ctp:109
 msgid "Discount Credit"
 msgstr ""
 
-#: Payments/admin_details.ctp:318
-#: Payments/admin_payment_history.ctp:65
-#: Report/admin_reseller_purchases.ctp:160
-#: Report/admin_user_purchases.ctp:142
-#: Reseller/admin_purchases.ctp:111
-#: User/admin_purchases.ctp:112
+#: View/Payments/admin_details.ctp:326
+#: View/Payments/admin_payment_history.ctp:65
+#: View/Report/admin_reseller_purchases.ctp:160
+#: View/Report/admin_user_purchases.ctp:142
+#: View/Reseller/admin_purchases.ctp:111
+#: View/User/admin_purchases.ctp:112
 msgid "Balance Added"
 msgstr ""
 
-#: Payments/admin_details.ctp:341
-#: Payments/admin_payment_history.ctp:66
-#: Recharge/admin_check_status.ctp:162
-#: Recharge/admin_view_status.ctp:208
-#: Report/admin_transactions.ctp:136;171
-#: Reseller/admin_add.ctp:301
-#: Reseller/admin_edit.ctp:390
-#: Reseller/admin_index.ctp:91
-#: Reseller/admin_transactions.ctp:100
-#: Reseller/admin_view.ctp:432
-#: Reward/admin_add.ctp:179
-#: Reward/admin_edit.ctp:178
-#: Reward/admin_index.ctp:57
-#: Setting/admin_operator.ctp:54
-#: Sponsor/admin_add.ctp:256
-#: Sponsor/admin_edit.ctp:314
-#: Sponsor/admin_index.ctp:99
-#: Sponsor/admin_resellers.ctp:114
-#: Sponsor/admin_view.ctp:322
-#: User/admin_add.ctp:263
-#: User/admin_edit.ctp:333
-#: User/admin_index.ctp:101
-#: User/admin_transactions.ctp:114
-#: User/admin_view.ctp:373
+#: View/Payments/admin_details.ctp:349
+#: View/Payments/admin_payment_history.ctp:66
+#: View/Recharge/admin_check_status.ctp:162
+#: View/Recharge/admin_view_status.ctp:208
+#: View/Report/admin_transactions.ctp:136;171
+#: View/Reseller/admin_add.ctp:301
+#: View/Reseller/admin_edit.ctp:390
+#: View/Reseller/admin_index.ctp:91
+#: View/Reseller/admin_transactions.ctp:100
+#: View/Reseller/admin_view.ctp:432
+#: View/Reward/admin_add.ctp:179
+#: View/Reward/admin_edit.ctp:178
+#: View/Reward/admin_index.ctp:57
+#: View/Setting/admin_operator.ctp:54
+#: View/Sponsor/admin_add.ctp:256
+#: View/Sponsor/admin_edit.ctp:314
+#: View/Sponsor/admin_index.ctp:99
+#: View/Sponsor/admin_resellers.ctp:114
+#: View/Sponsor/admin_view.ctp:322
+#: View/User/admin_add.ctp:263
+#: View/User/admin_edit.ctp:333
+#: View/User/admin_index.ctp:102
+#: View/User/admin_transactions.ctp:114
+#: View/User/admin_view.ctp:373
 msgid "Status"
 msgstr ""
 
-#: Payments/admin_details.ctp:346
-#: Payments/admin_payment_history.ctp:145
+#: View/Payments/admin_details.ctp:354
+#: View/Payments/admin_payment_history.ctp:145;209
 msgid " Approved "
 msgstr ""
 
-#: Payments/admin_details.ctp:350
+#: View/Payments/admin_details.ctp:358
 msgid " Pending "
 msgstr ""
 
-#: Payments/admin_details.ctp:354
-#: Payments/admin_payment_history.ctp:149
+#: View/Payments/admin_details.ctp:362
+#: View/Payments/admin_payment_history.ctp:149
 msgid " Denied "
 msgstr ""
 
-#: Payments/admin_details.ctp:361
+#: View/Payments/admin_details.ctp:369
 msgid "Reason for Denial"
 msgstr ""
 
-#: Payments/admin_details.ctp:382
-#: Recharge/admin_failed.ctp:64
-#: Setting/admin_view_platform.ctp:58
+#: View/Payments/admin_details.ctp:390
+#: View/Recharge/admin_failed.ctp:64
+#: View/Setting/admin_view_platform.ctp:58
 msgid "Action"
 msgstr ""
 
-#: Payments/admin_details.ctp:386
-#: Payments/admin_payment_notifications.ctp:120
+#: View/Payments/admin_details.ctp:394
+#: View/Payments/admin_payment_notifications.ctp:128
 msgid "<i class=\"icon-ok icon-white\"></i><span class=\"hidden-phone\">&nbsp;Approve</span>"
 msgstr ""
 
-#: Payments/admin_details.ctp:401
-#: Payments/admin_payment_notifications.ctp:134
+#: View/Payments/admin_details.ctp:409
+#: View/Payments/admin_payment_notifications.ctp:142
 msgid "<i class=\"icon-remove icon-white\"></i><span class=\"hidden-phone\">&nbsp;Deny</span>"
 msgstr ""
 
-#: Payments/admin_details.ctp:423
-#: Recharge/admin_check_status.ctp:221
-#: Recharge/admin_view_status.ctp:277
+#: View/Payments/admin_details.ctp:431
+#: View/Recharge/admin_check_status.ctp:221
+#: View/Recharge/admin_view_status.ctp:277
 msgid " Location"
 msgstr ""
 
-#: Payments/admin_payment_history.ctp:47
+#: View/Payments/admin_payment_history.ctp:47
 msgid " Payment History"
 msgstr ""
 
-#: Payments/admin_payment_history.ctp:54
-#: Payments/admin_payment_notifications.ctp:54
-#: Recharge/admin_check_status.ctp:133
-#: Recharge/admin_view_status.ctp:149
-#: Report/admin_direct_sales.ctp:190
-#: Report/admin_transactions.ctp:163
-#: Report/admin_user_purchases.ctp:135
+#: View/Payments/admin_payment_history.ctp:54
+#: View/Payments/admin_payment_notifications.ctp:54
+#: View/Recharge/admin_check_status.ctp:133
+#: View/Recharge/admin_view_status.ctp:149
+#: View/Report/admin_direct_sales.ctp:190
+#: View/Report/admin_transactions.ctp:163
+#: View/Report/admin_user_purchases.ctp:135
+#: View/Reseller/admin_edit.ctp:428
 msgid "User"
 msgstr ""
 
-#: Payments/admin_payment_history.ctp:55
-#: Payments/admin_payment_notifications.ctp:55
-#: Recharge/admin_check_status.ctp:135
-#: Recharge/admin_view_status.ctp:151
-#: Report/admin_reseller_purchases.ctp:151
-#: Report/admin_reseller_sales.ctp:187
-#: Report/admin_transactions.ctp:164
+#: View/Payments/admin_payment_history.ctp:55
+#: View/Payments/admin_payment_notifications.ctp:55
+#: View/Recharge/admin_check_status.ctp:135
+#: View/Recharge/admin_view_status.ctp:151
+#: View/Report/admin_reseller_purchases.ctp:151
+#: View/Report/admin_reseller_sales.ctp:187
+#: View/Report/admin_transactions.ctp:164
+#: View/User/admin_edit.ctp:371
 msgid "Reseller"
 msgstr ""
 
-#: Payments/admin_payment_history.ctp:56
-#: Report/admin_reseller_purchases.ctp:152
-#: Report/admin_user_purchases.ctp:136
-#: Reseller/admin_purchases.ctp:102
-#: User/admin_purchases.ctp:102
+#: View/Payments/admin_payment_history.ctp:56
+#: View/Report/admin_reseller_purchases.ctp:152
+#: View/Report/admin_user_purchases.ctp:136
+#: View/Reseller/admin_purchases.ctp:102
+#: View/User/admin_purchases.ctp:102
 msgid "Type"
 msgstr ""
 
-#: Payments/admin_payment_history.ctp:59
-#: Reseller/admin_purchases.ctp:105
-#: User/admin_purchases.ctp:107
+#: View/Payments/admin_payment_history.ctp:59
+#: View/Reseller/admin_purchases.ctp:105
+#: View/User/admin_purchases.ctp:107
 msgid "Notification"
 msgstr ""
 
-#: Payments/admin_payment_history.ctp:191;192
-#: User/admin_purchases.ctp:210;211;212
+#: View/Payments/admin_payment_history.ctp:192
+#: View/User/admin_purchases.ctp:210;211;212
 msgid "-"
 msgstr ""
 
-#: Payments/admin_payment_history.ctp:209
-msgid " Pre-Approved "
-msgstr ""
-
-#: Payments/admin_payment_notifications.ctp:47
+#: View/Payments/admin_payment_notifications.ctp:47
 msgid " Payment Notifications"
 msgstr ""
 
-#: Payments/admin_payment_notifications.ctp:58
+#: View/Payments/admin_payment_notifications.ctp:58
 msgid "Notification Date & Time"
 msgstr ""
 
-#: Recharge/admin_check_status.ctp:79
-#: Recharge/admin_view_status.ctp:79
+#: View/Payments/admin_payment_notifications.ctp:117
+msgid "Direct Deposit"
+msgstr ""
+
+#: View/Recharge/admin_check_status.ctp:79
+#: View/Recharge/admin_view_status.ctp:79
 msgid " Recharge Status"
 msgstr ""
 
-#: Recharge/admin_check_status.ctp:96
-#: Recharge/admin_failed.ctp:58
-#: Recharge/admin_status.ctp:64;77
-#: Recharge/admin_view_status.ctp:92
-#: Report/admin_transactions.ctp:162
-#: Reseller/admin_transactions.ctp:95
-#: User/admin_transactions.ctp:107
+#: View/Recharge/admin_check_status.ctp:96
+#: View/Recharge/admin_failed.ctp:58
+#: View/Recharge/admin_status.ctp:64;77
+#: View/Recharge/admin_view_status.ctp:92
+#: View/Report/admin_transactions.ctp:162
+#: View/Reseller/admin_transactions.ctp:95
+#: View/User/admin_transactions.ctp:107
 msgid "Transaction ID"
 msgstr ""
 
-#: Recharge/admin_check_status.ctp:114
-#: Recharge/admin_failed.ctp:60
-#: Recharge/admin_view_status.ctp:110
-#: Report/admin_direct_sales.ctp:192
-#: Report/admin_reseller_sales.ctp:189
-#: Report/admin_transactions.ctp:166
-#: Reseller/admin_add.ctp:230
-#: Reseller/admin_edit.ctp:295;308
-#: Reseller/admin_transactions.ctp:97
-#: Reseller/admin_view.ctp:333;347
-#: Sponsor/admin_add.ctp:230;243
-#: Sponsor/admin_edit.ctp:288;301
-#: Sponsor/admin_view.ctp:295;309
-#: User/admin_add.ctp:237
-#: User/admin_edit.ctp:288;301
-#: User/admin_transactions.ctp:109
-#: User/admin_view.ctp:326;340
+#: View/Recharge/admin_check_status.ctp:114
+#: View/Recharge/admin_failed.ctp:60
+#: View/Recharge/admin_view_status.ctp:110
+#: View/Report/admin_direct_sales.ctp:192
+#: View/Report/admin_reseller_sales.ctp:189
+#: View/Report/admin_transactions.ctp:166
+#: View/Reseller/admin_add.ctp:230
+#: View/Reseller/admin_edit.ctp:295;308
+#: View/Reseller/admin_transactions.ctp:97
+#: View/Reseller/admin_view.ctp:333;347
+#: View/Sponsor/admin_add.ctp:230;243
+#: View/Sponsor/admin_edit.ctp:288;301
+#: View/Sponsor/admin_view.ctp:295;309
+#: View/User/admin_add.ctp:237
+#: View/User/admin_edit.ctp:288;301
+#: View/User/admin_index.ctp:99
+#: View/User/admin_transactions.ctp:109
+#: View/User/admin_view.ctp:326;340
 msgid "Phone Number"
 msgstr ""
 
-#: Recharge/admin_check_status.ctp:167;195
-#: Recharge/admin_view_status.ctp:213;251
+#: View/Recharge/admin_check_status.ctp:167;195
+#: View/Recharge/admin_view_status.ctp:213;251
 msgid " Successful "
 msgstr ""
 
-#: Recharge/admin_check_status.ctp:171;199
-#: Recharge/admin_view_status.ctp:217;255
+#: View/Recharge/admin_check_status.ctp:171;199
+#: View/Recharge/admin_view_status.ctp:217;255
 msgid " Failed "
 msgstr ""
 
-#: Recharge/admin_check_status.ctp:175
-#: Recharge/admin_view_status.ctp:221
+#: View/Recharge/admin_check_status.ctp:175
+#: View/Recharge/admin_view_status.ctp:221
 msgid " Replaced "
 msgstr ""
 
-#: Recharge/admin_check_status.ctp:182
-#: Recharge/admin_view_status.ctp:228
+#: View/Recharge/admin_check_status.ctp:182
+#: View/Recharge/admin_view_status.ctp:228
 msgid "Original Response message"
 msgstr ""
 
-#: Recharge/admin_check_status.ctp:190
-#: Recharge/admin_view_status.ctp:246
+#: View/Recharge/admin_check_status.ctp:190
+#: View/Recharge/admin_view_status.ctp:246
 msgid "TrxEngine Status"
 msgstr ""
 
-#: Recharge/admin_check_status.ctp:206
-#: Recharge/admin_view_status.ctp:262
+#: View/Recharge/admin_check_status.ctp:206
+#: View/Recharge/admin_view_status.ctp:262
 msgid "TrxEngine Response"
 msgstr ""
 
-#: Recharge/admin_failed.ctp:49
+#: View/Recharge/admin_failed.ctp:49
 msgid " Failed Credit Card Recharges"
 msgstr ""
 
-#: Recharge/admin_failed.ctp:63
+#: View/Recharge/admin_failed.ctp:63
 msgid "Mobile Operator Response"
 msgstr ""
 
-#: Recharge/admin_failed.ctp:129
+#: View/Recharge/admin_failed.ctp:129
 msgid "<i class=\"icon-edit icon-black\"></i></i><span class=\"hidden-phone\">Retry</span>"
 msgstr ""
 
-#: Recharge/admin_status.ctp:47
+#: View/Recharge/admin_status.ctp:47
 msgid " Check Recharge in Mobile Operator"
 msgstr ""
 
-#: Report/admin_direct_sales.ctp:112
+#: View/Report/admin_direct_sales.ctp:112
 msgid " Direct Sales"
 msgstr ""
 
-#: Report/admin_direct_sales.ctp:121
+#: View/Report/admin_direct_sales.ctp:121
 msgid "Gross Sales : B/. "
 msgstr ""
 
-#: Report/admin_direct_sales.ctp:125
+#: View/Report/admin_direct_sales.ctp:125
 msgid "Net Sales : B/. "
 msgstr ""
 
-#: Report/admin_direct_sales.ctp:129
+#: View/Report/admin_direct_sales.ctp:129
 msgid "Recharges : "
 msgstr ""
 
-#: Report/admin_direct_sales.ctp:133
+#: View/Report/admin_direct_sales.ctp:133
 msgid "Points Awarded : "
 msgstr ""
 
-#: Report/admin_direct_sales.ctp:140
+#: View/Report/admin_direct_sales.ctp:140
 msgid "Select a Payment Method"
 msgstr ""
 
-#: Report/admin_direct_sales.ctp:142
+#: View/Report/admin_direct_sales.ctp:142
 msgid "Payment method"
 msgstr ""
 
-#: Report/admin_direct_sales.ctp:155
-#: Report/admin_reseller_purchases.ctp:98
-#: Report/admin_reseller_sales.ctp:150
-#: Report/admin_user_purchases.ctp:98
+#: View/Report/admin_direct_sales.ctp:155
+#: View/Report/admin_reseller_purchases.ctp:98
+#: View/Report/admin_reseller_sales.ctp:150
+#: View/Report/admin_user_purchases.ctp:98
 msgid "From Date"
 msgstr ""
 
-#: Report/admin_direct_sales.ctp:158
-#: Report/admin_reseller_purchases.ctp:102
-#: Report/admin_reseller_sales.ctp:153
-#: Report/admin_user_purchases.ctp:101
+#: View/Report/admin_direct_sales.ctp:158
+#: View/Report/admin_reseller_purchases.ctp:102
+#: View/Report/admin_reseller_sales.ctp:153
+#: View/Report/admin_user_purchases.ctp:101
 msgid "To Date"
 msgstr ""
 
-#: Report/admin_direct_sales.ctp:160
-#: Report/admin_reseller_sales.ctp:155
+#: View/Report/admin_direct_sales.ctp:160
+#: View/Report/admin_reseller_sales.ctp:155
 msgid "Select a Mobile Operator"
 msgstr ""
 
-#: Report/admin_direct_sales.ctp:161
-#: Report/admin_reseller_sales.ctp:156
+#: View/Report/admin_direct_sales.ctp:161
+#: View/Report/admin_reseller_sales.ctp:156
 msgid "Operator"
 msgstr ""
 
-#: Report/admin_direct_sales.ctp:171
-#: Report/admin_reseller_purchases.ctp:131
-#: Report/admin_reseller_sales.ctp:166
-#: Report/admin_user_purchases.ctp:116
+#: View/Report/admin_direct_sales.ctp:171
+#: View/Report/admin_reseller_purchases.ctp:131
+#: View/Report/admin_reseller_sales.ctp:166
+#: View/Report/admin_user_purchases.ctp:116
 msgid "Search"
 msgstr ""
 
-#: Report/admin_direct_sales.ctp:194
-#: Reward/admin_add.ctp:103
-#: Reward/admin_edit.ctp:103
-#: Reward/admin_index.ctp:54
+#: View/Report/admin_direct_sales.ctp:194
+#: View/Reward/admin_add.ctp:103
+#: View/Reward/admin_edit.ctp:103
+#: View/Reward/admin_index.ctp:54
 msgid "Recharge Amount"
 msgstr ""
 
-#: Report/admin_direct_sales.ctp:195
-#: Setting/admin_tax.ctp:47
+#: View/Report/admin_direct_sales.ctp:195
+#: View/Setting/admin_tax.ctp:47
 msgid "Taxes"
 msgstr ""
 
-#: Report/admin_direct_sales.ctp:196
+#: View/Report/admin_direct_sales.ctp:196
 msgid "Total Amount"
 msgstr ""
 
-#: Report/admin_direct_sales.ctp:197
-#: Report/admin_transactions.ctp:170
-#: User/admin_transactions.ctp:113
+#: View/Report/admin_direct_sales.ctp:197
+#: View/Report/admin_transactions.ctp:170
+#: View/User/admin_transactions.ctp:113
 msgid "Points Awarded"
 msgstr ""
 
-#: Report/admin_direct_sales.ctp:284
-#: Report/admin_reseller_purchases.ctp:344
-#: Report/admin_reseller_sales.ctp:279
-#: Report/admin_user_purchases.ctp:292
-#: Reseller/admin_purchases.ctp:228
-#: User/admin_purchases.ctp:254
-#: User/admin_rewards.ctp:179
+#: View/Report/admin_direct_sales.ctp:284
+#: View/Report/admin_reseller_purchases.ctp:344
+#: View/Report/admin_reseller_sales.ctp:279
+#: View/Report/admin_user_purchases.ctp:292
+#: View/Reseller/admin_purchases.ctp:228
+#: View/User/admin_purchases.ctp:254
+#: View/User/admin_rewards.ctp:179
 msgid "<i class=\"icon-download-alt icon-white\"></i><span> Export</span>"
 msgstr ""
 
-#: Report/admin_reseller_purchases.ctp:88
+#: View/Report/admin_reseller_purchases.ctp:88
 msgid " Reseller Purchases"
 msgstr ""
 
-#: Report/admin_reseller_purchases.ctp:105
-#: Report/admin_reseller_sales.ctp:126
+#: View/Report/admin_reseller_purchases.ctp:105
+#: View/Report/admin_reseller_sales.ctp:126
 msgid "Select a Sponsor"
 msgstr ""
 
-#: Report/admin_reseller_purchases.ctp:106
-#: Report/admin_reseller_sales.ctp:127
+#: View/Report/admin_reseller_purchases.ctp:106
+#: View/Report/admin_reseller_sales.ctp:127
 msgid "All Sponsors"
 msgstr ""
 
-#: Report/admin_reseller_purchases.ctp:118
-#: Report/admin_reseller_sales.ctp:138
+#: View/Report/admin_reseller_purchases.ctp:118
+#: View/Report/admin_reseller_sales.ctp:138
 msgid "Select a Reseller"
 msgstr ""
 
-#: Report/admin_reseller_purchases.ctp:119
-#: Report/admin_reseller_sales.ctp:139
-#: Report/admin_transactions.ctp:109
+#: View/Report/admin_reseller_purchases.ctp:119
+#: View/Report/admin_reseller_sales.ctp:139
+#: View/Report/admin_transactions.ctp:109
 msgid "All Resellers"
 msgstr ""
 
-#: Report/admin_reseller_purchases.ctp:150
-#: Report/admin_reseller_sales.ctp:186
-#: Reseller/admin_add.ctp:256;269
-#: Reseller/admin_edit.ctp:321;334
-#: Reseller/admin_index.ctp:88
-#: Reseller/admin_view.ctp:360;374
+#: View/Report/admin_reseller_purchases.ctp:150
+#: View/Report/admin_reseller_sales.ctp:186
+#: View/Reseller/admin_add.ctp:256;269
+#: View/Reseller/admin_edit.ctp:321;334
+#: View/Reseller/admin_index.ctp:88
+#: View/Reseller/admin_view.ctp:360;374
 msgid "Sponsor"
 msgstr ""
 
-#: Report/admin_reseller_purchases.ctp:155
-#: Report/admin_user_purchases.ctp:139
+#: View/Report/admin_reseller_purchases.ctp:155
+#: View/Report/admin_user_purchases.ctp:139
 msgid "Approval Date"
 msgstr ""
 
-#: Report/admin_reseller_purchases.ctp:227
-#: Report/admin_user_purchases.ctp:193
+#: View/Report/admin_reseller_purchases.ctp:227
+#: View/Report/admin_user_purchases.ctp:193
 msgid "Credit card"
 msgstr ""
 
-#: Report/admin_reseller_sales.ctp:105
+#: View/Report/admin_reseller_sales.ctp:105
 msgid " Reseller Sales"
 msgstr ""
 
-#: Report/admin_reseller_sales.ctp:114
+#: View/Report/admin_reseller_sales.ctp:114
 msgid "Total Sales: B/. "
 msgstr ""
 
-#: Report/admin_reseller_sales.ctp:118
+#: View/Report/admin_reseller_sales.ctp:118
 msgid "Recharges: "
 msgstr ""
 
-#: Report/admin_transactions.ctp:90
-#: Reseller/admin_transactions.ctp:89
-#: User/admin_transactions.ctp:99
+#: View/Report/admin_transactions.ctp:90
+#: View/Reseller/admin_transactions.ctp:89
+#: View/User/admin_transactions.ctp:99
 msgid " Transactions"
 msgstr ""
 
-#: Report/admin_transactions.ctp:97
-#: Report/admin_user_purchases.ctp:104
+#: View/Report/admin_transactions.ctp:97
+#: View/Report/admin_user_purchases.ctp:104
 msgid "All Users"
 msgstr ""
 
-#: Report/admin_transactions.ctp:253
-#: Reseller/admin_transactions.ctp:133
-#: User/admin_transactions.ctp:163
+#: View/Report/admin_transactions.ctp:253
+#: View/Reseller/admin_transactions.ctp:133
+#: View/User/admin_transactions.ctp:163
 msgid "<span class='label label-warning'>Failed</span>"
 msgstr ""
 
-#: Report/admin_transactions.ctp:255
-#: Reseller/admin_transactions.ctp:131
-#: User/admin_transactions.ctp:161
+#: View/Report/admin_transactions.ctp:255
+#: View/Reseller/admin_transactions.ctp:131
+#: View/User/admin_transactions.ctp:161
 msgid "<span class='label label-success'>Successful</span>"
 msgstr ""
 
-#: Report/admin_transactions.ctp:257
+#: View/Report/admin_transactions.ctp:257
 msgid "<span class='label label-warning'>Replaced</span>"
 msgstr ""
 
-#: Report/admin_transactions.ctp:300
+#: View/Report/admin_transactions.ctp:300
 msgid "<i class=\"icon-download-alt icon-white\"></i><span class=\"hidden-phone\"> Export</span>"
 msgstr ""
 
-#: Report/admin_user_purchases.ctp:88
+#: View/Report/admin_user_purchases.ctp:88
 msgid " User Purchases"
 msgstr ""
 
-#: Report/admin_user_purchases.ctp:103
+#: View/Report/admin_user_purchases.ctp:103
 msgid "Select a User"
 msgstr ""
 
-#: Reseller/admin_account.ctp:31
-#: Reseller/admin_edit.ctp:33
-#: Reseller/admin_purchases.ctp:66
-#: Reseller/admin_transactions.ctp:61
-#: Reseller/admin_view.ctp:64
+#: View/Reseller/admin_account.ctp:31
+#: View/Reseller/admin_edit.ctp:33
+#: View/Reseller/admin_purchases.ctp:66
+#: View/Reseller/admin_transactions.ctp:61
+#: View/Reseller/admin_view.ctp:64
 msgid "View Resellers"
 msgstr ""
 
-#: Reseller/admin_account.ctp:60
-#: User/admin_account.ctp:60
+#: View/Reseller/admin_account.ctp:60
+#: View/User/admin_account.ctp:60
 msgid " Prepaid Balance"
 msgstr ""
 
-#: Reseller/admin_account.ctp:70
-#: User/admin_account.ctp:78
+#: View/Reseller/admin_account.ctp:70
+#: View/User/admin_account.ctp:78
 msgid " Adjust"
 msgstr ""
 
-#: Reseller/admin_account.ctp:83
-#: User/admin_account.ctp:91
+#: View/Reseller/admin_account.ctp:83
+#: View/User/admin_account.ctp:91
 msgid " Account Type"
 msgstr ""
 
-#: Reseller/admin_account.ctp:92
-#: User/admin_account.ctp:105
+#: View/Reseller/admin_account.ctp:92
+#: View/User/admin_account.ctp:105
 msgid " Action"
 msgstr ""
 
-#: Reseller/admin_account.ctp:96
-#: User/admin_account.ctp:109
+#: View/Reseller/admin_account.ctp:96
+#: View/User/admin_account.ctp:109
 msgid "Add"
 msgstr ""
 
-#: Reseller/admin_account.ctp:101
-#: User/admin_account.ctp:114
+#: View/Reseller/admin_account.ctp:101
+#: View/User/admin_account.ctp:114
 msgid "Subtract"
 msgstr ""
 
-#: Reseller/admin_account.ctp:106
-#: User/admin_account.ctp:119
+#: View/Reseller/admin_account.ctp:106
+#: View/User/admin_account.ctp:119
 msgid " Amount"
 msgstr ""
 
-#: Reseller/admin_account.ctp:119
-#: User/admin_account.ctp:132
+#: View/Reseller/admin_account.ctp:119
+#: View/User/admin_account.ctp:132
 msgid " Notes"
 msgstr ""
 
-#: Reseller/admin_account.ctp:151
-#: User/admin_account.ctp:164
+#: View/Reseller/admin_account.ctp:151
+#: View/User/admin_account.ctp:164
 msgid "  Account History"
 msgstr ""
 
-#: Reseller/admin_account.ctp:157
-#: User/admin_account.ctp:170
+#: View/Reseller/admin_account.ctp:157
+#: View/User/admin_account.ctp:170
 msgid "Payment ID"
 msgstr ""
 
-#: Reseller/admin_account.ctp:158
-#: User/admin_account.ctp:171
+#: View/Reseller/admin_account.ctp:158
+#: View/User/admin_account.ctp:171
 msgid "Account Adjusted"
 msgstr ""
 
-#: Reseller/admin_account.ctp:160
-#: User/admin_account.ctp:173
+#: View/Reseller/admin_account.ctp:160
+#: View/User/admin_account.ctp:173
 msgid "Notes"
 msgstr ""
 
-#: Reseller/admin_add.ctp:47
+#: View/Reseller/admin_account.ctp:162
+#: View/User/admin_account.ctp:175
+msgid "Authorized By"
+msgstr ""
+
+#: View/Reseller/admin_add.ctp:47
 msgid " Add Reseller"
 msgstr ""
 
-#: Reseller/admin_add.ctp:78
-#: Reseller/admin_edit.ctp:143
-#: Reseller/admin_view.ctp:175
-#: Sponsor/admin_add.ctp:78
-#: Sponsor/admin_edit.ctp:136
-#: Sponsor/admin_view.ctp:137
-#: User/admin_add.ctp:85
-#: User/admin_edit.ctp:137
-#: User/admin_view.ctp:169
+#: View/Reseller/admin_add.ctp:78
+#: View/Reseller/admin_edit.ctp:143
+#: View/Reseller/admin_view.ctp:175
+#: View/Sponsor/admin_add.ctp:78
+#: View/Sponsor/admin_edit.ctp:136
+#: View/Sponsor/admin_view.ctp:137
+#: View/User/admin_add.ctp:85
+#: View/User/admin_edit.ctp:137
+#: View/User/admin_view.ctp:169
 msgid "Cedula / Passport"
 msgstr ""
 
-#: Reseller/admin_add.ctp:91
-#: Reseller/admin_edit.ctp:156
-#: Reseller/admin_view.ctp:189
-#: Sponsor/admin_edit.ctp:149
-#: Sponsor/admin_view.ctp:151
-#: User/admin_add.ctp:98
-#: User/admin_edit.ctp:150
-#: User/admin_view.ctp:183
+#: View/Reseller/admin_add.ctp:91
+#: View/Reseller/admin_edit.ctp:156
+#: View/Reseller/admin_view.ctp:189
+#: View/Sponsor/admin_edit.ctp:149
+#: View/Sponsor/admin_view.ctp:151
+#: View/User/admin_add.ctp:98
+#: View/User/admin_edit.ctp:150
+#: View/User/admin_view.ctp:183
 msgid "Cedula or Passport number"
 msgstr ""
 
-#: Reseller/admin_add.ctp:116
-#: Reseller/admin_edit.ctp:181
-#: Reseller/admin_view.ctp:215
-#: Sponsor/admin_add.ctp:116
-#: Sponsor/admin_edit.ctp:174
-#: Sponsor/admin_view.ctp:177
-#: Staff/admin_add.ctp:116
-#: Staff/admin_edit.ctp:129
-#: User/admin_add.ctp:123
-#: User/admin_edit.ctp:175
-#: User/admin_view.ctp:209
+#: View/Reseller/admin_add.ctp:116
+#: View/Reseller/admin_edit.ctp:181
+#: View/Reseller/admin_view.ctp:215
+#: View/Sponsor/admin_add.ctp:116
+#: View/Sponsor/admin_edit.ctp:174
+#: View/Sponsor/admin_view.ctp:177
+#: View/Staff/admin_add.ctp:116
+#: View/Staff/admin_edit.ctp:129
+#: View/User/admin_add.ctp:123
+#: View/User/admin_edit.ctp:175
+#: View/User/admin_view.ctp:209
 msgid "Email address"
 msgstr ""
 
-#: Reseller/admin_add.ctp:129;142
-#: Reseller/admin_edit.ctp:194;207
-#: Reseller/admin_view.ctp:228;242
-#: Sponsor/admin_add.ctp:129
-#: Sponsor/admin_edit.ctp:187;200
-#: Sponsor/admin_view.ctp:190;204
-#: User/admin_add.ctp:136;149
-#: User/admin_edit.ctp:188;201
-#: User/admin_view.ctp:222;236
+#: View/Reseller/admin_add.ctp:129;142
+#: View/Reseller/admin_edit.ctp:194;207
+#: View/Reseller/admin_view.ctp:228;242
+#: View/Sponsor/admin_add.ctp:129
+#: View/Sponsor/admin_edit.ctp:187;200
+#: View/Sponsor/admin_view.ctp:190;204
+#: View/User/admin_add.ctp:136;149
+#: View/User/admin_edit.ctp:188;201
+#: View/User/admin_view.ctp:222;236
 msgid "Address"
 msgstr ""
 
-#: Reseller/admin_add.ctp:154;167
-#: Reseller/admin_edit.ctp:219;232
-#: Reseller/admin_view.ctp:254;268
-#: Sponsor/admin_add.ctp:154;167
-#: Sponsor/admin_edit.ctp:212;225
-#: Sponsor/admin_resellers.ctp:111
-#: Sponsor/admin_view.ctp:216;230
-#: User/admin_add.ctp:161;174
-#: User/admin_edit.ctp:213;226
-#: User/admin_view.ctp:248;262
+#: View/Reseller/admin_add.ctp:154;167
+#: View/Reseller/admin_edit.ctp:219;232
+#: View/Reseller/admin_view.ctp:254;268
+#: View/Sponsor/admin_add.ctp:154;167
+#: View/Sponsor/admin_edit.ctp:212;225
+#: View/Sponsor/admin_resellers.ctp:111
+#: View/Sponsor/admin_view.ctp:216;230
+#: View/User/admin_add.ctp:161;174
+#: View/User/admin_edit.ctp:213;226
+#: View/User/admin_view.ctp:248;262
 msgid "City"
 msgstr ""
 
-#: Reseller/admin_add.ctp:179
-#: Reseller/admin_edit.ctp:244
-#: Reseller/admin_view.ctp:280
-#: Sponsor/admin_add.ctp:179
-#: Sponsor/admin_edit.ctp:237
-#: Sponsor/admin_view.ctp:242
-#: User/admin_add.ctp:186
-#: User/admin_edit.ctp:238
-#: User/admin_view.ctp:274
+#: View/Reseller/admin_add.ctp:179
+#: View/Reseller/admin_edit.ctp:244
+#: View/Reseller/admin_view.ctp:280
+#: View/Sponsor/admin_add.ctp:179
+#: View/Sponsor/admin_edit.ctp:237
+#: View/Sponsor/admin_view.ctp:242
+#: View/User/admin_add.ctp:186
+#: View/User/admin_edit.ctp:238
+#: View/User/admin_view.ctp:274
 msgid "State / Province"
 msgstr ""
 
-#: Reseller/admin_add.ctp:192
-#: Reseller/admin_edit.ctp:257
-#: Reseller/admin_view.ctp:294
-#: Sponsor/admin_add.ctp:192
-#: Sponsor/admin_edit.ctp:250
-#: Sponsor/admin_view.ctp:256
-#: User/admin_add.ctp:199
-#: User/admin_edit.ctp:251
-#: User/admin_view.ctp:288
+#: View/Reseller/admin_add.ctp:192
+#: View/Reseller/admin_edit.ctp:257
+#: View/Reseller/admin_view.ctp:294
+#: View/Sponsor/admin_add.ctp:192
+#: View/Sponsor/admin_edit.ctp:250
+#: View/Sponsor/admin_view.ctp:256
+#: View/User/admin_add.ctp:199
+#: View/User/admin_edit.ctp:251
+#: View/User/admin_view.ctp:288
 msgid "State or Province"
 msgstr ""
 
-#: Reseller/admin_add.ctp:204;217
-#: Reseller/admin_edit.ctp:269
-#: Reseller/admin_view.ctp:306
-#: Sponsor/admin_add.ctp:204;218
-#: Sponsor/admin_edit.ctp:262;275
-#: Sponsor/admin_view.ctp:268;282
-#: User/admin_add.ctp:211;225
-#: User/admin_edit.ctp:263;276
-#: User/admin_view.ctp:300;314
+#: View/Reseller/admin_add.ctp:204;217
+#: View/Reseller/admin_edit.ctp:269
+#: View/Reseller/admin_view.ctp:306
+#: View/Sponsor/admin_add.ctp:204;218
+#: View/Sponsor/admin_edit.ctp:262;275
+#: View/Sponsor/admin_view.ctp:268;282
+#: View/User/admin_add.ctp:211;225
+#: View/User/admin_edit.ctp:263;276
+#: View/User/admin_view.ctp:300;314
 msgid "Country"
 msgstr ""
 
-#: Reseller/admin_add.ctp:243
-#: User/admin_add.ctp:250
+#: View/Reseller/admin_add.ctp:243
+#: View/User/admin_add.ctp:250
 msgid "Phone number"
 msgstr ""
 
-#: Reseller/admin_add.ctp:276
-#: Reseller/admin_edit.ctp:341
-#: Reseller/admin_view.ctp:381
-#: Sponsor/admin_resellers.ctp:113
+#: View/Reseller/admin_add.ctp:276
+#: View/Reseller/admin_edit.ctp:341
+#: View/Reseller/admin_view.ctp:381
+#: View/Sponsor/admin_resellers.ctp:113
 msgid "Discount"
 msgstr ""
 
-#: Reseller/admin_add.ctp:291
+#: View/Reseller/admin_add.ctp:291
 msgid "Discount percentage if different from the default value"
 msgstr ""
 
-#: Reseller/admin_edit.ctp:65
+#: View/Reseller/admin_edit.ctp:65
 msgid " Edit Reseller"
 msgstr ""
 
-#: Reseller/admin_edit.ctp:85
-#: Reseller/admin_view.ctp:116
+#: View/Reseller/admin_edit.ctp:85
+#: View/Reseller/admin_view.ctp:116
 msgid " ID"
 msgstr ""
 
-#: Reseller/admin_edit.ctp:356
-#: Reseller/admin_view.ctp:397
+#: View/Reseller/admin_edit.ctp:356
+#: View/Reseller/admin_view.ctp:397
 msgid "Reseller's discount percentage"
 msgstr ""
 
-#: Reseller/admin_edit.ctp:371
-#: Reseller/admin_view.ctp:412
-#: User/admin_edit.ctp:314
-#: User/admin_view.ctp:353
+#: View/Reseller/admin_edit.ctp:371
+#: View/Reseller/admin_view.ctp:412
+#: View/User/admin_edit.ctp:314
+#: View/User/admin_view.ctp:353
 msgid "Email Verification"
 msgstr ""
 
-#: Reseller/admin_edit.ctp:409
-#: Reseller/admin_view.ctp:452
-#: User/admin_edit.ctp:352
-#: User/admin_view.ctp:393
+#: View/Reseller/admin_edit.ctp:409
+#: View/Reseller/admin_view.ctp:452
+#: View/User/admin_edit.ctp:352
+#: View/User/admin_view.ctp:393
 msgid "Ban"
 msgstr ""
 
-#: Reseller/admin_index.ctp:85
-#: Sponsor/admin_index.ctp:95
-#: Sponsor/admin_resellers.ctp:108
-#: User/admin_edit.ctp:79
-#: User/admin_index.ctp:96
-#: User/admin_view.ctp:110
-msgid "ID"
-msgstr ""
-
-#: Reseller/admin_index.ctp:89
-msgid "Discount Rate"
-msgstr ""
-
-#: Reseller/admin_index.ctp:90
-#: Sponsor/admin_index.ctp:98
-#: Sponsor/admin_resellers.ctp:112
-#: User/admin_index.ctp:100
-msgid "Registered"
-msgstr ""
-
-#: Reseller/admin_index.ctp:142
-#: Reward/admin_index.ctp:88
-#: Sponsor/admin_index.ctp:148
-#: Sponsor/admin_resellers.ctp:163
-#: User/admin_index.ctp:162
-msgid "<span class='label label-success'>Active</span>"
-msgstr ""
-
-#: Reseller/admin_index.ctp:144
-#: Reward/admin_index.ctp:90
-#: Sponsor/admin_index.ctp:150
-#: Sponsor/admin_resellers.ctp:166
-#: User/admin_index.ctp:164
-msgid "<span class='label label-warning'>Inactive</span>"
-msgstr ""
-
-#: Reseller/admin_index.ctp:151
-#: Sponsor/admin_index.ctp:157
-#: User/admin_index.ctp:172
-msgid "<i class=\"icon-edit icon-black\"></i><span class=\"hidden-phone\"> Edit</span>"
-msgstr ""
-
-#: Reseller/admin_index.ctp:165
-#: Sponsor/admin_index.ctp:168
-#: User/admin_index.ctp:186
-msgid "<i class=\"icon-trash icon-black\"></i></i><span class=\"hidden-phone\"> Delete</span>"
-msgstr ""
-
-#: Reseller/admin_index.ctp:180
-#: User/admin_index.ctp:201
-msgid "<i class=\"icon-user icon-black\"></i></i><span class=\"hidden-phone\"> Account</span>"
-msgstr ""
-
-#: Reseller/admin_index.ctp:193
-#: User/admin_index.ctp:214
-msgid "<i class=\"icon-th icon-black\"></i></i><span class=\"hidden-phone\"> Transactions</span>"
-msgstr ""
-
-#: Reseller/admin_index.ctp:205
-#: User/admin_index.ctp:238
-msgid "<i class=\"icon icon-cart icon-black\"></i></i><span class=\"hidden-phone\"> Purchases</span>"
-msgstr ""
-
-#: Reseller/admin_index.ctp:250
-#: Reseller/admin_transactions.ctp:173
-#: User/admin_index.ctp:285
-msgid "<i class=\"icon-download-alt icon-white\"></i><span> Export</span> "
-msgstr ""
-
-#: Reseller/admin_purchases.ctp:94
-#: User/admin_purchases.ctp:94
-msgid " Purchase History"
-msgstr ""
-
-#: Reseller/admin_view.ctp:96
-msgid " View Reseller"
-msgstr ""
-
-#: Reseller/admin_view.ctp:474
-#: User/admin_view.ctp:415
-msgid "Account"
-msgstr ""
-
-#: Reseller/admin_view.ctp:493
-#: User/admin_view.ctp:434
-msgid " Signup Location"
-msgstr ""
-
-#: Reward/admin_add.ctp:31
-#: Reward/admin_edit.ctp:31
-msgid "View Rewards"
-msgstr ""
-
-#: Reward/admin_add.ctp:59
-msgid " Add Reward"
-msgstr ""
-
-#: Reward/admin_add.ctp:90
-#: Reward/admin_edit.ctp:90
-msgid "Cost of the reward in points"
-msgstr ""
-
-#: Reward/admin_add.ctp:116
-#: Reward/admin_edit.ctp:116
-msgid "Recharge amount"
-msgstr ""
-
-#: Reward/admin_add.ctp:129
-#: Reward/admin_edit.ctp:129
-#: Reward/admin_index.ctp:56
-msgid "Description"
-msgstr ""
-
-#: Reward/admin_add.ctp:142
-#: Reward/admin_edit.ctp:142
-msgid "Description to show in app"
-msgstr ""
-
-#: Reward/admin_add.ctp:154
-#: Reward/admin_edit.ctp:154
-#: Reward/admin_index.ctp:55
+#: View/Reseller/admin_edit.ctp:442
+#: View/Reward/admin_add.ctp:154
+#: View/Reward/admin_edit.ctp:154
+#: View/Reward/admin_index.ctp:55
 msgid "Image"
 msgstr ""
 
-#: Reward/admin_add.ctp:166
-#: Reward/admin_edit.ctp:166
+#: View/Reseller/admin_edit.ctp:454
+#: View/Reward/admin_add.ctp:166
+#: View/Reward/admin_edit.ctp:166
 msgid "Upload an image"
 msgstr ""
 
-#: Reward/admin_edit.ctp:59
+#: View/Reseller/admin_index.ctp:85
+#: View/Sponsor/admin_index.ctp:95
+#: View/Sponsor/admin_resellers.ctp:108
+#: View/User/admin_edit.ctp:79
+#: View/User/admin_index.ctp:96
+#: View/User/admin_view.ctp:110
+msgid "ID"
+msgstr ""
+
+#: View/Reseller/admin_index.ctp:89
+msgid "Discount Rate"
+msgstr ""
+
+#: View/Reseller/admin_index.ctp:90
+#: View/Sponsor/admin_index.ctp:98
+#: View/Sponsor/admin_resellers.ctp:112
+#: View/User/admin_index.ctp:101
+msgid "Registered"
+msgstr ""
+
+#: View/Reseller/admin_index.ctp:142
+#: View/Reward/admin_index.ctp:88
+#: View/Sponsor/admin_index.ctp:148
+#: View/Sponsor/admin_resellers.ctp:163
+#: View/User/admin_index.ctp:164
+msgid "<span class='label label-success'>Active</span>"
+msgstr ""
+
+#: View/Reseller/admin_index.ctp:144
+#: View/Reward/admin_index.ctp:90
+#: View/Sponsor/admin_index.ctp:150
+#: View/Sponsor/admin_resellers.ctp:166
+#: View/User/admin_index.ctp:166
+msgid "<span class='label label-warning'>Inactive</span>"
+msgstr ""
+
+#: View/Reseller/admin_index.ctp:151
+#: View/Sponsor/admin_index.ctp:157
+#: View/User/admin_index.ctp:174
+msgid "<i class=\"icon-edit icon-black\"></i><span class=\"hidden-phone\"> Edit</span>"
+msgstr ""
+
+#: View/Reseller/admin_index.ctp:165
+#: View/Sponsor/admin_index.ctp:168
+#: View/User/admin_index.ctp:188
+msgid "<i class=\"icon-trash icon-black\"></i></i><span class=\"hidden-phone\"> Delete</span>"
+msgstr ""
+
+#: View/Reseller/admin_index.ctp:180
+#: View/User/admin_index.ctp:203
+msgid "<i class=\"icon-user icon-black\"></i></i><span class=\"hidden-phone\"> Account</span>"
+msgstr ""
+
+#: View/Reseller/admin_index.ctp:193
+#: View/User/admin_index.ctp:216
+msgid "<i class=\"icon-th icon-black\"></i></i><span class=\"hidden-phone\"> Transactions</span>"
+msgstr ""
+
+#: View/Reseller/admin_index.ctp:205
+#: View/User/admin_index.ctp:240
+msgid "<i class=\"icon icon-cart icon-black\"></i></i><span class=\"hidden-phone\"> Purchases</span>"
+msgstr ""
+
+#: View/Reseller/admin_index.ctp:250
+#: View/Reseller/admin_transactions.ctp:173
+#: View/User/admin_index.ctp:287
+msgid "<i class=\"icon-download-alt icon-white\"></i><span> Export</span> "
+msgstr ""
+
+#: View/Reseller/admin_purchases.ctp:94
+#: View/User/admin_purchases.ctp:94
+msgid " Purchase History"
+msgstr ""
+
+#: View/Reseller/admin_view.ctp:96
+msgid " View Reseller"
+msgstr ""
+
+#: View/Reseller/admin_view.ctp:474
+#: View/User/admin_view.ctp:415
+msgid "Account"
+msgstr ""
+
+#: View/Reseller/admin_view.ctp:493
+#: View/Reward/admin_edit.ctp:205
+msgid " Image"
+msgstr ""
+
+#: View/Reseller/admin_view.ctp:509
+#: View/User/admin_view.ctp:434
+msgid " Signup Location"
+msgstr ""
+
+#: View/Reward/admin_add.ctp:31
+#: View/Reward/admin_edit.ctp:31
+msgid "View Rewards"
+msgstr ""
+
+#: View/Reward/admin_add.ctp:59
+msgid " Add Reward"
+msgstr ""
+
+#: View/Reward/admin_add.ctp:90
+#: View/Reward/admin_edit.ctp:90
+msgid "Cost of the reward in points"
+msgstr ""
+
+#: View/Reward/admin_add.ctp:116
+#: View/Reward/admin_edit.ctp:116
+msgid "Recharge amount"
+msgstr ""
+
+#: View/Reward/admin_add.ctp:129
+#: View/Reward/admin_edit.ctp:129
+#: View/Reward/admin_index.ctp:56
+msgid "Description"
+msgstr ""
+
+#: View/Reward/admin_add.ctp:142
+#: View/Reward/admin_edit.ctp:142
+msgid "Description to show in app"
+msgstr ""
+
+#: View/Reward/admin_edit.ctp:59
 msgid " Edit Reward"
 msgstr ""
 
-#: Reward/admin_edit.ctp:77
+#: View/Reward/admin_edit.ctp:77
 msgid "Value"
 msgstr ""
 
-#: Reward/admin_index.ctp:47
-#: User/admin_rewards.ctp:99
+#: View/Reward/admin_index.ctp:47
+#: View/User/admin_rewards.ctp:99
 msgid " Rewards"
 msgstr ""
 
-#: Reward/admin_index.ctp:66
+#: View/Reward/admin_index.ctp:66
 msgid "No rewards available"
 msgstr ""
 
-#: Reward/admin_index.ctp:77
+#: View/Reward/admin_index.ctp:77
 msgid " points"
 msgstr ""
 
-#: Setting/admin_change_password.ctp:31
-#: Setting/admin_edit_platform.ctp:31
+#: View/Setting/admin_change_password.ctp:31
+#: View/Setting/admin_edit_platform.ctp:31
 msgid "View TrxEngine Settings"
 msgstr ""
 
-#: Setting/admin_change_password.ctp:59
+#: View/Setting/admin_change_password.ctp:59
 msgid " Change TrxEngine Password"
 msgstr ""
 
-#: Setting/admin_edit_platform.ctp:59
+#: View/Setting/admin_edit_platform.ctp:59
 msgid " Edit TrxEngine Settings"
 msgstr ""
 
-#: Setting/admin_edit_platform.ctp:121;134
-#: Setting/admin_view_platform.ctp:54
+#: View/Setting/admin_edit_platform.ctp:121;134
+#: View/Setting/admin_view_platform.ctp:54
 msgid "Product ID"
 msgstr ""
 
-#: Setting/admin_edit_platform.ctp:147
-#: Setting/admin_view_platform.ctp:55
+#: View/Setting/admin_edit_platform.ctp:147
+#: View/Setting/admin_view_platform.ctp:55
 msgid "Server"
 msgstr ""
 
-#: Setting/admin_edit_platform.ctp:160
+#: View/Setting/admin_edit_platform.ctp:160
 msgid "Server IP address"
 msgstr ""
 
-#: Setting/admin_edit_platform.ctp:173
-#: Setting/admin_view_platform.ctp:56
+#: View/Setting/admin_edit_platform.ctp:173
+#: View/Setting/admin_view_platform.ctp:56
 msgid "Port"
 msgstr ""
 
-#: Setting/admin_edit_platform.ctp:186
+#: View/Setting/admin_edit_platform.ctp:186
 msgid "Port number"
 msgstr ""
 
-#: Setting/admin_edit_platform.ctp:199
+#: View/Setting/admin_edit_platform.ctp:199
 msgid "Merchant_ID"
 msgstr ""
 
-#: Setting/admin_edit_platform.ctp:211
+#: View/Setting/admin_edit_platform.ctp:211
 msgid "Merchant_ID value"
 msgstr ""
 
-#: Setting/admin_edit_points.ctp:47
+#: View/Setting/admin_edit_points.ctp:47
 msgid " Reward Points Settings"
 msgstr ""
 
-#: Setting/admin_edit_points.ctp:64
+#: View/Setting/admin_edit_points.ctp:64
 msgid "Points for Signup"
 msgstr ""
 
-#: Setting/admin_edit_points.ctp:77
+#: View/Setting/admin_edit_points.ctp:77
 msgid "Reward points granted for account signup"
 msgstr ""
 
-#: Setting/admin_edit_points.ctp:90
+#: View/Setting/admin_edit_points.ctp:90
 msgid "Points for Refferals"
 msgstr ""
 
-#: Setting/admin_edit_points.ctp:103
+#: View/Setting/admin_edit_points.ctp:103
 msgid "Reward points granted for account referrals"
 msgstr ""
 
-#: Setting/admin_edit_points.ctp:116
+#: View/Setting/admin_edit_points.ctp:116
 msgid "Points per B/. 1.00 Recharge"
 msgstr ""
 
-#: Setting/admin_edit_points.ctp:129
+#: View/Setting/admin_edit_points.ctp:129
 msgid "Reward points granted for each dollar successfuly recharged"
 msgstr ""
 
-#: Setting/admin_edit_points.ctp:142
+#: View/Setting/admin_edit_points.ctp:142
 msgid "Points for Shares Or Likes"
 msgstr ""
 
-#: Setting/admin_edit_points.ctp:155
+#: View/Setting/admin_edit_points.ctp:155
 msgid "Reward points granted for social media participation"
 msgstr ""
 
-#: Setting/admin_operator.ctp:47
+#: View/Setting/admin_operator.ctp:47
 msgid " Mobile Operator Status"
 msgstr ""
 
-#: Setting/admin_operator.ctp:68
+#: View/Setting/admin_operator.ctp:68
 msgid "<span class='label label-success'>ON</span>"
 msgstr ""
 
-#: Setting/admin_operator.ctp:70
+#: View/Setting/admin_operator.ctp:70
 msgid "<span class='label label-warning'>OFF</span>"
 msgstr ""
 
-#: Setting/admin_operator.ctp:78
+#: View/Setting/admin_operator.ctp:78
 msgid "<i class=\"icon-edit icon-black\"></i><span>ON</span>"
 msgstr ""
 
-#: Setting/admin_operator.ctp:94
+#: View/Setting/admin_operator.ctp:94
 msgid "<i class=\"icon-trash icon-black\"></i></i><span>OFF</span>"
 msgstr ""
 
-#: Setting/admin_reseller.ctp:47
+#: View/Setting/admin_reseller.ctp:47
 msgid " Fees and Discounts"
 msgstr ""
 
-#: Setting/admin_reseller.ctp:64
+#: View/Setting/admin_reseller.ctp:64
 msgid " Default Reseller Discount"
 msgstr ""
 
-#: Setting/admin_reseller.ctp:79
+#: View/Setting/admin_reseller.ctp:79
 msgid "Default discount percentage for resellers"
 msgstr ""
 
-#: Setting/admin_reseller.ctp:95
+#: View/Setting/admin_reseller.ctp:95
 msgid "Credit Card Fees"
 msgstr ""
 
-#: Setting/admin_reseller.ctp:98
+#: View/Setting/admin_reseller.ctp:98
 msgid "Percentage of Transaction"
 msgstr ""
 
-#: Setting/admin_reseller.ctp:113
+#: View/Setting/admin_reseller.ctp:113
 msgid "Percentage of gross transaction value charged by the payment processor"
 msgstr ""
 
-#: Setting/admin_reseller.ctp:129
+#: View/Setting/admin_reseller.ctp:129
 msgid "Fixed Transaction Fee"
 msgstr ""
 
-#: Setting/admin_reseller.ctp:144
+#: View/Setting/admin_reseller.ctp:144
 msgid "Fixed fee charged by the payment processor for each credit card transaction"
 msgstr ""
 
-#: Setting/admin_tax.ctp:68
+#: View/Setting/admin_tax.ctp:68
 msgid "ITBMS"
 msgstr ""
 
-#: Setting/admin_tax.ctp:83
+#: View/Setting/admin_tax.ctp:83
 msgid "ITBMS percentage"
 msgstr ""
 
-#: Setting/admin_view_platform.ctp:47
+#: View/Setting/admin_view_platform.ctp:47
 msgid "TrxEngine Settings"
 msgstr ""
 
-#: Setting/admin_view_platform.ctp:71;76;81
+#: View/Setting/admin_view_platform.ctp:71;76;81
 msgid "N/A"
 msgstr ""
 
-#: Setting/admin_view_platform.ctp:92
+#: View/Setting/admin_view_platform.ctp:92
 msgid "<i class=\"icon-edit icon-black\"></i><span>Edit</span>"
 msgstr ""
 
-#: Setting/admin_view_platform.ctp:106
+#: View/Setting/admin_view_platform.ctp:106
 msgid "<i class=\"icon-edit icon-black\"></i><span>Change Password</span>"
 msgstr ""
 
-#: Sponsor/admin_add.ctp:47
+#: View/Sponsor/admin_add.ctp:47
 msgid " Add Sponsor"
 msgstr ""
 
-#: Sponsor/admin_add.ctp:212
-#: Sponsor/admin_edit.ctp:270
-#: Sponsor/admin_view.ctp:276
-#: User/admin_add.ctp:219
-#: User/admin_edit.ctp:271
-#: User/admin_view.ctp:308
+#: View/Sponsor/admin_add.ctp:212
+#: View/Sponsor/admin_edit.ctp:270
+#: View/Sponsor/admin_view.ctp:276
+#: View/User/admin_add.ctp:219
+#: View/User/admin_edit.ctp:271
+#: View/User/admin_view.ctp:308
 msgid "Select a country"
 msgstr ""
 
-#: Sponsor/admin_edit.ctp:31
-#: Sponsor/admin_resellers.ctp:67
-#: Sponsor/admin_view.ctp:31
+#: View/Sponsor/admin_edit.ctp:31
+#: View/Sponsor/admin_resellers.ctp:67
+#: View/Sponsor/admin_view.ctp:31
 msgid "View Sponsors"
 msgstr ""
 
-#: Sponsor/admin_edit.ctp:59
+#: View/Sponsor/admin_edit.ctp:59
 msgid " Edit Sponsor"
 msgstr ""
 
-#: Sponsor/admin_edit.ctp:79
-#: Sponsor/admin_view.ctp:79
+#: View/Sponsor/admin_edit.ctp:79
+#: View/Sponsor/admin_view.ctp:79
 msgid "Sponsor ID"
 msgstr ""
 
-#: Sponsor/admin_index.ctp:180
+#: View/Sponsor/admin_index.ctp:180
 msgid "<i class=\"icon-user icon-black\"></i></i><span class=\"hidden-phone\"> Resellers</span>"
 msgstr ""
 
-#: Sponsor/admin_resellers.ctp:99
+#: View/Sponsor/admin_resellers.ctp:99
 msgid " Assigned Resellers"
 msgstr ""
 
-#: Sponsor/admin_view.ctp:59
+#: View/Sponsor/admin_view.ctp:59
 msgid " View Sponsor"
 msgstr ""
 
-#: Staff/admin_add.ctp:61
+#: View/Staff/admin_add.ctp:61
 msgid " Add Staff Member"
 msgstr ""
 
-#: Staff/admin_add.ctp:206
-#: Staff/admin_edit.ctp:188
-#: Staff/admin_index.ctp:55
+#: View/Staff/admin_add.ctp:206
+#: View/Staff/admin_edit.ctp:188
+#: View/Staff/admin_index.ctp:55
 msgid "Role"
 msgstr ""
 
-#: Staff/admin_add.ctp:212
-#: Staff/admin_edit.ctp:194
-#: Staff/admin_index.ctp:76
+#: View/Staff/admin_add.ctp:212
+#: View/Staff/admin_edit.ctp:194
+#: View/Staff/admin_index.ctp:76
 msgid "Manager"
 msgstr ""
 
-#: Staff/admin_add.ctp:219
-#: Staff/admin_edit.ctp:201
-#: Staff/admin_index.ctp:74
+#: View/Staff/admin_add.ctp:219
+#: View/Staff/admin_edit.ctp:201
+#: View/Staff/admin_index.ctp:74
 msgid "Supervisor"
 msgstr ""
 
-#: Staff/admin_add.ctp:226
-#: Staff/admin_edit.ctp:208
-#: Staff/admin_index.ctp:72
+#: View/Staff/admin_add.ctp:226
+#: View/Staff/admin_edit.ctp:208
+#: View/Staff/admin_index.ctp:72
 msgid "Support / Customer Service"
 msgstr ""
 
-#: Staff/admin_add.ctp:240
-#: Staff/admin_edit.ctp:224
+#: View/Staff/admin_add.ctp:240
+#: View/Staff/admin_edit.ctp:224
 msgid "Allowed to send recharges"
 msgstr ""
 
-#: Staff/admin_change_password.ctp:31
-#: Staff/admin_edit.ctp:46
+#: View/Staff/admin_change_password.ctp:31
+#: View/Staff/admin_edit.ctp:46
 msgid "View Staff"
 msgstr ""
 
-#: Staff/admin_edit.ctp:74
+#: View/Staff/admin_edit.ctp:74
 msgid " Edit Staff Member"
 msgstr ""
 
-#: Staff/admin_index.ctp:56
+#: View/Staff/admin_index.ctp:56
 msgid "Recharger"
 msgstr ""
 
-#: Staff/admin_index.ctp:119
+#: View/Staff/admin_index.ctp:119
 msgid "<i class=\"icon-edit icon-black\"></i><span class=\"hidden-phone\">Change Password</span>"
 msgstr ""
 
-#: User/admin_account.ctp:31
-#: User/admin_edit.ctp:31
-#: User/admin_purchases.ctp:66
-#: User/admin_rewards.ctp:67
-#: User/admin_transactions.ctp:67
-#: User/admin_view.ctp:62
+#: View/User/admin_account.ctp:31
+#: View/User/admin_edit.ctp:31
+#: View/User/admin_purchases.ctp:66
+#: View/User/admin_rewards.ctp:67
+#: View/User/admin_transactions.ctp:67
+#: View/User/admin_view.ctp:62
 msgid "View Users"
 msgstr ""
 
-#: User/admin_account.ctp:68
+#: View/User/admin_account.ctp:68
 msgid " Reward Points"
 msgstr ""
 
-#: User/admin_add.ctp:47
+#: View/User/admin_add.ctp:47
 msgid " Add User"
 msgstr ""
 
-#: User/admin_edit.ctp:59
+#: View/User/admin_edit.ctp:59
 msgid " Edit User"
 msgstr ""
 
-#: User/admin_index.ctp:99
+#: View/User/admin_index.ctp:100
 msgid "Verified"
 msgstr ""
 
-#: User/admin_index.ctp:145
+#: View/User/admin_index.ctp:147
 msgid "<span class='label label-success'>Verified</span>"
 msgstr ""
 
-#: User/admin_index.ctp:147
+#: View/User/admin_index.ctp:149
 msgid "<span class='label label-warning'>Not Verified</span>"
 msgstr ""
 
-#: User/admin_index.ctp:159
+#: View/User/admin_index.ctp:161
 msgid "<span class='label label-warning'>Banned</span>"
 msgstr ""
 
-#: User/admin_index.ctp:226
+#: View/User/admin_index.ctp:228
 msgid "<i class=\"icon-star icon-black\"></i></i><span class=\"hidden-phone\"> Rewards</span>"
 msgstr ""
 
-#: User/admin_rewards.ctp:107
+#: View/User/admin_rewards.ctp:107
 msgid "Reward ID"
 msgstr ""
 
-#: User/admin_rewards.ctp:108
+#: View/User/admin_rewards.ctp:108
 msgid "Reward Type"
 msgstr ""
 
-#: User/admin_rewards.ctp:109
+#: View/User/admin_rewards.ctp:109
 msgid "Reward Value"
 msgstr ""
 
-#: User/admin_rewards.ctp:110
+#: View/User/admin_rewards.ctp:110
 msgid "Points Spent"
 msgstr ""
 
-#: User/admin_transactions.ctp:202
+#: View/User/admin_transactions.ctp:202
 msgid "<i class=\"icon-download-alt icon-white\"></i><spa> Export</span> "
 msgstr ""
 
-#: User/admin_view.ctp:90
+#: View/User/admin_view.ctp:90
 msgid " View User"
 msgstr ""
 
