@@ -102,12 +102,38 @@ class RequestSendPaymentDepositAPI extends Dbconn {
 			// Generate Payment Received email
 			$mail = new PHPMailer(true);
 
+			// Get Bank information
+			$queryBank =
+				"SELECT *
+					FROM banks
+					WHERE id = " . $data['BankId'] . " AND delete_status = " . NOT_DELETED;
+			$resultBank = $this->fireQuery($queryBank);
+			$valueBank = $this->fetchAssoc($resultBank);
+
+			// Translate account type
+			if ($valueBank['account_type'] == 1) {
+				$bankType = "Corriente";
+			} else {
+				$bankType = "Ahorros";
+			}
+ 
+			// Calculate ITBMS and net amount
+			$amount_net = $amount / 1.07;
+			$itbms = $amount - $amount_net;
+
+
 			// Select email template and pass variables
-			$messageBody = file_get_contents(TEMPLATE_DIR . '/payment_received.html');
+			$messageBody = file_get_contents(TEMPLATE_DIR . '/paymentreceived_deposit.html');
 			$messageBody = str_replace('%username%', $userData['name'], $messageBody);
 			$messageBody = str_replace('%payment_number%', str_pad($paymentId, 7, "0", STR_PAD_LEFT), $messageBody);
 			$messageBody = str_replace('%notification_date%', date('d-m-Y h:i:s a', strtotime($date)), $messageBody);
 			$messageBody = str_replace('%amount_total%', number_format((float)$amount, 2, '.', ''), $messageBody);
+			$messageBody = str_replace('%itbms%', number_format((float)$itbms, 2, '.', ''), $messageBody);
+			$messageBody = str_replace('%amount_net%', number_format((float)$amount_net, 2, '.', ''), $messageBody);
+			$messageBody = str_replace('%razon%', "Móviles de Panamá, S.A.", $messageBody);
+			$messageBody = str_replace('%banco%', $valueBank['bank_name'], $messageBody);
+			$messageBody = str_replace('%cuenta%', $valueBank['account_number'], $messageBody);
+			$messageBody = str_replace('%tipo%', $bankType, $messageBody);
 
 			// Set PHP Mailer parameters
 			$mail->isSMTP();
