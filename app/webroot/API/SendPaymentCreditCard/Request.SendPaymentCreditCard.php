@@ -130,7 +130,7 @@ class RequestSendPaymentCreditCardAPI extends Dbconn {
 				$itbms = $amount - $amount_net;
 
 				// Select email template and pass variables
-				$messageBody = file_get_contents(TEMPLATE_DIR . '/payment_received.html');
+				$messageBody = file_get_contents(TEMPLATE_DIR . '/paymentreceived_cc.html');
 				$messageBody = str_replace('%username%', $userData['name'], $messageBody);
 				$messageBody = str_replace('%payment_number%', str_pad($paymentId, 7, "0", STR_PAD_LEFT), $messageBody);
 				$messageBody = str_replace('%notification_date%', date('d-m-Y h:i:s a', strtotime($date)), $messageBody);
