@@ -190,8 +190,8 @@ class PaymentsController extends AppController {
 			// Set taxes paid for Payments table
 			$data['Payment']['tax'] = $taxPaid;
 
-			// Check user type and set Net Amount for Payments Table
-			if ($userData['User']['user_type'] == 2 && $paymentData['Payment']['payment_method'] == 2) {
+			// Check payment method and set Net Amount for Payments Table
+			if ($paymentData['Payment']['payment_method'] == 2) {
 				$netAmountWithFees = round($netAmount - $fees, 2);
 				$data['Payment']['net_amount'] = $netAmountWithFees;
 				$data['Payment']['fees'] = $fees;
@@ -229,13 +229,20 @@ class PaymentsController extends AppController {
 			$invoice['Invoice']['payment_id'] = base64_decode($id);
 			$invoice['Invoice']['nombre'] = $userData['User']['name'];
 			$invoice['Invoice']['ruc'] = $userData['User']['tax_id'];
-			$invoice['Invoice']['direccion'] =
-				$userData['User']['address'] . ", " .
-				$userData['User']['city'] . ", " .
-				$userData['User']['state'];
-			$invoice['Invoice']['descuento'] = $data['Payment']['discount'];
+			$invoice['Invoice']['direccion'] = 'Panamá'; // Hardcoded because fiscal printer has very little space for address
+
+			// Calculating discount amount for fiscal printer
+			$unRoundedNewAmount = (100 * (100 * $amount) / ($tax + 100)) / (100 - $userData['User']['discount_rate']);
+			$retailAmount = $unRoundedNewAmount + ($unRoundedNewAmount * $tax / 100);
+			$invoice['Invoice']['descuento'] = $retailAmount - $amount;
+
 			$invoice['Invoice']['total_pagos'] = $amount;
 			$invoice['Invoice']['total_final'] = $amount;
+
+			// Generate invoice number
+			$documentoId = base64_decode($id);
+			$documento = 'FACTI' . str_pad($documentoId, 7, "0", STR_PAD_LEFT);
+			$invoice['Invoice']['documento'] = $documento;
 
 			// Check payment type and store in appropriate column
 			if ($paymentData['Payment']['payment_method'] == 1) {
@@ -244,8 +251,8 @@ class PaymentsController extends AppController {
 				$invoice['Invoice']['tarjeta_credito'] = $amount;
 			}
 
-			// Add credit card fees to the invoice (resellers only)
-			if ($paymentData['Payment']['payment_method'] == 2 && $userData['User']['user_type'] == 2) {
+			// Add credit card fees to the invoice
+			if ($paymentData['Payment']['payment_method'] == 2) {
 				$invoice['Invoice']['porcentaje_recargo'] = $ccFee;
 				$invoice['Invoice']['recargos'] = $fees;
 			}
@@ -256,10 +263,10 @@ class PaymentsController extends AppController {
 			} else if ($userData['User']['user_type'] == 2) {
 				$invoice['Invoice']['codigo'] = 'CLUB-REV';
 			}
-			$invoice['Invoice']['nombre_articulo'] = 'Balance para Recargas';
+			$invoice['Invoice']['nombre_articulo'] = 'Balance Club Prepago Celular';
 			$invoice['Invoice']['unidad'] = 'USD';
 			$invoice['Invoice']['cantidad'] = $data['Payment']['amount_credited'];
-			$invoice['Invoice']['precio_neto_unit'] = round(COST - (COST * $userData['User']['discount_rate']) / 100, 2);
+			$invoice['Invoice']['precio_neto_unit'] = COST;
 			$invoice['Invoice']['alicuota'] = $tax;
 
 			// Save data to tables and generate confirmation email
@@ -270,11 +277,9 @@ class PaymentsController extends AppController {
 				$this->User->id = $userData['User']['id'];
 				$this->User->saveField("balance", $newBalance);
 				
-				// Save data to Invoice table and generate document number
+				// Save data to Invoice table and get invoice id
 				$this->Invoice->save($invoice['Invoice']);
 				$invoiceId = $this->Invoice->getInsertID();
-				$documento = 'FACTI' . str_pad($invoiceId, 7, "0", STR_PAD_LEFT);
-				$this->Invoice->saveField("documento", $documento);
 
 				// Generate invoice
 				$invoice = $this->admin_generate_invoice($invoiceId);
@@ -556,7 +561,7 @@ class PaymentsController extends AppController {
 
 		// Generate invoice movement file
 		$path = realpath('../../app/invoices/') . '/';
-		$invoiceId = str_pad($invoice['id'], 7, "0", STR_PAD_LEFT);
+		$invoiceId = str_pad($invoice['payment_id'], 7, "0", STR_PAD_LEFT);
 		$fileNameMv = 'FACMV' . $invoiceId . '.txt';
 		$newFile = $path . $fileNameMv;
 		file_put_contents($newFile, $contentMv);
