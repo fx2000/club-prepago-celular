@@ -11,7 +11,7 @@
  */
 
 // Server URL
-define('DOMAINURL','http://test.clubprepago.com/');
+define('DOMAINURL','https://app.clubprepago.com/');
 
 // Directories
 define('LOG_DIR', '/var/www/app/log');
