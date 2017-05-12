@@ -157,11 +157,6 @@
 								)
 							);
 						?>
-						<script language="javascript" type="text/javascript">
-							var f1 = new LiveValidation('tax_id');
-
-							f1.add( Validate.Presence);
-						</script>
 					</div>
 				</div>
 				<div class="control-group">
@@ -208,11 +203,6 @@
 								)
 							);
 						?>
-						<script language="javascript" type="text/javascript">
-							var f1 = new LiveValidation('address');
-
-							f1.add( Validate.Presence);
-						</script>
 					</div>
 				</div>
 				<div class="control-group">
@@ -233,11 +223,6 @@
 								)
 							);
 						?>
-						<script language="javascript" type="text/javascript">
-							var f1 = new LiveValidation('city');
-
-							f1.add( Validate.Presence);
-						</script>
 					</div>
 				</div>
 				<div class="control-group">
@@ -258,11 +243,6 @@
 								)
 							);
 						?>
-						<script language="javascript" type="text/javascript">
-							var f1 = new LiveValidation('state');
-
-							f1.add( Validate.Presence);
-						</script>
 					</div>
 				</div>
 				<div class="control-group">
@@ -284,11 +264,6 @@
 								)
 							);
 						?>
-						<script language="javascript" type="text/javascript">
-							var f1 = new LiveValidation('country_id');
-
-							f1.add( Validate.Presence);
-						</script>
 					</div>
 				</div>
 				<div class="control-group">

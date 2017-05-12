@@ -123,11 +123,6 @@ class ResellerController extends AppController {
 				$this->Session->write('success', "0");
 				$this->Session->write('alert', __('You must enter a name'));
 
-			// Validate Cedula or Passport
-			} else if ($this->Validation->Presence($this->request->data['Reseller']['tax_id'])) {
-				$this->Session->write('success', "0");
-				$this->Session->write('alert', __('You must enter a Cedula or Passport number'));
-
 			// Validate presence of email address
 			} else if ($this->Validation->Presence($this->request->data['Reseller']['email'])) {
 				$this->Session->write('success', "0");
@@ -137,11 +132,6 @@ class ResellerController extends AppController {
 			} else if ($this->Validation->Email($this->request->data['Reseller']['email'])) {
 				$this->Session->write('success', "0");
 				$this->Session->write('alert', __('Invalid email address'));
-
-			// Validate presence of address
-			} else if ($this->Validation->Presence($this->request->data['Reseller']['address'])) {
-				$this->Session->write('success', "0");
-				$this->Session->write('alert', __('You must enter an address'));
 
 			// Validate presence of phone number
 			} else if($this->Validation->Presence($this->request->data['Reseller']['phone_number'])) {

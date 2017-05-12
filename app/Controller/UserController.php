@@ -109,12 +109,6 @@ class UserController extends AppController {
 				$this->Session->write('alert', __('You must enter a name'));
 				$this->render();
 
-			// Validate presence of Cedula or Passport
-			}else if ($this->Validation->Presence($this->request->data['User']['tax_id'])) {
-				$this->Session->write('success', "0");
-				$this->Session->write('alert', __('You must enter a Cedula or Passport number'));
-				$this->render();
-
 			// Validate presence of email address
 			} else if ($this->Validation->Presence($this->request->data['User']['email'])) {
 				$this->Session->write('success', "0");
@@ -131,12 +125,6 @@ class UserController extends AppController {
 			} else if ($checkUser == 1) {
 				$this->Session->write('success', "0");
 				$this->Session->write('alert', __('Email already registered'));
-				$this->render();
-
-			// Validate presence of address
-			} else if ($this->Validation->Presence($this->request->data['User']['address'])) {
-				$this->Session->write('success', "0");
-				$this->Session->write('alert', __('You must enter an address'));
 				$this->render();
 
 			// Validate presence of phone number
@@ -301,11 +289,6 @@ class UserController extends AppController {
 				$this->Session->write('success', "0");
 				$this->Session->write('alert', __('You must enter a name'));
 
-			// Validate Cedula or Passport
-			} else if ($this->Validation->Presence($this->request->data['User']['tax_id'])) {
-				$this->Session->write('success', "0");
-				$this->Session->write('alert', __('You must enter a Cedula or Passport number'));
-
 			// Validate presence of email address
 			} else if ($this->Validation->Presence($this->request->data['User']['email'])) {
 				$this->Session->write('success', "0");
@@ -320,11 +303,6 @@ class UserController extends AppController {
 			} else if (!empty($exist_Email)) {
 				$this->Session->write('success', "0");
 				$this->Session->write('alert', __('Email already registered'));
-
-			// Validate presence of address
-			} else if ($this->Validation->Presence($this->request->data['User']['address'])) {
-				$this->Session->write('success', "0");
-				$this->Session->write('alert', __('You must enter an address'));
 
 			// Validate presence of phone number
 			} else if($this->Validation->Presence($this->request->data['User']['phone_number'])) {
