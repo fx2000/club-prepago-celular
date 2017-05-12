@@ -22,9 +22,16 @@ class RestResponse {
 		// Initializing logger
 		$logger = new Katzgrau\KLogger\Logger(LOG_DIR);
 
+		// Making sure the user's password doesn't show up in the log
+		$logArray = array(
+			'UserId' => $CLIENT_DATA_ARY['Email'],
+			'DeviceId' => $CLIENT_DATA_ARY['DeviceId'],
+			'PlatformId' => $CLIENT_DATA_ARY['PlatformId'],
+		);
+
 		// Logging Change Password
-		$logger->notice("============================================================");
-		$logger->notice("Received ChangePassword request:", $CLIENT_DATA_ARY);
+		$logger->info("============================================================");
+		$logger->info("Received ChangePassword request:", $logArray);
 
 		$returnArray = array();
 		$responseArray = array();
