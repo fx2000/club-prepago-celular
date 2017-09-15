@@ -10,7 +10,7 @@
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
 include "Request.ChangePassword.php";
-include "../ServerStatusCodes.php";
+include "../../APIConfig/ServerStatusCodes.php";
 
 class RestResponse {
 
@@ -48,9 +48,9 @@ class RestResponse {
 		foreach ($CLIENT_DATA_ARY as $key => $val) {
 			array_push($client_key_array, $key);
 		}
-		
+
 		for ($i = 0; $i < count($client_key_array); $i++) {
-			
+
 			if (in_array($client_key_array[$i],$check_data_array)) {
 				array_push($returnArray, 'S');
 			} else {
@@ -69,7 +69,7 @@ class RestResponse {
 			// Check current password
 			if (in_array("CurrentPassword", $client_key_array)) {
 				$currentPassword = $CLIENT_DATA_ARY['CurrentPassword'];
-				
+
 				if (strlen($currentPassword) == 0) {
 					$logger->error("ChangePassword request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('582'));
 					return $this->generateJSONError('582');
@@ -82,7 +82,7 @@ class RestResponse {
 			// Check new password
 			if (in_array("NewPassword", $client_key_array)) {
 				$newPassword = $CLIENT_DATA_ARY['NewPassword'];
-				
+
 				if (strlen($newPassword) == 0) {
 					$logger->error("ChangePassword request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('515'));
 					return $this->generateJSONError('515');
@@ -94,11 +94,11 @@ class RestResponse {
 				$logger->error("ChangePassword request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('514'));
 				return $this->generateJSONError('514');
 			}
-			
+
 			// Check User ID
 			if (in_array("UserId", $client_key_array)) {
 				$userId = $CLIENT_DATA_ARY['UserId'];
-				
+
 				if (strlen($userId) == 0) {
 					$logger->error("ChangePassword request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('541'));
 					return $this->generateJSONError('541');
@@ -114,7 +114,7 @@ class RestResponse {
 			// Check Device ID
 			if (in_array("DeviceId", $client_key_array)) {
 				$deviceId = $CLIENT_DATA_ARY['DeviceId'];
-				
+
 				if (strlen($deviceId) == 0) {
 					$logger->error("ChangePassword request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('503'));
 					return $this->generateJSONError('503');
@@ -127,7 +127,7 @@ class RestResponse {
 			// Check Platform ID
 			if (in_array("PlatformId", $client_key_array)) {
 				$platformId = $CLIENT_DATA_ARY['PlatformId'];
-				
+
 				if (strlen($platformId) == 0) {
 					$logger->error("ChangePassword request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('526'));
 					return $this->generateJSONError('526');
@@ -198,7 +198,7 @@ class RestResponse {
 	/**
 	 * Generate JSON error
 	 */
-	function generateJSONError($status) { 
+	function generateJSONError($status) {
 		$obj_server_RespCode_code = new ServerStatusCode();
 		$output = $obj_server_RespCode_code->getStatusCodeMessage($status);
 		$arr['Status'] = '0';

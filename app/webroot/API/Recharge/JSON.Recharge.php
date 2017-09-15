@@ -10,7 +10,7 @@
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
 include "Request.Recharge.php";
-include "../ServerStatusCodes.php";
+include "../../APIConfig/ServerStatusCodes.php";
 
 class RestResponse {
 

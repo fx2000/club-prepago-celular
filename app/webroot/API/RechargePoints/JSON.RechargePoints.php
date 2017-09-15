@@ -10,7 +10,7 @@
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
 include "Request.RechargePoints.php";
-include "../ServerStatusCodes.php";
+include "../../APIConfig/ServerStatusCodes.php";
 
 class RestResponse {
 
@@ -47,9 +47,9 @@ class RestResponse {
 		foreach ($CLIENT_DATA_ARY as $key => $val) {
 			array_push($client_key_array, $key);
 		}
-		
+
 		for ($i = 0; $i < count($client_key_array); $i++) {
-			
+
 			if (in_array($client_key_array[$i], $check_data_array)) {
 				array_push($returnArray, 'S');
 			} else {
@@ -61,14 +61,14 @@ class RestResponse {
 		if (in_array("F", $returnArray)) {
 			$logger->error("RechargePoints request failed for Phone Number " . $CLIENT_DATA_ARY['Phone_Number'] . " " . $this->generateJSONError('501'));
 			return $this->generateJSONError('501');
-		
+
 		// Otherwise, check each parameter's validity individually
 		} else {
 
 			// Check phone number
 			if (in_array("Phone_Number", $client_key_array)) {
 				$phoneNumber = $CLIENT_DATA_ARY['Phone_Number'];
-				
+
 				if (strlen($phoneNumber) == 0) {
 					$logger->error("RechargePoints request failed for Phone Number " . $CLIENT_DATA_ARY['Phone_Number'] . " " . $this->generateJSONError('522'));
 					return $this->generateJSONError('522');
@@ -84,7 +84,7 @@ class RestResponse {
 			// Check mobile operator
 			if (in_array("Operator", $client_key_array)) {
 				$operator = $CLIENT_DATA_ARY['Operator'];
-				
+
 				if (strlen($operator) == 0) {
 					$logger->error("RechargePoints request failed for Phone Number " . $CLIENT_DATA_ARY['Phone_Number'] . " " . $this->generateJSONError('539'));
 					return $this->generateJSONError('539');
@@ -97,7 +97,7 @@ class RestResponse {
 			// Check amount
 			if (in_array("Amount", $client_key_array)) {
 				$amount = $CLIENT_DATA_ARY['Amount'];
-				
+
 				if (strlen($amount) == 0) {
 					$logger->error("RechargePoints request failed for Phone Number " . $CLIENT_DATA_ARY['Phone_Number'] . " " . $this->generateJSONError('601'));
 					return $this->generateJSONError('601');
@@ -113,7 +113,7 @@ class RestResponse {
 			// Check payment method
 			if (in_array("Payment_Method", $client_key_array)) {
 				$paymentMethod = $CLIENT_DATA_ARY['Payment_Method'];
-				
+
 				if (strlen($paymentMethod) == 0) {
 					$logger->error("RechargePoints request failed for Phone Number " . $CLIENT_DATA_ARY['Phone_Number'] . " " . $this->generateJSONError('560'));
 					return $this->generateJSONError('560');
@@ -129,7 +129,7 @@ class RestResponse {
 			// Check User ID
 			if (in_array("UserId", $client_key_array)) {
 				$userId = $CLIENT_DATA_ARY['UserId'];
-				
+
 				if (strlen($userId) == 0) {
 					$logger->error("RechargePoints request failed for Phone Number " . $CLIENT_DATA_ARY['Phone_Number'] . " " . $this->generateJSONError('541'));
 					return $this->generateJSONError('541');
@@ -145,7 +145,7 @@ class RestResponse {
 			// Check Device ID
 			if (in_array("DeviceId", $client_key_array)) {
 				$deviceId = $CLIENT_DATA_ARY['DeviceId'];
-				
+
 				if (strlen($deviceId) == 0) {
 					$logger->error("RechargePoints request failed for Phone Number " . $CLIENT_DATA_ARY['Phone_Number'] . " " . $this->generateJSONError('503'));
 					return $this->generateJSONError('503');
@@ -158,7 +158,7 @@ class RestResponse {
 			// Check Platform ID
 			if (in_array("PlatformId", $client_key_array)) {
 				$platformId = $CLIENT_DATA_ARY['PlatformId'];
-				
+
 				if (strlen($platformId) == 0) {
 					$logger->error("RechargePoints request failed for Phone Number " . $CLIENT_DATA_ARY['Phone_Number'] . " " . $this->generateJSONError('526'));
 					return $this->generateJSONError('526');
@@ -206,7 +206,7 @@ class RestResponse {
 			// Check that the user has enough available points
 			$pointsCheck = $REQ_SUCCESS->checkPoints($userId);
 			$points = $CLIENT_DATA_ARY['Points'];
-				
+
 			if ($pointsCheck['points'] < $points) {
 				$logger->error("RechargePoints request failed for Phone Number " . $CLIENT_DATA_ARY['Phone_Number'] . " " . $this->generateJSONError('562'));
 				return $this->generateJSONError('562');
@@ -225,7 +225,7 @@ class RestResponse {
 				$arr['Message'] = $output;
 				$arr['Data'] = $rechargeStatus['Data'];
 				$result['Response'] = $arr;
-			
+
 			// Otherwise, save failed response into array
 			} else {
 				$status = $rechargeStatus['Code'];

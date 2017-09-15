@@ -9,7 +9,7 @@
  * @package       API.GetSettings
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
-include "../Dbconn.php";
+include "../../APIConfig/Dbconn.php";
 
 class RequestGetSettingsAPI extends Dbconn {
 
@@ -22,16 +22,16 @@ class RequestGetSettingsAPI extends Dbconn {
 		$selSettings =
 			"SELECT *
 				FROM settings ";
-		$resSettings = $this->fireQuery($selSettings);	
+		$resSettings = $this->fireQuery($selSettings);
 		$numSettings = $this->rowCount($resSettings);
-		
+
 		// If data is present, return settings
 		if ($numSettings > 0) {
 			$arrSettings = $this->fetchAssoc($resSettings);
 			$response['credit_card_fee_percent'] = $arrSettings['credit_card_fee_percent'];
 			$response['credit_card_fee_fixed'] = $arrSettings['credit_card_fee_fixed'];
 			return $response;
-		
+
 		// Otherwise, return 0
 		} else {
 			return $numSettings;

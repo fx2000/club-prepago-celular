@@ -9,7 +9,7 @@
  * @package       API.Country
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
-include "../Dbconn.php";
+include "../../APIConfig/Dbconn.php";
 
 class RequestGetCountriesAPI extends Dbconn {
 
@@ -29,7 +29,7 @@ class RequestGetCountriesAPI extends Dbconn {
 		// If there are countries on the list, return them all
 		if ($numCountries > 0) {
 			$i = 0;
-			
+
 			while ($arrCountries = $this->fetchAssoc($resCountries)) {
 				$countries[$i]['Id'] = $arrCountries['id'];
 				$countries[$i]['Name'] = $arrCountries['name'];

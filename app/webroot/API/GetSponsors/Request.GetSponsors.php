@@ -9,7 +9,7 @@
  * @package       API.GetSponsor
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
-include "../Dbconn.php";
+include "../../APIConfig/Dbconn.php";
 
 class RequestGetSponsorsAPI extends Dbconn {
 
@@ -22,12 +22,12 @@ class RequestGetSponsorsAPI extends Dbconn {
 			"SELECT *
 				FROM sponsors
 				WHERE status = " . ACTIVE . " AND delete_status = " . NOT_DELETED;
-		$resSponsors = $this->fireQuery($selSponsors);	
+		$resSponsors = $this->fireQuery($selSponsors);
 		$numSponsors = $this->rowCount($resSponsors);
-		
+
 		if ($numSponsors > 0) {
 			$i = 0;
-			
+
 			while ($ArrSponsors = $this->fetchAssoc($resSponsors)) {
 				$sponsors[$i]['id'] = $ArrSponsors['id'];
 				$sponsors[$i]['name'] = $ArrSponsors['name'];

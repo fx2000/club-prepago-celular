@@ -1,0 +1,75 @@
+2017-09-04 12:41:03 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'clubprepago\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /clubprepago/
+Stack Trace:
+#0 /var/www/html/clubprepago/lib/Cake/Model/Datasource/DboSource.php(267): Mysql->connect()
+#1 /var/www/html/clubprepago/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/html/clubprepago/lib/Cake/Model/Model.php(3633): ConnectionManager::getDataSource('default')
+#3 /var/www/html/clubprepago/lib/Cake/Model/Model.php(1162): Model->setDataSource('default')
+#4 /var/www/html/clubprepago/lib/Cake/Model/Model.php(3660): Model->setSource('staff')
+#5 /var/www/html/clubprepago/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#6 /var/www/html/clubprepago/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#7 /var/www/html/clubprepago/lib/Cake/View/Helper/FormHelper.php(480): FormHelper->_introspectModel('Admin', 'fields')
+#8 /var/www/html/clubprepago/app/View/Cpanel/admin_index.ctp(70): FormHelper->create('Admin', Array)
+#9 /var/www/html/clubprepago/lib/Cake/View/View.php(971): include('/var/www/html/c...')
+#10 /var/www/html/clubprepago/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/c...', Array)
+#11 /var/www/html/clubprepago/lib/Cake/View/View.php(473): View->_render('/var/www/html/c...')
+#12 /var/www/html/clubprepago/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#13 /var/www/html/clubprepago/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /var/www/html/clubprepago/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CpanelController), Object(CakeRequest))
+#15 /var/www/html/clubprepago/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-09-04 12:41:03 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'clubprepago\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /clubprepago/
+Stack Trace:
+#0 /var/www/html/clubprepago/lib/Cake/Model/Datasource/DboSource.php(267): Mysql->connect()
+#1 /var/www/html/clubprepago/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/html/clubprepago/lib/Cake/Model/Model.php(3633): ConnectionManager::getDataSource('default')
+#3 /var/www/html/clubprepago/lib/Cake/Model/Model.php(1162): Model->setDataSource('default')
+#4 /var/www/html/clubprepago/lib/Cake/Model/Model.php(3660): Model->setSource('staff')
+#5 /var/www/html/clubprepago/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#6 /var/www/html/clubprepago/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#7 /var/www/html/clubprepago/lib/Cake/View/Helper/FormHelper.php(480): FormHelper->_introspectModel('Admin', 'fields')
+#8 /var/www/html/clubprepago/app/View/Cpanel/admin_index.ctp(70): FormHelper->create('Admin', Array)
+#9 /var/www/html/clubprepago/lib/Cake/View/View.php(971): include('/var/www/html/c...')
+#10 /var/www/html/clubprepago/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/c...', Array)
+#11 /var/www/html/clubprepago/lib/Cake/View/View.php(473): View->_render('/var/www/html/c...')
+#12 /var/www/html/clubprepago/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#13 /var/www/html/clubprepago/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /var/www/html/clubprepago/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CpanelController), Object(CakeRequest))
+#15 /var/www/html/clubprepago/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-09-04 12:41:03 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'clubprepago\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /clubprepago/
+Stack Trace:
+#0 /var/www/html/clubprepago/lib/Cake/Model/Datasource/DboSource.php(267): Mysql->connect()
+#1 /var/www/html/clubprepago/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/html/clubprepago/lib/Cake/Model/Model.php(3633): ConnectionManager::getDataSource('default')
+#3 /var/www/html/clubprepago/lib/Cake/Model/Model.php(1162): Model->setDataSource('default')
+#4 /var/www/html/clubprepago/lib/Cake/Model/Model.php(3660): Model->setSource('staff')
+#5 /var/www/html/clubprepago/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#6 /var/www/html/clubprepago/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#7 /var/www/html/clubprepago/lib/Cake/View/Helper/FormHelper.php(480): FormHelper->_introspectModel('Admin', 'fields')
+#8 /var/www/html/clubprepago/app/View/Cpanel/admin_index.ctp(70): FormHelper->create('Admin', Array)
+#9 /var/www/html/clubprepago/lib/Cake/View/View.php(971): include('/var/www/html/c...')
+#10 /var/www/html/clubprepago/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/c...', Array)
+#11 /var/www/html/clubprepago/lib/Cake/View/View.php(473): View->_render('/var/www/html/c...')
+#12 /var/www/html/clubprepago/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#13 /var/www/html/clubprepago/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /var/www/html/clubprepago/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CpanelController), Object(CakeRequest))
+#15 /var/www/html/clubprepago/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}

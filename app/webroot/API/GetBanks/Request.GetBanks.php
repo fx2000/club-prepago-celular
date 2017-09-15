@@ -9,10 +9,10 @@
  * @package       API.GetBanks
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
-include "../Dbconn.php";
+include "../../APIConfig/Dbconn.php";
 
 class RequestGetBanksAPI extends Dbconn {
-	
+
 	/*
 	 * Get list of active banks
 	 */
@@ -26,11 +26,11 @@ class RequestGetBanksAPI extends Dbconn {
 				WHERE delete_status = " . NOT_DELETED;
 		$resBanks = $this->fireQuery($selBanks);
 		$numBanks = $this->rowCount($resBanks);
-		
+
 		// If there are banks on the list, return them all
-		if ($numBanks > 0) {	
+		if ($numBanks > 0) {
 			$i = 0;
-			
+
 			while ($arrBank = $this->fetchAssoc($resBanks)) {
 				$banks[$i]['id'] = $arrBank['id'];
 				$banks[$i]['bank_name'] = $arrBank['bank_name'];
@@ -47,7 +47,7 @@ class RequestGetBanksAPI extends Dbconn {
 	 */
 	function checkUser($userId) {
 		$query =
-			"SELECT id 
+			"SELECT id
 				FROM users
 				WHERE id = " . $userId;
 		$result = $this->fireQuery($query);
@@ -59,7 +59,7 @@ class RequestGetBanksAPI extends Dbconn {
 	 * Check Device ID
 	 */
 	function checkDevice($deviceId, $platformId, $userId) {
-		$query = 
+		$query =
 			"SELECT id
 				FROM devices
 				WHERE device_id = " . $deviceId . " AND user_id = " . $userId . " AND login_status = " . SIGNED_IN;

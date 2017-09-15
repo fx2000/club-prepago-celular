@@ -10,7 +10,7 @@
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
 include "Request.UpdateProfile.php";
-include "../ServerStatusCodes.php";
+include "../../APIConfig/ServerStatusCodes.php";
 
 class RestResponse {
 
@@ -25,13 +25,13 @@ class RestResponse {
 		// Logging Forgot Password
 		$logger->info("============================================================");
 		$logger->info("Received UpdateProfile request:", $CLIENT_DATA_ARY);
-	
+
 		$returnArray = array();
 		$responseArray = array();
 		$client_key_array = array();
 		$check_data_array = array(
 			'0' => 'Email',
-			'1' => 'Phone_Number',	
+			'1' => 'Phone_Number',
 			'2' => 'Address',
 			'3' => 'City',
 			'4' => 'Province',
@@ -44,9 +44,9 @@ class RestResponse {
 		foreach ($CLIENT_DATA_ARY as $key => $val) {
 			array_push($client_key_array, $key);
 		}
-		
+
 		for ($i = 0; $i < count($client_key_array); $i++) {
-			
+
 			if (in_array($client_key_array[$i],$check_data_array)) {
 				array_push($returnArray, 'S');
 			} else {
@@ -65,7 +65,7 @@ class RestResponse {
 			// Check address
 			if (in_array("Address", $client_key_array)) {
 				$address = $CLIENT_DATA_ARY['Address'];
-				
+
 				if (strlen($address) == 0) {
 					$logger->error("UpdateProfile request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('518'));
 					return $this->generateJSONError('518');
@@ -78,7 +78,7 @@ class RestResponse {
 			// Check phone number
 			if (in_array("Phone_Number", $client_key_array)) {
 				$phoneNumber = $CLIENT_DATA_ARY['Phone_Number'];
-				
+
 				if (strlen($phoneNumber) == 0) {
 					$logger->error("UpdateProfile request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('522'));
 					return $this->generateJSONError('522');
@@ -95,7 +95,7 @@ class RestResponse {
 			if (in_array("Email", $client_key_array)) {
 				$email = $CLIENT_DATA_ARY['Email'];
 				$EMAIL_REG_EXP = "/^\w+[\+\.\w-]*@([\w-]+\.)*\w+[\w-]*\.([a-z]{2,4}|[A-Z]{2,4}|\d+)$/";
-				
+
 				if (strlen($email) == 0) {
 					$logger->error("UpdateProfile request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('509'));
 					return $this->generateJSONError('509');
@@ -111,7 +111,7 @@ class RestResponse {
 			// Check User ID
 			if (in_array("UserId", $client_key_array)) {
 				$userId = $CLIENT_DATA_ARY['UserId'];
-				
+
 				if (strlen($userId) == 0) {
 					$logger->error("UpdateProfile request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('541'));
 					return $this->generateJSONError('541');
@@ -127,7 +127,7 @@ class RestResponse {
 			// Check Device ID
 			if (in_array("DeviceId", $client_key_array)) {
 				$deviceId = $CLIENT_DATA_ARY['DeviceId'];
-				
+
 				if (strlen($deviceId) == 0) {
 					$logger->error("UpdateProfile request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('503'));
 					return $this->generateJSONError('503');
@@ -140,7 +140,7 @@ class RestResponse {
 			// Check Platform ID
 			if (in_array("PlatformId", $client_key_array)) {
 				$platformId = $CLIENT_DATA_ARY['PlatformId'];
-				
+
 				if (strlen($platformId) == 0) {
 					$logger->error("UpdateProfile request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('526'));
 					return $this->generateJSONError('526');
@@ -149,11 +149,11 @@ class RestResponse {
 				$logger->error("UpdateProfile request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('527'));
 				return $this->generateJSONError('527');
 			}
-			
+
 			// Check city
 			if (in_array("City", $client_key_array)) {
 				$city = $CLIENT_DATA_ARY['City'];
-				
+
 				if (strlen($city) == 0) {
 					$logger->error("UpdateProfile request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('713'));
 					return $this->generateJSONError('713');
@@ -162,11 +162,11 @@ class RestResponse {
 				$logger->error("UpdateProfile request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('712'));
 				return $this->generateJSONError('712');
 			}
-			
+
 			// Check state or province
 			if (in_array("Province", $client_key_array)) {
 				$province = $CLIENT_DATA_ARY['Province'];
-				
+
 				if (strlen($province) == 0) {
 					$logger->error("UpdateProfile request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('715'));
 					return $this->generateJSONError('715');
@@ -209,7 +209,7 @@ class RestResponse {
 				$logger->error("UpdateProfile request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('529'));
 				return $this->generateJSONError('529');
 			}
-			
+
 			// Request profile update
 			$update = $REQ_SUCCESS->updateProfile($CLIENT_DATA_ARY);
 
@@ -228,13 +228,13 @@ class RestResponse {
 				return $this->generateJSONError('555');
 			}
 		}
-	
+
 	}
 
 	/**
 	 * Generate JSON error
 	 */
-	function generateJSONError($status) { 
+	function generateJSONError($status) {
 		$obj_server_RespCode_code = new ServerStatusCode();
 		$output = $obj_server_RespCode_code->getStatusCodeMessage($status);
 		$arr['Status'] = '0';
@@ -243,7 +243,7 @@ class RestResponse {
 		$result['Response'] = $arr;
 		return json_encode($result);
 	}
-	
+
 }
 
 // Send response back to user

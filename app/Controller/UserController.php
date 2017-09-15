@@ -310,9 +310,15 @@ class UserController extends AppController {
 				$this->Session->write('alert', __('You must enter a phone number'));
 			} else {
 				$data['User'] = $this->request->data['User'];
+				$data = $this->request->data;
+
+				//If change to reseller is checked
+				if($this->request->data['User']['user_type']==2){
+				    $data['User']['discount_rate'] = 7.00;
+				}
 
 				// If User update was successful
-				if($this->User->save($this->request->data)) {
+				if($this->User->save($data)) {
 					$this->Session->write('success', "1");
 					$this->Session->write('alert', __('User update successful'));
 

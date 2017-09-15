@@ -9,7 +9,7 @@
  * @package       API.Recharge Points
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
-include "../Dbconn.php";
+include "../../APIConfig/Dbconn.php";
 
 class RequestRechargePointsAPI extends Dbconn {
 
@@ -55,7 +55,7 @@ class RequestRechargePointsAPI extends Dbconn {
 					x,
 					y
 				) VALUES (" .
-					$data['UserId'] . "," . 
+					$data['UserId'] . "," .
 					"1" . "," . // Hardcoded to User
 					"\"" . $data['Phone_Number'] . "\"" . "," .
 					$data['Operator'] . "," .
@@ -63,7 +63,7 @@ class RequestRechargePointsAPI extends Dbconn {
 					$tax . "," .
 					$totalAmount . "," .
 					$data['Payment_Method'] . "," .
-					"\"" . $date . "\"" . "," . 
+					"\"" . $date . "\"" . "," .
 					"\"" . $data['longitude'] . "\"" . "," .
 					"\"" . $data['latitude'] . "\"" .
 				")";
@@ -117,7 +117,7 @@ class RequestRechargePointsAPI extends Dbconn {
 						phone_number,
 						operator
 					) VALUES (" .
-						$data['UserId'] . "," . 
+						$data['UserId'] . "," .
 						$data['Points'] . "," .
 						"\"" . $date . "\"" . "," .
 						"1" . "," .
@@ -336,9 +336,8 @@ class RequestRechargePointsAPI extends Dbconn {
 			// Set PHP Mailer parameters
 			$mail->isSMTP();
 			$mail->Host = EMAIL_SERVER;
-			$mail->Port = 465;
+			$mail->Port = EMAIL_PORT
 			$mail->Timeout = 30;
-			$mail->SMTPSecure = 'ssl';
 			$mail->SMTPAuth = true;
 			$mail->Username = EMAIL_USER;
 			$mail->Password = EMAIL_PASSWORD;

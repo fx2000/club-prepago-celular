@@ -9,7 +9,7 @@
  * @package       API.SendPaymentCreditCard
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
-include "../Dbconn.php";
+include "../../APIConfig/Dbconn.php";
 
 class RequestSendPaymentCreditCardAPI extends Dbconn {
 
@@ -26,12 +26,12 @@ class RequestSendPaymentCreditCardAPI extends Dbconn {
 		$name = $userData['name'];
 
 		// Set user type name
-		if ($data['PlatformId'] == 1) {
+		if ($userData['user_type'] == 1) {
 			$type = 'Usuario';
-		} else if ($data['PlatformId'] == 2) {
+		} else if ($userData['user_type'] == 2) {
 			$type = 'Revendedor';
 		} else {
-			$type = $data['PlatformId'];
+			$type = $userData['user_type'];
 		}
 
 		// Inserting transaction information into credit card transactions table
@@ -89,9 +89,8 @@ class RequestSendPaymentCreditCardAPI extends Dbconn {
 				// Set PHP Mailer parameters
 				$mail->isSMTP();
 				$mail->Host = EMAIL_SERVER;
-				$mail->Port = 465;
+				$mail->Port = EMAIL_PORT;
 				$mail->Timeout = 30;
-				$mail->SMTPSecure = 'ssl';
 				$mail->SMTPAuth = true;
 				$mail->Username = EMAIL_USER;
 				$mail->Password = EMAIL_PASSWORD;
@@ -196,7 +195,7 @@ class RequestSendPaymentCreditCardAPI extends Dbconn {
 	 * Check Device ID
 	 */
 	function checkDevice($deviceId, $platformId, $userId) {
-		$query = 
+		$query =
 			"SELECT id
 				FROM devices
 				WHERE device_id = " . $deviceId . " AND user_id = " . $userId . " AND login_status = " . SIGNED_IN;

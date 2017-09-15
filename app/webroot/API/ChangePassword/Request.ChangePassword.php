@@ -9,7 +9,7 @@
  * @package       API.ChangePassword
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
-include "../Dbconn.php";
+include "../../APIConfig/Dbconn.php";
 
 class RequestChangePasswordAPI extends Dbconn {
 
@@ -25,7 +25,7 @@ class RequestChangePasswordAPI extends Dbconn {
 		// If everything goes well, return 1
 		if ($resPassword) {
 			return 1;
-		
+
 		// Otherwise return 0
 		} else {
 			return 0;
@@ -50,7 +50,7 @@ class RequestChangePasswordAPI extends Dbconn {
 	 */
 	function checkUser($userId) {
 		$query =
-			"SELECT id 
+			"SELECT id
 				FROM users
 				WHERE id = " . $userId;
 		$result = $this->fireQuery($query);
@@ -62,7 +62,7 @@ class RequestChangePasswordAPI extends Dbconn {
 	 * Check Device ID
 	 */
 	function checkDevice($deviceId, $platformId, $userId) {
-		$query = 
+		$query =
 			"SELECT id
 				FROM devices
 				WHERE device_id = " . $deviceId . " AND user_id = " . $userId . " AND login_status = " . SIGNED_IN;

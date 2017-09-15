@@ -9,10 +9,10 @@
  * @package       API.GetRechargeHistory
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
-include "../Dbconn.php";
+include "../../APIConfig/Dbconn.php";
 
 class RequestGetHistoryAPI extends Dbconn {
-	
+
 	/**
 	 * Get a user's recharge history
 	 */
@@ -20,13 +20,14 @@ class RequestGetHistoryAPI extends Dbconn {
 		$selRechargeHistory =
 			"SELECT *
 				FROM recharges
-				WHERE user_id = " . $data['UserId'];
+				WHERE user_id = " . $data['UserId'] . "
+				ORDER BY recharge_date DESC";
 		$resRechargeHistory = $this->fireQuery($selRechargeHistory);
 		$numRechargeHistory = $this->rowCount($resRechargeHistory);
-		
+
 		if ($numRechargeHistory > 0) {
 			$i = 0;
-			
+
 			while ($arrHistory = $this->fetchAssoc($resRechargeHistory)) {
 				$rechargeHistory[$i]['HistoryType'] = $arrHistory['payment_method'];
 				$rechargeHistory[$i]['RechargeStatus'] = $arrHistory['status'];
@@ -56,7 +57,7 @@ class RequestGetHistoryAPI extends Dbconn {
 	 */
 	function checkUser($userId) {
 		$query =
-			"SELECT id 
+			"SELECT id
 				FROM users
 				WHERE id = " . $userId;
 		$result = $this->fireQuery($query);
@@ -68,7 +69,7 @@ class RequestGetHistoryAPI extends Dbconn {
 	 * Check Device ID
 	 */
 	function checkDevice($deviceId, $platformId, $userId) {
-		$query = 
+		$query =
 			"SELECT id
 				FROM devices
 				WHERE device_id = " . $deviceId . " AND user_id = " . $userId . " AND login_status = " . SIGNED_IN;
@@ -87,6 +88,20 @@ class RequestGetHistoryAPI extends Dbconn {
 				WHERE id = " . $platformId;
 		$result = $this->fireQuery($query);
 		$value = $this->rowCount($result);
+		return $value;
+	}
+
+	/**
+	 * Check Transaction ID
+	 */
+	function checkTransacionId($data) {
+		$query =
+			"SELECT *
+				FROM recharges
+				WHERE merchant_txn_id = " . $data['ReferenceNo'] . "
+				LIMIT 1";
+		$result = $this->fireQuery($query);
+		$value = $this->fetchAssoc($result);
 		return $value;
 	}
 }

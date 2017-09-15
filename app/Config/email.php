@@ -46,7 +46,7 @@ class EmailConfig {
 	public $smtp = array(
 		'transport' => 'Smtp',
 		'from' => array('noreply@clubprepago.com' => 'Club Prepago Celular'),
-		'host' => 'ssl://pan.movilesdepanama.com',
+		'host' => 'ssl://premium39.web-hosting.com',
 		'port' => 465,
 		'timeout' => 30,
 		'username' => 'noreply@clubprepago.com',

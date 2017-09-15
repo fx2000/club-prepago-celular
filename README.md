@@ -1,4 +1,4 @@
-# Club Prepago Celular Venezuela
+# Club Prepago Celular
 
 Plataforma transaccional para comercialización de productos y servicios intangibles.
 
@@ -19,9 +19,7 @@ PHP 5.6
 
 Clonar repositorio en directorio raiz de apache
 
-Cambiar la propiedad de los directorios /app/tmp, /app/log, /app/invoices, /app/webroot/uploads y /app/webroot/img/rewards a www-data (recursivo)
-
-Correr "composer update" en directorio /app/webroot/API
+Correr install.sh con un usuario del grupo Sudo
 
 Configurar acceso a MySQL en /app/Config/database.php
 

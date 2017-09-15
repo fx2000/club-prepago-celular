@@ -9,7 +9,7 @@
  * @package       API.ForgotPassword
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
-include "../Dbconn.php";
+include "../../APIConfig/Dbconn.php";
 
 class RequestForgotPasswordAPI extends Dbconn {
 
@@ -35,7 +35,7 @@ class RequestForgotPasswordAPI extends Dbconn {
 				SET password = \"" . sha1($pwd.SALT) . "\" WHERE id = " . $arrUser['id'];
 		$result = $this->fireQuery($query);
 
-		// If everything goes well, send a notification email to the user 
+		// If everything goes well, send a notification email to the user
 		if ($result) {
 
 			// Generate account activation email
@@ -44,9 +44,8 @@ class RequestForgotPasswordAPI extends Dbconn {
 			// Set PHP Mailer parameters
 			$mail->isSMTP();
 			$mail->Host = EMAIL_SERVER;
-			$mail->Port = 465;
+			$mail->Port = EMAIL_PORT;
 			$mail->Timeout = 30;
-			$mail->SMTPSecure = 'ssl';
 			$mail->SMTPAuth = true;
 			$mail->Username = EMAIL_USER;
 			$mail->Password = EMAIL_PASSWORD;

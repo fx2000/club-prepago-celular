@@ -12,7 +12,7 @@
  * @package       API.SendPaymentDeposit
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
-include "../Dbconn.php";
+include "../../APIConfig/Dbconn.php";
 
 class RequestSendPaymentDepositAPI extends Dbconn {
 
@@ -67,9 +67,8 @@ class RequestSendPaymentDepositAPI extends Dbconn {
 			// Set PHP Mailer parameters
 			$mail->isSMTP();
 			$mail->Host = EMAIL_SERVER;
-			$mail->Port = 465;
+			$mail->Port = EMAIL_PORT;
 			$mail->Timeout = 30;
-			$mail->SMTPSecure = 'ssl';
 			$mail->SMTPAuth = true;
 			$mail->Username = EMAIL_USER;
 			$mail->Password = EMAIL_PASSWORD;
@@ -116,7 +115,7 @@ class RequestSendPaymentDepositAPI extends Dbconn {
 			} else {
 				$bankType = "Ahorros";
 			}
- 
+
 			// Calculate ITBMS and net amount
 			$amount_net = $amount / 1.07;
 			$itbms = $amount - $amount_net;

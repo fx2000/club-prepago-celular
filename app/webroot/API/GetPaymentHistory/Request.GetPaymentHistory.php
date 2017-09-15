@@ -9,10 +9,10 @@
  * @package       API.GetpaymentHistory
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
-include "../Dbconn.php";
+include "../../APIConfig/Dbconn.php";
 
 class RequestGetpaymentHistoryAPI extends Dbconn {
-	
+
 	/**
 	 * Get user's payment history
 	 */
@@ -29,9 +29,9 @@ class RequestGetpaymentHistoryAPI extends Dbconn {
 		$numpaymentHistory = $this->rowCount($respaymentHistory);
 
 		// If there are payments on the list, return them all
-		if ($numpaymentHistory > 0) {	
+		if ($numpaymentHistory > 0) {
 			$i = 0;
-			
+
 			while ($arrpaymentHistory = $this->fetchAssoc($respaymentHistory)) {
 				$paymentHistory[$i]['id'] = $arrpaymentHistory['id'];
 				$paymentHistory[$i]['payment_method'] = $arrpaymentHistory['payment_method'];
@@ -52,7 +52,7 @@ class RequestGetpaymentHistoryAPI extends Dbconn {
 						WHERE id = " . $bankId . " AND delete_status = " . NOT_DELETED . " LIMIT 1";
 				$resQry = $this->fireQuery($selQry);
 				$numBanks = $this->rowCount($resQry);
-				
+
 				if ($numBanks > 0) {
 					$bank = $this->fetchAssoc($resQry);
 					$bank_name = $bank['bank_name'];
@@ -72,7 +72,7 @@ class RequestGetpaymentHistoryAPI extends Dbconn {
 	 */
 	function checkUser($userId) {
 		$query =
-			"SELECT id 
+			"SELECT id
 				FROM users
 				WHERE id = " . $userId;
 		$result = $this->fireQuery($query);
@@ -84,7 +84,7 @@ class RequestGetpaymentHistoryAPI extends Dbconn {
 	 * Check Device ID
 	 */
 	function checkDevice($deviceId, $platformId, $userId) {
-		$query = 
+		$query =
 			"SELECT id
 				FROM devices
 				WHERE device_id = " . $deviceId . " AND user_id = " . $userId . " AND login_status = " . SIGNED_IN;

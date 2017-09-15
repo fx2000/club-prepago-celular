@@ -356,7 +356,13 @@ class ResellerController extends AppController {
 
 					// Set default Sponsor if none is specified
 					$this->request->data['Reseller']['sponsor_id'] = '1';
-				} 
+				}
+
+				//If change to user is checked
+				if($this->request->data['Reseller']['user_type']==1){
+				    $this->request->data['Reseller']['discount_rate'] = 0.00;
+				}
+
 				$data['Reseller'] = $this->request->data['Reseller'];
 
 /*				// Check and upload image

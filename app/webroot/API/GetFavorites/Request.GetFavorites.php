@@ -9,7 +9,7 @@
  * @package       API.GetFavorites
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
-include "../Dbconn.php";
+include "../../APIConfig/Dbconn.php";
 
 class RequestGetFavoritesAPI extends Dbconn {
 
@@ -30,7 +30,7 @@ class RequestGetFavoritesAPI extends Dbconn {
 		// If there are favorites on the list, return them all
 		if ($numFavorites > 0) {
 			$i = 0;
-			
+
 			while ($arrFavorites = $this->fetchAssoc($resFavorites)) {
 				$favorites[$i]['id'] = $arrFavorites['id'];
 				$favorites[$i]['name'] = $arrFavorites['name'];
@@ -49,7 +49,7 @@ class RequestGetFavoritesAPI extends Dbconn {
 	 */
 	function checkUser($userId) {
 		$query =
-			"SELECT id 
+			"SELECT id
 				FROM users
 				WHERE id = " . $userId;
 		$result = $this->fireQuery($query);
@@ -61,7 +61,7 @@ class RequestGetFavoritesAPI extends Dbconn {
 	 * Check Device ID
 	 */
 	function checkDevice($deviceId, $platformId, $userId) {
-		$query = 
+		$query =
 			"SELECT id
 				FROM devices
 				WHERE device_id = " . $deviceId . " AND user_id = " . $userId . " AND login_status = " . SIGNED_IN;

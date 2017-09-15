@@ -9,10 +9,10 @@
  * @package       API.GetPrepaidBalance
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
-include "../Dbconn.php";
+include "../../APIConfig/Dbconn.php";
 
 class RequestGetPrepaidBalanceAPI extends Dbconn {
-	
+
 	/**
 	 * Get user's prepaid balance
 	 */
@@ -33,7 +33,7 @@ class RequestGetPrepaidBalanceAPI extends Dbconn {
 	 */
 	function checkUser($userId) {
 		$query =
-			"SELECT id 
+			"SELECT id
 				FROM users
 				WHERE id = " . $userId;
 		$result = $this->fireQuery($query);
@@ -45,7 +45,7 @@ class RequestGetPrepaidBalanceAPI extends Dbconn {
 	 * Check Device ID
 	 */
 	function checkDevice($deviceId, $platformId, $userId) {
-		$query = 
+		$query =
 			"SELECT id
 				FROM devices
 				WHERE device_id = " . $deviceId . " AND user_id = " . $userId . " AND login_status = " . SIGNED_IN;

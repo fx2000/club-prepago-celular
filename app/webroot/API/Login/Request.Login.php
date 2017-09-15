@@ -9,7 +9,7 @@
  * @package       API.Login
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
-include "../Dbconn.php";
+include "../../APIConfig/Dbconn.php";
 
 class RequestLoginAPI extends Dbconn {
 

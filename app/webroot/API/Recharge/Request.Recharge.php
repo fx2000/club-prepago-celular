@@ -9,7 +9,8 @@
  * @package       API.Recharge
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
-include "../Dbconn.php";
+include "../../APIConfig/Dbconn.php";
+include "../ServiceOperators/selectorOperator.php";
 
 class RequestRechargeAPI extends Dbconn {
 
@@ -33,9 +34,10 @@ class RequestRechargeAPI extends Dbconn {
 		// Set total amount
 		$totalAmount = $amount + $tax;
 
-		// Check user activation and ban status
+		// Check user activation, type and ban status
 		$arrUserStatus = $this->checkStatus($data['UserId']);
 		$arrUserBanned = $this->checkBan($data['UserId']);
+		$arrUserType = $this->checkType($data['UserId']);
 
 		// If user is active and not banned, proceed normally
 		if ($arrUserStatus['status'] == ACTIVE && $arrUserBanned['banned'] == NOT_BANNED) {
@@ -56,14 +58,14 @@ class RequestRechargeAPI extends Dbconn {
 					y
 				) VALUES (" .
 					$data['UserId'] . "," .
-					$data['PlatformId'] . "," . // Change this to check the user tables
+					$arrUserType['user_type'] . "," .
 					"\"" . $data['Phone_Number'] . "\"" . "," .
 					$data['Operator'] . "," .
 					$amount . "," .
 					$tax . "," .
 					$totalAmount . "," .
 					$data['Payment_Method'] . "," .
-					"\"" . $date . "\"" . "," . 
+					"\"" . $date . "\"" . "," .
 					"\"" . $data['longitude'] . "\"" . "," .
 					"\"" . $data['latitude'] . "\"" .
 				")";
@@ -88,10 +90,18 @@ class RequestRechargeAPI extends Dbconn {
 			// Making sure points are awarded for each whole dollar, no fractions
 			$points = $arrSetting['reward_recharge'] * floor($amount);
 
-			// Excecute recharge
-			$rechargeStatus = $this->doRecharge(
-				$data['Phone_Number'], $data['Operator'], $amount, $merchantTxnId, $data['UserId'], $data['PlatformId']
-			);
+			//Prepare to array with request data
+			$requestData = array();
+			$requestData['Phone_Number'] = $data['Phone_Number'];
+			$requestData['Operator'] = $data['Operator'];
+			$requestData['Amount'] = $amount;
+			$requestData['MerchantTxnId'] = $merchantTxnId;
+			$requestData['UserId'] = $data['UserId'];
+			$requestData['PlatformId'] = $data['PlatformId'];
+
+			//Send request to Operators Recharge Service Selecction
+			$selectorClass = new selectorOperator();
+			$rechargeStatus = $selectorClass->selector($requestData);
 
 			// Read TrxEngine's response
 			$arrRechargeStatus = explode(':', $rechargeStatus);
@@ -221,6 +231,7 @@ class RequestRechargeAPI extends Dbconn {
 			// If recharge is succesful, put updated user's balance in the results array
 			if ($rechargeDone == 1) {
 				$resultArr['Data']['AvailableBalance'] = $arrUser['balance'];
+				$resultArr['Data']['NewBalanceOperator'] = $arrRechargeStatus[3];
 			}
 
 			// Return recharge information
@@ -247,72 +258,6 @@ class RequestRechargeAPI extends Dbconn {
 	}
 
 	/**
-	 * Send a new Recharge to trxengine
-	 */
-	function doRecharge($phoneNumber, $operatorId, $amount, $merchantTxnId, $userId, $platformId) {
-
-		// Get trxengine settings for the mobile operator
-		$selproduct =
-			"SELECT *
-				FROM operator_credentials
-				WHERE operator_id = ". $operatorId;
-		$resproduct = $this->fireQuery($selproduct);
-		$arrproduct = $this->fetchAssoc($resproduct);
-
-		// Assign appropriate values
-		$url = $arrproduct['ip_address'];
-		$port = $arrproduct['port'];
-		$merchantId = $arrproduct['username'];
-		$merchantPin = $arrproduct['password'];
-		$productId = $arrproduct['product_id'];
-
-		// Generate TrxEngine XML file
-		$header[] = "Host:" . $url . ":" . $port;
-		$header[] = "Content-type: text/xml";
-		$NewXml =
-			'<methodCall>
-			<methodName>roms.esinglextrapr</methodName>
-			<params>
-			<param><value>' . $merchantId .'</value></param>
-			<param><value>' . $merchantPin .'</value></param>
-			<param><value>' . $phoneNumber .'</value></param>
-			<param><value>' . number_format((float)$amount, 2, '.', '') .'</value></param>
-			<param><value>' . $merchantTxnId .'</value></param>
-			<param><value>' . $platformId . '</value></param>
-			<param><value>' . $userId . '</value></param>
-			<param><value>' . date('YmdHis') . '</value></param>
-			<param><value>' . $productId . '</value></param>
-			</params>
-			</methodCall>';
-		$ch = curl_init();
-
-		// Check Mobile Operator and set target server
-		curl_setopt($ch, CURLOPT_URL, $url . ":" . $port);
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1 );
-
-		// Add headers
-		curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-
-		// Set POST
-		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
-
-		// Add XML content
-		curl_setopt($ch, CURLOPT_POSTFIELDS, $NewXml);
-
-		// Send transaction to trxengine
-		$result = curl_exec($ch);
-
-		// Close connection
-		curl_close($ch);
-
-		// Read and return results
-		$result1 = simplexml_load_string($result);
-		$result2 = $result1->params->param->value;
-		$result3 = $result2->string;
-		return $result3;
-	}
-
-	/**
 	 * Check for Inventory Warnings, and send low inventory reminders
 	 */
 	function lowInventoryEmail($operator) {
@@ -334,9 +279,8 @@ class RequestRechargeAPI extends Dbconn {
 			// Set PHP Mailer parameters
 			$mail->isSMTP();
 			$mail->Host = EMAIL_SERVER;
-			$mail->Port = 465;
+			$mail->Port = EMAIL_PORT;
 			$mail->Timeout = 30;
-			$mail->SMTPSecure = 'ssl';
 			$mail->SMTPAuth = true;
 			$mail->Username = EMAIL_USER;
 			$mail->Password = EMAIL_PASSWORD;
@@ -375,6 +319,19 @@ class RequestRechargeAPI extends Dbconn {
 				WHERE id = " . $userId;
 		$result = $this->fireQuery($query);
 		$value = $this->rowCount($result);
+		return $value;
+	}
+
+	/**
+	 * Check User Type
+	 */
+	function checkType($userId) {
+		$query =
+			"SELECT user_type
+				FROM users
+				WHERE id = " . $userId;
+		$result = $this->fireQuery($query);
+		$value = $this->fetchAssoc($result);
 		return $value;
 	}
 

@@ -10,7 +10,7 @@
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
 include "Request.UpdateFavorite.php";
-include "../ServerStatusCodes.php";
+include "../../APIConfig/ServerStatusCodes.php";
 
 class RestResponse {
 
@@ -25,7 +25,7 @@ class RestResponse {
 		// Logging Forgot Password
 		$logger->info("============================================================");
 		$logger->info("Received UpdateFavorite request:", $CLIENT_DATA_ARY);
-	
+
 		$returnArray = array();
 		$responseArray = array();
 		$client_key_array = array();
@@ -43,9 +43,9 @@ class RestResponse {
 		foreach ($CLIENT_DATA_ARY as $key => $val) {
 			array_push($client_key_array, $key);
 		}
-		
+
 		for ($i = 0; $i < count($client_key_array); $i++) {
-			
+
 			if (in_array($client_key_array[$i], $check_data_array)) {
 				array_push($returnArray, 'S');
 			} else {
@@ -57,14 +57,14 @@ class RestResponse {
 		if (in_array("F", $returnArray)) {
 			$logger->error("UpdateFavorite request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('501'));
 			return $this->generateJSONError('501');
-		
+
 		// Otherwise, check each parameter's validity individually
 		} else {
 
 			// Check Favorite ID
 			if (in_array("FavoriteId",$client_key_array)) {
 				$favoriteId = $CLIENT_DATA_ARY['FavoriteId'];
-				
+
 				if (strlen($favoriteId) == 0) {
 					$logger->error("UpdateFavorite request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('580'));
 					return $this->generateJSONError('580');
@@ -73,11 +73,11 @@ class RestResponse {
 				$logger->error("UpdateFavorite request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('579'));
 				return $this->generateJSONError('579');
 			}
-			
+
 			// Check favorite's name
 			if (in_array("Name", $client_key_array)) {
 				$name = $CLIENT_DATA_ARY['Name'];
-				
+
 				if (strlen($name) == 0) {
 					$logger->error("UpdateFavorite request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('505'));
 					return $this->generateJSONError('505');
@@ -90,7 +90,7 @@ class RestResponse {
 			// Check favorite's phone number
 			if (in_array("Phone_Number", $client_key_array)) {
 				$phoneNumber = $CLIENT_DATA_ARY['Phone_Number'];
-				
+
 				if (strlen($phoneNumber) == 0) {
 					$logger->error("UpdateFavorite request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('522'));
 					return $this->generateJSONError('522');
@@ -106,7 +106,7 @@ class RestResponse {
 			// Check favorite's mobile operator
 			if (in_array("Operator", $client_key_array)) {
 				$operator = $CLIENT_DATA_ARY['Operator'];
-				
+
 				if (strlen($operator) == 0) {
 					$logger->error("UpdateFavorite request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('539'));
 					return $this->generateJSONError('539');
@@ -119,7 +119,7 @@ class RestResponse {
 			// Check User ID
 			if (in_array("UserId", $client_key_array)) {
 				$userId = $CLIENT_DATA_ARY['UserId'];
-				
+
 				if (strlen($userId) == 0) {
 					$logger->error("UpdateFavorite request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('541'));
 					return $this->generateJSONError('541');
@@ -135,7 +135,7 @@ class RestResponse {
 			// Check Device ID
 			if (in_array("DeviceId", $client_key_array)) {
 				$deviceId = $CLIENT_DATA_ARY['DeviceId'];
-				
+
 				if (strlen($deviceId) == 0) {
 					$logger->error("UpdateFavorite request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('503'));
 					return $this->generateJSONError('503');
@@ -148,7 +148,7 @@ class RestResponse {
 			// Check Platform ID
 			if (in_array("PlatformId", $client_key_array)) {
 				$platformId = $CLIENT_DATA_ARY['PlatformId'];
-				
+
 				if (strlen($platformId) == 0) {
 					$logger->error("UpdateFavorite request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('526'));
 					return $this->generateJSONError('526');
@@ -211,7 +211,7 @@ class RestResponse {
 
 			// Request new Favorite update
 			$upFavorite = $REQ_SUCCESS->updateFavorite($CLIENT_DATA_ARY);
-	
+
 			if ($upFavorite != 0) {
 				$status = '533';
 				$obj_server_RespCode_code = new ServerStatusCode();

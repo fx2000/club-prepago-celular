@@ -9,10 +9,10 @@
  * @package       API.GetProfile
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
-include "../Dbconn.php";
+include "../../APIConfig/Dbconn.php";
 
 class RequestGetProfileAPI extends Dbconn {
-	
+
 	/**
 	 * Get profile information
 	 */
@@ -48,7 +48,7 @@ class RequestGetProfileAPI extends Dbconn {
 		// Fill the User ID with zeroes for cosmetic reasons
 		$remaining = 6 - strlen($arrUser['id']);
 		$userId = '';
-		
+
 		for ($i = 0; $i < $remaining; $i++) {
 			$userId .= '0';
 		}
@@ -60,7 +60,7 @@ class RequestGetProfileAPI extends Dbconn {
 		// Fill the Sponsor ID with zeroes for cosmetic reasons
 		$remaining2 = 6 - strlen($arrSponsor['id']);
 		$sponsorId = '';
-		
+
 		for ($i = 0; $i < $remaining2; $i++) {
 			$sponsorId .= '0';
 		}
@@ -79,7 +79,7 @@ class RequestGetProfileAPI extends Dbconn {
 	 */
 	function checkUser($userId) {
 		$query =
-			"SELECT id 
+			"SELECT id
 				FROM users
 				WHERE id = " . $userId;
 		$result = $this->fireQuery($query);
@@ -91,10 +91,10 @@ class RequestGetProfileAPI extends Dbconn {
 	 * Check Device ID
 	 */
 	function checkDevice($deviceId, $userId) {
-		$query = 
+		$query =
 			"SELECT id
 				FROM devices
-				WHERE device_id = " . $deviceId . " AND user_id = " . $userId . " 
+				WHERE device_id = " . $deviceId . " AND user_id = " . $userId . "
 				AND login_status = " . SIGNED_IN;
 		$result = $this->fireQuery($query);
 		$value = $this->rowCount($result);

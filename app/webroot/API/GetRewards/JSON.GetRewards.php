@@ -10,7 +10,7 @@
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
 include "Request.GetRewards.php";
-include "../ServerStatusCodes.php";
+include "../../APIConfig/ServerStatusCodes.php";
 
 class RestResponse {
 
@@ -39,9 +39,9 @@ class RestResponse {
 		foreach ($CLIENT_DATA_ARY as $key => $val) {
 			array_push($client_key_array, $key);
 		}
-		
+
 		for ($i = 0; $i < count($client_key_array); $i++) {
-			
+
 			if (in_array($client_key_array[$i], $check_data_array)) {
 				array_push($returnArray, 'S');
 			} else {
@@ -58,7 +58,7 @@ class RestResponse {
 			// Check User ID
 			if (in_array("UserId", $client_key_array)) {
 				$userId = $CLIENT_DATA_ARY['UserId'];
-				
+
 				if (strlen($userId) == 0) {
 					$logger->error("GetRewards request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('541'));
 					return $this->generateJSONError('541');
@@ -74,7 +74,7 @@ class RestResponse {
 			// Check Device ID
 			if (in_array("DeviceId", $client_key_array)) {
 				$deviceId = $CLIENT_DATA_ARY['DeviceId'];
-				
+
 				if (strlen($deviceId) == 0) {
 					$logger->error("GetRewards request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('503'));
 					return $this->generateJSONError('503');
@@ -87,7 +87,7 @@ class RestResponse {
 			// Check Platform ID
 			if (in_array("PlatformId", $client_key_array)) {
 				$platformId = $CLIENT_DATA_ARY['PlatformId'];
-				
+
 				if (strlen($platformId) == 0) {
 					$logger->error("GetRewards request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('526'));
 					return $this->generateJSONError('526');

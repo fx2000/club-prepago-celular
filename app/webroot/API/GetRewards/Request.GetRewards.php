@@ -9,15 +9,15 @@
  * @package       API.GetRewards
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
-include "../Dbconn.php";
+include "../../APIConfig/Dbconn.php";
 
 class RequestGetRewardsAPI extends Dbconn {
-	
+
 	/**
 	 * Get Rewards
 	 */
 	function getRewards($data) {
-		
+
 		// Prepare the results array
 		$rewards = array();
 
@@ -33,16 +33,16 @@ class RequestGetRewardsAPI extends Dbconn {
 		// If rewards exist, get their information
 		if ($numReward > 0) {
 			$num = 0;
-			
+
 			while ($arrReward = $this->fetchAssoc($resRewards)) {
 					$rewards[$num]['id'] = $arrReward['id'];
-					$rewards[$num]['Point'] = $arrReward['points'];	
-					$rewards[$num]['Cost'] = $arrReward['value'];	
+					$rewards[$num]['Point'] = $arrReward['points'];
+					$rewards[$num]['Cost'] = $arrReward['value'];
 					$rewards[$num]['Description'] = $arrReward['description'];
 					$rewards[$num]['Image'] = DOMAINURL . 'img/rewards/' . $arrReward['image'];
 					$num++;
 			}
-			
+
 			// If there is data in the rewards array, return it
 			if (!empty($rewards)) {
 				return $rewards;
@@ -63,7 +63,7 @@ class RequestGetRewardsAPI extends Dbconn {
 	 */
 	function checkUser($userId) {
 		$query =
-			"SELECT id 
+			"SELECT id
 				FROM users
 				WHERE id = " . $userId;
 		$result = $this->fireQuery($query);
@@ -75,7 +75,7 @@ class RequestGetRewardsAPI extends Dbconn {
 	 * Check Device ID
 	 */
 	function checkDevice($deviceId, $platformId, $userId) {
-		$query = 
+		$query =
 			"SELECT id
 				FROM devices
 				WHERE device_id = " . $deviceId . " AND user_id = " . $userId . " AND login_status = " . SIGNED_IN;

@@ -10,7 +10,7 @@
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
 include "Request.SendPaymentCreditCard.php";
-include "../ServerStatusCodes.php";
+include "../../APIConfig/ServerStatusCodes.php";
 
 class RestResponse {
 
@@ -45,9 +45,9 @@ class RestResponse {
 		foreach ($CLIENT_DATA_ARY as $key => $val) {
 			array_push($client_key_array, $key);
 		}
-		
+
 		for ($i = 0; $i < count($client_key_array); $i++) {
-			
+
 			if (in_array($client_key_array[$i], $check_data_array)) {
 				array_push($returnArray, 'S');
 			} else {
@@ -59,14 +59,14 @@ class RestResponse {
 		if (in_array("F", $returnArray)) {
 			$logger->error("SendPaymentCreditCard request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('501'));
 			return $this->generateJSONError('501');
-		
+
 		// Otherwise, check each parameter's validity individually
 		} else {
 
 			// Check User ID
 			if (in_array("UserId", $client_key_array)) {
 				$userId = $CLIENT_DATA_ARY['UserId'];
-				
+
 				if (strlen($userId) == 0) {
 					$logger->error("SendPaymentCreditCard request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('541'));
 					return $this->generateJSONError('541');
@@ -82,7 +82,7 @@ class RestResponse {
 			// Check Device ID
 			if (in_array("DeviceId", $client_key_array)) {
 				$deviceId = $CLIENT_DATA_ARY['DeviceId'];
-				
+
 				if (strlen($deviceId) == 0) {
 					$logger->error("SendPaymentCreditCard request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('503'));
 					return $this->generateJSONError('503');
@@ -95,7 +95,7 @@ class RestResponse {
 			// Check Platform ID
 			if (in_array("PlatformId", $client_key_array)) {
 				$platformId = $CLIENT_DATA_ARY['PlatformId'];
-				
+
 				if (strlen($platformId) == 0) {
 					$logger->error("SendPaymentCreditCard request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('526'));
 					return $this->generateJSONError('526');
@@ -108,7 +108,7 @@ class RestResponse {
 			// Check amount
 			if (in_array("amount", $client_key_array)) {
 				$amount = $CLIENT_DATA_ARY['amount'];
-				
+
 				if (strlen($amount) == 0) {
 					$logger->error("SendPaymentCreditCard request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('601'));
 					return $this->generateJSONError('601');
@@ -124,7 +124,7 @@ class RestResponse {
 			// Check discount
 			if (in_array("discount_rate", $client_key_array)) {
 				$rateDiscount = $CLIENT_DATA_ARY['discount_rate'];
-				
+
 				if (strlen($rateDiscount) == 0) {
 					$logger->error("SendPaymentCreditCard request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('705'));
 					return $this->generateJSONError('705');
@@ -140,7 +140,7 @@ class RestResponse {
 			// Check tax
 			if (in_array("tax_rate", $client_key_array)) {
 				$rateTax = $CLIENT_DATA_ARY['tax_rate'];
-				
+
 				if (strlen($rateTax) == 0) {
 					$logger->error("SendPaymentCreditCard request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('708'));
 					return $this->generateJSONError('708');
@@ -156,7 +156,7 @@ class RestResponse {
 			// Check payment processor's transaction ID
 			if (in_array("TransactionId", $client_key_array)) {
 				$transactionId = $CLIENT_DATA_ARY['TransactionId'];
-				
+
 				if (strlen($transactionId) == 0) {
 					$logger->error("SendPaymentCreditCard request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('603'));
 					return $this->generateJSONError('603');
@@ -168,7 +168,7 @@ class RestResponse {
 			// Check payment processor's transaction status
 			if (in_array("TransactionStatus", $client_key_array)) {
 				$transactionStatus = $CLIENT_DATA_ARY['TransactionStatus'];
-			
+
 				if (strlen($transactionStatus) == 0) {
 					$logger->error("SendPaymentCreditCard request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('604'));
 					return $this->generateJSONError('604');
@@ -234,7 +234,7 @@ class RestResponse {
 	/**
 	 * Generate JSON error
 	 */
-	function generateJSONError($status) { 
+	function generateJSONError($status) {
 		$obj_server_RespCode_code = new ServerStatusCode();
 		$output = $obj_server_RespCode_code->getStatusCodeMessage($status);
 		$arr['Status'] = '0';
