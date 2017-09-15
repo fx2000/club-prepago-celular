@@ -20,13 +20,13 @@
 		if (c_start == -1) {
 			c_start = c_value.indexOf(c_name + "=");
 		}
-		
+
 		if (c_start == -1) {
 			c_value = null;
 		} else {
 			c_start = c_value.indexOf("=", c_start) + 1;
 			var c_end = c_value.indexOf(";", c_start);
-			
+
 			if (c_end == -1) {
 				c_end = c_value.length;
 			}
@@ -34,7 +34,7 @@
 		}
 		return c_value;
 	}
-	
+
 	function Export() {
 		var datatableInfo = getCookie('ClubPrepago_<?php echo strtolower(urlencode($this->params['pass'][0])); ?>');
 
@@ -75,7 +75,7 @@
 <div class="alert <?php echo ($this->Session->read('success') == 1) ? 'alert-success' : 'alert-error' ?>">
 	<button type="button" class="close" data-dismiss="alert">x</button>
 	<strong>
-		<?php 
+		<?php
 			echo $this->Session->read('alert');
 			$_SESSION['alert'] = '';
 		?>
@@ -84,7 +84,7 @@
 <?php
 	}
 ?>
-<div class="row-fluid ">		
+<div class="row-fluid ">
 	<div class="box span12">
 		<div class="box-header well" data-original-title>
 			<h2><i class="icon-user"></i><?php echo __(' Transactions'); ?></h2>
@@ -97,7 +97,7 @@
 					<option value=""><?php echo __('All Users'); ?></option>
 					<?php
 						$Userdata = $this->requestAction('user/getUser/');
-						
+
 						foreach ($Userdata as $key => $user) {
 							$selected = ($key == $_REQUEST['username']) ? 'selected="selected"' : '';
 							echo "<option value='" . $key . "' " . $selected . ">" . $user . "</option>";
@@ -109,7 +109,7 @@
 					<option value=""><?php echo __('All Resellers'); ?></option>
 						<?php
 							$Resellerdata = $this->requestAction('reseller/getReseller/');
-							
+
 							foreach ($Resellerdata as $key => $sponsor) {
 								$selected = ($key == $_REQUEST['reseller']) ? 'selected="selected"' : '';
 								echo "<option value='" . $key . "' " . $selected . ">" . $sponsor . "</option>";
@@ -128,7 +128,7 @@
 						<?php echo __('Reward Points'); ?>
 					</option>
 				</select>
-				<input type="date" class="input-small datepicker" id="input_date" name="input_date" 
+				<input type="date" class="input-small datepicker" id="input_date" name="input_date"
 					placeholder="Input Date" data-rel='tooltip' data-original-title='Input date'
 					value="<?php echo @$_REQUEST['input_date'];?>">&nbsp;
 				<select name="status" class="input-medium" data-rel=tooltip data-original-title='Status'>
@@ -230,9 +230,9 @@
 						</td>
 						<td class="hidden-phone"><?php echo $val['Operator']['name'];?></td>
 						<td><?php echo $val['Recharge']['phone_number']; ?></td>
-						<td><?php echo 'B/. ' . $val['Recharge']['amount']; ?></td>
+						<td><?php echo 'Bs. ' . $val['Recharge']['amount']; ?></td>
 						<td class="hidden-phone">
-							<?php 							
+							<?php
 								if ($val['Recharge']['payment_method'] == 1) {
 									echo __("Prepaid Balance");
 								} else if ($val['Recharge']['payment_method'] == 2) {
@@ -260,12 +260,12 @@
 								}
 							?>
 						</td>
-					</tr>	
+					</tr>
 					<?php
 							}
-					 	}	
-					?>			
-				</tbody>   
+					 	}
+					?>
+				</tbody>
 			</table>
 			<div class="box-content">
 				<?php

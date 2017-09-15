@@ -46,17 +46,17 @@ $pointAwarded =
 
 		var c_value = document.cookie;
 		var c_start = c_value.indexOf(" " + c_name + "=");
-		
+
 		if (c_start == -1) {
 			c_start = c_value.indexOf(c_name + "=");
 		}
-		
+
 		if (c_start == -1) {
 			c_value = null;
 		} else {
 			c_start = c_value.indexOf("=", c_start) + 1;
 			var c_end = c_value.indexOf(";", c_start);
-			
+
 			if (c_end == -1) {
 				c_end = c_value.length;
 			}
@@ -95,7 +95,7 @@ $pointAwarded =
 <div class="alert <?php echo ($this->Session->read('success') == 1) ? 'alert-success' : 'alert-error' ?>">
 	<button type="button" class="close" data-dismiss="alert">x</button>
 	<strong>
-		<?php 
+		<?php
 			echo $this->Session->read('alert');
 			$_SESSION['alert']='';
 		?>
@@ -104,7 +104,7 @@ $pointAwarded =
 <?php
 	}
 ?>
-<div class="row-fluid ">	
+<div class="row-fluid ">
 	<div class="box span12">
 
 		<!-- Page icon and title -->
@@ -118,11 +118,11 @@ $pointAwarded =
 			<!-- Generate report summary -->
 			<div style="float: left;">
 				<span class="blue" style="font-size: 16px;font-weight: bold;line-height:30px;">
-					<?php echo __('Gross Sales : B/. ') . (($grossSale != '') ? number_format($grossSale, 2) : '0.00'); ?>
+					<?php echo __('Gross Sales : Bs. ') . (($grossSale != '') ? number_format($grossSale, 2) : '0.00'); ?>
 				</span>
 				<br/>
 				<span class="blue" style="font-size: 16px;font-weight: bold;line-height:30px;">
-					<?php echo __('Net Sales : B/. ') . (($netSale != '') ? number_format($netSale, 2) : '0.00'); ?>
+					<?php echo __('Net Sales : Bs. ') . (($netSale != '') ? number_format($netSale, 2) : '0.00'); ?>
 				</span>
 				<br/>
 				<span class="blue" style="font-size: 16px;font-weight: bold;line-height:30px;">
@@ -155,7 +155,7 @@ $pointAwarded =
 					data-rel='tooltip' data-original-title='From date' placeholder="<?php echo __('From Date'); ?>"
 					value="<?php echo @$_REQUEST['from_date'];?>">&nbsp;
 				<input type="date" class="input-small datepicker" id="to_date" name="to_date"
-					data-rel='tooltip' data-original-title='To date' placeholder="<?php echo __('To Date'); ?>" 
+					data-rel='tooltip' data-original-title='To date' placeholder="<?php echo __('To Date'); ?>"
 					value="<?php echo @$_REQUEST['to_date'];?>">&nbsp;
 				<select name="operator" class="input-small" data-rel=tooltip data-original-title="<?php echo __('Select a Mobile Operator'); ?>">
 					<option value=""><?php echo __('Operator'); ?></option>
@@ -201,7 +201,7 @@ $pointAwarded =
 					<tbody>
 						<?php
 							if (!empty($userdata)) {
-								
+
 								foreach ($userdata as $val) {
 						?>
 						<tr>
@@ -236,20 +236,20 @@ $pointAwarded =
 									}
 								?>
 							</td>
-							<td align="center" ><?php echo 'B/. ' . $val['Recharge']['amount']; ?></td>
-							<td align="center" class="hidden-phone"><?php echo 'B/. ' . $val['Recharge']['tax_amount']; ?></td>
-							<td align="center" class="hidden-phone"><?php echo 'B/. ' . $val['Recharge']['total_amount']; ?></td>
+							<td align="center" ><?php echo 'Bs. ' . $val['Recharge']['amount']; ?></td>
+							<td align="center" class="hidden-phone"><?php echo 'Bs. ' . $val['Recharge']['tax_amount']; ?></td>
+							<td align="center" class="hidden-phone"><?php echo 'Bs. ' . $val['Recharge']['total_amount']; ?></td>
 							<td align="center" class="hidden-phone"><?php echo $val['Recharge']['points']; ?></td>
 							<td>
 								<?php
 									echo $val['Recharge']['recharge_date'];
 								?>
-							</td>	
-						</tr>	
+							</td>
+						</tr>
 						<?php
 								}
-							}	
-						?>	
+							}
+						?>
 					</tbody>
 				</table>
 

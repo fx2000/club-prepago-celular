@@ -38,13 +38,13 @@
 		</li>
 	</ul>
 </div>
-<?php 
+<?php
 	if ($this->Session->read('alert') != '') {
 ?>
 <div class="alert <?php echo ($this->Session->read('success') == 1) ? 'alert-success' : 'alert-error' ?>">
 	<button type="button" class="close" data-dismiss="alert">x</button>
 	<strong>
-		<?php 
+		<?php
 			echo $this->Session->read('alert');
 			$_SESSION['alert'] = '';
 		?>
@@ -60,8 +60,8 @@
 				<h2><i class="icon-th"></i><?php echo __(' Prepaid Balance'); ?></h2>
 			</div>
 			<div class="box-content"  style="font-size:15px;">
-				<h1><center>$<?php echo $this->request->data['User']['balance']; ?></center></h1>
-			</div>			
+				<h1><center>Bs. <?php echo $this->request->data['User']['balance']; ?></center></h1>
+			</div>
 		</div>
 		<div class="box span6">
 			<div class="box-header well" data-original-title>
@@ -89,7 +89,7 @@
 				?>
 				<div class="control-group">
 					<label class="control-label"><?php echo __(' Account Type'); ?></label>
-					<div class="controls"> 
+					<div class="controls">
 						<label class="radio">
 							<input type="radio" name="data[User][name]" id="action1" value="1" checked >
 							<?php echo __('Prepaid Balance'); ?>
@@ -103,7 +103,7 @@
 				</div>
 				<div class="control-group">
 					<label class="control-label"><?php echo __(' Action'); ?></label>
-					<div class="controls"> 
+					<div class="controls">
 						<label class="radio">
 							<input type="radio" name="data[User][action]" id="action1" value="1" checked >
 							<?php echo __('Add'); ?>
@@ -117,7 +117,7 @@
 				</div>
 				<div class="control-group">
 					<label class="control-label"><?php echo __(' Amount'); ?></label>
-					<div class="controls"> 
+					<div class="controls">
 						<input type="text" class="input-small" id="amount" name="data[User][amount]" data-rel='tooltip'
 							data-original-title='Amount' placeholder="Amount" >&nbsp;
 						<script language="javascript" type="text/javascript">
@@ -130,7 +130,7 @@
 				</div>
 				<div class="control-group">
 					<label class="control-label"><?php echo __(' Notes'); ?></label>
-					<div class="controls"> 
+					<div class="controls">
 						<input type="text" class="input-xxlarge" id="detail" name="data[User][detail]" data-rel='tooltip'
 							data-original-title='Notes' placeholder="Notes" maxlength="255">&nbsp;
 						<script language="javascript" type="text/javascript">
@@ -181,12 +181,12 @@
 						?>
 						<tr>
 							<td class="hidden-phone">
-								<?php 
+								<?php
 									if ($val['AccountHistory']['payment_id'] != 0) {
 
 										if (strlen($val['AccountHistory']['payment_id']) < 6) {
 											$filler = 6 - strlen($val['AccountHistory']['payment_id']);
-									
+
 											for ($i = 0; $i < $filler; $i++) {
 												echo '0';
 											}
@@ -204,10 +204,10 @@
 								<?php
 									if ($val['AccountHistory']['account_type'] == 1) {
 										if ($val['AccountHistory']['amount'] < 0) {
-											?><p style="color:red"><?php echo 'B/. ' . number_format((float)$val['AccountHistory']['amount'], 2, '.', '');?></p>
+											?><p style="color:red"><?php echo 'Bs. ' . number_format((float)$val['AccountHistory']['amount'], 2, '.', '');?></p>
 										<?php
 										} else {
-											echo 'B/. ' . number_format((float)$val['AccountHistory']['amount'], 2, '.', '');
+											echo 'Bs. ' . number_format((float)$val['AccountHistory']['amount'], 2, '.', '');
 										}
 									} else if ($val['AccountHistory']['account_type'] == 2) {
 										if ($val['AccountHistory']['amount'] < 0) {
@@ -219,7 +219,7 @@
 									} else {
 										echo number_format((float)$val['AccountHistory']['amount'], 2, '.', '');
 									}
-									
+
 								?>
 							</td>
 							<td class="hidden-phone"><?php echo $val['AccountHistory']['detail']; ?></td>
@@ -231,7 +231,7 @@
 								?>
 							</td>
 							<td class="hidden-phone">
-								<?php 
+								<?php
 									if ($val['AccountHistory']['staff_id'] != 0) {
 										$staff = $this->requestAction(
 											array(
@@ -253,7 +253,7 @@
 					</tbody>
 				</table>
 			</div>
-		</div>	
+		</div>
 	</div>
 	<?php
 		}

@@ -36,13 +36,13 @@ $recharges =
 		if (c_start == -1) {
 			c_start = c_value.indexOf(c_name + "=");
 		}
-		
+
 		if (c_start == -1) {
 			c_value = null;
 		} else {
 			c_start = c_value.indexOf("=", c_start) + 1;
 			var c_end = c_value.indexOf(";", c_start);
-			
+
 			if (c_end == -1) {
 				c_end = c_value.length;
 			}
@@ -52,7 +52,7 @@ $recharges =
 	}
 
 	function Export() {
-		
+
 		var datatableInfo = getCookie('ClubPrepago_<?php echo strtolower(urlencode($this->params['pass'][0])); ?>');
 
 		$('#info').val(datatableInfo);
@@ -88,7 +88,7 @@ $recharges =
 <div class="alert <?php echo ($this->Session->read('success') == 1) ? 'alert-success' : 'alert-error' ?>">
 	<button type="button" class="close" data-dismiss="alert">x</button>
 	<strong>
-		<?php 
+		<?php
 			echo $this->Session->read('alert');
 			$_SESSION['alert'] = '';
 		?>
@@ -97,7 +97,7 @@ $recharges =
 <?php
 	}
 ?>
-<div class="row-fluid ">	
+<div class="row-fluid ">
 	<div class="box span12">
 
 		<!-- Page icon and title -->
@@ -111,7 +111,7 @@ $recharges =
 			<!-- Generate summary -->
 			<div style="float: left;">
 				<span class="blue" style="font-size: 16px;font-weight: bold;line-height:30px;">
-					<?php echo __('Total Sales: B/. ') . (($sale != '') ? number_format($sale, 2) : '0.00'); ?>&nbsp;&nbsp;&nbsp;
+					<?php echo __('Total Sales: Bs. ') . (($sale != '') ? number_format($sale, 2) : '0.00'); ?>&nbsp;&nbsp;&nbsp;
 				</span>
 				<br/>
 				<span class="blue" style="font-size: 16px;font-weight: bold;line-height:30px;">
@@ -127,7 +127,7 @@ $recharges =
 					<option value=""><?php echo __('All Sponsors'); ?></option>
 					<?php
 						$Sponsordata = $this->requestAction('sponsor/GetSponsor');
-						
+
 						foreach ($Sponsordata as $key => $sponsor) {
 							$selected = ($key==$_REQUEST['sponsor']) ? 'selected="selected"' : '';
 							echo "<option value='" . $key . "' " . $selected . ">" . $sponsor . "</option>";
@@ -139,7 +139,7 @@ $recharges =
 					<option value=""><?php echo __('All Resellers'); ?></option>
 					<?php
 						$Resellerdata = $this->requestAction('reseller/GetReseller/' . $_REQUEST['sponsor']);
-						
+
 						foreach ($Resellerdata as $key=>$sponsor) {
 							$selected = ($key == $_REQUEST['reseller']) ? 'selected="selected"' : '';
 							echo "<option value='" . $key . "' " . $selected . ">" . $sponsor . "</option>";
@@ -194,12 +194,12 @@ $recharges =
 				<tbody>
 					<?php
 						if (!empty($userdata)) {
-						
+
 							foreach ($userdata as $val) {
 					?>
 					<tr>
 						<td>
-							<?php 
+							<?php
 								if ($val['Sponsor']['delete_status'] == 0) {
 									echo $this->Html->link(
 										$val['Sponsor']['name'],
@@ -215,7 +215,7 @@ $recharges =
 							?>
 						</td>
 						<td>
-							<?php 
+							<?php
 								if ($val['Reseller']['delete_status'] == 0) {
 									echo $this->Html->link(
 										$val['Reseller']['name'],
@@ -233,7 +233,7 @@ $recharges =
 						</td>
 						<td class="hidden-phone"><?php echo $val['Operator']['name']; ?></td>
 						<td class="hidden-phone"><?php echo $val['Recharge']['phone_number']; ?></td>
-						<td align="center"><?php echo 'B/. ' . $val['Recharge']['amount']; ?></td>
+						<td align="center"><?php echo 'Bs. ' . $val['Recharge']['amount']; ?></td>
 						<td>
 							<?php
 								echo $val['Recharge']['recharge_date'];
@@ -243,7 +243,7 @@ $recharges =
 					<?php
 							}
 						}
-					?>	
+					?>
 				</tbody>
 			</table>
 			<div class="box-content">

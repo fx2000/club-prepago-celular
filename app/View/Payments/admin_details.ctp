@@ -249,7 +249,7 @@ $userName = $this->requestAction(
 									);
 								?>
 							</div>
-							<span class="add-on" style="float:left">B/.</span>
+							<span class="add-on" style="float:left">Bs.</span>
 						</div>
 					</div>
 				</div>
@@ -272,7 +272,7 @@ $userName = $this->requestAction(
 									);
 								?>
 							</div>
-							<span class="add-on" style="float:left">B/.</span>
+							<span class="add-on" style="float:left">Bs.</span>
 						</div>
 					</div>
 				</div>
@@ -295,7 +295,7 @@ $userName = $this->requestAction(
 									);
 								?>
 							</div>
-							<span class="add-on" style="float:left">B/.</span>
+							<span class="add-on" style="float:left">Bs.</span>
 						</div>
 					</div>
 				</div>
@@ -318,7 +318,7 @@ $userName = $this->requestAction(
 									);
 								?>
 							</div>
-							<span class="add-on" style="float:left">B/.</span>
+							<span class="add-on" style="float:left">Bs.</span>
 						</div>
 					</div>
 				</div>
@@ -341,7 +341,7 @@ $userName = $this->requestAction(
 									);
 								?>
 							</div>
-							<span class="add-on" style="float:left">B/.</span>
+							<span class="add-on" style="float:left">Bs.</span>
 						</div>
 					</div>
 				</div>

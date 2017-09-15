@@ -296,7 +296,7 @@ class RequestRechargeAPI extends Dbconn {
 				<body>
 					<div style="font-family:Tahoma;">
 						El inventario para recargas de ' . $arrMinLimit['name'] . ' ha caído por debajo de su límite mínimo.
-						El balance actual es de B/. ' . $arrMinLimit['balance'] . '
+						El balance actual es de Bs. ' . $arrMinLimit['balance'] . '
 					</div>
 				</body>
 				<html>';

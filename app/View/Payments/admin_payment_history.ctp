@@ -32,7 +32,7 @@
 	<div class="alert <?php echo ($this->Session->read('success') == 1) ? 'alert-success' : 'alert-error' ?>">
 		<button type="button" class="close" data-dismiss="alert">x</button>
 		<strong>
-			<?php 
+			<?php
 				echo $this->Session->read('alert');
 				$_SESSION['alert'] = '';
 			?>
@@ -41,7 +41,7 @@
 <?php
 	}
 ?>
-<div class="row-fluid ">		
+<div class="row-fluid ">
 	<div class="box span12">
 		<div class="box-header well" data-original-title>
 			<h2><i class="icon-user"></i><?php echo __(' Payment History'); ?></h2>
@@ -69,7 +69,7 @@
 			<tbody>
 				<?php
 					if (!empty($paymentdata)) {
-						
+
 						foreach($paymentdata as $val) {
 							$user = $this->requestAction(
 								array(
@@ -125,19 +125,19 @@
 						<td style="vertical-align:middle;" class="hidden-phone"><?php echo $val['Payment']['reference_number']; ?></td>
 						<td style="vertical-align:middle;" class="hidden-phone"><?php echo $val['Payment']['notification_date']; ?></td>
 						<td style="vertical-align:middle;"><?php echo $val['Payment']['change_status_date']; ?></td>
-						<td style="vertical-align:middle;"><?php echo 'B/. ' . $val['Payment']['amount']; ?></td>
-						<td style="vertical-align:middle;" class="hidden-phone"><?php echo 'B/. ' . $val['Payment']['tax']; ?></td>
-						<td style="vertical-align:middle;" class="hidden-phone"><?php echo 'B/. ' . $val['Payment']['fees']; ?></td>
+						<td style="vertical-align:middle;"><?php echo 'Bs ' . $val['Payment']['amount']; ?></td>
+						<td style="vertical-align:middle;" class="hidden-phone"><?php echo 'Bs. ' . $val['Payment']['tax']; ?></td>
+						<td style="vertical-align:middle;" class="hidden-phone"><?php echo 'Bs. ' . $val['Payment']['fees']; ?></td>
 						<td style="vertical-align:middle;" class="hidden-phone">
 							<?php
 								if ($val['Payment']['user_type'] == 2) {
-									echo 'B/. ' . $val['Payment']['discount'];
+									echo 'Bs. ' . $val['Payment']['discount'];
 								} else {
 									echo '-';
 								}
 							?>
 						</td>
-						<td style="vertical-align:middle;" class="hidden-phone"><?php echo 'B/. ' . $val['Payment']['amount_credited']; ?></td>
+						<td style="vertical-align:middle;" class="hidden-phone"><?php echo 'Bs. ' . $val['Payment']['amount_credited']; ?></td>
 						<td style="vertical-align:middle;">
 							<?php
 								if ($val['Payment']['status'] == '1') {
@@ -192,19 +192,19 @@
 						<td style="vertical-align:middle;" class="hidden-phone"><?php echo __('-');?></td>
 						<td style="vertical-align:middle;" class="hidden-phone"><?php echo $val['Payment']['notification_date'];?></td>
 						<td style="vertical-align:middle;"><?php echo $val['Payment']['change_status_date'];?></td>
-						<td style="vertical-align:middle;"><?php echo 'B/. ' . $val['Payment']['amount'];?></td>
-						<td style="vertical-align:middle;" class="hidden-phone"><?php echo 'B/. ' . $val['Payment']['tax'];?></td>
-						<td style="vertical-align:middle;" class="hidden-phone"><?php echo 'B/. ' . $val['Payment']['fees']; ?></td>
+						<td style="vertical-align:middle;"><?php echo 'Bs. ' . $val['Payment']['amount'];?></td>
+						<td style="vertical-align:middle;" class="hidden-phone"><?php echo 'Bs. ' . $val['Payment']['tax'];?></td>
+						<td style="vertical-align:middle;" class="hidden-phone"><?php echo 'Bs. ' . $val['Payment']['fees']; ?></td>
 						<td style="vertical-align:middle;" class="hidden-phone">
 							<?php
 								if ($val['Payment']['user_type'] == 2) {
-									echo 'B/. ' . $val['Payment']['discount'];
+									echo 'Bs. ' . $val['Payment']['discount'];
 								} else {
 									echo '-';
 								}
 							?>
 						</td>
-						<td style="vertical-align:middle;" class="hidden-phone"><?php echo 'B/. ' . $val['Payment']['amount_credited']; ?></td>
+						<td style="vertical-align:middle;" class="hidden-phone"><?php echo 'Bs. ' . $val['Payment']['amount_credited']; ?></td>
 						<td style="vertical-align:middle;">
 							<span class="label label-success"><?php echo __(' Approved '); ?></span>
 						</td>

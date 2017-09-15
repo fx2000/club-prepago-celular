@@ -183,10 +183,10 @@
 						<td align="center" class="hidden-phone"><?php echo $val['Payment']['reference_number']; ?></td>
 						<td align="center" class="hidden-phone"><?php echo $val['Payment']['notification_date']; ?></td>
 						<td><?php echo $val['Payment']['change_status_date']; ?></td>
-						<td><?php echo 'B/. ' . $val['Payment']['amount']; ?></td>
-						<td class="hidden-phone"><?php echo 'B/. ' . $val['Payment']['tax']; ?></td>
-						<td class="hidden-phone"><?php echo 'B/. ' . $val['Payment']['fees']; ?></td>
-						<td class="hidden-phone"><?php echo 'B/. ' . $val['Payment']['amount_credited']; ?></td>
+						<td><?php echo 'Bs. ' . $val['Payment']['amount']; ?></td>
+						<td class="hidden-phone"><?php echo 'Bs. ' . $val['Payment']['tax']; ?></td>
+						<td class="hidden-phone"><?php echo 'Bs. ' . $val['Payment']['fees']; ?></td>
+						<td class="hidden-phone"><?php echo 'Bs. ' . $val['Payment']['amount_credited']; ?></td>
 					</tr>	
 					<?php
 								} else {
@@ -213,10 +213,10 @@
 						<td align="center" class="hidden-phone"><?php echo $val['Payment']['reference_number']; ?></td>
 						<td align="center" class="hidden-phone"><?php echo $val['Payment']['notification_date']; ?></td>
 						<td><?php echo $val['Payment']['change_status_date']; ?></td>
-						<td><?php echo 'B/. ' . $val['Payment']['amount']; ?></td>
-						<td class="hidden-phone"><?php echo 'B/. ' . $val['Payment']['tax']; ?></td>
-						<td class="hidden-phone"><?php echo 'B/. ' . $val['Payment']['fees']; ?></td>
-						<td class="hidden-phone"><?php echo 'B/. ' . $val['Payment']['amount_credited']; ?></td>
+						<td><?php echo 'Bs. ' . $val['Payment']['amount']; ?></td>
+						<td class="hidden-phone"><?php echo 'Bs. ' . $val['Payment']['tax']; ?></td>
+						<td class="hidden-phone"><?php echo 'Bs. ' . $val['Payment']['fees']; ?></td>
+						<td class="hidden-phone"><?php echo 'Bs. ' . $val['Payment']['amount_credited']; ?></td>
 					</tr>
 					<?php
 								}

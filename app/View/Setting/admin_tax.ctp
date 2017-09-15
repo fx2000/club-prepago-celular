@@ -32,7 +32,7 @@
 <div class="alert <?php echo ($this->Session->read('success') == 1) ? 'alert-success' : 'alert-error' ?>">
 	<button type="button" class="close" data-dismiss="alert">x</button>
 	<strong>
-		<?php 
+		<?php
 			echo $this->Session->read('alert');
 			$_SESSION['alert'] = '';
 		?>
@@ -63,10 +63,10 @@
 				<?php
 					if (!empty($this->request->data)) {
 						foreach ($this->request->data as $Taxes) {
-				?>      
+				?>
 				<div class="control-group">
-					<label class="control-label"><?php echo __('ITBMS'); ?></label>
-					<div class="controls"> 
+					<label class="control-label"><?php echo __('IVA'); ?></label>
+					<div class="controls">
 						<div class="input-append">
 							<div style="float:left">
 								<?php
@@ -80,7 +80,7 @@
 											'label'               => false,
 											'maxlength'           => '10',
 											'data-rel'            => 'tooltip',
-											'data-original-title' => __('ITBMS percentage'),
+											'data-original-title' => __('IVA percentage'),
 											'value'               => number_format($Taxes['Country']['tax'],2)
 										)
 									);
