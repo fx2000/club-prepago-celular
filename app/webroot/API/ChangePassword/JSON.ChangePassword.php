@@ -24,7 +24,7 @@ class RestResponse {
 
 		// Making sure the user's password doesn't show up in the log
 		$logArray = array(
-			'UserId' => $CLIENT_DATA_ARY['Email'],
+			'UserId' => $CLIENT_DATA_ARY['UserId'],
 			'DeviceId' => $CLIENT_DATA_ARY['DeviceId'],
 			'PlatformId' => $CLIENT_DATA_ARY['PlatformId'],
 		);

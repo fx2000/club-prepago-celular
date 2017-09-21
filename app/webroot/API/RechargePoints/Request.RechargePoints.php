@@ -336,7 +336,7 @@ class RequestRechargePointsAPI extends Dbconn {
 			// Set PHP Mailer parameters
 			$mail->isSMTP();
 			$mail->Host = EMAIL_SERVER;
-			$mail->Port = EMAIL_PORT
+			$mail->Port = EMAIL_PORT; 
 			$mail->Timeout = 30;
 			$mail->SMTPAuth = true;
 			$mail->Username = EMAIL_USER;

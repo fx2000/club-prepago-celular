@@ -73,7 +73,7 @@ class PaymentsController extends AppController {
 	 * Check payment request history
 	 */
 	public function admin_payment_history() {
-		
+
 		// Check that the session is active
 		$this->requestAction(
 			array(
@@ -128,7 +128,7 @@ class PaymentsController extends AppController {
 
 		// Load models
 		$this->loadModel('Country');
-		
+
 		if (!empty($id)) {
 
 			// Set basic payment information
@@ -141,7 +141,7 @@ class PaymentsController extends AppController {
 			$promo = str_pad($prePromo, 4, "0", STR_PAD_LEFT);
 			$data['Payment']['promo_number'] = $promo;
 
-			
+
 			// Find payment details
 			$paymentData = $this->Payment->find(
 				'first',
@@ -229,7 +229,7 @@ class PaymentsController extends AppController {
 			$invoice['Invoice']['payment_id'] = base64_decode($id);
 			$invoice['Invoice']['nombre'] = $userData['User']['name'];
 			$invoice['Invoice']['ruc'] = $userData['User']['tax_id'];
-			$invoice['Invoice']['direccion'] = 'Panamá'; // Hardcoded because fiscal printer has very little space for address
+			$invoice['Invoice']['direccion'] = 'Venezuela'; // Hardcoded because fiscal printer has very little space for address
 
 			// Calculating discount amount for fiscal printer
 			$unRoundedNewAmount = (100 * (100 * $amount) / ($tax + 100)) / (100 - $userData['User']['discount_rate']);
@@ -263,7 +263,7 @@ class PaymentsController extends AppController {
 			} else if ($userData['User']['user_type'] == 2) {
 				$invoice['Invoice']['codigo'] = 'CLUB-REV';
 			}
-			$invoice['Invoice']['nombre_articulo'] = 'Balance Club Prepago Celular';
+			$invoice['Invoice']['nombre_articulo'] = 'Balance Club Prepago';
 			$invoice['Invoice']['unidad'] = 'USD';
 			$invoice['Invoice']['cantidad'] = $data['Payment']['amount_credited'];
 			$invoice['Invoice']['precio_neto_unit'] = COST;
@@ -276,7 +276,7 @@ class PaymentsController extends AppController {
 				$this->AccountHistory->save($history['AccountHistory']);
 				$this->User->id = $userData['User']['id'];
 				$this->User->saveField("balance", $newBalance);
-				
+
 				// Save data to Invoice table and get invoice id
 				$this->Invoice->save($invoice['Invoice']);
 				$invoiceId = $this->Invoice->getInsertID();
@@ -348,7 +348,7 @@ class PaymentsController extends AppController {
 	/**
 	 * Deny a payment action
 	 */
-	public function admin_deny($id) {  
+	public function admin_deny($id) {
 
 		// Check that session is still valid
 		$this->requestAction(
@@ -364,9 +364,9 @@ class PaymentsController extends AppController {
 
 		// Load User model
 		$this->loadModel('User');
-		
+
 		// If a payment ID is specified
-		if (!empty($id)) { 
+		if (!empty($id)) {
 			$this->Payment->id = base64_decode($id);
 
 			// Set status to denied
@@ -483,7 +483,7 @@ class PaymentsController extends AppController {
 
 		// Load payment model
 		$this->loadModel('Payment');
-		
+
 		// If a payment id is specified, seach the payments table for it
 		if (!empty($id)) {
 			$this->request->data = $this->Payment->find(
@@ -521,7 +521,7 @@ class PaymentsController extends AppController {
 
 		// If there is data to write to the invoice files
 		if (!empty($data)) {
-		
+
 			// Fill rows with data
 			foreach ($data as $invoice) {
 				$contentTi .=
@@ -573,12 +573,12 @@ class PaymentsController extends AppController {
 	/**
 	 * Pull credit card tranactions from credit card transactions table
 	 */
-	public function admin_GetTransDetail($id) { 
+	public function admin_GetTransDetail($id) {
 		$this->autoRender = false;
 
 		// Load Transaction model
 		$this->loadModel('Transaction');
-		
+
 		// Find credit card transaction data
 		if (!empty($id)) {
 			return $this->Transaction->find(

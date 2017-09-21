@@ -108,7 +108,7 @@ class RequestSendPaymentCreditCardAPI extends Dbconn {
 							Hay una nueva notificación de pago de tarjeta de crédito pendiente por revisión:<br/><br/>
 							<span style='font-size:12px;'><b>Tipo: </b>" . $type . "</span><br/>
 							<span style='font-size:12px;'><b>Nombre: </b>" . $name . "</span><br/>
-							<span style='font-size:12px;'><b>Monto: </b> Bs. " . number_format((float)$amount, 2, '.', '') . "</span><br/>
+							<span style='font-size:12px;'><b>Monto: </b> Bs. " . number_format((float)$amount, 2, ',', '') . "</span><br/>
 							<span style='font-size:12px;'><b>Número de Pago: </b>" . str_pad($paymentId, 6, '0', STR_PAD_LEFT) . "</span><br/><br/>
 							<a href=" . $url . ">Haz Click Aquí</a> para ingresar al sistema.<br/><br/>
 							Gracias,<br/><br/>

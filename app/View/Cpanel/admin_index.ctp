@@ -33,6 +33,11 @@
 		?>
 	</head>
 	<body>
+		<div class="well well-lg" style="background-color: #007e88;">
+       <div class="" style="color:white; margin-left: .5cm;">Venezuela |
+		      <?php echo $this->Html->image('veneflag.png', array('width'=>'16px','margin-left'=>'.5cm'));?>
+			 </div>
+    </div>
 		<div class="container-fluid">
 			<div class="row-fluid">
 				<div class="row-fluid">
@@ -58,7 +63,7 @@
 							<?php echo __('Enter your username and password'); ?>
 						</div>
 						<div class="row-fluid" style="margin:0px 0px 10px 0px;">
-							<?php 
+							<?php
 								echo $this->Session->read('alert');
 								$_SESSION['alert'] = "";
 							?>
@@ -134,8 +139,8 @@
 				</div>
 			</div>
 		</div>
-		<?php 
-			echo $this->Html->script('jquery-1.7.2.min');	
+		<?php
+			echo $this->Html->script('jquery-1.7.2.min');
 			echo $this->Html->script('jquery-ui-1.8.21.custom.min');
 			echo $this->Html->script('bootstrap-transition');
 			echo $this->Html->script('bootstrap-alert');
@@ -194,7 +199,7 @@
 
 			// 	<!-- history.js for cross-browser state change on ajax -->
 			echo $this->Html->script('jquery.history');
-			
+
 			// 	<!-- application script for Charisma demo -->
 			echo $this->Html->script('travel_script');
 		?>

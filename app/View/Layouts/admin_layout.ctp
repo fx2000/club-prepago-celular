@@ -24,7 +24,7 @@
 
 	<!-- Page Title -->
 	<title><?php echo __('Club Prepago'); ?></title>
-	
+
 	<?php
 		echo $this->Html->css('admin_style');
 		echo $this->Html->css('bootstrap-cerulean');
@@ -46,7 +46,7 @@
 		echo $this->Html->script('livevalidation_standalone');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
-		echo $this->fetch('script');		
+		echo $this->fetch('script');
 	?>
 </head>
 <body>
@@ -70,10 +70,13 @@
 					<?php echo $this->fetch('content'); ?>
 				</div>
 			</div>
-		</div>		
+		</div>
 	</div>
-	<?php 
-		echo $this->Html->script('jquery-1.7.2.min');	
+	<footer style="text-align: center; width: 100%; position: absolute; height: 65px;">
+			<?php echo $this->element('adminfooter');?>
+	</footer>
+	<?php
+		echo $this->Html->script('jquery-1.7.2.min');
 		echo $this->Html->script('jquery-ui-1.8.21.custom.min');
 		echo $this->Html->script('bootstrap-transition');
 		echo $this->Html->script('bootstrap-alert');
@@ -89,7 +92,7 @@
 		echo $this->Html->script('bootstrap-typeahead');
 		echo $this->Html->script('bootstrap-tour');
 		echo $this->Html->script('jquery.cookie');
-		echo $this->Html->script('fullcalendar.min');	
+		echo $this->Html->script('fullcalendar.min');
 
 		// 	<!-- data table plugin -->
 		echo $this->Html->script('jquery.dataTables.min');
