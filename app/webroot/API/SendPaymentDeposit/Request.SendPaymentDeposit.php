@@ -129,7 +129,7 @@ class RequestSendPaymentDepositAPI extends Dbconn {
 			$messageBody = str_replace('%amount_total%', number_format((float)$amount, 2, '.', ''), $messageBody);
 			$messageBody = str_replace('%itbms%', number_format((float)$itbms, 2, '.', ''), $messageBody);
 			$messageBody = str_replace('%amount_net%', number_format((float)$amount_net, 2, '.', ''), $messageBody);
-			$messageBody = str_replace('%razon%', "Móviles de Panamá, S.A.", $messageBody);
+			$messageBody = str_replace('%razon%', "Club Prepago Celular, C.A.", $messageBody);
 			$messageBody = str_replace('%banco%', $valueBank['bank_name'], $messageBody);
 			$messageBody = str_replace('%cuenta%', $valueBank['account_number'], $messageBody);
 			$messageBody = str_replace('%tipo%', $bankType, $messageBody);
