@@ -113,7 +113,11 @@
 					</div>
 				</div>
 				<div class="control-group">
+<<<<<<< HEAD
 					<label class="control-label"><?php echo __('Points per Bs. 1,00 Recharge'); ?></label>
+=======
+					<label class="control-label"><?php echo __('Points per Bs. 1.00 Recharge'); ?></label>
+>>>>>>> 36e3b79f83d0d77240951b5c627a20cccdae7e21
 					<div class="controls">
 						<?php
 							echo $this->Form->input(

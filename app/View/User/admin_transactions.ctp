@@ -135,7 +135,7 @@
 						</td>
 						<td class="hidden-phone"><?php echo $val['Operator']['name']; ?></td>
 						<td><?php echo $val['Recharge']['phone_number']; ?></td>
-						<td><?php echo 'B/. ' . $val['Recharge']['amount']; ?></td>
+						<td><?php echo 'Bs. ' . $val['Recharge']['amount']; ?></td>
 						<td class="hidden-phone">
 							<?php
 								if ($val['Recharge']['payment_method'] == 1) {

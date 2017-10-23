@@ -75,7 +75,11 @@
 					?>
 					<tr>
 						<td><?php echo $val['Reward']['points'] . __(' points');?></td>
+<<<<<<< HEAD
 						<td >Bs. <?php echo str_replace(".",",",sprintf("%.2f", $val['Reward']['value'])); ?></td>
+=======
+						<td >Bs. <?php echo $val['Reward']['value'];?></td>
+>>>>>>> 36e3b79f83d0d77240951b5c627a20cccdae7e21
 						<td class="hidden-phone">
 							<?php
 								echo $this->Html->image('rewards/' . $val['Reward']['image'], array('width' => '150'));

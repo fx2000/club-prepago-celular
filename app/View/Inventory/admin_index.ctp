@@ -60,7 +60,11 @@ $userBalance = $this->requestAction('user/total_user_balance');
 				<h2><i class="icon-th"></i><?php echo $data['Operator']['name'] ?></h2>
 			</div>
 			<div class="box-content"  style="font-size:15px;">
+<<<<<<< HEAD
 				<h1><center>Bs. <?php echo str_replace(".",",",sprintf("%.2f", $data['Operator']['balance'])); ?></center></h1>
+=======
+				<h1><center>Bs. <?php echo $data['Operator']['balance'] ?></center></h1>
+>>>>>>> 36e3b79f83d0d77240951b5c627a20cccdae7e21
 			</div>
 		</div>
 	<?php
@@ -76,7 +80,11 @@ $userBalance = $this->requestAction('user/total_user_balance');
 				<h2><i class="icon-th"></i><?php echo __('User Prepaid Balance'); ?></h2>
 			</div>
 			<div class="box-content"  style="font-size:15px;">
+<<<<<<< HEAD
 				<h1><center>Bs. <?php echo str_replace(".",",",sprintf("%.2f", round($userBalance[0][0]['total'], 2))); ?></center></h1>
+=======
+				<h1><center>Bs. <?php echo round($userBalance[0][0]['total'], 2); ?></center></h1>
+>>>>>>> 36e3b79f83d0d77240951b5c627a20cccdae7e21
 			</div>
 		</div>
 		<div class="box span4">
@@ -84,7 +92,11 @@ $userBalance = $this->requestAction('user/total_user_balance');
 				<h2><i class="icon-th"></i><?php echo __('Reseller Prepaid Balance'); ?></h2>
 			</div>
 			<div class="box-content"  style="font-size:15px;">
+<<<<<<< HEAD
 				<h1><center>Bs. <?php echo str_replace(".",",",sprintf("%.2f", round($resellerBalance[0][0]['total'], 2))); ?></center></h1>
+=======
+				<h1><center>Bs. <?php echo round($resellerBalance[0][0]['total'], 2); ?></center></h1>
+>>>>>>> 36e3b79f83d0d77240951b5c627a20cccdae7e21
 			</div>
 		</div>
 	</div>

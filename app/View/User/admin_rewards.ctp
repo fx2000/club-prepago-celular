@@ -141,7 +141,7 @@
 								}
 							?>
 						</td>
-						<td><?php echo 'B/. ' . $val['Reward']['value']; ?></td>
+						<td><?php echo 'Bs. ' . $val['Reward']['value']; ?></td>
 						<td><?php echo $val['Redemption']['points']; ?></td>
 						<td><?php echo $val['Redemption']['redeem_date']; ?></td>
 					</tr>	

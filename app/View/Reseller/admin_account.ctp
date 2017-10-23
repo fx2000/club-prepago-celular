@@ -191,10 +191,10 @@
 								<?php
 									if ($val['AccountHistory']['account_type'] == 1) {
 										if ($val['AccountHistory']['amount'] < 0) {
-											?><p style="color:red"><?php echo 'B/. ' . number_format((float)$val['AccountHistory']['amount'], 2, '.', ''); ?></p>
+											?><p style="color:red"><?php echo 'Bs. ' . number_format((float)$val['AccountHistory']['amount'], 2, '.', ''); ?></p>
 										<?php
 										} else {
-											echo 'B/. ' . number_format((float)$val['AccountHistory']['amount'], 2, '.', '');
+											echo 'Bs. ' . number_format((float)$val['AccountHistory']['amount'], 2, '.', '');
 										}
 									} else if ($val['AccountHistory']['account_type'] == 2) {
 										if ($val['AccountHistory']['amount'] < 0) {

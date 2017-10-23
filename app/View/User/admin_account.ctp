@@ -60,7 +60,11 @@
 				<h2><i class="icon-th"></i><?php echo __(' Prepaid Balance'); ?></h2>
 			</div>
 			<div class="box-content"  style="font-size:15px;">
+<<<<<<< HEAD
 				<h1><center>Bs. <?php echo str_replace(".",",",sprintf("%.2f", $this->request->data['User']['balance'])); ?></center></h1>
+=======
+				<h1><center>Bs. <?php echo $this->request->data['User']['balance']; ?></center></h1>
+>>>>>>> 36e3b79f83d0d77240951b5c627a20cccdae7e21
 			</div>
 		</div>
 		<div class="box span6">
@@ -204,10 +208,10 @@
 								<?php
 									if ($val['AccountHistory']['account_type'] == 1) {
 										if ($val['AccountHistory']['amount'] < 0) {
-											?><p style="color:red"><?php echo 'B/. ' . number_format((float)$val['AccountHistory']['amount'], 2, '.', '');?></p>
+											?><p style="color:red"><?php echo 'Bs. ' . number_format((float)$val['AccountHistory']['amount'], 2, '.', '');?></p>
 										<?php
 										} else {
-											echo 'B/. ' . number_format((float)$val['AccountHistory']['amount'], 2, '.', '');
+											echo 'Bs. ' . number_format((float)$val['AccountHistory']['amount'], 2, '.', '');
 										}
 									} else if ($val['AccountHistory']['account_type'] == 2) {
 										if ($val['AccountHistory']['amount'] < 0) {
