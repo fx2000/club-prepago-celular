@@ -32,7 +32,7 @@
 <div class="alert <?php echo ($this->Session->read('success') == 1) ? 'alert-success' : 'alert-error' ?>">
 	<button type="button" class="close" data-dismiss="alert">x</button>
 	<strong>
-	<?php 
+	<?php
 		echo $this->Session->read('alert');
 		$_SESSION['alert'] = '';
 		?>
@@ -54,7 +54,7 @@
 			<table class="table table-striped table-bordered bootstrap-datatable Faileddatatable">
 				<thead>
 					<tr>
-						<th class="hidden-phone"><?php echo __('User or Reseller'); ?></th>							
+						<th class="hidden-phone"><?php echo __('User or Reseller'); ?></th>
 						<th align="center"><?php echo __('Transaction ID'); ?></th>
 						<th class="hidden-phone"><?php echo __('Mobile Operator'); ?></th>
 						<th class="hidden-phone"><?php echo __('Phone Number'); ?></th>
@@ -67,14 +67,14 @@
 				<tbody>
 					<?php
 						if (!empty($userdata)) {
-					
+
 							foreach($userdata as $val) {
 					?>
 						<tr>
 							<td class="hidden-phone">
 								<?php
 									if ($val['User']['delete_status'] == 0) {
-										
+
 										if ($val['User']['user_type'] == 1) {
 											echo $this->Html->link(
 												$val['User']['name'],
@@ -115,7 +115,7 @@
 							</td>
 							<td class="hidden-phone"><?php echo $val['Operator']['name']; ?></td>
 							<td class="hidden-phone"><?php echo $val['Recharge']['phone_number']; ?></td>
-							<td align="center"><?php echo 'B/. ' . $val['Recharge']['amount']; ?></td>
+							<td align="center"><?php echo 'Bs. ' . $val['Recharge']['amount']; ?></td>
 							<td>
 								<?php
 									echo $val['Recharge']['recharge_date'];

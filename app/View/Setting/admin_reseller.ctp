@@ -32,7 +32,7 @@
 <div class="alert <?php echo ($this->Session->read('success') == 1) ? 'alert-success' : 'alert-error' ?>">
 	<button type="button" class="close" data-dismiss="alert">x</button>
 	<strong>
-		<?php 
+		<?php
 			echo $this->Session->read('alert');
 			$_SESSION['alert'] = '';
 		?>
@@ -59,10 +59,10 @@
 					)
 				);
 			?>
-			<fieldset>     
+			<fieldset>
 				<div class="control-group">
 					<label class="control-label"><?php echo __(' Default Reseller Discount'); ?></label>
-					<div class="controls"> 
+					<div class="controls">
 						<div class="input-append">
 							<div style="float:left">
 								<?php
@@ -92,11 +92,11 @@
 					</div>
 				</div>
 				<div class="control-group">
-					<label class="control-label"><strong><?php echo __('Credit Card Fees'); ?></strong></label>	
+					<label class="control-label"><strong><?php echo __('Credit Card Fees'); ?></strong></label>
 				</div>
 				<div class="control-group">
 					<label class="control-label"><?php echo __('Percentage of Transaction'); ?></label>
-					<div class="controls"> 
+					<div class="controls">
 						<div class="input-append">
 							<div style="float:left">
 								<?php
@@ -127,7 +127,7 @@
 				</div>
 				<div class="control-group">
 					<label class="control-label"><?php echo __('Fixed Transaction Fee'); ?></label>
-					<div class="controls"> 
+					<div class="controls">
 						<div class="input-append">
 							<div style="float:right">
 								<?php
@@ -146,7 +146,7 @@
 									);
 								?>
 							</div>
-							<span class="add-on" style="float:left">B/.</span>
+							<span class="add-on" style="float:left">Bs. </span>
 						</div>
 						<script language="javascript" type="text/javascript">
 							var f1 = new LiveValidation('credit_card_fee_fixed');

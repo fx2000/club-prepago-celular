@@ -32,7 +32,7 @@
 <div class="alert <?php echo ($this->Session->read('success') == 1) ? 'alert-success' : 'alert-error' ?>">
 	<button type="button" class="close" data-dismiss="alert">x</button>
 	<strong>
-		<?php 
+		<?php
 			echo $this->Session->read('alert');
 			$_SESSION['alert'] = '';
 		?>
@@ -82,7 +82,7 @@
 					</div>
 				</div>
 				<div class="control-group">
-					<label class="control-label"><?php echo __('Cedula / Passport'); ?></label>
+					<label class="control-label"><?php echo __('Cédula'); ?></label>
 					<div class="controls">
 						<?php
 							echo $this->Form->input(
@@ -168,7 +168,7 @@
 					</div>
 				</div>
 				<div class="control-group">
-					<label class="control-label"><?php echo __('State / Province'); ?></label>
+					<label class="control-label"><?php echo __('State'); ?></label>
 					<div class="controls">
 						<?php
 							echo $this->Form->input(
@@ -181,7 +181,7 @@
 									'label'               => false,
 									'maxlength'           => 100,
 									'data-rel'            => 'tooltip',
-									'data-original-title' => __('State or Province')
+									'data-original-title' => __('State')
 								)
 							);
 						?>
@@ -190,7 +190,7 @@
 				<div class="control-group">
 					<label class="control-label"><?php echo __('Country'); ?></label>
 					<div class="controls">
-						<?php 
+						<?php
 							$countryoptions = $this->requestAction('setting/getCountries');
 							echo $this->Form->select(
 								'User.country_id',
@@ -216,7 +216,7 @@
 				<div class="control-group">
 					<label class="control-label"><?php echo __('Phone Number'); ?></label>
 					<div class="controls">
-						<?php 
+						<?php
 							echo $this->Form->input(
 								'User.phone_number',
 								array(

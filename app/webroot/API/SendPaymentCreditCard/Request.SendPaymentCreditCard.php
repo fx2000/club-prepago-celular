@@ -10,6 +10,7 @@
  * @since         Club Prepago Celular(tm) v 1.0.0
  */
 include "../../APIConfig/Dbconn.php";
+include "../CreditCardProcessors/instapago.php";
 
 class RequestSendPaymentCreditCardAPI extends Dbconn {
 
@@ -34,6 +35,16 @@ class RequestSendPaymentCreditCardAPI extends Dbconn {
 			$type = $userData['user_type'];
 		}
 
+		// Request payment Credit Card Processor
+		$REQ_SUCCESS = new instapago();
+
+		// Check that Platform is valid
+		$resultPayment = $REQ_SUCCESS->createPayment($data);
+
+		$arrResultPayment = explode(':', $resultPayment);
+		$status = $arrResultPayment[0];
+		$referenceId = $arrResultPayment[2].":".$arrResultPayment[1];
+
 		// Inserting transaction information into credit card transactions table
 		$selTransactions =
 			"INSERT INTO creditcard_transactions (
@@ -44,16 +55,16 @@ class RequestSendPaymentCreditCardAPI extends Dbconn {
 				transaction_date
 			) VALUES (" .
 				$userId . "," .
-				"\"" . $data['TransactionId'] . "\"" . "," .
+				"\"" . $referenceId . "\"" . "," .
 				$amount . "," .
-				$data['TransactionStatus'] . "," .
+				$status . "," .
 				"\"" . $date . "\"" .
 			")";
 		$resTransactions = $this->fireQuery($selTransactions);
 		$transactionId = mysqli_insert_id($this->_conn);
 
 		// If transaction was successful, insert it into the payments table
-		if ($data['TransactionStatus'] == 1) {
+		if ($status == 1) {
 			$selPayments =
 				"INSERT INTO payments (
 					user_id,
@@ -66,7 +77,7 @@ class RequestSendPaymentCreditCardAPI extends Dbconn {
 					y
 				) VALUES (" .
 					$userId . "," .
-					$data['PlatformId'] . "," .
+					$type . "," .
 					PAYMENT_CC . "," .
 					$transactionId . "," .
 					$amount . "," .
@@ -108,7 +119,7 @@ class RequestSendPaymentCreditCardAPI extends Dbconn {
 							Hay una nueva notificación de pago de tarjeta de crédito pendiente por revisión:<br/><br/>
 							<span style='font-size:12px;'><b>Tipo: </b>" . $type . "</span><br/>
 							<span style='font-size:12px;'><b>Nombre: </b>" . $name . "</span><br/>
-							<span style='font-size:12px;'><b>Monto: </b> B/. " . number_format((float)$amount, 2, '.', '') . "</span><br/>
+							<span style='font-size:12px;'><b>Monto: </b> Bs. " . number_format((float)$amount, 2, ',', '') . "</span><br/>
 							<span style='font-size:12px;'><b>Número de Pago: </b>" . str_pad($paymentId, 6, '0', STR_PAD_LEFT) . "</span><br/><br/>
 							<a href=" . $url . ">Haz Click Aquí</a> para ingresar al sistema.<br/><br/>
 							Gracias,<br/><br/>
@@ -162,6 +173,8 @@ class RequestSendPaymentCreditCardAPI extends Dbconn {
 			} else {
 				return 0;
 			}
+		} else {
+			return 0;
 		}
 	}
 

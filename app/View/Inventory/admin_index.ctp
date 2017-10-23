@@ -34,7 +34,7 @@ $userBalance = $this->requestAction('user/total_user_balance');
 	<div class="alert <?php echo ($this->Session->read('success') == 1) ? 'alert-success' : 'alert-error' ?>">
 		<button type="button" class="close" data-dismiss="alert">x</button>
 		<strong>
-			<?php 
+			<?php
 				echo $this->Session->read('alert');
 				$_SESSION['alert'] = '';
 			?>
@@ -44,11 +44,11 @@ $userBalance = $this->requestAction('user/total_user_balance');
 	}
 ?>
 <div class="row-fluid ">
-	<?php 
+	<?php
 		$i = 0;
-		
-		foreach ($userdata as $data) {	
-			
+
+		foreach ($userdata as $data) {
+
 			if ($i == 0 || $i % 3 == 0) {
 	?>
 	<div class="row-fluid">
@@ -60,7 +60,7 @@ $userBalance = $this->requestAction('user/total_user_balance');
 				<h2><i class="icon-th"></i><?php echo $data['Operator']['name'] ?></h2>
 			</div>
 			<div class="box-content"  style="font-size:15px;">
-				<h1><center>$<?php echo $data['Operator']['balance'] ?></center></h1>
+				<h1><center>Bs. <?php echo str_replace(".",",",sprintf("%.2f", $data['Operator']['balance'])); ?></center></h1>
 			</div>
 		</div>
 	<?php
@@ -76,7 +76,7 @@ $userBalance = $this->requestAction('user/total_user_balance');
 				<h2><i class="icon-th"></i><?php echo __('User Prepaid Balance'); ?></h2>
 			</div>
 			<div class="box-content"  style="font-size:15px;">
-				<h1><center>$<?php echo round($userBalance[0][0]['total'], 2); ?></center></h1>
+				<h1><center>Bs. <?php echo str_replace(".",",",sprintf("%.2f", round($userBalance[0][0]['total'], 2))); ?></center></h1>
 			</div>
 		</div>
 		<div class="box span4">
@@ -84,7 +84,7 @@ $userBalance = $this->requestAction('user/total_user_balance');
 				<h2><i class="icon-th"></i><?php echo __('Reseller Prepaid Balance'); ?></h2>
 			</div>
 			<div class="box-content"  style="font-size:15px;">
-				<h1><center>$<?php echo round($resellerBalance[0][0]['total'], 2); ?></center></h1>
+				<h1><center>Bs. <?php echo str_replace(".",",",sprintf("%.2f", round($resellerBalance[0][0]['total'], 2))); ?></center></h1>
 			</div>
 		</div>
 	</div>
@@ -112,7 +112,7 @@ $userBalance = $this->requestAction('user/total_user_balance');
 					?>
 					<div class="control-group">
 						<label class="control-label"><?php echo __('Mobile Operator'); ?></label>
-						<div class="controls"> 
+						<div class="controls">
 							<select name="data[Inventory][operator]" id="operator" class="input-medium" data-rel=tooltip data-original-title='Operator'>
 								<option value=""><?php echo __('Select...'); ?></option>
 								<?php
@@ -129,7 +129,7 @@ $userBalance = $this->requestAction('user/total_user_balance');
 					</div>
 					<div class="control-group">
 						<label class="control-label"><?php echo __('Amount'); ?></label>
-						<div class="controls"> 
+						<div class="controls">
 							<input type="text" class="input-medium" id="amount" name="data[Inventory][amount]"
 								data-rel='tooltip' data-original-title='Amount' placeholder=<?php echo __('Amount'); ?>>
 								<script language="javascript" type="text/javascript">
@@ -141,7 +141,7 @@ $userBalance = $this->requestAction('user/total_user_balance');
 					</div>
 					<div class="control-group">
 						<label class="control-label"><?php echo __('Document Number'); ?></label>
-						<div class="controls"> 
+						<div class="controls">
 							<input type="text" class="input-medium" id="document_number" name="data[Inventory][document_number]"
 								data-rel='tooltip' data-original-title='Document Number' placeholder=<?php echo __('Document Number'); ?> maxlength="255" >&nbsp;
 								<script language="javascript" type="text/javascript">
@@ -149,7 +149,7 @@ $userBalance = $this->requestAction('user/total_user_balance');
 									f1.add( Validate.Presence);
 								</script>
 						</div>
-					</div>	
+					</div>
 					<div class="form-actions">
 						<?php
 							echo $this->Form->Button(
@@ -197,11 +197,11 @@ $userBalance = $this->requestAction('user/total_user_balance');
 													? date('Y-m-d H:i:s', strtotime($val['AirtimePurchaseHistory']['purchase_date'])) : 'N/A';
 											?>
 										</td>
-									</tr>	
-								<?php 
-									}	
-								?>			
-							</tbody>   
+									</tr>
+								<?php
+									}
+								?>
+							</tbody>
 						<table>
 					</div>
 				</div>

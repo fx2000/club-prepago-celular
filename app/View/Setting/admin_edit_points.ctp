@@ -32,7 +32,7 @@
 <div class="alert <?php echo ($this->Session->read('success') == 1) ? 'alert-success' : 'alert-error' ?>">
 	<button type="button" class="close" data-dismiss="alert">x</button>
 	<strong>
-		<?php 
+		<?php
 			echo $this->Session->read('alert');
 			$_SESSION['alert'] = '';
 		?>
@@ -41,7 +41,7 @@
 <?php
 	}
 ?>
-<div class="row-fluid ">	
+<div class="row-fluid ">
 	<div class="box span12">
 		<div class="box-header well" data-original-title>
 			<h2><i class="icon-cog"></i><?php echo __(' Reward Points Settings'); ?></h2>
@@ -113,7 +113,7 @@
 					</div>
 				</div>
 				<div class="control-group">
-					<label class="control-label"><?php echo __('Points per B/. 1.00 Recharge'); ?></label>
+					<label class="control-label"><?php echo __('Points per Bs. 1,00 Recharge'); ?></label>
 					<div class="controls">
 						<?php
 							echo $this->Form->input(

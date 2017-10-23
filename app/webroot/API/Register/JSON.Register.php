@@ -79,18 +79,18 @@ class RestResponse {
 
 		// If parameter check fails, send an error message
 		if (in_array("F", $returnArray)) {
-			$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('501'));
+			$logger->error("Register request failed for user " . $this->generateJSONError('501'));
 			return $this->generateJSONError('501');
 
 		// Otherwise, check each parameter's validity individually
 		} else {
 
-			// Check name
+			// Check Name
 			if (in_array("Name", $client_key_array)) {
-				$name = $CLIENT_DATA_ARY['Name'];
+				$fname = $CLIENT_DATA_ARY['Name'];
 
-				if (strlen($name) == 0) {
-					$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('505'));
+				if (strlen($fname) == 0) {
+					$logger->error("Register request failed for user " . $this->generateJSONError('505'));
 					return $this->generateJSONError('505');
 				}
 			} else  {
@@ -104,14 +104,17 @@ class RestResponse {
 				$EMAIL_REG_EXP = "/^\w+[\+\.\w-]*@([\w-]+\.)*\w+[\w-]*\.([a-z]{2,4}|[A-Z]{2,4}|\d+)$/";
 
 				if (strlen($email) == 0) {
-					$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('509'));
+					$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " .
+						$this->generateJSONError('509'));
 					return $this->generateJSONError('509');
 				} else if (!preg_match($EMAIL_REG_EXP, $email)) {
-					$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('510'));
+					$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " .
+						$this->generateJSONError('510'));
 					return $this->generateJSONError('510');
 				}
 			} else {
-				$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('508'));
+				$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " .
+					$this->generateJSONError('508'));
 				return $this->generateJSONError('508');
 			}
 
@@ -120,14 +123,17 @@ class RestResponse {
 				$password = $CLIENT_DATA_ARY['Password'];
 
 				if (strlen($password) == 0) {
-					$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('515'));
+					$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " .
+						$this->generateJSONError('515'));
 					return $this->generateJSONError('515');
 				} else if (strlen($password) < 6) {
-					$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('516'));
+					$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Fisrt_Name'] . " " .
+						$this->generateJSONError('516'));
 					return $this->generateJSONError('516');
 				}
 			} else {
-				$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('514'));
+				$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " .
+					$this->generateJSONError('514'));
 				return $this->generateJSONError('514');
 			}
 
@@ -136,11 +142,13 @@ class RestResponse {
 				$country = $CLIENT_DATA_ARY['Country'];
 
 				if (strlen($country) == 0) {
-					$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('614'));
+					$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " .
+						$this->generateJSONError('614'));
 					return $this->generateJSONError('614');
 				}
 			} else {
-				$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('614'));
+				$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " .
+					$this->generateJSONError('614'));
 				return $this->generateJSONError('614');
 			}
 
@@ -149,14 +157,17 @@ class RestResponse {
 				$phoneNumber = $CLIENT_DATA_ARY['Phone_Number'];
 
 				if (strlen($phoneNumber) == 0) {
-					$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('522'));
+					$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " .
+						$this->generateJSONError('522'));
 					return $this->generateJSONError('522');
 				} else if (!preg_match("/^[0-9\+]+$/i", stripslashes($phoneNumber))) {
-					$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('523'));
+					$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " .
+						$this->generateJSONError('523'));
 					return $this->generateJSONError('523');
 				}
 			} else  {
-				$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('521'));
+				$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " .
+					$this->generateJSONError('521'));
 				return $this->generateJSONError('521');
 			}
 
@@ -171,11 +182,13 @@ class RestResponse {
 				$deviceId = $CLIENT_DATA_ARY['DeviceId'];
 
 				if (strlen($deviceId) == 0) {
-					$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('503'));
+					$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " .
+						$this->generateJSONError('503'));
 					return $this->generateJSONError('503');
 				}
 			} else {
-				$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('502'));
+				$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " .
+					$this->generateJSONError('502'));
 				return $this->generateJSONError('502');
 			}
 
@@ -184,11 +197,13 @@ class RestResponse {
 				$platformId = $CLIENT_DATA_ARY['PlatformId'];
 
 				if (strlen($platformId) == 0) {
-					$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('526'));
+					$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " .
+						$this->generateJSONError('526'));
 					return $this->generateJSONError('526');
 				}
 			} else {
-				$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('527'));
+				$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " .
+					$this->generateJSONError('527'));
 				return $this->generateJSONError('527');
 			}
 
@@ -199,7 +214,8 @@ class RestResponse {
 			$platformValid = $REQ_SUCCESS->checkPlatform($platformId);
 
 			if ($platformValid == 0) {
-				$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('527'));
+				$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " .
+					$this->generateJSONError('527'));
 				return $this->generateJSONError('527');
 			}
 
@@ -207,7 +223,8 @@ class RestResponse {
 			$emailValid = $REQ_SUCCESS->checkEmail($email);
 
 			if ($emailValid > 0) {
-				$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('529'));
+				$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " .
+					$this->generateJSONError('529'));
 				return $this->generateJSONError('529');
 			}
 
@@ -223,10 +240,12 @@ class RestResponse {
 				$arr['Message'] = $output;
 				$arr['data'] = $register;
 				$result['Response'] = $arr;
-				$logger->notice("Register request successful for user " . $CLIENT_DATA_ARY['Name'] . " " . json_encode($result));
+				$logger->notice("Register request successful for user " . $CLIENT_DATA_ARY['Name'] . " " .
+					json_encode($result));
 				return json_encode($result);
 			} else {
-				$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " . $this->generateJSONError('534'));
+				$logger->error("Register request failed for user " . $CLIENT_DATA_ARY['Name'] . " " .
+					$this->generateJSONError('534'));
 				return $this->generateJSONError('534');
 			}
 		}

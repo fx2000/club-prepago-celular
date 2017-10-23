@@ -30,7 +30,7 @@
     .yshortcuts a:hover, .yshortcuts a span { text-decoration: none !important; border-bottom: none !important;}
     table{ mso-table-lspace:0pt; mso-table-rspace:0pt; }
     img{ -ms-interpolation-mode:bicubic; }
-    
+
     /*mailChimp class*/
     .default-edit-image{
     height:20px;
@@ -40,8 +40,8 @@
     border: 1px dotted rgba(0,0,0,0.2);
     }
     img{height:auto !important;}
-    
-    
+
+
     td[class="image-100px"] img{
     width:100px;
     height:auto !important;
@@ -251,7 +251,7 @@
     }
     table[class="col-2-last"]{
     width:100% !important;
-    
+
     }
     table[class="col-3"]{
     width:100% !important;
@@ -259,7 +259,7 @@
     }
     table[class="col-3-last"]{
     width:100% !important;
-    
+
     }
     table[class="row-2"]{
     width:100% !important;
@@ -366,20 +366,20 @@ a img{ border: 0 !important;}
 </head>
 <body  style="font-size:12px; width:100%; height:100%;">
 <table id="mainStructure" width="800" class="full-width" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color: #efefef; width: 800px; max-width: 800px; outline: rgb(239, 239, 239) solid 1px; box-shadow: rgb(224, 224, 224) 0px 0px 5px; margin: 0px auto;"><!--START VIEW ONLINE AND ICON SOCAIL --><tr><td align="center" valign="top" style="background-color: #f05e5e; " bgcolor="#f05e5e">
-            
+
             <!-- start container 600 -->
             <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color: #f05e5e; min-width: 600px; width: 600px; margin: 0px auto;"><tbody><tr><td valign="top">
                   <table width="560" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width" style="width: 560px; margin: 0px auto;"><!-- start space --><tbody><tr><td valign="top" height="10" style="height: 10px; font-size: 0px; line-height: 0; border-collapse: collapse;">
                       </td>
                     </tr><!-- end space --><tr><td valign="top">
-                        
+
                         <!-- start container -->
                         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="margin: 0px auto;"><tbody><tr><td valign="top">
-                              
-                              
+
+
                               <table align="left" border="0" cellspacing="0" cellpadding="0" class="container2" width="auto" style="mso-table-lspace:0pt; mso-table-rspace:0pt;"><tbody><tr><td>
                                     <table align="center" border="0" cellspacing="0" cellpadding="0" width="auto" style="margin: 0px auto;"><tbody><tr><td style="font-size: 12px; font-family: Arial, Tahoma, Helvetica, sans-serif; color: #ffffff; font-weight: normal; text-align: center; word-break: break-word; line-height: 20px;" align="center"><br style="font-size: 12px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;"></td>
-                                        
+
                                       </tr></tbody></table></td>
                                 </tr><!-- start space --><tr><td valign="top" class="increase-Height">
                                   </td>
@@ -390,11 +390,11 @@ a img{ border: 0 !important;}
                                         <td s="" align="center" valign="middle" id="clear-padding" width="30" style="width: 30px;">
                                           <a href="http://www.twitter.com/clubprepago" style="font-size: inherit; border-style: none; text-decoration: none !important;" border="0"><img src="http://www.clubprepago.com/email/icon-twitter.png" width="30" alt="icon-twitter" style="max-width: 30px; display: block !important; width: 30px; height: auto;" border="0" hspace="0" vspace="0" height="auto"></a>
                                         </td>
-                                        
-                                        
-                                        
-                                        
-                                        
+
+
+
+
+
                                         <td align="center" valign="middle" id="clear-padding" width="30" style="width: 30px;">
                                           <a href="http://www.instagram.com/clubprepagocelular/" style="font-size: inherit; border-style: none; text-decoration: none !important;" border="0"><img src="http://www.clubprepago.com/email/icon-instagram.png" width="30" alt="icon-instagram" style="max-width: 30px; display: block !important; width: 30px; height: auto;" border="0" hspace="0" vspace="0" height="auto"></a>
                                         </td>
@@ -428,7 +428,7 @@ a img{ border: 0 !important;}
                     </tr><!--end space height --><!-- start text content --><tr><td valign="top">
                         <table border="0" cellspacing="0" cellpadding="0" align="left" width="100%" style="mso-table-lspace:0pt; mso-table-rspace:0pt;"><tbody><tr><td style="font-size: 18px; font-family: Arial, Tahoma, Helvetica, sans-serif; color: #555555; font-weight: bold; text-align: center; word-break: break-word; line-height: 26px;" align="center"><span style="color: #555555; line-height: 26px; font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">Gracias&nbsp;<a href="http://mailbuild.rookiewebstudio.com/item/e7qsUGuW/?edit=build&amp;tem=eUwwNVBraE8yMDE3MDMyNTA0MjUxNA==#" data-mce-href="#" style="color: #555555; text-decoration: none !important; border-style: none; line-height: 26px; font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;" border="0"><span style="color: #f05e5e; line-height: 26px; font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $username; ?> </span></a><a href="#" style="color: #555555; text-decoration: none !important; border-style: none; line-height: 26px; font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;" data-mce-href="#" border="0"><br style="font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">Tu pago ha sido&nbsp;<span style="color: #f05e5e; line-height: 26px; font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">Aprobado</span></a></span></td>
                           </tr><!--start space height --><tr><td height="15" style="height: 15px; font-size: 0px; line-height: 0; border-collapse: collapse;"></td>
-                          </tr><!--end space height --><tr><td style="font-size: 13px; font-family: Arial, Tahoma, Helvetica, sans-serif; color: #a3a2a2; font-weight: normal; text-align: justify; word-break: break-word; line-height: 21px;" align="justify"><div style="text-align: justify; font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Tu pago con número de referencia <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $payment_number; ?></span> ha sido procesado correctamente:</div><div style="text-align: justify; font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;"><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Fecha de Notificación: <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $notification_date; ?></span><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Fecha de Aprobación: <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $status_change; ?></span><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Monto Neto: <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">B/. <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $amount_net; ?></span></span><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">ITBMS: <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">B/. <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $amount_itbms; ?></span></span><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Cargos Adicionales: <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">B/. <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $amount_fees; ?></span></span><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Descuento: <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">B/. <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $amount_discount; ?></span></span><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Monto Total: <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">B/. <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $amount_total; ?></span></span><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;"><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;"></div><div style="text-align: justify; font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">El monto neto ya se encuentra disponible en tu cuenta y puedes usarlo cuándo quieras.</div></td>
+                          </tr><!--end space height --><tr><td style="font-size: 13px; font-family: Arial, Tahoma, Helvetica, sans-serif; color: #a3a2a2; font-weight: normal; text-align: justify; word-break: break-word; line-height: 21px;" align="justify"><div style="text-align: justify; font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Tu pago con número de referencia <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $payment_number; ?></span> ha sido procesado correctamente:</div><div style="text-align: justify; font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;"><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Fecha de Notificación: <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $notification_date; ?></span><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Fecha de Aprobación: <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $status_change; ?></span><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Monto Neto: <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">Bs. <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $amount_net; ?></span></span><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">IVA: <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">Bs. <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $amount_itbms; ?></span></span><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Cargos Adicionales: <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">Bs. <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $amount_fees; ?></span></span><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Descuento: <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">Bs. <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $amount_discount; ?></span></span><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Monto Total: <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">Bs. <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $amount_total; ?></span></span><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;"><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;"></div><div style="text-align: justify; font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">El monto neto ya se encuentra disponible en tu cuenta y puedes usarlo cuándo quieras.</div></td>
                           </tr><tr><td style="font-size: 18px; font-family: Arial, Tahoma, Helvetica, sans-serif; color: #555555; font-weight: bold; text-align: center; word-break: break-word; line-height: 26px;" align="center"><span style="color: #555555; line-height: 26px; font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><a href="http://mailbuild.rookiewebstudio.com/item/e7qsUGuW/?edit=build&amp;tem=eUwwNVBraE8yMDE3MDMyNTA0MjUxNA==#" data-mce-href="#" style="color: #555555; text-decoration: none !important; border-style: none; line-height: 26px; font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;" border="0"><span style="color: #f05e5e; line-height: 26px; font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"></span></a><a href="#" style="color: #555555; text-decoration: none !important; border-style: none; line-height: 26px; font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;" data-mce-href="#" border="0"><br style="font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">Tu número promocional es&nbsp;<span style="color: #f05e5e; line-height: 26px; font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $promo; ?></span></a></span></td>
                           </tr><!--start space height --><tr><td height="20" style="height: 20px; font-size: 0px; line-height: 0; border-collapse: collapse;">&nbsp;</td>
                           </tr><!--end space height --><!-- start wrap button --><tr><td valign="top" align="center">
@@ -446,8 +446,8 @@ a img{ border: 0 !important;}
                   <!-- start layout-7 container width 560px -->
                   <table width="560" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width" style="width: 560px; margin: 0px auto;" dir="rtl"><!--start space height --><tbody><tr><td height="20" style="height: 20px; font-size: 0px; line-height: 0; border-collapse: collapse;">&nbsp;</td>
                     </tr><!--end space height --><!-- start image content --><tr><td valign="top" width="100%">
-                        
-                        
+
+
                         <table width="185" border="0" cellspacing="0" cellpadding="0" align="right" class="full-width" style="width: 185px;mso-table-lspace:0pt; mso-table-rspace:0pt;" dir="ltr"><tbody><tr><td valign="top">
                               <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="clear-align" style="mso-table-lspace:0pt; mso-table-rspace:0pt;"><tbody><tr><td valign="top" align="center" width="185" style="width: 185px;">
                                     <a href="#" style="font-size: inherit; border-style: none; text-decoration: none !important;" border="0">
@@ -461,7 +461,7 @@ a img{ border: 0 !important;}
                           </tr></tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top" ><![endif]--><table width="350" border="0" cellspacing="0" cellpadding="0" align="left" class="full-width" style="width: 350px;mso-table-lspace:0pt; mso-table-rspace:0pt;" dir="ltr"><!-- start text content --><tbody><tr><td valign="top">
                               <table border="0" cellspacing="0" cellpadding="0" align="left" width="auto" style="mso-table-lspace:0pt; mso-table-rspace:0pt;"><tbody><tr><td style="font-size: 18px; font-family: Arial, Tahoma, Helvetica, sans-serif; color: #555555; font-weight: bold; text-align: left; word-break: break-word; line-height: 26px;" align="left"><span style="color: #555555; line-height: 26px; font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><a href="#" style="color: #555555; text-decoration: none !important; border-style: none; line-height: 26px; font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;" data-mce-href="#" border="0">¿Conoces nuestro programa de puntos?</a></span></td>
                                 </tr><!--start space height --><tr><td height="15" style="height: 15px; font-size: 0px; line-height: 0; border-collapse: collapse;"></td>
-                                </tr><!--end space height --><tr><td style="font-size: 13px; font-family: Arial, Tahoma, Helvetica, sans-serif; color: #a3a2a2; font-weight: normal; text-align: left; word-break: break-word; line-height: 21px;" align="left"><span style="line-height: 21px; font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Recibes 10 puntos por cada dólar de recarga que hagas a través de <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">Club Prepago Celular</span>.&nbsp;Conoce más acerca de los beneficios de nuestro programa de puntos, pronto tendremos nuevas sorpresas para tí.</span></td>
+                                </tr><!--end space height --><tr><td style="font-size: 13px; font-family: Arial, Tahoma, Helvetica, sans-serif; color: #a3a2a2; font-weight: normal; text-align: left; word-break: break-word; line-height: 21px;" align="left"><span style="line-height: 21px; font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Recibes 10 puntos por cada bolívar de recarga que hagas a través de <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">Club Prepago Celular</span>.&nbsp;Conoce más acerca de los beneficios de nuestro programa de puntos, pronto tendremos nuevas sorpresas para tí.</span></td>
                                 </tr><!--start space height --><tr><td height="15" style="height: 15px; font-size: 0px; line-height: 0; border-collapse: collapse;"></td>
                                 </tr><!--end space height --><!-- start button text --><tr><td>
                                     <table align="left" border="0" cellspacing="0" cellpadding="0" width="auto" style="mso-table-lspace:0pt; mso-table-rspace:0pt;"><tbody><tr><td style="font-size: 12px; font-family: Arial, Tahoma, Helvetica, sans-serif; color: #f05e5e; font-weight: bold; text-align: center; word-break: break-word; line-height: 20px;" align="center"><span style="line-height: 20px; font-size: 12px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">Conocer más<br style="font-size: 12px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"></span></td>
@@ -483,19 +483,19 @@ a img{ border: 0 !important;}
                               <table width="29" border="0" cellspacing="0" cellpadding="0" align="left" style="width: 29px;mso-table-lspace:0pt; mso-table-rspace:0pt;"><tbody><tr valign="top"><td align="left" valign="middle" width="29" style="width: 29px;">
                                     <img src="http://www.clubprepago.com/email/megaphone.png" width="29" alt="megaphone" style="max-width: 29px; display: block !important;" border="0" hspace="0" vspace="0"></td>
                                 </tr></tbody></table></td>
-                            
+
                             <td align="left" style="font-size: 18px; font-family: Arial, Tahoma, Helvetica, sans-serif; color: #555555; font-weight: bold; text-align: left; word-break: break-word; line-height: 26px;"><span style="color: #555555; line-height: 26px; font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><a href="#" style="color: #555555; text-decoration: none !important; border-style: none; line-height: 26px; font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;" data-mce-href="#" border="0"><span style="color: #f05e5e; line-height: 26px; font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">¿Necesitas ayuda?</span></a></span></td>
                           </tr></tbody></table></td>
                     </tr><!-- end heading --><!--start space height --><tr><td height="15" style="height: 15px; font-size: 0px; line-height: 0; border-collapse: collapse;"></td>
                     </tr><!--end space height --><!-- start text content --><tr><td valign="top">
-                        <table border="0" cellspacing="0" cellpadding="0" align="left" width="100%" style="mso-table-lspace:0pt; mso-table-rspace:0pt;"><tbody><tr><td style="font-size: 13px; font-family: Arial, Tahoma, Helvetica, sans-serif; color: #a3a2a2; font-weight: normal; text-align: justify; word-break: break-word; line-height: 21px;" align="justify"><div style="text-align: justify; font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;"><span style="line-height: 21px; font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Recuerda que puedes ponerte en contacto con nosotros enviando un email a <span style="color: #ff0000; line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><a href="mailto:soporte@clubprepago.como" border="0" data-mce-href="mailto:soporte@clubprepago.como" style="border-style: none; text-decoration: none !important; line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><span style="color: #ff0000; line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">soporte@clubprepago.com</span></a></span>&nbsp;o llamandonos al <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">+507 388-6220</span>, nuestro personal de Atención al Cliente está disponible para responder cualquiera de tus preguntas.</span></div></td>
+                        <table border="0" cellspacing="0" cellpadding="0" align="left" width="100%" style="mso-table-lspace:0pt; mso-table-rspace:0pt;"><tbody><tr><td style="font-size: 13px; font-family: Arial, Tahoma, Helvetica, sans-serif; color: #a3a2a2; font-weight: normal; text-align: justify; word-break: break-word; line-height: 21px;" align="justify"><div style="text-align: justify; font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;"><span style="line-height: 21px; font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Recuerda que puedes ponerte en contacto con nosotros enviando un email a <span style="color: #ff0000; line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><a href="mailto:soporte@clubprepago.como" border="0" data-mce-href="mailto:soporte@clubprepago.como" style="border-style: none; text-decoration: none !important; line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><span style="color: #ff0000; line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">soporte@clubprepago.com</span></a></span>&nbsp;o llamandonos al <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">+58244 111-1111</span>, nuestro personal de Atención al Cliente está disponible para responder cualquiera de tus preguntas.</span></div></td>
                           </tr><!--start space height --><tr><td height="15" style="height: 15px; font-size: 0px; line-height: 0; border-collapse: collapse;"></td>
                           </tr><!--end space height --><!-- start button text --><tr><td>
                               <table align="left" border="0" cellspacing="0" cellpadding="0" width="auto" style="mso-table-lspace:0pt; mso-table-rspace:0pt;"><tbody><tr><td style="font-size: 12px; font-family: Arial, Tahoma, Helvetica, sans-serif; color: #f05e5e; font-weight: bold; text-align: center; word-break: break-word; line-height: 20px;" align="center"><br style="font-size: 12px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"></td>
-                                  
+
                                 </tr></tbody></table></td>
                           </tr><!-- end button text --></tbody></table></td>
-                      
+
                     </tr><!-- end text content --><!--start space height --><tr><td height="20" style="height: 20px; font-size: 0px; line-height: 0; border-collapse: collapse;">&nbsp;</td>
                     </tr><!--end space height --></tbody></table><!-- end layout-9 container width 560px --></td>
               </tr></tbody></table><!-- end layout-9 container width 600px --></td>
@@ -515,11 +515,11 @@ a img{ border: 0 !important;}
                                     <a href="http://www.twitter.com/clubprepago" style="font-size: inherit; border-style: none; text-decoration: none !important;" border="0">
                                       <img src="http://www.clubprepago.com/email/icon-twitter-gray.png" width="30" alt="icon-twitter" style="max-width: 30px; display: block !important; width: 30px; height: auto;" border="0" hspace="0" vspace="0" height="auto"></a>
                                   </td>
-                                  
-                                  
-                                  
-                                  
-                                  
+
+
+
+
+
                                   <td style="padding-left: 5px; width: 30px; height: 30px; line-height: 30px; font-size: 30px;" height="30" align="center" valign="middle" class="clear-padding" width="30">
                                     <a href="http://www.instagram.com/clubprepagocelular/" style="font-size: inherit; border-style: none; text-decoration: none !important;" border="0">
                                       <img src="http://www.clubprepago.com/email/icon-instagram-gray.png" width="30" alt="icon-instagram" style="max-width: 30px; display: block !important; width: 30px; height: auto;" border="0" hspace="0" vspace="0" height="auto"></a>
@@ -532,7 +532,7 @@ a img{ border: 0 !important;}
         </tr><!-- END LAYOUT-14--><tbody><tr><td align="center" valign="top" style="background-color:#f05e5e;" bgcolor="#f05e5e">
             <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color: #f05e5e; min-width: 600px; width: 600px; margin: 0px auto;"><tbody><tr><td valign="top">
                   <table width="560" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width" style="width: 560px; margin: 0px auto;"><!--start space height --><tbody><tr><td height="10" style="height: 10px; font-size: 0px; line-height: 0; border-collapse: collapse;"></td>
-                    </tr><!--end space height --><tr><!-- start COPY RIGHT content --><td valign="top" style="font-size: 13px; font-family: Arial, Tahoma, Helvetica, sans-serif; color: #ffffff; font-weight: normal; text-align: center; word-break: break-word; line-height: 21px;" align="center"><span style="line-height: 21px; font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Móviles de Panamá, S.A. ,&nbsp;Todos los derechos reservados 2017 © </span></td>
+                  </tr><!--end space height --><tr><!-- start COPY RIGHT content --><td valign="top" style="font-size: 13px; font-family: Arial, Tahoma, Helvetica, sans-serif; color: #ffffff; font-weight: normal; text-align: center; word-break: break-word; line-height: 21px;" align="center"><span style="line-height: 21px; font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Club Prepago Celular, C.A. ,&nbsp;Todos los derechos reservados 2017 © </span></td>
                       <!-- end COPY RIGHT content -->
                     </tr><!--start space height --><tr><td height="10" style="height: 10px; font-size: 0px; line-height: 0; border-collapse: collapse;"></td>
                     </tr><!--end space height --></tbody></table></td>

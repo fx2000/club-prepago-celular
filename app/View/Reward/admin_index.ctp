@@ -32,7 +32,7 @@
 <div class="alert <?php echo ($this->Session->read('success') == 1) ? 'alert-success' : 'alert-error' ?>">
 	<button type="button" class="close" data-dismiss="alert">x</button>
 	<strong>
-		<?php 
+		<?php
 			echo $this->Session->read('alert');
 			$_SESSION['alert'] = '';
 		?>
@@ -41,7 +41,7 @@
 <?php
 	}
 ?>
-<div class="row-fluid ">		
+<div class="row-fluid ">
 	<div class="box span12">
 		<div class="box-header well" data-original-title>
 			<h2><i class="icon-user"></i><?php echo __(' Rewards'); ?></h2>
@@ -64,18 +64,18 @@
 				 <tbody>
 					<tr>
 						<td colspan="5"><?php echo __('No rewards available'); ?></td>
-					</tr>	
-				</tbody> 
+					</tr>
+				</tbody>
 				<?php
 					} else {
 				?>
 				<tbody>
-					<?php 
+					<?php
 						foreach($rechargedata as $val){
 					?>
 					<tr>
 						<td><?php echo $val['Reward']['points'] . __(' points');?></td>
-						<td >$<?php echo $val['Reward']['value'];?></td>
+						<td >Bs. <?php echo str_replace(".",",",sprintf("%.2f", $val['Reward']['value'])); ?></td>
 						<td class="hidden-phone">
 							<?php
 								echo $this->Html->image('rewards/' . $val['Reward']['image'], array('width' => '150'));
@@ -89,7 +89,7 @@
 								} else {
 									echo __("<span class='label label-warning'>Inactive</span>");
 								}
-							?>	
+							?>
 						</td>
 						<td class="center">
 							<?php

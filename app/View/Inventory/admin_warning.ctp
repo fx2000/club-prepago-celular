@@ -44,7 +44,7 @@
 	<div class="alert <?php echo ($this->Session->read('success') == 1 )? 'alert-success' : 'alert-error' ?>">
 		<button type="button" class="close" data-dismiss="alert">x</button>
 		<strong>
-			<?php 
+			<?php
 				echo $this->Session->read('alert');
 				$_SESSION['alert'] = '';
 			?>
@@ -53,7 +53,7 @@
 <?php
 	}
 ?>
-<div class="row-fluid ">	
+<div class="row-fluid ">
 	<div class="box span12">
 		<div class="box-header well" data-original-title>
 			<h2><i class="icon-list-alt"></i><?php echo __(' Inventory Warnings'); ?></h2>
@@ -74,12 +74,12 @@
 			<fieldset>
 				<?php
 					if (!empty($this->request->data)) {
-						
+
 						foreach ($this->request->data as $Operator) {
-				?>      
+				?>
 					<div class="control-group">
 						<label class="control-label"><?php echo $Operator['Operator']['name'] ?></label>
-						<div class="controls"> 
+						<div class="controls">
 							<div class="input-append">
 								<div style="float:left">
 									<?php
@@ -94,7 +94,7 @@
 												'maxlength'           => '50',
 												'data-rel'            => 'tooltip',
 												'data-original-title' => 'Minimum amount for ' . $Operator['Operator']['name'],
-												'value'               => $Operator['Operator']['minimum_limit']
+												'value'               => str_replace(".",",",sprintf("%.2f", $Operator['Operator']['minimum_limit']))
 											)
 										);
 									?>

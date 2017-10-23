@@ -85,7 +85,7 @@ class RequestSendPaymentDepositAPI extends Dbconn {
 						<div style='font-family:Tahoma;'>
 							Hay una nueva notificación de pago en efectivo, depósito o transferencia pendiente por revisión:<br/><br/>
 							<span style='font-size:12px;'><b>Nombre: </b>" . $name . "</span><br/>
-							<span style='font-size:12px;'><b>Monto: </b> B/. " . number_format((float)$amount, 2, '.', '') . "</span><br/>
+							<span style='font-size:12px;'><b>Monto: </b> Bs. " . number_format((float)$amount, 2, '.', '') . "</span><br/>
 							<span style='font-size:12px;'><b>Número de Pago: </b>" . str_pad($paymentId, 6, '0', STR_PAD_LEFT) . "</span><br/><br/>
 							<a href=" . $url . ">Haz Click Aquí</a> para ingresar al sistema.<br/><br/>
 							Gracias,<br/><br/>
@@ -129,7 +129,7 @@ class RequestSendPaymentDepositAPI extends Dbconn {
 			$messageBody = str_replace('%amount_total%', number_format((float)$amount, 2, '.', ''), $messageBody);
 			$messageBody = str_replace('%itbms%', number_format((float)$itbms, 2, '.', ''), $messageBody);
 			$messageBody = str_replace('%amount_net%', number_format((float)$amount_net, 2, '.', ''), $messageBody);
-			$messageBody = str_replace('%razon%', "Móviles de Panamá, S.A.", $messageBody);
+			$messageBody = str_replace('%razon%', "Club Prepago Celular, C.A.", $messageBody);
 			$messageBody = str_replace('%banco%', $valueBank['bank_name'], $messageBody);
 			$messageBody = str_replace('%cuenta%', $valueBank['account_number'], $messageBody);
 			$messageBody = str_replace('%tipo%', $bankType, $messageBody);

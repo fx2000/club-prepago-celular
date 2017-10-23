@@ -11,11 +11,11 @@
  */
 
 // Server URL
-define('DOMAINURL','http://test.clubprepago.com/');
+define('DOMAINURL','http://192.168.1.125/clubprepagovzla/');
 
 // Directories
-define('LOG_DIR', '/var/www/app/log');
-define('TEMPLATE_DIR', '/var/www/app/View/Emails/html');
+define('LOG_DIR', '/var/www/html/clubprepagovzla/app/log');
+define('TEMPLATE_DIR', '/var/www/html/clubprepagovzla/app/View/Emails/html');
 
 // Set email parameters
 define('EMAIL_SERVER', 'ssl://premium39.web-hosting.com');
@@ -24,7 +24,7 @@ define('EMAIL_FROM', 'noreply@clubprepago.com');
 define('EMAIL_USER', 'noreply@clubprepago.com');
 define('EMAIL_PASSWORD', 'noreplyClub2049');
 define('EMAIL_SENDER_NAME', 'Club Prepago Celular');
-define('EMAIL_STAFF', 'staff@clubprepago.com');
+define('EMAIL_STAFF', 'jhonmer.araujo@clubprepago.com');
 
 // Set API type
 define('API_TYPE', 1);				// Club Prepago Empresarios
@@ -55,6 +55,10 @@ define('BANNED', 1);				// Banned
 define('NOT_BANNED', 0);			// Not banned
 define('VERIFIED', 1);				// Email verified
 define('NOT_VERIFIED', 0);			// Email not verified
+
+// Credentials Instapago TDC Processor
+define('KEY_ID_TDC_PROC','fefc8d5ad19ebdef49d9561f918770b0');
+define('PUBLIC_KEY_ID_TDC_PROC','00D7B372-2099-494D-8F59-2796CD5F7FF6');
 
 // Security
 define('SALT', 'HrJiOSKXMuf7VR2syu2wv83iDUoCo3V5og2SavLF822LbAxA8GYx1kOAOWXambo8'); // SHA1 salt

@@ -44,7 +44,7 @@
 <div class="alert <?php echo ($this->Session->read('success') == 1) ? 'alert-success' : 'alert-error' ?>">
 	<button type="button" class="close" data-dismiss="alert">x</button>
 	<strong>
-		<?php 
+		<?php
 			echo $this->Session->read('alert');
 			$_SESSION['alert'] = '';
 		?>
@@ -78,10 +78,10 @@
 				<div class="control-group">
 					<label class="control-label"><?php echo __('ID'); ?></label>
 					<div class="controls">
-						<?php 
+						<?php
 							$remaining = 6 - strlen($this->data['User']['id']);
 							$membershipId = '';
-							
+
 							for($i = 0; $i < $remaining; $i++) {
 								$membershipId .= '0';
 							}
@@ -220,7 +220,7 @@
 					</div>
 				</div>
 				<div class="control-group">
-					<label class="control-label"><?php echo __('State / Province'); ?></label>
+					<label class="control-label"><?php echo __('Estado'); ?></label>
 					<div class="controls">
 						<?php
 							echo $this->Form->input(
@@ -233,7 +233,7 @@
 									'label'               => false,
 									'maxlength'           => 100,
 									'data-rel'            => 'tooltip',
-									'data-original-title' => __('State or Province')
+									'data-original-title' => __('Estado')
 								)
 							);
 						?>
@@ -242,7 +242,7 @@
 				<div class="control-group">
 					<label class="control-label"><?php echo __('Country'); ?></label>
 					<div class="controls">
-						<?php 
+						<?php
 							$countryoptions = $this->requestAction('setting/GetCountries');
 							echo $this->Form->select(
 								'User.country_id',

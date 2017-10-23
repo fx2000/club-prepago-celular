@@ -336,7 +336,7 @@ class RequestRechargePointsAPI extends Dbconn {
 			// Set PHP Mailer parameters
 			$mail->isSMTP();
 			$mail->Host = EMAIL_SERVER;
-			$mail->Port = EMAIL_PORT
+			$mail->Port = EMAIL_PORT; 
 			$mail->Timeout = 30;
 			$mail->SMTPAuth = true;
 			$mail->Username = EMAIL_USER;
@@ -354,7 +354,7 @@ class RequestRechargePointsAPI extends Dbconn {
 					<div style="font-family:Tahoma;">
 						Hola ' . $arrStaff['name'] . ',<br/>
 						El inventario para recargas de ' . $arrMinLimit['name'] . ' ha caído por debajo de su límite mínimo.
-						El balance actual es de B/. ' . $arrMinLimit['balance'] . '
+						El balance actual es de Bs. ' . $arrMinLimit['balance'] . '
 					</div>
 				</body>
 				<html>';

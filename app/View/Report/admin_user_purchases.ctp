@@ -13,7 +13,7 @@
 ?>
 <script>
 	function getCookie(c_name) {
-		
+
 		var c_value = document.cookie;
 		var c_start = c_value.indexOf(" " + c_name + "=");
 
@@ -26,7 +26,7 @@
 		} else {
 			c_start = c_value.indexOf("=", c_start) + 1;
 			var c_end = c_value.indexOf(";", c_start);
-			
+
 			if (c_end == -1) {
 				c_end = c_value.length;
 			}
@@ -34,7 +34,7 @@
 		}
 		return c_value;
 	}
-	
+
 	function Export() {
 
 		var datatableInfo = getCookie('ClubPrepago_<?php echo strtolower(urlencode($this->params['pass'][0])); ?>');
@@ -71,7 +71,7 @@
 <div class="alert <?php echo ($this->Session->read('success') == 1) ? 'alert-success' : 'alert-error' ?>">
 	<button type="button" class="close" data-dismiss="alert">x</button>
 	<strong>
-		<?php 
+		<?php
 			echo $this->Session->read('alert');
 			$_SESSION['alert'] = '';
 		?>
@@ -80,7 +80,7 @@
 <?php
 	}
 ?>
-<div class="row-fluid ">	
+<div class="row-fluid ">
 	<div class="box span12">
 
 		<!-- Page icon and title -->
@@ -98,13 +98,13 @@
 					data-rel='tooltip' data-original-title='From date' placeholder="<?php echo __('From Date'); ?>"
 					value="<?php echo @$_REQUEST['from_date'];?>">&nbsp;
 				<input type="date" class="input-small datepicker" id="to_date" name="to_date"
-					data-rel='tooltip' data-original-title='To date' placeholder="<?php echo __('To Date'); ?>" 
+					data-rel='tooltip' data-original-title='To date' placeholder="<?php echo __('To Date'); ?>"
 					value="<?php echo @$_REQUEST['to_date'];?>">&nbsp;
 				<select name="user" class="input-medium" data-rel=tooltip data-original-title="<?php echo __('Select a User'); ?>" onchange="searchData(this.form);">
 					<option value=""><?php echo __('All Users'); ?></option>
 					<?php
 						$userData = $this->requestAction('user/GetUser');
-						
+
 						foreach ($userData as $key => $user) {
 							$selected = ($key == $_REQUEST['user']) ? 'selected="selected"' : '';
 							echo "<option value='" . $key . "' " . $selected . ">" . $user . "</option>";
@@ -145,9 +145,9 @@
 				<tbody>
 					<?php
 						if (!empty($userdata)) {
-							
+
 							foreach($userdata as $val) {
-						
+
 								if ($val['Payment']['payment_method'] == 1) {
 									$bank = $this->requestAction(
 										array(
@@ -162,7 +162,7 @@
 							<?php
 								if (strlen($val['Payment']['id']) < 6) {
 									$filler = 6 - strlen($val['Payment']['id']);
-									
+
 									for ($i = 0; $i < $filler; $i++) {
 										echo '0';
 									}
@@ -173,7 +173,7 @@
 							?>
 						</td>
 						<td>
-							<?php 
+							<?php
 								if ($val['User']['delete_status'] == 0) {
 									echo $this->Html->link(
 										$val['User']['name'],
@@ -200,10 +200,10 @@
 									echo $val['Payment']['payment_method'] == 1 ? $val['Payment']['change_status_date'] : '';
 							?>
 						</td>
-						<td><?php echo 'B/. ' . $val['Payment']['amount']; ?></td>
-						<td class="hidden-phone"><?php echo 'B/. ' . $val['Payment']['tax']; ?></td>
-						<td class="hidden-phone"><?php echo 'B/. ' . $val['Payment']['amount_credited']; ?></td>	
-						</tr>	
+						<td><?php echo 'Bs. ' . $val['Payment']['amount']; ?></td>
+						<td class="hidden-phone"><?php echo 'Bs. ' . $val['Payment']['tax']; ?></td>
+						<td class="hidden-phone"><?php echo 'Bs. ' . $val['Payment']['amount_credited']; ?></td>
+						</tr>
 					<?php
 								} else {
 									$paymentDetail = $this->requestAction(
@@ -214,7 +214,7 @@
 								<?php
 									if (strlen($val['Payment']['id']) < 6) {
 										$filler = 6 - strlen($val['Payment']['id']);
-										
+
 										for ($i = 0; $i < $filler; $i++) {
 											echo '0';
 										}
@@ -225,7 +225,7 @@
 								?>
 							</td>
 							<td>
-								<?php 
+								<?php
 									if($val['User']['delete_status'] == 0) {
 										echo $this->Html->link(
 											$val['User']['name'],
@@ -248,16 +248,16 @@
 							<td class="hidden-phone"><?php echo '-'; ?></td>
 							<td class="hidden-phone"><?php echo $paymentDetail['Transaction']['transaction_id']; ?></td>
 							<td align="center"><?php echo $val['Payment']['change_status_date']; ?></td>
-							<td><?php echo 'B/. ' . $val['Payment']['amount']; ?></td>
-							<td class="hidden-phone"><?php echo 'B/. ' . $val['Payment']['tax']; ?></td>
-							<td class="hidden-phone"><?php echo 'B/. ' . $val['Payment']['amount_credited']; ?></td>
-						</tr>	
-					<?php	
+							<td><?php echo 'Bs. ' . $val['Payment']['amount']; ?></td>
+							<td class="hidden-phone"><?php echo 'Bs. ' . $val['Payment']['tax']; ?></td>
+							<td class="hidden-phone"><?php echo 'Bs. ' . $val['Payment']['amount_credited']; ?></td>
+						</tr>
+					<?php
 								}
-					
+
 							}
-						}	
-					?>	
+						}
+					?>
 				</tbody>
 			</table>
 			<div class="box-content">

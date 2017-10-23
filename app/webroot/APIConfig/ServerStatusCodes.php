@@ -12,7 +12,7 @@
 include('config.php');
 
 class ServerStatusCode {
-	
+
 	public static function getStatusCodeMessage($status) {
 		$codes = Array(
 			500 => 'XML not formatted correctly',
@@ -93,8 +93,8 @@ class ServerStatusCode {
 			575 => 'Merchant account has been disabled',							//
 			576 => 'Improper Terminal',												//
 			577 => 'Something went wrong',											//
-			578 => 'Type should be 1 , 2 or 3',						
-			579 => 'Invalid Favorite ID',											//	
+			578 => 'Type should be 1 , 2 or 3',
+			579 => 'Invalid Favorite ID',											//
 			580 => 'Favorite ID parameter cannot be empty',							//
 			581 => 'Current Password parameter not found',							//
 			582 => 'Current Password parameter cannot be empty',					//
@@ -132,20 +132,34 @@ class ServerStatusCode {
 			614 => 'Country parameter cannot be empty',
 			700 => 'Sponsor ID parameter not found',
 			701 => 'Sponsor ID parameter cannot be empty',
-			702 => 'Unable to obtain Sponsor information',							//	
+			702 => 'Unable to obtain Sponsor information',							//
 			703 => 'Sponsor not found',
 			704 => 'Discount parameter not found',									//
-			705 => 'Discount parameter cannot be empty',							//	
+			705 => 'Discount parameter cannot be empty',							//
 			706 => 'Invalid Discount',												//
-			707 => 'Tax parameter not found',										//	
+			707 => 'Tax parameter not found',										//
 			708 => 'Tax parameter cannot be empty',									//
 			709 => 'Invalid Tax',													//
 			710 => 'Tax ID parameter not found',									//
 			711 => 'Tax ID parameter cannot be empty',
-			712 => 'City parameter not found',										//	
+			712 => 'City parameter not found',										//
 			713 => 'City parameter cannot be empty',								//
-			714 => 'Province parameter not found',									//	
-			715 => 'Province parameter cannot be empty'								//
+			714 => 'Province parameter not found',									//
+			715 => 'Province parameter cannot be empty',								//
+			716 => 'Card Holder parameter not found',								//
+			717 => 'Card Holder parameter cannot be empty',								//
+			718 => 'Card Holder ID parameter not found',								//
+			719 => 'Card Holder ID parameter cannot be empty',								//
+			720 => 'Card Number parameter not found',								//
+			721 => 'Card Number parameter cannot be empty',								//
+			722 => 'Invalid Card Number',											//
+			723 => 'Card CVC parameter not found',								//
+			724 => 'Card CVC parameter cannot be empty',								//
+			725 => 'Invalid CVC Number',											//
+			726 => 'Card Expire Date parameter not found',								//
+			727 => 'Card Expire Date parameter cannot be empty',								//
+			728 => 'IP Address parameter not found',								//
+			729 => 'IP Address parameter cannot be empty',								//
 		);
 		return (isset($codes[$status])) ? $codes[$status] : '';
 	}

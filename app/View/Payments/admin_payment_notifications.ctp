@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * Payment Notifications view
  *
@@ -32,7 +32,7 @@
 	<div class="alert <?php echo ($this->Session->read('success') == 1) ? 'alert-success' : 'alert-error' ?>">
 		<button type="button" class="close" data-dismiss="alert">x</button>
 		<strong>
-			<?php 
+			<?php
 				echo $this->Session->read('alert');
 				$_SESSION['alert'] = '';
 			?>
@@ -41,7 +41,7 @@
 <?php
 	}
 ?>
-<div class="row-fluid ">		
+<div class="row-fluid ">
 	<div class="box span12">
 		<div class="box-header well" data-original-title>
 			<h2><i class="icon-user"></i><?php echo __(' Payment Notifications'); ?></h2>
@@ -63,7 +63,7 @@
 				<tbody>
 					<?php
 						if (!empty($paymentdata)) {
-						
+
 							foreach ($paymentdata as $val) {
 								$user = $this->requestAction(
 									array(
@@ -121,7 +121,7 @@
 							?>
 						</td>
 						<td><?php echo $val['Payment']['notification_date']; ?></td>
-						<td><?php echo 'B/. ' . $val['Payment']['amount']; ?></td>
+						<td><?php echo 'Bs. ' . $val['Payment']['amount']; ?></td>
 						<td class="hidden-phone">
 							<?php
 								echo $this->html->link(

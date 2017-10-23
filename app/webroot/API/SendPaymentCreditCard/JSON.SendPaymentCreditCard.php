@@ -35,10 +35,20 @@ class RestResponse {
 			'3'	=> 'amount',
 			'4'	=> 'discount_rate',
 			'5'	=> 'tax_rate',
-			'6'	=> 'TransactionId',
-			'7'	=> 'TransactionStatus',
-			'8' => 'latitude',
-			'9' => 'longitude'
+			//'6'	=> 'TransactionId',
+			//'7'	=> 'TransactionStatus',
+			'6' => 'card_holder',
+			'7' => 'card_holder_id',
+			'8' => 'card_number',
+			'9' => 'card_cvc',
+			'10' => 'card_exp_date',
+			'11' => 'ip_address',
+			'12' => 'card_address',
+			'13' => 'card_city',
+			'14' => 'card_zipcode',
+			'15' => 'card_state',
+			'16' => 'latitude',
+			'17' => 'longitude'
 		);
 
 		// Check if the correct parameters are being sent and mark as (S)uccess or (F)ailed
@@ -153,32 +163,132 @@ class RestResponse {
 				return $this->generateJSONError('707');
 			}
 
-			// Check payment processor's transaction ID
-			if (in_array("TransactionId", $client_key_array)) {
-				$transactionId = $CLIENT_DATA_ARY['TransactionId'];
+			// // Check payment processor's transaction ID
+			// if (in_array("TransactionId", $client_key_array)) {
+			// 	$transactionId = $CLIENT_DATA_ARY['TransactionId'];
+			//
+			// 	if (strlen($transactionId) == 0) {
+			// 		$logger->error("SendPaymentCreditCard request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('603'));
+			// 		return $this->generateJSONError('603');
+			// 	}
+			// } else {
+			// 	return $this->generateJSONError('603');
+			// }
+			//
+			// // Check payment processor's transaction status
+			// if (in_array("TransactionStatus", $client_key_array)) {
+			// 	$transactionStatus = $CLIENT_DATA_ARY['TransactionStatus'];
+			//
+			// 	if (strlen($transactionStatus) == 0) {
+			// 		$logger->error("SendPaymentCreditCard request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('604'));
+			// 		return $this->generateJSONError('604');
+			// 	} else if ($transactionStatus != 0 && $transactionStatus != 1) {
+			// 		$logger->error("SendPaymentCreditCard request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('605'));
+			// 		return $this->generateJSONError('605');
+			// 	}
+			// } else {
+			// 	$logger->error("SendPaymentCreditCard request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('604'));
+			// 	return $this->generateJSONError('604');
+			// }
 
-				if (strlen($transactionId) == 0) {
-					$logger->error("SendPaymentCreditCard request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('603'));
-					return $this->generateJSONError('603');
+			// Check card_holder
+			if (in_array("card_holder", $client_key_array)) {
+				$card_holder = $CLIENT_DATA_ARY['card_holder'];
+
+				if (strlen($card_holder) == 0) {
+					$logger->error("SendPaymentCreditCard request failed for UserId " .
+						$CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('717'));
+					return $this->generateJSONError('717');
 				}
-			} else {
-				return $this->generateJSONError('603');
+			} else  {
+				$logger->error("SendPaymentCreditCard request failed for user " . $CLIENT_DATA_ARY['UserId'] . " " .
+					$this->generateJSONError('716'));
+				return $this->generateJSONError('716');
 			}
 
-			// Check payment processor's transaction status
-			if (in_array("TransactionStatus", $client_key_array)) {
-				$transactionStatus = $CLIENT_DATA_ARY['TransactionStatus'];
+			// Check card_holder_id
+			if (in_array("card_holder_id", $client_key_array)) {
+				$card_holder_id = $CLIENT_DATA_ARY['card_holder_id'];
 
-				if (strlen($transactionStatus) == 0) {
-					$logger->error("SendPaymentCreditCard request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('604'));
-					return $this->generateJSONError('604');
-				} else if ($transactionStatus != 0 && $transactionStatus != 1) {
-					$logger->error("SendPaymentCreditCard request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('605'));
-					return $this->generateJSONError('605');
+				if (strlen($card_holder_id) == 0) {
+					$logger->error("SendPaymentCreditCard request failed for UserId " .
+						$CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('719'));
+					return $this->generateJSONError('719');
 				}
-			} else {
-				$logger->error("SendPaymentCreditCard request failed for UserId " . $CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('604'));
-				return $this->generateJSONError('604');
+			} else  {
+				$logger->error("SendPaymentCreditCard request failed for user " . $CLIENT_DATA_ARY['UserId'] . " " .
+					$this->generateJSONError('718'));
+				return $this->generateJSONError('718');
+			}
+
+			// Check card_number
+			if (in_array("card_number", $client_key_array)) {
+
+				$card_number = $CLIENT_DATA_ARY['card_number'];
+
+				if (strlen($card_number) == 0) {
+					$logger->error("SendPaymentCreditCard request failed for Card Number " .
+						$CLIENT_DATA_ARY['card_number'] . " " . $this->generateJSONError('721'));
+					return $this->generateJSONError('721');
+				} else if (!preg_match("/^[0-9\+]+$/i", stripslashes($card_number))) {
+					$logger->error("SendPaymentCreditCard request failed for Card Number " .
+						$CLIENT_DATA_ARY['card_number'] . " " . $this->generateJSONError('722'));
+					return $this->generateJSONError('722');
+				}
+			} else  {
+				$logger->error("SendPaymentCreditCard request failed for Card Number " .
+					$CLIENT_DATA_ARY['card_number'] . " " . $this->generateJSONError('720'));
+				return $this->generateJSONError('720');
+			}
+
+			// Check card_cvc
+			if (in_array("card_cvc", $client_key_array)) {
+
+				$card_cvc = $CLIENT_DATA_ARY['card_cvc'];
+
+				if (strlen($card_cvc) == 0) {
+					$logger->error("SendPaymentCreditCard request failed for Card CVC " .
+						$CLIENT_DATA_ARY['card_cvc'] . " " . $this->generateJSONError('724'));
+					return $this->generateJSONError('724');
+				} else if (!preg_match("/^[0-9\+]+$/i", stripslashes($card_cvc))) {
+					$logger->error("SendPaymentCreditCard request failed for Card CVC " .
+						$CLIENT_DATA_ARY['card_cvc'] . " " . $this->generateJSONError('725'));
+					return $this->generateJSONError('725');
+				}
+			} else  {
+				$logger->error("SendPaymentCreditCard request failed for Card CVC " .
+					$CLIENT_DATA_ARY['card_cvc'] . " " . $this->generateJSONError('723'));
+				return $this->generateJSONError('723');
+			}
+
+			// Check card_exp_date
+			if (in_array("card_exp_date", $client_key_array)) {
+				$card_exp_date = $CLIENT_DATA_ARY['card_exp_date'];
+
+				if (strlen($card_exp_date) == 0) {
+					$logger->error("SendPaymentCreditCard request failed for UserId " .
+						$CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('727'));
+					return $this->generateJSONError('727');
+				}
+			} else  {
+				$logger->error("SendPaymentCreditCard request failed for user " . $CLIENT_DATA_ARY['UserId'] . " " .
+					$this->generateJSONError('726'));
+				return $this->generateJSONError('726');
+			}
+
+			// Check ip_address
+			if (in_array("ip_address", $client_key_array)) {
+				$ip_address = $CLIENT_DATA_ARY['ip_address'];
+
+				if (strlen($ip_address) == 0) {
+					$logger->error("SendPaymentCreditCard request failed for UserId " .
+						$CLIENT_DATA_ARY['UserId'] . " " . $this->generateJSONError('729'));
+					return $this->generateJSONError('729');
+				}
+			} else  {
+				$logger->error("SendPaymentCreditCard request failed for user " . $CLIENT_DATA_ARY['UserId'] . " " .
+					$this->generateJSONError('728'));
+				return $this->generateJSONError('728');
 			}
 
 			// If all fields are validated correctly, call the Send Payment Credit Card API

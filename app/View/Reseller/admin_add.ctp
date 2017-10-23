@@ -32,7 +32,7 @@
 <div class="alert <?php echo ($this->Session->read('success') == 1) ? 'alert-success' : 'alert-error' ?>">
 	<button type="button" class="close" data-dismiss="alert">x</button>
 	<strong>
-		<?php 
+		<?php
 			echo $this->Session->read('alert');
 			$_SESSION['alert'] ='';
 		?>
@@ -41,7 +41,7 @@
 <?php
 	}
 ?>
-<div class="row-fluid ">	
+<div class="row-fluid ">
 	<div class="box span12">
 		<div class="box-header well" data-original-title>
 			<h2><i class="icon-list-alt"></i><?php echo __(' Add Reseller'); ?></h2>
@@ -75,7 +75,7 @@
 					</div>
 				</div>
 				<div class="control-group">
-					<label class="control-label"><?php echo __('Cedula / Passport'); ?></label>
+					<label class="control-label"><?php echo __('Cedula'); ?></label>
 					<div class="controls">
 						<?php
 							echo $this->Form->input(
@@ -88,7 +88,7 @@
 									'label'               => false,
 									'maxlength'           => 25,
 									'data-rel'            => 'tooltip',
-									'data-original-title' => __('Cedula or Passport number')
+									'data-original-title' => __('Cédula')
 								)
 							);
 						?>
@@ -161,7 +161,7 @@
 					</div>
 				</div>
 				<div class="control-group">
-					<label class="control-label"><?php echo __('State / Province'); ?></label>
+					<label class="control-label"><?php echo __('Estado'); ?></label>
 					<div class="controls">
 						<?php
 							echo $this->Form->input(
@@ -174,7 +174,7 @@
 									'label'               => false,
 									'maxlength'           => 100,
 									'data-rel'            => 'tooltip',
-									'data-original-title' => __('State or Province')
+									'data-original-title' => __('Estado')
 								)
 							);
 						?>
@@ -183,7 +183,7 @@
 				<div class="control-group">
 					<label class="control-label"><?php echo __('Country'); ?></label>
 					<div class="controls">
-						<?php 
+						<?php
 							$countryoptions = $this->requestAction('setting/GetCountries');
 							echo $this->Form->select(
 								'Reseller.country_id',
@@ -230,7 +230,7 @@
 				<div class="control-group">
 					<label class="control-label"><?php echo __('Sponsor'); ?></label>
 					<div class="controls">
-						<?php 
+						<?php
 							$sponsoroptions = $this->requestAction('sponsor/GetSponsor');
 							echo $this->Form->select(
 								'Reseller.sponsor_id',
