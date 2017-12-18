@@ -2,10 +2,9 @@
 /**
  * Dashboard
  *
- * @copyright     Copyright (c) Móviles de Panamá, S.A. (http://www.movilesdepanama.com)
- * @link          http://www.clubprepago.com Club Prepago Celular(tm) Project
+ * @copyright     Club Prepago Celular(tm) Project
  * @package       app.View.Cpanel
- * @since         Club Prepago Celular(tm) v 1.0.0
+ * @since         Club Prepago Celular(tm) v 1.1.0
  */
 echo $this->Html->css('charisma-app');
 $users = $this->requestAction('user/total_users');
@@ -30,7 +29,7 @@ $staff = $this->requestAction('staff/total_staff');
 </div>
 
 <!-- Home view for administrator profile-->
-<?php 
+<?php
 	if ($this->Session->read('admin_type') == 3) {
 ?>
 <div class="row-fluid" style="margin:30px 0 10px 0;">
@@ -157,9 +156,71 @@ $staff = $this->requestAction('staff/total_staff');
 		);
 	?>
 </div>
+<div class="row-fluid" style="margin:20px 0;">
+	<?php
+		echo $this->Html->link(
+			__('<span class="icon32 icon-blue icon-tag"></span><div>Coupons</div>'),
+			array(
+				'controller' => 'coupon',
+				'action' => 'index'
+			),
+			array(
+				'data-rel' => 'tooltip',
+				'title'    => __('View coupons'),
+				'class'    => 'well span3 top-block',
+				'escape'   => false
+			)
+		);
+	?>
+	<?php
+		echo $this->Html->link(
+			__('<span class="icon32 icon-blue icon-home"></span><div>Stores</div>'),
+			array(
+				'controller' => 'store',
+				'action' => 'index'
+			),
+			array(
+				'data-rel' => 'tooltip',
+				'title'    => __('View stores'),
+				'class'    => 'well span3 top-block',
+				'escape'   => false
+			)
+		);
+	?>
+	<?php
+		echo $this->Html->link(
+			__('<span class="icon32 icon-blue icon-check"></span><div>Coupon Redemptions</div>'),
+			array(
+				'controller' => 'report',
+				'action' => 'coupon_redemptions'
+			),
+			array(
+				'data-rel' => 'tooltip',
+				'title'    => __('Coupon Redemptions'),
+				'class'    => 'well span3 top-block',
+				'escape'   => false
+			)
+		);
+	?>
+	<?php
+		echo $this->Html->link(
+			__('<span class="icon32 icon-blue icon-briefcase"></span><div>Business</div>'),
+			array(
+				'controller' => 'business',
+				'action' => 'index'
+			),
+			array(
+				'data-rel' => 'tooltip',
+				'title'    => __('Business'),
+				'class'    => 'well span3 top-block',
+				'escape'   => false
+			)
+		);
+	?>
+</div>
 
 <!-- Home view for Supervisor profile-->
-<?php 
+<?php
 	} else if ($this->Session->read('admin_type') == 2) {
 ?>
 <div class="row-fluid" style="margin:30px 0 10px 0;">
@@ -273,7 +334,7 @@ $staff = $this->requestAction('staff/total_staff');
 </div>
 
 <!-- Home view for Customer Support profile-->
-<?php 
+<?php
 	} else if ($this->Session->read('admin_type') == 1) {
 ?>
 <div class="row-fluid" style="margin:30px 0 10px 0;">
