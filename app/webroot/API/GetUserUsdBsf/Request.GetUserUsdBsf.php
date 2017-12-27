@@ -35,7 +35,7 @@ class RequestGetUserUsdBsfAPI extends Dbconn {
 		$users['City'] = $arrUser['city'];
 		$users['Province'] = $arrUser['state'];
 		$users['PhoneNo'] = $arrUser['phone_number'];
-    $users['Amount'] = (double)filter_var($data['Amount'], FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION) * $this->checkDolarToday();
+    $users['Amount'] = $this->checkDolarToday($data['Amount']);
 
 		// Fill the User ID with zeroes for cosmetic reasons
 		$remaining = 6 - strlen($arrUser['id']);
@@ -56,7 +56,7 @@ class RequestGetUserUsdBsfAPI extends Dbconn {
 	/**
 	 * Check Value BSF per USD
 	 */
-	function checkDolarToday() {
+	function checkDolarToday($amount) {
 
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
@@ -64,9 +64,10 @@ class RequestGetUserUsdBsfAPI extends Dbconn {
     curl_setopt($ch, CURLOPT_URL, 'https://s3.amazonaws.com/dolartoday/data.json');
     $result = curl_exec($ch);
     curl_close($ch);
-
     $obj = json_decode($result);
-    return $obj['USD']['tranferencia'];
+    $bsfUsd = $obj['USD']['tranferencia'];
+    //$newAmount = (double)filter_var($amount, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION) * $bsfUsd;
+    return $bsfUsd; //$newAmount;
 
 	}
 }
