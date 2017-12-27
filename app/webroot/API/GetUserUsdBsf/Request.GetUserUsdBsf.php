@@ -35,7 +35,7 @@ class RequestGetUserUsdBsfAPI extends Dbconn {
 		$users['City'] = $arrUser['city'];
 		$users['Province'] = $arrUser['state'];
 		$users['PhoneNo'] = $arrUser['phone_number'];
-    $users['Amount'] = (double)filter_var($data['Amount'], FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION) * checkBSF();
+    $users['Amount'] = (double)filter_var($this->checkDolarToday($data['Amount']), FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION) * checkBSF();
 
 		// Fill the User ID with zeroes for cosmetic reasons
 		$remaining = 6 - strlen($arrUser['id']);
@@ -56,7 +56,7 @@ class RequestGetUserUsdBsfAPI extends Dbconn {
 	/**
 	 * Check Value BSF per USD
 	 */
-	function checkBSF() {
+	function checkDolarToday() {
 
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
