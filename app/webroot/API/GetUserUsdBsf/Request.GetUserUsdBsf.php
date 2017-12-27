@@ -66,7 +66,7 @@ class RequestGetUserUsdBsfAPI extends Dbconn {
     curl_close($ch);
 
     $obj = json_decode($result);
-    return $obj->USD['tranferencia'];
+    return $obj['USD']['tranferencia'];
 
 	}
 }
