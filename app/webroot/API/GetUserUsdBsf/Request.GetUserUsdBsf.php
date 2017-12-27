@@ -35,7 +35,7 @@ class RequestGetUserUsdBsfAPI extends Dbconn {
 		$users['City'] = $arrUser['city'];
 		$users['Province'] = $arrUser['state'];
 		$users['PhoneNo'] = $arrUser['phone_number'];
-    $users['Amount'] = (double)filter_var($this->checkDolarToday($data['Amount']), FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION) * checkBSF();
+    $users['Amount'] = (double)filter_var($data['Amount'], FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION) * $this->checkDolarToday();
 
 		// Fill the User ID with zeroes for cosmetic reasons
 		$remaining = 6 - strlen($arrUser['id']);
