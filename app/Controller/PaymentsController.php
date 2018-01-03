@@ -165,14 +165,14 @@ class PaymentsController extends AppController {
 			$dataTDC['amount'] = $paymentData['Payment']['amount'];
 
 			// Request complete payment Credit Card Processor
-			$REQ_SUCCESS = new instapago();
+			//$REQ_SUCCESS = new instapago();
 
 			// Check that Platform is valid
-			$resultPayment = $REQ_SUCCESS->completePayment($dataTDC);
+			//$resultPayment = $REQ_SUCCESS->completePayment($dataTDC);
 
-			$arrResultPayment = explode(':', $resultPayment);
-			$status = $arrResultPayment[0];
-			$referenceId = $arrResultPayment[2];
+			//$arrResultPayment = explode(':', $resultPayment);
+			//$status = $arrResultPayment[0];
+			//$referenceId = $arrResultPayment[2];
 
 			// Getting Tax rate
 			$taxArr = $this->Country->findById(
