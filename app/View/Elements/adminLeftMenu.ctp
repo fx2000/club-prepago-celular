@@ -128,7 +128,7 @@
 							)
 						);
 					?>
-				</li>	
+				</li>
 			</ol>
 		</li>
 		<li class="left_menu_option">
@@ -171,6 +171,54 @@
 							),
 							array(
 								'id'         => 'view_reseller',
+								'class'      => 'ajax-link',
+								'escape'     => false
+							)
+						);
+					?>
+				</li>
+			</ol>
+		</li>
+		<li class="left_menu_option">
+			<?php
+				echo $this->Html->link(
+					__("<i class='icon-briefcase'></i><span class='hidden-tablet'> Business</span>"),
+					'#',
+					array(
+						'id'     => 'slotb',
+						'class'  => 'ajax-link',
+						'escape' => false
+					)
+				);
+			?>
+			<ol id="sub_menub" class="sub_menu_div" style="display:none;list-style:none;background-color:white;
+				margin:0px;padding-left: 13px;border-left:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd;">
+				<li class="submenu_option">
+					<?php
+						echo $this->Html->link(
+							__("<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> Add Business</span>"),
+							array(
+								'controller' => 'business',
+								'action'     => 'add'
+							),
+							array(
+								'id'         => 'add_business',
+								'class'      => 'ajax-link',
+								'escape'     => false
+							)
+						);
+					?>
+				</li>
+				<li class="submenu_option">
+					<?php
+						echo $this->Html->link(
+							__("<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> View Business</span>"),
+							array(
+								'controller' => 'business',
+								'action'     => 'index'
+							),
+							array(
+								'id'         => 'view_business',
 								'class'      => 'ajax-link',
 								'escape'     => false
 							)
@@ -235,6 +283,22 @@
 							),
 							array(
 								'id'         => 'transactions',
+								'class'      => 'ajax-link',
+								'escape'     => false
+							)
+						);
+					?>
+				</li>
+				<li class="submenu_option">
+					<?php
+						echo $this->Html->link(
+							__("<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> Coupon Redemptions</span>"),
+							array(
+								'controller' => 'report',
+								'action'     => 'coupon_redemptions'
+							),
+							array(
+								'id'         => 'coupon_redemptions',
 								'class'      => 'ajax-link',
 								'escape'     => false
 							)
@@ -320,7 +384,7 @@
 							)
 						);
 					?>
-				</li>	
+				</li>
 			</ol>
 		</li>
 		<li class="left_menu_option">
@@ -368,7 +432,87 @@
 							)
 						);
 					?>
-				</li>	
+				</li>
+			</ol>
+		</li>
+		<li class="left_menu_option">
+			<?php
+				echo $this->Html->link(
+					__("<i class='icon-tag'></i><span class='hidden-tablet'> Coupons</span>"),
+					'#',
+					array(
+						'id'     => 'slota',
+						'class'  => 'ajax-link',
+						'escape' => false
+					)
+				);
+			?>
+			<ol id="sub_menua" class="sub_menu_div" style="display:none;list-style:none;background-color:white;
+				margin:0px;padding-left: 13px;border-left:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd;">
+				<li class="submenu_option">
+					<?php
+						echo $this->Html->link(
+							__("<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> Add Coupons</span>"),
+							array(
+								'controller' => 'coupon',
+								'action'     => 'add'
+							),
+							array(
+								'id'         => 'add_coupon',
+								'class'      => 'ajax-link',
+								'escape'     => false
+							)
+						);
+					?>
+				</li>
+				<li class="submenu_option">
+					<?php
+						echo $this->Html->link(
+							__("<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> View Coupons</span>"),
+							array(
+								'controller' => 'coupon',
+								'action'     => 'index'
+							),
+							array(
+								'id'         => 'view_coupon',
+								'class'      => 'ajax-link',
+								'escape'     => false
+							)
+						);
+					?>
+				</li>
+				<li class="submenu_option">
+					<?php
+						echo $this->Html->link(
+							__("<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> Add Stores</span>"),
+							array(
+								'controller' => 'store',
+								'action'     => 'add'
+							),
+							array(
+								'id'         => 'add_store',
+								'class'      => 'ajax-link',
+								'escape'     => false
+							)
+						);
+					?>
+				</li>
+				<li class="submenu_option">
+					<?php
+						echo $this->Html->link(
+							__("<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> View Stores</span>"),
+							array(
+								'controller' => 'store',
+								'action'     => 'index'
+							),
+							array(
+								'id'         => 'view_store',
+								'class'      => 'ajax-link',
+								'escape'     => false
+							)
+						);
+					?>
+				</li>
 			</ol>
 		</li>
 		<li class="left_menu_option">
@@ -810,6 +954,22 @@
 				<li class="submenu_option">
 					<?php
 						echo $this->Html->link(
+							__("<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> Coupon Redemptions</span>"),
+							array(
+								'controller' => 'report',
+								'action'     => 'coupon_redemptions'
+							),
+							array(
+								'id'         => 'coupon_redemptions',
+								'class'      => 'ajax-link',
+								'escape'     => false
+							)
+						);
+					?>
+				</li>
+				<li class="submenu_option">
+					<?php
+						echo $this->Html->link(
 							__("<i class='icon-circle-arrow-right'></i><span class='hidden-tablet'> User Purchases</span>"),
 							array(
 								'controller' => 'report',
@@ -1168,7 +1328,7 @@
 		<?php
 			}
 		?>
-	</ul> 
+	</ul>
 </div>
 <!-- left menu ends -->
 
@@ -1177,7 +1337,7 @@
 	var crt_control = '<?php echo $this->request->params['controller']; ?>';
 	var crt_action = '<?php echo $this->request->params['action']; ?>';
 	var selColor = '#194964';
-	
+
 	switch (crt_control) {
 
 		// No menu selected
@@ -1191,7 +1351,7 @@
 			var element = document.getElementById("slot0");
 			element.parentNode.classList.add("active");
 			(document.getElementById("sub_menu0")).style.display = 'block';
-			
+
 			if (crt_action == 'admin_add') {
 				(document.getElementById("add_user")).style.color = selColor;
 			} else {
@@ -1204,7 +1364,7 @@
 			var element = document.getElementById("slot1");
 			element.parentNode.classList.add("active");
 			(document.getElementById("sub_menu1")).style.display = 'block';
-			
+
 			if (crt_action == 'admin_add') {
 				(document.getElementById("add_sponsor")).style.color = selColor;
 			} else {
@@ -1212,12 +1372,12 @@
 			}
 			break;
 
-		// Resellers menu	
+		// Resellers menu
 		case 'reseller':
 			var element = document.getElementById("slot2");
 			element.parentNode.classList.add("active");
 			(document.getElementById("sub_menu2")).style.display = 'block';
-			
+
 			if (crt_action == 'admin_add') {
 				(document.getElementById("add_reseller")).style.color = selColor;
 			} else {
@@ -1230,13 +1390,15 @@
 			var element = document.getElementById("slot3");
 			element.parentNode.classList.add("active");
 			(document.getElementById("sub_menu3")).style.display = 'block';
-			
+
 			if (crt_action == 'admin_direct_sales') {
 				(document.getElementById("direct_sales")).style.color = selColor;
 			} else if (crt_action == 'admin_reseller_sales') {
 				(document.getElementById("reseller_sales")).style.color = selColor;
 			} else if (crt_action == 'admin_transactions') {
 				(document.getElementById("transactions")).style.color = selColor;
+			} else if (crt_action == 'admin_transactions') {
+				(document.getElementById("coupon_redemptions")).style.color = selColor;
 			} else if (crt_action == 'admin_user_purchases') {
 				(document.getElementById("user_purchases")).style.color = selColor;
 			} else if (crt_action == 'admin_reseller_purchases') {
@@ -1249,7 +1411,7 @@
 			var element = document.getElementById("slot4");
 			element.parentNode.classList.add("active");
 			(document.getElementById("sub_menu4")).style.display = 'block';
-			
+
 			if (crt_action == 'admin_index') {
 				(document.getElementById("inventory")).style.color = selColor;
 			} else {
@@ -1262,7 +1424,7 @@
 			var element = document.getElementById("slot5");
 			element.parentNode.classList.add("active");
 			(document.getElementById("sub_menu5")).style.display = 'block';
-			
+
 			if (crt_action == 'admin_index' || crt_action == 'admin_edit') {
 				(document.getElementById("view_reward")).style.color = selColor;
 			} else if(crt_action == 'admin_add') {
@@ -1275,7 +1437,7 @@
 			var element = document.getElementById("slot6");
 			element.parentNode.classList.add("active");
 			(document.getElementById("sub_menu6")).style.display = 'block';
-			
+
 			if (crt_action == 'admin_status') {
 				(document.getElementById("rechage_status")).style.color = selColor;
 			} else {
@@ -1288,7 +1450,7 @@
 			var element = document.getElementById("slot7");
 			element.parentNode.classList.add("active");
 			(document.getElementById("sub_menu7")).style.display = 'block';
-			
+
 			if (crt_action == 'admin_edit_points') {
 				(document.getElementById("view_setting")).style.color = selColor;
 			} else if(crt_action == 'admin_tax') {
@@ -1305,7 +1467,7 @@
 			var element = document.getElementById("slot7");
 			element.parentNode.classList.add("active");
 			(document.getElementById("sub_menu7")).style.display = 'block';
-			
+
 			if (crt_action =='admin_index' || crt_action == 'admin_edit') {
 				(document.getElementById("view_banks")).style.color = selColor;
 			} else if (crt_action =='admin_add') {
@@ -1318,7 +1480,7 @@
 			var element = document.getElementById("slot8");
 			element.parentNode.classList.add("active");
 			(document.getElementById("sub_menu8")).style.display = 'block';
-			
+
 			if (crt_action =='admin_index' || crt_action == 'admin_edit') {
 				(document.getElementById("view_staff")).style.color = selColor;
 			} else if (crt_action =='admin_add') {
@@ -1331,11 +1493,39 @@
 			var element = document.getElementById("slot9");
 			element.parentNode.classList.add("active");
 			(document.getElementById("sub_menu9")).style.display = 'block';
-			
+
 			if (crt_action == 'admin_payment_notifications') {
 				(document.getElementById("payment_notifications")).style.color = selColor;
 			} else {
 				(document.getElementById("payment_history")).style.color = selColor;
+			}
+			break;
+
+		// Coupons menu
+		case 'coupons':
+			var element = document.getElementById("slota");
+			element.parentNode.classList.add("active");
+			(document.getElementById("sub_menua")).style.display = 'block';
+			if (crt_action == 'admin_add') {
+				(document.getElementById("add_coupon")).style.color = selColor;
+			} elseif (rt_action == 'admin_add') {
+				(document.getElementById("view_coupon")).style.color = selColor;
+			} elseif (rt_action == 'admin_add') {
+				(document.getElementById("add_store")).style.color = selColor;
+			} else {
+				(document.getElementById("view_store")).style.color = selColor;
+			}
+			break;
+
+		// Business menu
+		case 'business':
+			var element = document.getElementById("slotb");
+			element.parentNode.classList.add("active");
+			(document.getElementById("sub_menub")).style.display = 'block';
+			if (crt_action == 'admin_add') {
+				(document.getElementById("add_business")).style.color = selColor;
+			} else {
+				(document.getElementById("view_business")).style.color = selColor;
 			}
 			break;
 	}
