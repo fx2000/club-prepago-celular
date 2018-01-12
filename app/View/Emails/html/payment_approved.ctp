@@ -8,7 +8,6 @@
 <title>Tu Pago Ha Sido Aprobado</title>
 
 <style type="text/css">
-
     /* Resets: see reset.css for details */
     .ReadMsgBody { width: 100%; background-color: #ffffff;}
     .ExternalClass {width: 100%; background-color: #ffffff;}
@@ -30,7 +29,6 @@
     .yshortcuts a:hover, .yshortcuts a span { text-decoration: none !important; border-bottom: none !important;}
     table{ mso-table-lspace:0pt; mso-table-rspace:0pt; }
     img{ -ms-interpolation-mode:bicubic; }
-
     /*mailChimp class*/
     .default-edit-image{
     height:20px;
@@ -40,8 +38,6 @@
     border: 1px dotted rgba(0,0,0,0.2);
     }
     img{height:auto !important;}
-
-
     td[class="image-100px"] img{
     width:100px;
     height:auto !important;
@@ -185,7 +181,6 @@
         width:100% !important;
         min-width:100% !important;
     }
-
     }
     @media only screen and (max-width: 479px){
     body{
@@ -251,7 +246,6 @@
     }
     table[class="col-2-last"]{
     width:100% !important;
-
     }
     table[class="col-3"]{
     width:100% !important;
@@ -259,7 +253,6 @@
     }
     table[class="col-3-last"]{
     width:100% !important;
-
     }
     table[class="row-2"]{
     width:100% !important;
@@ -332,7 +325,6 @@
         width:100% !important;
         min-width:100% !important;
     }
-
     }
     @media only screen and (max-width: 320px){
     table[class="width-small"]{
@@ -346,7 +338,6 @@
     }
     }
     td ul{list-style: initial; margin:0; padding-left:20px;}
-
     @media only screen and (max-width: 640px){ .image-100-percent{ width:100%!important; height: auto !important; max-width: 100% !important; min-width: 124px !important;}}body{background-color:#efefef;} .default-edit-image{height:20px;} tr.tpl-repeatblock , tr.tpl-repeatblock > td{ display:block !important;} .tpl-repeatblock {padding: 0px !important;border: 1px dotted rgba(0,0,0,0.2);} table[width="595"]{width:100% !important;}a img{ border: 0 !important;}
 a:active{color:initial } a:visited{color:initial }
 .tpl-content{padding:0 !important;}
@@ -423,7 +414,7 @@ a img{ border: 0 !important;}
                     </tr><!--end space height --><!-- start text content --><tr><td valign="top">
                         <table border="0" cellspacing="0" cellpadding="0" align="left" width="100%" style="mso-table-lspace:0pt; mso-table-rspace:0pt;"><tbody><tr><td style="font-size: 18px; font-family: Arial, Tahoma, Helvetica, sans-serif; color: #555555; font-weight: bold; text-align: center; word-break: break-word; line-height: 26px;" align="center"><span style="color: #555555; line-height: 26px; font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">Gracias&nbsp;<a href="http://mailbuild.rookiewebstudio.com/item/e7qsUGuW/?edit=build&amp;tem=eUwwNVBraE8yMDE3MDMyNTA0MjUxNA==#" data-mce-href="#" style="color: #555555; text-decoration: none !important; border-style: none; line-height: 26px; font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;" border="0"><span style="color: #f05e5e; line-height: 26px; font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $username; ?> </span></a><a href="#" style="color: #555555; text-decoration: none !important; border-style: none; line-height: 26px; font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;" data-mce-href="#" border="0"><br style="font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">Tu pago ha sido&nbsp;<span style="color: #f05e5e; line-height: 26px; font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">Aprobado</span></a></span></td>
                           </tr><!--start space height --><tr><td height="15" style="height: 15px; font-size: 0px; line-height: 0; border-collapse: collapse;"></td>
-                          </tr><!--end space height --><tr><td style="font-size: 13px; font-family: Arial, Tahoma, Helvetica, sans-serif; color: #a3a2a2; font-weight: normal; text-align: justify; word-break: break-word; line-height: 21px;" align="justify"><div style="text-align: justify; font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Tu pago con número de referencia <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $payment_number; ?></span> ha sido procesado correctamente:</div><div style="text-align: justify; font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;"><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Fecha de Notificación: <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $notification_date; ?></span><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Fecha de Aprobación: <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $status_change; ?></span><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Monto Neto: <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">Bs. <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $amount_net; ?></span></span><<br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Cargos Adicionales: <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">Bs. <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $amount_fees; ?></span></span><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Descuento: <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">Bs. <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $amount_discount; ?></span></span><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Monto Total: <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">Bs. <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $amount_total; ?></span></span><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;"><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;"></div><div style="text-align: justify; font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">El monto neto ya se encuentra disponible en tu cuenta y puedes usarlo cuándo quieras.</div></td>
+                          </tr><!--end space height --><tr><td style="font-size: 13px; font-family: Arial, Tahoma, Helvetica, sans-serif; color: #a3a2a2; font-weight: normal; text-align: justify; word-break: break-word; line-height: 21px;" align="justify"><div style="text-align: justify; font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Tu pago con número de referencia <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $payment_number; ?></span> ha sido procesado correctamente:</div><div style="text-align: justify; font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;"><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Fecha de Notificación: <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $notification_date; ?></span><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Fecha de Aprobación: <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $status_change; ?></span><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Monto Neto: <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">Bs. <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $amount_net; ?></span></span><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Descuento: <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">Bs. <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $amount_discount; ?></span></span><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">Monto Total: <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">Bs. <span style="line-height: 21px; font-size: 13px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $amount_total; ?></span></span><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;"><br style="font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;"></div><div style="text-align: justify; font-size: 13px; font-weight: 400; font-family: Arial, Tahoma, Helvetica, sans-serif;">El monto neto ya se encuentra disponible en tu cuenta y puedes usarlo cuándo quieras.</div></td>
                           </tr><tr><td style="font-size: 18px; font-family: Arial, Tahoma, Helvetica, sans-serif; color: #555555; font-weight: bold; text-align: center; word-break: break-word; line-height: 26px;" align="center"><span style="color: #555555; line-height: 26px; font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><a href="http://mailbuild.rookiewebstudio.com/item/e7qsUGuW/?edit=build&amp;tem=eUwwNVBraE8yMDE3MDMyNTA0MjUxNA==#" data-mce-href="#" style="color: #555555; text-decoration: none !important; border-style: none; line-height: 26px; font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;" border="0"><span style="color: #f05e5e; line-height: 26px; font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"></span></a><a href="#" style="color: #555555; text-decoration: none !important; border-style: none; line-height: 26px; font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;" data-mce-href="#" border="0"><br style="font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;">Tu número promocional es&nbsp;<span style="color: #f05e5e; line-height: 26px; font-size: 18px; font-weight: bold; font-family: Arial, Tahoma, Helvetica, sans-serif;"><?php echo $promo; ?></span></a></span></td>
                           </tr><!--start space height --><tr><td height="20" style="height: 20px; font-size: 0px; line-height: 0; border-collapse: collapse;">&nbsp;</td>
                           </tr><!--end space height --><!-- start wrap button --><tr><td valign="top" align="center">
