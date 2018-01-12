@@ -175,9 +175,9 @@ class PaymentsController extends AppController {
 			//$referenceId = $arrResultPayment[2];
 
 			// Getting Tax rate
-			//$taxArr = $this->Country->findById(
-			//	$userData['User']['country_id']
-			//);
+			$taxArr = $this->Country->findById(
+				$userData['User']['country_id']
+			);
 			$tax = $taxArr['Country']['tax'];
 
 			// Getting Credit Card fees
