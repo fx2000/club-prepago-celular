@@ -12,7 +12,7 @@
  */
 
 App::uses('CakeEmail', 'Network/Email');
-include '../../webroot/API/CreditCardProcessors/instapago.php';
+//include '../../webroot/API/CreditCardProcessors/instapago.php';
 
 class PaymentsController extends AppController {
 
@@ -160,9 +160,9 @@ class PaymentsController extends AppController {
 				)
 			);
 
-			$arrRefNo = explode(':', $paymentData['Payment']['reference_number']);
-			$dataTDC['id'] = $arrRefNo[1];
-			$dataTDC['amount'] = $paymentData['Payment']['amount'];
+			//$arrRefNo = explode(':', $paymentData['Payment']['reference_number']);
+			//$dataTDC['id'] = $arrRefNo[1];
+			//$dataTDC['amount'] = $paymentData['Payment']['amount'];
 
 			// Request complete payment Credit Card Processor
 			//$REQ_SUCCESS = new instapago();
@@ -175,45 +175,48 @@ class PaymentsController extends AppController {
 			//$referenceId = $arrResultPayment[2];
 
 			// Getting Tax rate
-			$taxArr = $this->Country->findById(
-				$userData['User']['country_id']
-			);
+			//$taxArr = $this->Country->findById(
+			//	$userData['User']['country_id']
+			//);
 			$tax = $taxArr['Country']['tax'];
 
 			// Getting Credit Card fees
-			$feeArr = $this->Setting->find(
-				'first'
-			);
-			$ccFee = $feeArr['Setting']['credit_card_fee_percent'];
+			//$feeArr = $this->Setting->find(
+			//	'first'
+			//);
+			//$ccFee = $feeArr['Setting']['credit_card_fee_percent'];
 
 			// Getting gross amount from Payments table
 			$amount = $paymentData['Payment']['amount'];
 
 			// Calculating Net Amount
-			$netAmount = round((100 * $amount) / ($tax + 100), 2);
+			//$netAmount = round((100 * $amount) / ($tax + 100), 2);
 
 			// Calculating Credit Card fees
-			if ($paymentData['Payment']['payment_method'] == 2) {
-				$fees = round((($netAmount * $ccFee) / 100), 2);
-			} else {
-				$fees = 0;
-			}
+			//if ($paymentData['Payment']['payment_method'] == 2) {
+			//	$fees = round((($netAmount * $ccFee) / 100), 2);
+			//} else {
+			//	$fees = 0;
+			//}
 
 			// Calculating taxes paid
-			$taxPaid = $amount - $netAmount;
+			//$taxPaid = $amount - $netAmount;
 
 			// Set taxes paid for Payments table
-			$data['Payment']['tax'] = $taxPaid;
+			//$data['Payment']['tax'] = $taxPaid;
 
 			// Check payment method and set Net Amount for Payments Table
-			if ($paymentData['Payment']['payment_method'] == 2) {
-				$netAmountWithFees = round($netAmount - $fees, 2);
-				$data['Payment']['net_amount'] = $netAmountWithFees;
-				$data['Payment']['fees'] = $fees;
-				$netAmount = $netAmountWithFees;
-			} else {
-				$data['Payment']['net_amount'] = $netAmount;
-			}
+			//if ($paymentData['Payment']['payment_method'] == 2) {
+			//	$netAmountWithFees = round($netAmount - $fees, 2);
+			//	$data['Payment']['net_amount'] = $netAmountWithFees;
+			//	$data['Payment']['fees'] = $fees;
+			//	$netAmount = $netAmountWithFees;
+			//} else {
+			//	$data['Payment']['net_amount'] = $netAmount;
+			//}
+
+			// There is not TAX Rate
+			$netAmount = $amount;
 
 			// If it's a Reseller, calculate discounted amount
 			if ($userData['User']['user_type'] == 2) {
@@ -250,7 +253,6 @@ class PaymentsController extends AppController {
 			$unRoundedNewAmount = (100 * (100 * $amount) / ($tax + 100)) / (100 - $userData['User']['discount_rate']);
 			$retailAmount = $unRoundedNewAmount + ($unRoundedNewAmount * $tax / 100);
 			$invoice['Invoice']['descuento'] = $retailAmount - $amount;
-
 			$invoice['Invoice']['total_pagos'] = $amount;
 			$invoice['Invoice']['total_final'] = $amount;
 
@@ -297,7 +299,7 @@ class PaymentsController extends AppController {
 				$invoiceId = $this->Invoice->getInsertID();
 
 				// Generate invoice
-				$invoice = $this->admin_generate_invoice($invoiceId);
+				//$invoice = $this->admin_generate_invoice($invoiceId);
 
 				// Get user's data
 				$user_data = $this->User->find(
@@ -326,8 +328,8 @@ class PaymentsController extends AppController {
 						'notification_date'  => date('d-m-Y h:i:s a', strtotime($paymentData['Payment']['notification_date'])),
 						'status_change'      => date('d-m-Y h:i:s a', strtotime($data['Payment']['change_status_date'])),
 						'amount_net'         => number_format((float)$newAmount, 2, '.', ''),
-						'amount_itbms'       => number_format((float)$taxPaid, 2, '.', ''),
-						'amount_fees'        => number_format((float)$fees, 2, '.', ''),
+						//'amount_itbms'       => number_format((float)$taxPaid, 2, '.', ''),
+						//'amount_fees'        => number_format((float)$fees, 2, '.', ''),
 						'amount_discount'    => number_format((float)$discountApplied, 2, '.', ''),
 						'amount_total'       => number_format((float)$paymentData['Payment']['amount'], 2, '.', ''),
 						'promo'              => $promo
