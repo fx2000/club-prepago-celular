@@ -60,11 +60,7 @@
 				<h2><i class="icon-th"></i><?php echo __(' Prepaid Balance'); ?></h2>
 			</div>
 			<div class="box-content"  style="font-size:15px;">
-<<<<<<< HEAD
 				<h1><center>Bs. <?php echo str_replace(".",",",sprintf("%.2f", $this->request->data['User']['balance'])); ?></center></h1>
-=======
-				<h1><center>Bs. <?php echo $this->request->data['User']['balance']; ?></center></h1>
->>>>>>> 36e3b79f83d0d77240951b5c627a20cccdae7e21
 			</div>
 		</div>
 		<div class="box span6">
