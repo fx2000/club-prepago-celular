@@ -121,7 +121,7 @@
 							?>
 						</td>
 						<td><?php echo $val['Payment']['notification_date']; ?></td>
-						<td><?php echo 'Bs. ' . $val['Payment']['amount']; ?></td>
+						<td><?php echo 'Bs. ' . str_replace(".",",",sprintf("%.2f",$val['Payment']['amount'])); ?></td>
 						<td class="hidden-phone">
 							<?php
 								echo $this->html->link(
