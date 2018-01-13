@@ -79,7 +79,7 @@
 							?>
 						</td>
 						<td class="hidden-phone"><?php echo $val['Coupon']['description']; ?></td>
-						<td >$<?php echo $val['Coupon']['amount'];?></td>
+						<td >$<?php echo str_replace(".",",",sprintf("%.2f", $val['Coupon']['amount']));?></td>
 						<td class="hidden-phone"><?php echo $val['Coupon']['cant']; ?></td>
 						<td class="hidden-phone"><?php echo $val['Coupon']['points']; ?></td>
 						<td class="hidden-phone">
