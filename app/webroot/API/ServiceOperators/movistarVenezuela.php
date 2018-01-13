@@ -111,6 +111,8 @@
         }
       }
 
+      if($result === NULL) $result = "0:99";
+
       return $result;
 
     }
