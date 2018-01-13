@@ -38,6 +38,8 @@
 
       $options = array('connection_timeout'=>15,'exceptions'=>true);
 
+      $result = '';
+
       try {
 
         $params = array(
@@ -111,7 +113,9 @@
         }
       }
 
-      if($result === NULL) $result = "0:99";
+      if($result === ''){
+        $result = "0:99";
+      } 
 
       return $result;
 
