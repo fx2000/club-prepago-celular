@@ -66,20 +66,23 @@
 
         $code = $responseArray['ResponseCode'];
         $desc = $responseArray['ResponseMessage'];
-        $codRec = $responseArray['TransactionID'];
-        $trxCode = $responseArray['ExternalTransactionReference'];
-        $bal = $responseArray['StockBalance'];
-        $balW = $responseArray['WalletBalance'];
-        $balP = $responseArray['PointBalance'];
 
         if ($code == '0') {
 
+          $codRec = $responseArray['TransactionID'];
+          $trxCode = $responseArray['ExternalTransactionReference'];
+          $bal = $responseArray['StockBalance'];
+          $balW = $responseArray['WalletBalance'];
+          $balP = $responseArray['PointBalance'];
           $result = "0:00:".$codRec.":".$bal.":00:0";
 
         } else {
 
-          $result = "0:99";
-
+          if ($code == '500') {
+            $result = "0:1";
+          } else {
+            $result = "0:99";
+          }
         }
 
       } catch (Exception $e) {
@@ -115,7 +118,7 @@
 
       if($result === ''){
         $result = "0:99";
-      } 
+      }
 
       return $result;
 
