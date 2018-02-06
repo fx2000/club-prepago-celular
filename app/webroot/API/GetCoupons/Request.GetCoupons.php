@@ -23,10 +23,10 @@ class RequestGetCouponsAPI extends Dbconn {
 
     // Select data from coupons table
 		$selCoupons =
-			"SELECT *
-				FROM coupons
-				WHERE status = " . ACTIVE;
-				" ORDER BY coupon_type asc";
+			"SELECT c.*, s.name AS name_store, s.address AS address, s.email AS email_store
+				FROM coupons c, stores s
+				WHERE c.store_id = s.id AND c.delete_status = ". NOT_DELETED ." AND c.status = " . ACTIVE;
+				" ORDER BY c.coupon_type asc";
 		$resCoupons = $this->fireQuery($selCoupons);
 		$numCoupon = $this->rowCount($resCoupons);
 
@@ -41,8 +41,11 @@ class RequestGetCouponsAPI extends Dbconn {
 					$coupons[$num]['Amount'] = $arrCoupon['amount'];
 					$coupons[$num]['Duedate'] = $arrCoupon['due_date'];
 					$coupons[$num]['Description'] = $arrCoupon['description'];
-					//$coupons[$num]['Image'] = DOMAINURL . 'img/rewards/' . $arrCoupon['image'];
-          $coupons[$num]['Image'] = $arrCoupon['image'];
+					$coupons[$num]['image'] = $arrCoupon['image'];
+					$coupons[$num]['name_store'] = $arrCoupon['name_store'];
+					$coupons[$num]['address'] = $arrCoupon['address'];
+					$coupons[$num]['email_store'] = $arrCoupon['email_store'];
+					$coupons[$num]['cant'] = $arrCoupon['cant'];
 					$num++;
 
       }
