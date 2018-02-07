@@ -19,7 +19,8 @@ class ReportController extends AppController {
 		'Operator',
 		'Admin',
 		'Payment',
-		'Bank'
+		'Bank',
+		'CouponRedemption'
 	);
 	
 	var $components = array('Validation');
@@ -598,6 +599,92 @@ class ReportController extends AppController {
 						'alias'      => 'User',
 						'type'       => 'INNER',
 						'conditions' => array('Recharge.user_id=User.id')
+					)
+				)
+			)
+		);
+		$this->set('userdata', $data);
+
+		// Get current staff member details
+		$Admindata = $this->Admin->find(
+			'first',
+			array(
+				'conditions' => array('id' => $this->Session->read('admin_id'))
+			)
+		);
+		$this->set('Admindata', $Admindata);
+	}
+
+	/**
+	 * Coupon Redemptions report
+	 */
+	public function admin_coupon_redemptions() {
+
+		// Check that session is still valid
+		$this->requestAction(
+			array(
+				'controller' => 'cpanel',
+				'action'     => 'admin_checkSession'
+			)
+		);
+
+		// Load standard layout
+		$this->layout = 'admin_layout';
+
+		$inputDate = @$_REQUEST['input_date'];
+		$inputDateArr = explode('-', $inputDate);
+
+		// Create conditions array
+		$conditions = array();
+
+		// If a date is entered, add it to the conditions array
+		if ($inputDate != ''&& checkdate($inputDateArr[1], $inputDateArr[2], $inputDateArr[0])) {
+			$conditions = array("DATE(CouponRedemption.purchase_date)"=>$inputDate);
+		}
+
+		// If a payment method is entered, add it to the conditions array
+		if (@$_REQUEST['payment_method'] != '') {
+			$conditions[] = "payment_method=\"" . $_REQUEST['payment_method'] . "\"";
+		}
+
+		// If a user is entered, add it to the conditions array
+		if (@$_REQUEST['username'] != '') {
+			$conditions['User.id'] = $_REQUEST['username'];
+		}
+
+		// If a reseller is entered, add it to the conditions array
+		if (@$_REQUEST['reseller'] != '') {
+			$conditions['User.id'] = $_REQUEST['reseller'];
+		}
+
+		// If a status is entered, add it to the conditions array
+		if (@$_REQUEST['status'] != '') {
+			$conditions['CouponRedemption.status'] = $_REQUEST['status'];
+		}
+
+		// Get data from coupon_redemptions table
+		$data = $this->CouponRedemption->find(
+			'all',
+			array(
+				'conditions' => $conditions,
+				'fields'     => array(
+					'CouponRedemption.*',
+					'Coupon.amount',
+					'User.name'
+				),
+				'order'      => 'id desc',
+				'joins'      => array(
+					array(
+						'table'      => 'coupons',
+						'alias'      => 'Coupon',
+						'type'       => 'INNER',
+						'conditions' => array('CouponRedemption.coupon_id=Coupon.id')
+					),
+					array(
+						'table'      => 'users',
+						'alias'      => 'User',
+						'type'       => 'INNER',
+						'conditions' => array('CouponRedemption.user_id=User.id')
 					)
 				)
 			)
