@@ -1,6 +1,6 @@
 # Club Prepago Celular
 
-![CPC Logo](https://raw.githubusercontent.com/fx2000/club-prepago-celular/master/app/webroot/img/logo.png)
+![CPC Logo](https://github.com/fx2000/club-prepago-celular/blob/master/app/webroot/img/logo.png?raw=true)
 
 ## CLUB PREPAGO CELULAR IS THE BEST WAY TO RECHARGE AND PAY FOR SERVICES
 You can recharge your mobile phone, get exclusive offers and pay your bills or your transportation cards. But that's not all, all your recharges in Club Prepago Celular earn you points, that you can exchange for any of the products in the app.
