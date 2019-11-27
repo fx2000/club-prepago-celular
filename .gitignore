@@ -3,6 +3,7 @@
 # Configuration Files
 /app/Config/core.php
 /app/Config/database.php
+/app/Config/email.php
 /app/webroot/API/config.php
 
 # Dependencies
@@ -22,6 +23,8 @@
 !/app/tmp/sessions/empty
 /app/tmp/tests/*
 !/app/tmp/tests/empty
+/app/tmp/logs
+!/app/tmp/logs/empty
 
 # Logs
 /app/log/*
