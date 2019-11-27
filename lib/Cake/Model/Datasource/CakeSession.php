@@ -557,7 +557,7 @@ class CakeSession {
 			}
 		}
 		if (!empty($sessionConfig['handler']) && !isset($sessionConfig['handler']['engine'])) {
-			call_user_func_array('session_set_save_handler', $sessionConfig['handler']);
+			//call_user_func_array('session_set_save_handler', $sessionConfig['handler']);
 		}
 		if (!empty($sessionConfig['handler']['engine'])) {
 			$handler = static::_getHandler($sessionConfig['handler']['engine']);
